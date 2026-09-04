@@ -1,24 +1,33 @@
 name: Renovar token
 
-# O token de longa duração do Instagram vale 60 dias. Vencido, o pipeline fica
-# mudo e o Story do dia simplesmente não sai — sem erro visível no celular.
-# Roda dia 1 de cada mês: renova sozinho se houver um PAT em REPO_PAT, e
-# imprime o token novo no log se não houver.
+# O token do Instagram vale 60 dias e cada renovação devolve outros 60 — então
+# o prazo nunca é o problema. O problema seria a renovação falhar em silêncio.
+#
+# Por isso SEMANAL, e não mensal: são ~8 tentativas dentro de uma validade, e
+# uma falha isolada não custa nada. E por isso o passo final abre ISSUE quando
+# falha: issue vira e-mail, e um pipeline que publica sozinho não pode ter
+# modo de falha silencioso.
 on:
   schedule:
-    - cron: "0 12 1 * *"
+    - cron: "20 11 * * 1"     # toda segunda, 11:20 UTC (8h20 de Brasília)
   workflow_dispatch:
 
 jobs:
   token:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write         # commit do token.json
+      issues: write           # o alarme quando falha
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+
       - name: Trocar por um token de mais 60 dias
+        id: renovar
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           REPO_PAT: ${{ secrets.REPO_PAT }}
@@ -29,3 +38,49 @@ jobs:
             exit 0
           fi
           python refresh_token.py
+
+      - name: Guardar quando vence
+        if: success()
+        run: |
+          if [ -n "$(git status --porcelain token.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add token.json
+            git commit -m "Token do Instagram renovado (auto)"
+            git pull --rebase --autostash origin main
+            git push
+          fi
+
+      - name: Abrir issue se a renovação falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="Token do Instagram não renovou"
+          # não empilhar issue nova a cada semana enquanto a antiga está aberta
+          if gh issue list --state open --search "$titulo in:title" \
+               --json number -q '.[0].number' | grep -q .; then
+            echo "Já existe issue aberta sobre isso."
+            exit 0
+          fi
+          corpo=$(cat <<TXT
+          A renovação semanal do token do Instagram falhou.
+
+          **Enquanto não for resolvido, os Stories continuam saindo** — o token
+          só para de valer no fim dos 60 dias, e há várias rodadas semanais até
+          lá. É provável que a próxima resolva sozinha.
+
+          Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          O que olhar, em ordem:
+
+          1. O log acima diz o motivo.
+          2. Falta o secret \`REPO_PAT\`? Sem ele o workflow não consegue gravar
+          o token novo — é a causa mais provável na primeira vez.
+          3. Renovar à mão, pelo PC, resolve na hora:
+          \`IG_ACCESS_TOKEN=<token atual> python refresh_token.py\`
+          4. Se o token já tiver expirado, gerar outro no painel da Meta (app
+          \`vendanaobra\` → API do Instagram → Gerar token) e regravar o secret.
+          TXT
+          )
+          gh issue create --title "$titulo" --body "$corpo"

@@ -38,6 +38,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write        # commit do estado + assets das Releases
+      issues: write          # o alarme quando a publicação falha
 
     steps:
       - uses: actions/checkout@v4
@@ -66,6 +67,40 @@ jobs:
           [ "${{ inputs.render_apenas }}" = "true" ] && args="$args --render-apenas"
           [ "${{ inputs.forcar }}" = "true" ] && args="$args --forcar"
           python publicar_story.py $args
+
+      - name: Avisar se a publicação falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Sem isto, uma falha de publicação é silenciosa: o story
+          # simplesmente não sai e ninguém fica sabendo até alguém abrir o
+          # perfil. Issue vira e-mail.
+          titulo="Story não foi publicado"
+          if gh issue list --state open --search "$titulo in:title" \
+               --json number -q '.[0].number' | grep -q .; then
+            echo "Já existe issue aberta sobre isso."
+            exit 0
+          fi
+          corpo=$(cat <<TXT
+          A execução de $(date -u '+%d/%m %H:%M UTC') falhou ao publicar.
+
+          Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          O que costuma ser, em ordem:
+
+          1. **Token do Instagram vencido ou revogado** — rode Actions →
+          Publicar Story → Run workflow → \`dry_run\`: ele diz qual conta o token
+          abre. Se reclamar, gere outro no painel da Meta e regrave o secret
+          \`IG_ACCESS_TOKEN\`.
+          2. **Cota de 100 publicações/24 h estourada** — o \`dry_run\` mostra o
+          consumo.
+          3. **Arquivo que o Instagram recusou** — o log diz qual.
+
+          A fila NÃO se perde: o que não publicou continua lá e sai na próxima.
+          TXT
+          )
+          gh issue create --title "$titulo" --body "$corpo"
 
       - name: Guardar o estado (memória entre execuções)
         if: always()

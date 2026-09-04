@@ -183,6 +183,18 @@ def main() -> None:
     if st["dia"]["data"] != hoje:
         st["dia"] = {"data": hoje, "n": 0}
 
+    # o prazo do token está anotado em token.json (sem segredo nenhum): dá
+    # para avisar cedo, em vez de descobrir no dia em que o story não sai
+    try:
+        import refresh_token
+        faltam = refresh_token.dias_restantes()
+        if faltam is not None and faltam <= refresh_token.ALERTA_DIAS:
+            log(f"ATENÇÃO: o token do Instagram vence em {faltam} dias e a "
+                f"renovação semanal não está pegando. Ver o workflow "
+                f"'Renovar token'.")
+    except Exception:
+        pass
+
     if args.dry_run:
         # o diagnóstico da credencial vem ANTES da fila: fila vazia é o caso
         # mais comum de rodar isto, e sair antes de testar o token seria
