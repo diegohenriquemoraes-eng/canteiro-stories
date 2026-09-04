@@ -62,6 +62,32 @@ chave vazada não consegue trocar o que o Actions roda — mas consegue editar
 motivo de o escopo ser o mínimo e de a chave não ir para lugar nenhum além do
 navegador dele.
 
+## Arquivo grande sobe em pedaços (04/09/2026)
+
+Um vídeo de 75 MB levou **422** da API de blobs — *"Sorry, your input was too
+large to process"*. O limite é do servidor do GitHub e aparece bem antes dos
+100 MB da documentação, então otimizar o envio não resolve. (Antes disso, o
+mesmo arquivo dava "Load failed": a página montava o base64 na mão e
+materializava o vídeo três vezes na memória do Safari. Agora usa
+`FileReader.readAsDataURL`; foi essa correção que fez o upload chegar até o
+servidor e o erro mudar de cara.)
+
+Acima de **6 MB** a página fatia:
+
+    2026-09-04-1930-solucao.mp4.p1de9  …  .p9de9   (pedaços)
+    2026-09-04-1930-solucao.mp4.partes.json        (bytes, sha256, nº de partes)
+
+A extensão fica **antes** do sufixo de propósito: o item remontado precisa
+continuar sendo `.mp4` para `RE_NOME` e o filtro de extensões funcionarem sem
+mudar nada. Os pedaços, esses, não têm extensão de mídia — se o manifesto
+faltar ou o envio parar no meio, nada disso é confundido com Story pronto.
+
+`fila.juntar_partes` junta antes de qualquer decisão e **só aceita conjunto
+completo**; faltando pedaço, o nome vai para o log e espera a próxima rodada.
+`fila.baixar_montado` confere **tamanho e sha256** contra o manifesto e levanta
+se não bater — Story truncado no ar é pior que Story não publicado. Coberto por
+`testes/test_partes.py`.
+
 ## Armadilhas já pagas (04/09/2026, construção)
 
 - **`-shortest` truncava o clipe esticado.** Vídeo de 2 s é estendido para 3 s

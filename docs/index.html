@@ -213,7 +213,7 @@ function doisDigitos(n){ return String(n).padStart(2, "0"); }
 // passa com folga. Acima disso nao adianta insistir nem otimizar o envio: o
 // caminho e' menos bytes (1080p 30fps na camera) ou fatiar o arquivo em pedacos
 // de 8 MB com o robo juntando antes de publicar.
-const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 35;
+const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 90, PEDACO_MB = 6;
 
 function tamanho(bytes){
   return bytes < 1e6 ? Math.max(1, Math.round(bytes/1e3)) + " KB"
@@ -291,8 +291,8 @@ function desenhar(){
         <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${tamanho(item.file.size)}</span>
         ${item.file.size > AVISA_MB*MB ? `<div class="aviso erro" style="margin:6px 0 0;padding:7px 9px">
           ${Math.round(item.file.size/MB)} MB — ${item.file.size > TETO_MB*MB
-            ? "o GitHub recusa esse tamanho (422) — grave em 1080p 30fps"
-            : "pode demorar alguns minutos no 4G"}.</div>` : ""}
+            ? "acima do que o Instagram aceita — grave em 1080p 30fps"
+            : "vai subir em pedaços; pode demorar alguns minutos no 4G"}.</div>` : ""}
         <label>Vai ao ar em</label>
         <input type="datetime-local" value="${item.quando}" step="900">
       </div>
@@ -320,6 +320,13 @@ function desenhar(){
 // arquivo tres vezes em JS (buffer + string binaria + base64), que era o que
 // derrubava o Safari do iPhone com video grande — "Load failed" com 45 MB, em
 // 04/09/2026. Aqui so sobra a string base64 e o corte do prefixo "data:".
+// A impressao digital do arquivo que saiu do celular. E' com ela que o robo
+// prova, do outro lado, que remontou exatamente o mesmo video.
+async function sha256(blob){
+  const h = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
+  return [...new Uint8Array(h)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
 function base64(blob){
   return new Promise((ok, erro) => {
     const fr = new FileReader();
@@ -335,10 +342,9 @@ el("enviar").onclick = async () => {
 
   const gordo = escolhidos.find(i => i.file.size > TETO_MB * MB);
   if (gordo) return recado(
-    `${Math.round(gordo.file.size/MB)} MB — o GitHub recusa arquivo desse tamanho `
-    + `(erro 422). O limite prático é ${TETO_MB} MB. No iPhone: Ajustes → Câmera → `
-    + "Gravar vídeo → 1080p HD, 30 fps — o mesmo story cai para uns 15 MB e o "
-    + "Instagram recomprime tudo de qualquer jeito.", "erro");
+    `${Math.round(gordo.file.size/MB)} MB — acima do que o Instagram aceita num Story `
+    + `(${TETO_MB} MB). No iPhone: Ajustes → Câmera → Gravar vídeo → 1080p HD, 30 fps.`,
+    "erro");
 
   el("enviar").disabled = true;
   el("progresso").classList.remove("oculto");
@@ -367,6 +373,38 @@ el("enviar").onclick = async () => {
         nome = `${dia}-${hora.replace(":", "")}-${slug(item.file.name)}-${n++}${ext}`;
       }
       usados.add(nome);
+
+      // Arquivo grande vai FATIADO: a API de blobs recusa acima de ~35 MB
+      // ("your input was too large to process", 422 — medido com 75 MB em
+      // 04/09/2026). Cada pedaço vira um blob pequeno e um manifesto guarda o
+      // sha256 do arquivo inteiro; o robô junta e só publica se conferir.
+      // O nome dos pedaços mantém a extensão ANTES do sufixo para a fila
+      // continuar sabendo que aquilo é um .mp4.
+      if (dados.size > PEDACO_MB * MB){
+        const total = Math.ceil(dados.size / (PEDACO_MB * MB));
+        const sha = await sha256(dados);
+        for (let i = 1; i <= total; i++){
+          const fatia = dados.slice((i-1) * PEDACO_MB * MB, i * PEDACO_MB * MB);
+          const bl = await api(`/repos/${REPO}/git/blobs`, {
+            method:"POST",
+            body: JSON.stringify({content: await base64(fatia), encoding:"base64"})
+          });
+          if (!bl.ok) throw new Error(`no pedaço ${i}/${total} de ${item.file.name}: ${bl.status} ${await bl.text()}`);
+          arvore.push({path:`${nome}.p${i}de${total}`, mode:"100644", type:"blob",
+                       sha:(await bl.json()).sha});
+          el("progresso").value = Math.round((feitos + i/total) / escolhidos.length * 90);
+        }
+        const man = await api(`/repos/${REPO}/git/blobs`, {
+          method:"POST",
+          body: JSON.stringify({content: btoa(JSON.stringify(
+            {arquivo:nome, bytes:dados.size, sha256:sha, partes:total})), encoding:"base64"})
+        });
+        if (!man.ok) throw new Error(`no manifesto de ${item.file.name}: ${man.status}`);
+        arvore.push({path:`${nome}.partes.json`, mode:"100644", type:"blob",
+                     sha:(await man.json()).sha});
+        feitos++;
+        continue;
+      }
 
       const blob = await api(`/repos/${REPO}/git/blobs`, {
         method:"POST",

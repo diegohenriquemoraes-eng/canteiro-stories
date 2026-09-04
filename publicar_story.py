@@ -212,6 +212,11 @@ def main() -> None:
     # preferir anexar o arquivo direto, já com o horário no nome
     assets = [dict(a, origem="release") for a in repo.assets(cfg["release_fila"])]
     assets += repo.entrada_listar()
+    # arquivo grande sobe fatiado (a API de blobs recusa acima de ~35 MB):
+    # junta os pedaços de volta antes de qualquer decisão sobre a fila
+    assets, incompletos = filamod.juntar_partes(assets)
+    for pendente in incompletos:
+        log(f"envio em partes ainda incompleto, esperando: {pendente}")
     if not assets:
         log("fila vazia — nada a publicar")
         return
@@ -275,9 +280,18 @@ def main() -> None:
 
     for alvo, nome, asset, chave in devidos:
         log(f"preparando {nome} (era para {alvo:%d/%m %H:%M})")
-        bruto = (repo.baixar(asset, TRABALHO / "bruto" / nome)
-                 if asset["origem"] == "release"
-                 else repo.entrada_baixar(asset, TRABALHO / "bruto" / nome))
+        try:
+            if asset["origem"] == "release":
+                bruto = repo.baixar(asset, TRABALHO / "bruto" / nome)
+            elif asset["origem"] == "partes":
+                log(f"  remontando de {len(asset['partes'])} pedaços e conferindo o sha256")
+                bruto = filamod.baixar_montado(repo, asset, TRABALHO / "bruto" / nome)
+            else:
+                bruto = repo.entrada_baixar(asset, TRABALHO / "bruto" / nome)
+        except filamod.FilaErro as exc:
+            # remontagem que nao confere: fica na fila, nao publica pela metade
+            log(f"NAO CONFERE, deixando na fila: {exc}")
+            continue
         base = f"{alvo:%Y%m%d-%H%M}-{Path(nome).stem[:40]}"
         try:
             res = midia.preparar(bruto, TRABALHO / "pronto", base, cfg["video"])
@@ -341,6 +355,9 @@ def main() -> None:
 
         if asset["origem"] == "release":               # sai da caixa de entrada
             repo.apagar(asset["id"])
+        elif asset["origem"] == "partes":              # os pedaços e o manifesto
+            repo.entrada_remover({p["name"] for p in asset["partes"]}
+                                 | {asset["manifesto"]["name"]})
         else:
             repo.entrada_remover({asset["name"]})
         for a in repo.assets(cfg["release_pronto"]):   # e da hospedagem

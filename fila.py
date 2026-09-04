@@ -38,6 +38,100 @@ class FilaErro(Exception):
     pass
 
 
+# ------------------------------------------------- arquivo grande em partes ---
+#
+# A API de blobs do GitHub recusa arquivo grande: medido em 04/09/2026, um video
+# de 75 MB levou 422 — "your input was too large to process". Nao adianta
+# otimizar o envio, o limite e' do servidor. Entao a pagina de envio fatia o
+# arquivo em pedacos pequenos e grava um manifesto junto; aqui a fila junta tudo
+# de volta ANTES de qualquer coisa, e so aceita se o resultado bater byte a byte
+# com o que saiu do celular.
+#
+#   2026-09-04-1930-solucao.p1de9     ... .p9de9   (pedacos, sem extensao)
+#   2026-09-04-1930-solucao.partes.json           (nome, bytes, sha256, ext)
+#
+# Os pedacos nao tem extensao de midia de proposito: se o manifesto faltar ou o
+# envio parar no meio, nada disso e' confundido com um Story pronto para ir ao
+# ar — some da fila em silencio em vez de publicar video quebrado.
+
+RE_PARTE = re.compile(r"^(?P<base>.+)\.p(?P<i>\d+)de(?P<n>\d+)$")
+SUFIXO_MANIFESTO = ".partes.json"
+
+
+def juntar_partes(itens: list[dict]) -> tuple[list[dict], list[str]]:
+    """Troca os pedacos de cada arquivo por um item so.
+
+    Devolve (itens, incompletos). Um conjunto so vira item quando o manifesto
+    esta la E todos os pedacos de 1 a n existem — faltando qualquer coisa, ele
+    fica de fora e o nome vai em `incompletos` para o log (o envio pode estar
+    em andamento; na proxima rodada estara completo).
+    """
+    manifestos, pedacos, soltos = {}, {}, []
+    for it in itens:
+        nome = it["name"]
+        if nome.endswith(SUFIXO_MANIFESTO):
+            manifestos[nome[:-len(SUFIXO_MANIFESTO)]] = it
+            continue
+        m = RE_PARTE.match(nome)
+        if m:
+            pedacos.setdefault(m["base"], {})[int(m["i"])] = (int(m["n"]), it)
+            continue
+        soltos.append(it)
+
+    incompletos = []
+    for base, man in sorted(manifestos.items()):
+        achados = pedacos.pop(base, {})
+        total = next(iter(achados.values()))[0] if achados else 0
+        if not achados or len(achados) != total or set(achados) != set(range(1, total + 1)):
+            incompletos.append(f"{base} ({len(achados)} de {total or '?'} pedaços)")
+            continue
+        soltos.append({
+            "name": base, "origem": "partes", "manifesto": man,
+            "partes": [achados[i][1] for i in range(1, total + 1)],
+            "size": sum(p[1].get("size", 0) for p in achados.values()),
+        })
+    for base, achados in pedacos.items():          # pedaços sem manifesto
+        incompletos.append(f"{base} (sem manifesto)")
+    return soltos, incompletos
+
+
+def baixar_montado(repo, item: dict, destino: Path) -> Path:
+    """Remonta o arquivo a partir dos pedacos e SO devolve se conferir.
+
+    O manifesto traz o tamanho e o sha256 do arquivo que saiu do celular. Se o
+    remontado nao bater nos dois, levanta — publicar video truncado no Story e'
+    pior do que nao publicar, e o erro vira issue no workflow.
+    """
+    import hashlib
+    import json as _json
+
+    man_txt = repo.entrada_baixar(item["manifesto"], destino.with_suffix(".manifesto"))
+    man = _json.loads(man_txt.read_text(encoding="utf-8"))
+    man_txt.unlink(missing_ok=True)
+
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    h, escritos = hashlib.sha256(), 0
+    with destino.open("wb") as saida:
+        for i, parte in enumerate(item["partes"], 1):
+            tmp = destino.with_suffix(f".p{i}")
+            repo.entrada_baixar(parte, tmp)
+            dados = tmp.read_bytes()
+            saida.write(dados)
+            h.update(dados)
+            escritos += len(dados)
+            tmp.unlink(missing_ok=True)
+
+    if man.get("bytes") and escritos != man["bytes"]:
+        destino.unlink(missing_ok=True)
+        raise FilaErro(f"{item['name']}: remontado com {escritos} bytes, "
+                       f"o manifesto diz {man['bytes']}")
+    if man.get("sha256") and h.hexdigest() != man["sha256"]:
+        destino.unlink(missing_ok=True)
+        raise FilaErro(f"{item['name']}: o arquivo remontado nao confere com o "
+                       "que saiu do celular (sha256 diferente)")
+    return destino
+
+
 # ------------------------------------------------------------- o horário ---
 
 def alvo_do_nome(nome: str, agora: datetime, atraso_max_min: int):
