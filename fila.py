@@ -147,6 +147,12 @@ class Repo:
         for a in rel.get("assets", []):
             if a["name"] == nome:
                 self.apagar(a["id"])
+        # O GitHub serve TODO asset como application/octet-stream, mande-se o
+        # que mandar no upload — conferido. O que o Instagram usa para
+        # reconhecer a mídia é a extensão no fim da URL, e é por isso que o
+        # nome do asset precisa terminar em .jpg/.mp4. Mesmo caminho que o
+        # pipeline dos Reels usa em produção desde 24/07, inclusive para as
+        # capas (imagem).
         r = self.sessao.post(
             f"{UPLOADS}/repos/{self.repo}/releases/{rel['id']}/assets",
             params={"name": nome},
