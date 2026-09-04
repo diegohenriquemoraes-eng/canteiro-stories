@@ -84,9 +84,18 @@ faltar ou o envio parar no meio, nada disso é confundido com Story pronto.
 
 `fila.juntar_partes` junta antes de qualquer decisão e **só aceita conjunto
 completo**; faltando pedaço, o nome vai para o log e espera a próxima rodada.
-`fila.baixar_montado` confere **tamanho e sha256** contra o manifesto e levanta
-se não bater — Story truncado no ar é pior que Story não publicado. Coberto por
+`fila.baixar_montado` confere **tamanho e um sha256 por pedaço** (`sha256_partes`
+no manifesto) e levanta dizendo QUAL pedaço não bateu — Story truncado no ar é
+pior que Story não publicado. O hash é por pedaço e não do arquivo inteiro
+porque o inteiro obrigava o celular a carregar 75 MB de uma vez. Coberto por
 `testes/test_partes.py`.
+
+O segundo "Load failed" do dia veio **depois** do fatiamento, sem dizer em qual
+dos 13 uploads caiu — era só a rede oscilando, mas um pedaço caindo derrubava o
+envio inteiro. Desde então `api()` na página **tenta cada chamada até 3 vezes**
+com pausa crescente, o erro final nomeia o passo ("pedaço 4/13 de X: Load
+failed"), a tela mostra o pedaço em andamento, e um **Wake Lock** segura a tela
+acesa durante o envio (tela apagando é o Safari suspendendo a aba).
 
 ## Armadilhas já pagas (04/09/2026, construção)
 

@@ -104,6 +104,41 @@ class TestRemontagem(unittest.TestCase):
             fila.baixar_montado(RepoFalso(), it, self.tmp / "saida.mp4")
         self.assertIn("bytes", str(e.exception))
 
+    # --- manifesto atual: um sha256 por pedaço, sem hash do arquivo inteiro ---
+
+    def _monta_por_pedaco(self, dados, estragar=None, pedacos=4):
+        n = len(dados) // pedacos + 1
+        fatias = [dados[i*n:(i+1)*n] for i in range(pedacos)]
+        hashes = [hashlib.sha256(f).hexdigest() for f in fatias]
+        if estragar is not None:
+            hashes[estragar] = "0" * 64
+        partes = [item(f"{self.base}.p{i+1}de{pedacos}", f) for i, f in enumerate(fatias)]
+        man = json.dumps({"arquivo": self.base, "bytes": len(dados),
+                          "sha256_partes": hashes, "partes": pedacos})
+        return {"name": self.base, "origem": "partes", "partes": partes,
+                "manifesto": item(f"{self.base}.partes.json", man.encode())}
+
+    def test_hash_por_pedaco_remonta_byte_a_byte(self):
+        alvo = fila.baixar_montado(RepoFalso(), self._monta_por_pedaco(self.original),
+                                   self.tmp / "saida.mp4")
+        self.assertEqual(alvo.read_bytes(), self.original)
+
+    def test_hash_por_pedaco_diz_qual_pedaco_quebrou(self):
+        it = self._monta_por_pedaco(self.original, estragar=2)   # o 3º de 4
+        with self.assertRaises(fila.FilaErro) as e:
+            fila.baixar_montado(RepoFalso(), it, self.tmp / "saida.mp4")
+        self.assertIn("pedaço 3/4", str(e.exception))
+        self.assertFalse((self.tmp / "saida.mp4").exists())
+
+    def test_manifesto_com_contagem_errada_de_hashes_recusa(self):
+        it = self._monta_por_pedaco(self.original)
+        it["manifesto"] = item(f"{self.base}.partes.json", json.dumps(
+            {"arquivo": self.base, "bytes": len(self.original),
+             "sha256_partes": ["0" * 64], "partes": 4}).encode())
+        with self.assertRaises(fila.FilaErro) as e:
+            fila.baixar_montado(RepoFalso(), it, self.tmp / "saida.mp4")
+        self.assertIn("hashes", str(e.exception))
+
 
 if __name__ == "__main__":
     unittest.main()

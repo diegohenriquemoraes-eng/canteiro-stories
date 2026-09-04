@@ -109,6 +109,15 @@ def baixar_montado(repo, item: dict, destino: Path) -> Path:
     man = _json.loads(man_txt.read_text(encoding="utf-8"))
     man_txt.unlink(missing_ok=True)
 
+    # Dois jeitos de conferir, conforme o manifesto: `sha256` do arquivo
+    # inteiro (primeira versao) ou `sha256_partes`, um por pedaco — este e' o
+    # atual, porque calcular o hash do arquivo inteiro obrigava o celular a
+    # carregar 75 MB de uma vez, e conferir por pedaco ainda diz QUAL quebrou.
+    hashes = man.get("sha256_partes") or []
+    if hashes and len(hashes) != len(item["partes"]):
+        raise FilaErro(f"{item['name']}: manifesto lista {len(hashes)} hashes "
+                       f"para {len(item['partes'])} pedaços")
+
     destino.parent.mkdir(parents=True, exist_ok=True)
     h, escritos = hashlib.sha256(), 0
     with destino.open("wb") as saida:
@@ -116,10 +125,15 @@ def baixar_montado(repo, item: dict, destino: Path) -> Path:
             tmp = destino.with_suffix(f".p{i}")
             repo.entrada_baixar(parte, tmp)
             dados = tmp.read_bytes()
+            tmp.unlink(missing_ok=True)
+            if hashes and hashlib.sha256(dados).hexdigest() != hashes[i - 1]:
+                saida.close()
+                destino.unlink(missing_ok=True)
+                raise FilaErro(f"{item['name']}: o pedaço {i}/{len(hashes)} nao "
+                               "confere com o que saiu do celular (sha256 diferente)")
             saida.write(dados)
             h.update(dados)
             escritos += len(dados)
-            tmp.unlink(missing_ok=True)
 
     if man.get("bytes") and escritos != man["bytes"]:
         destino.unlink(missing_ok=True)

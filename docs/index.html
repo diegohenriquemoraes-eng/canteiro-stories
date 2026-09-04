@@ -189,14 +189,42 @@ el("trocarToken").onclick = () => {
   localStorage.removeItem(CHAVE); token = ""; el("token").value = ""; mostrarApp();
 };
 
-function api(caminho, opcoes = {}){
-  return fetch(API + caminho, {...opcoes, headers: {
-    "Authorization": "Bearer " + token,
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    ...(opcoes.headers || {})
-  }});
+// "Load failed" (Safari) e "Failed to fetch" (Chrome) sao a MESMA coisa: a
+// requisicao morreu no caminho — 4G oscilou, tela apagou, proxy cortou. Num
+// envio de 13 pedacos de 8 MB isso e' questao de tempo, e ate 04/09/2026 um
+// pedaco caindo derrubava o envio inteiro sem tentar de novo. Agora cada
+// chamada tenta ate 3 vezes, com pausa crescente, e o erro final diz em que
+// passo estava — foi a falta disso que deixou dois "Load failed" sem
+// diagnostico no mesmo dia.
+async function api(caminho, opcoes = {}, passo = ""){
+  let ultimo;
+  for (let tentativa = 1; tentativa <= 3; tentativa++){
+    try{
+      const r = await fetch(API + caminho, {...opcoes, headers: {
+        "Authorization": "Bearer " + token,
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        ...(opcoes.headers || {})
+      }});
+      if (r.status >= 500 && tentativa < 3){ ultimo = new Error(`GitHub ${r.status}`); }
+      else return r;
+    }catch(e){
+      ultimo = e;                       // TypeError: Load failed / Failed to fetch
+    }
+    if (passo) recado(`${passo}: caiu (${ultimo.message}). Tentando de novo, ${tentativa + 1}a vez…`, "info");
+    await new Promise(r => setTimeout(r, 1500 * tentativa));
+  }
+  throw new Error(`${passo ? passo + ": " : ""}${ultimo.message} (desisti após 3 tentativas)`);
 }
+
+// Tela apagando no meio do upload e' o Safari suspendendo a aba — e um dos
+// jeitos de o envio morrer. Wake Lock (iOS 16.4+) segura a tela acesa enquanto
+// manda; onde nao existe, simplesmente nao faz nada.
+let travaTela = null;
+async function segurarTela(){
+  try{ travaTela = await navigator.wakeLock?.request("screen"); }catch(e){}
+}
+function soltarTela(){ try{ travaTela?.release(); }catch(e){} travaTela = null; }
 
 function recado(texto, tipo = "info"){
   el("recado").innerHTML = texto ? `<div class="aviso ${tipo}">${texto}</div>` : "";
@@ -349,12 +377,13 @@ el("enviar").onclick = async () => {
   el("enviar").disabled = true;
   el("progresso").classList.remove("oculto");
   el("progresso").value = 0;
-  recado("Enviando…", "info");
+  recado("Enviando… deixe esta tela aberta até o fim.", "info");
+  await segurarTela();
 
   try{
     // 1) o que já está na fila, para não sobrescrever
     let arvore = [];
-    const r = await api(`/repos/${REPO}/git/trees/${BRANCH}`);
+    const r = await api(`/repos/${REPO}/git/trees/${BRANCH}`, {}, "leitura da fila");
     if (r.ok) arvore = (await r.json()).tree.filter(n => n.type === "blob")
                         .map(n => ({path:n.path, mode:"100644", type:"blob", sha:n.sha}));
     const usados = new Set(arvore.map(n => n.path));
@@ -382,14 +411,20 @@ el("enviar").onclick = async () => {
       // continuar sabendo que aquilo é um .mp4.
       if (dados.size > PEDACO_MB * MB){
         const total = Math.ceil(dados.size / (PEDACO_MB * MB));
-        const sha = await sha256(dados);
+        // hash por pedaco, nao do arquivo inteiro: o inteiro obrigava a
+        // carregar 75 MB de uma vez no celular, e por pedaco ainda diz ao
+        // robo QUAL pedaco chegou errado
+        const hashes = [];
         for (let i = 1; i <= total; i++){
+          const rotulo = `pedaço ${i}/${total} de ${item.file.name}`;
+          recado(`Enviando ${rotulo}…`, "info");
           const fatia = dados.slice((i-1) * PEDACO_MB * MB, i * PEDACO_MB * MB);
+          hashes.push(await sha256(fatia));
           const bl = await api(`/repos/${REPO}/git/blobs`, {
             method:"POST",
             body: JSON.stringify({content: await base64(fatia), encoding:"base64"})
-          });
-          if (!bl.ok) throw new Error(`no pedaço ${i}/${total} de ${item.file.name}: ${bl.status} ${await bl.text()}`);
+          }, rotulo);
+          if (!bl.ok) throw new Error(`${rotulo}: ${bl.status} ${await bl.text()}`);
           arvore.push({path:`${nome}.p${i}de${total}`, mode:"100644", type:"blob",
                        sha:(await bl.json()).sha});
           el("progresso").value = Math.round((feitos + i/total) / escolhidos.length * 90);
@@ -397,8 +432,8 @@ el("enviar").onclick = async () => {
         const man = await api(`/repos/${REPO}/git/blobs`, {
           method:"POST",
           body: JSON.stringify({content: btoa(JSON.stringify(
-            {arquivo:nome, bytes:dados.size, sha256:sha, partes:total})), encoding:"base64"})
-        });
+            {arquivo:nome, bytes:dados.size, sha256_partes:hashes, partes:total})), encoding:"base64"})
+        }, `manifesto de ${item.file.name}`);
         if (!man.ok) throw new Error(`no manifesto de ${item.file.name}: ${man.status}`);
         arvore.push({path:`${nome}.partes.json`, mode:"100644", type:"blob",
                      sha:(await man.json()).sha});
@@ -406,23 +441,25 @@ el("enviar").onclick = async () => {
         continue;
       }
 
+      recado(`Enviando ${item.file.name}…`, "info");
       const blob = await api(`/repos/${REPO}/git/blobs`, {
         method:"POST",
         body: JSON.stringify({content: await base64(dados), encoding:"base64"})
-      });
+      }, `envio de ${item.file.name}`);
       if (!blob.ok) throw new Error(`ao enviar ${item.file.name}: ${blob.status} ${await blob.text()}`);
       arvore.push({path:nome, mode:"100644", type:"blob", sha:(await blob.json()).sha});
       el("progresso").value = Math.round(++feitos / escolhidos.length * 90);
     }
 
     // 3) commit ÓRFÃO (sem pai): a branch nunca acumula histórico
+    recado("Fechando a fila…", "info");
     const tree = await (await api(`/repos/${REPO}/git/trees`, {
-      method:"POST", body: JSON.stringify({tree: arvore})})).json();
+      method:"POST", body: JSON.stringify({tree: arvore})}, "montagem da árvore")).json();
     const commit = await (await api(`/repos/${REPO}/git/commits`, {
       method:"POST", body: JSON.stringify({
-        message:`fila: ${arvore.length} pendente(s)`, tree: tree.sha, parents: []})})).json();
+        message:`fila: ${arvore.length} pendente(s)`, tree: tree.sha, parents: []})}, "commit da fila")).json();
     let ref = await api(`/repos/${REPO}/git/refs/heads/${BRANCH}`, {
-      method:"PATCH", body: JSON.stringify({sha: commit.sha, force: true})});
+      method:"PATCH", body: JSON.stringify({sha: commit.sha, force: true})}, "gravação da fila");
     if (!ref.ok){
       ref = await api(`/repos/${REPO}/git/refs`, {
         method:"POST", body: JSON.stringify({ref:`refs/heads/${BRANCH}`, sha: commit.sha})});
@@ -437,6 +474,7 @@ el("enviar").onclick = async () => {
   }catch(e){
     recado("Não consegui enviar — " + e.message, "erro");
   }finally{
+    soltarTela();
     el("enviar").disabled = false;
     el("progresso").classList.add("oculto");
   }
