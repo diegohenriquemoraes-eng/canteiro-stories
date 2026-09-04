@@ -205,14 +205,15 @@ function recado(texto, tipo = "info"){
 /* --------------------------------------------------------------- helpers -- */
 function doisDigitos(n){ return String(n).padStart(2, "0"); }
 
-// Video vai cru para a API do GitHub e o corpo do POST fica 33% maior que o
-// arquivo (base64). O teto e' o limite real da API de blobs (100 MB de arquivo);
-// acima de AVISA_MB o envio pelo 4G demora e PODE cair, mas isso depende da rede
-// e do aparelho — entao a pagina avisa e deixa tentar, em vez de decidir por ele.
-// (04/09/2026: um video de 45 MB deu "Load failed"; a causa era memoria, ja
-// corrigida no base64. Se voltar a falhar nesse tamanho, o caminho e' a pagina
-// fatiar o arquivo em pedacos de 8 MB e o robo juntar antes de publicar.)
-const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 90;
+// Video vai cru para a API de blobs do GitHub e o corpo do POST fica 33% maior
+// que o arquivo (base64). O teto NAO e' escolha nossa: medido em 04/09/2026, um
+// video de 75 MB levou 422 do proprio GitHub — "Sorry, your input was too large
+// to process. Consider creating the blob in a local clone" —, ou seja o servidor
+// recusa bem antes dos 100 MB que a documentacao promete. 35 MB e' a faixa que
+// passa com folga. Acima disso nao adianta insistir nem otimizar o envio: o
+// caminho e' menos bytes (1080p 30fps na camera) ou fatiar o arquivo em pedacos
+// de 8 MB com o robo juntando antes de publicar.
+const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 35;
 
 function tamanho(bytes){
   return bytes < 1e6 ? Math.max(1, Math.round(bytes/1e3)) + " KB"
@@ -290,8 +291,8 @@ function desenhar(){
         <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${tamanho(item.file.size)}</span>
         ${item.file.size > AVISA_MB*MB ? `<div class="aviso erro" style="margin:6px 0 0;padding:7px 9px">
           ${Math.round(item.file.size/MB)} MB — ${item.file.size > TETO_MB*MB
-            ? "acima do limite da API, não vai passar"
-            : "pode demorar alguns minutos no 4G. Se falhar, grave em 1080p 30fps"}.</div>` : ""}
+            ? "o GitHub recusa esse tamanho (422) — grave em 1080p 30fps"
+            : "pode demorar alguns minutos no 4G"}.</div>` : ""}
         <label>Vai ao ar em</label>
         <input type="datetime-local" value="${item.quando}" step="900">
       </div>
@@ -334,9 +335,10 @@ el("enviar").onclick = async () => {
 
   const gordo = escolhidos.find(i => i.file.size > TETO_MB * MB);
   if (gordo) return recado(
-    `"${gordo.file.name}" tem ${Math.round(gordo.file.size/MB)} MB — acima do limite `
-    + "da API do GitHub. No iPhone: Ajustes → Câmera → Gravar vídeo → 1080p HD, 30 fps. "
-    + "Regrave ou corte o vídeo e tente de novo.", "erro");
+    `${Math.round(gordo.file.size/MB)} MB — o GitHub recusa arquivo desse tamanho `
+    + `(erro 422). O limite prático é ${TETO_MB} MB. No iPhone: Ajustes → Câmera → `
+    + "Gravar vídeo → 1080p HD, 30 fps — o mesmo story cai para uns 15 MB e o "
+    + "Instagram recomprime tudo de qualquer jeito.", "erro");
 
   el("enviar").disabled = true;
   el("progresso").classList.remove("oculto");
