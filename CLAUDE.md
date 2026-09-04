@@ -95,15 +95,33 @@ música, menção, localização ou hashtag clicável. Não é limitação deste
 — o Meta Business Suite também não faz. Story que precise de sticker tem de
 ser postado à mão.
 
+## NO AR desde 04/09/2026
+
+App Meta **vendanaobra** (id 1910368269635506, já existia) com o caso de uso
+"API do Instagram" e as permissões `instagram_business_basic` e
+`instagram_business_content_publish` prontas. Conta `@vendanaobra` aceita como
+**Testador do Instagram**, token de longa duração gerado e gravado no secret
+`IG_ACCESS_TOKEN`. Diagnóstico do dia:
+
+    conta do token: @vendanaobra (id 28458102257148998)
+    cota do Instagram: 2/100 publicações nas últimas 24 h
+
+⚠ **O id que a API usa NÃO é o do painel.** O Studio da Meta mostra
+`17841470188725651`; o que `graph.instagram.com/me` devolve — e o único que
+funciona — é `28458102257148998`. É por isso que `IG_USER_ID` deixou de ser
+cadastrado à mão: `descobrir_ig_id()` pergunta ao próprio token.
+
+Para diagnosticar depois: **Actions → Publicar Story → Run workflow →
+dry_run**. Ele confere a credencial ANTES de olhar a fila (com a fila vazia
+sairia antes de testar, que é justamente quando se quer testar) e não publica
+nada.
+
 ## Pendências do Diego
 
-1. **Chave do GitHub na página de envio** (PAT fine-grained): o passo a passo
-   está na própria tela, em "Como criar a chave". Uma vez por aparelho. Sem
-   ela a página abre mas não consegue gravar a fila.
-2. **Token do Instagram** (secret `IG_ACCESS_TOKEN`, e só ele — o id da conta
-   sai do próprio token em `/me`): passo a passo no `README.md`. Sem ele o
-   pipeline lê a fila e diz o que faria, mas não publica.
-3. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho.
+1. ~~Chave do GitHub na página de envio~~ — **feita em 04/09**, no iPhone.
+2. ~~Token do Instagram~~ — **feito em 04/09**.
+3. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho. Sem
+   ele, o workflow mensal falha de propósito pedindo a renovação pelo PC.
 
 ⚠ A regra de "app OAuth precisa estar em produção senão o token morre em 7
 dias" é do **Google/YouTube**, não da Meta — foi copiada por engano para cá na
