@@ -156,13 +156,13 @@ function mostrarApp(){
   el("app").classList.toggle("oculto", !token);
   if (doCartao){
     const [a, m, d] = doCartao.dia.split("-");
-    const semana = ["dom","seg","ter","qua","qui","sex","sab"][new Date(+a, +m-1, +d).getDay()];
+    const semana = ["dom","seg","ter","qua","qui","sex","sáb"][new Date(+a, +m-1, +d).getDay()];
     el("cartaoTitulo").textContent = doCartao.titulo || "Story do dia";
     el("cartaoQuando").textContent =
-      `${semana} ${d}/${m} as ${doCartao.hora.slice(0,2)}:${doCartao.hora.slice(2)}`;
+      `${semana} ${d}/${m} às ${doCartao.hora.slice(0,2)}:${doCartao.hora.slice(2)}`;
     el("doCartao").classList.remove("oculto");
     document.querySelector(".sub").textContent =
-      "Escolha a foto ou o video. O horario ja veio do cartao.";
+      "Escolha a foto ou o vídeo. O horário já veio do cartão.";
   }
   if (token) carregarFila();
 }
