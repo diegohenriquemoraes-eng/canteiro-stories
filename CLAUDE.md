@@ -100,11 +100,16 @@ ser postado à mão.
 1. **Chave do GitHub na página de envio** (PAT fine-grained): o passo a passo
    está na própria tela, em "Como criar a chave". Uma vez por aparelho. Sem
    ela a página abre mas não consegue gravar a fila.
-2. **Token do Instagram** (secrets `IG_USER_ID` e `IG_ACCESS_TOKEN`): passo a
-   passo no `README.md`. Sem eles o pipeline lê a fila e diz o que faria, mas
-   não publica.
-3. **App OAuth em produção**, senão o token morre em 7 dias.
-4. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho.
+2. **Token do Instagram** (secret `IG_ACCESS_TOKEN`, e só ele — o id da conta
+   sai do próprio token em `/me`): passo a passo no `README.md`. Sem ele o
+   pipeline lê a fila e diz o que faria, mas não publica.
+3. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho.
+
+⚠ A regra de "app OAuth precisa estar em produção senão o token morre em 7
+dias" é do **Google/YouTube**, não da Meta — foi copiada por engano para cá na
+primeira versão. O app da Meta do Palavra Viva Reels roda em
+**desenvolvimento** e publica desde 24/07 sem isso; o que vale aqui é o token
+de longa duração de 60 dias, renovável.
 
 ## Contexto que não está no código
 

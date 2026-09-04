@@ -75,6 +75,22 @@ def estado() -> dict:
 
 # ------------------------------------------------------------ Instagram ----
 
+def descobrir_ig_id(token: str) -> str:
+    """O id da conta sai do próprio token — não precisa ser cadastrado à mão.
+
+    E não é o número que o painel da Meta mostra (17841...), é o de
+    graph.instagram.com/me: confundir os dois foi o que fez o pipeline dos
+    Reels falhar em silêncio quando foi ligado.
+    """
+    r = requests.get(f"{GRAPH}/me", params={"fields": "id,username",
+                                            "access_token": token}, timeout=30)
+    j = r.json()
+    if "id" not in j:
+        raise SystemExit(f"o token não respondeu quem é a conta: {j}")
+    log(f"conta do token: @{j.get('username', '?')} (id {j['id']})")
+    return j["id"]
+
+
 def dentro_do_limite(ig_id: str, token: str) -> bool:
     try:
         r = requests.get(f"{GRAPH}/{ig_id}/content_publishing_limit",
@@ -221,12 +237,14 @@ def main() -> None:
 
     ig_id = os.environ.get("IG_USER_ID", "").strip()
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-    if not args.render_apenas and not (ig_id and token):
-        log("SEM IG_USER_ID/IG_ACCESS_TOKEN nos secrets — a fila está lida e "
-            "correta, mas não há como publicar. Ver README.md.")
+    if not args.render_apenas and not token:
+        log("SEM IG_ACCESS_TOKEN nos secrets — a fila está lida e correta, "
+            "mas não há como publicar. Ver README.md.")
         for alvo, nome, *_ in devidos:
             log(f"  publicaria agora: {nome}")
         return
+    if token and not ig_id and not args.render_apenas:
+        ig_id = descobrir_ig_id(token)
 
     if not args.render_apenas and not dentro_do_limite(ig_id, token):
         log("cota de publicação esgotada nas últimas 24 h; segurando a fila")

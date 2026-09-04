@@ -83,17 +83,14 @@ publica. É seguro deixar assim enquanto o token não existe.
    conta como usuária de teste e **gere um token** com os escopos
    `instagram_business_basic` e `instagram_business_content_publish`. Troque
    por um **token de longa duração** (60 dias), botão na mesma tela.
-4. **Pegue o id da conta**:
-   `GET https://graph.instagram.com/me?fields=id,username&access_token=SEU_TOKEN`
-   → use o `id` que vier aí (não o número que o painel mostra).
-5. **Cadastre os secrets** em Settings → Secrets and variables → Actions:
-   - `IG_USER_ID` = o id do passo 4
-   - `IG_ACCESS_TOKEN` = o token de longa duração
+4. **Cadastre o secret** em Settings → Secrets and variables → Actions:
+   - `IG_ACCESS_TOKEN` = o token de longa duração. **É só esse.** O id da
+     conta o pipeline descobre sozinho a partir do token (`/me`) — e assim
+     não há como colar o número errado, que é o do painel (17841...) e não o
+     que a API usa.
+   - *(opcional)* `IG_USER_ID`, se quiser fixar o id e poupar uma chamada.
    - *(opcional)* `REPO_PAT` = um PAT com permissão de escrever Secrets, para
-     o token se renovar sozinho todo mês.
-
-⚠ **O app OAuth precisa estar em produção**, senão o token morre em 7 dias —
-armadilha já paga nos canais do YouTube.
+     o token do Instagram se renovar sozinho todo mês.
 
 ### O token vale 60 dias
 
