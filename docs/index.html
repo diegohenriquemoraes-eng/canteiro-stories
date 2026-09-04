@@ -205,6 +205,12 @@ function recado(texto, tipo = "info"){
 /* --------------------------------------------------------------- helpers -- */
 function doisDigitos(n){ return String(n).padStart(2, "0"); }
 
+// Video vai cru para a API do GitHub e o corpo do POST fica 33% maior que o
+// arquivo (base64). Acima de ~20 MB o envio pelo 4G ja e' lento; acima de 40 MB
+// o Safari do celular costuma abortar antes de terminar. Melhor dizer isso na
+// hora de escolher do que depois de dois minutos de barra andando.
+const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 40;
+
 function tamanho(bytes){
   return bytes < 1e6 ? Math.max(1, Math.round(bytes/1e3)) + " KB"
                      : (bytes/1e6).toFixed(1) + " MB";
@@ -317,12 +323,6 @@ function base64(blob){
     fr.readAsDataURL(blob);
   });
 }
-
-// Video vai cru para a API do GitHub e o corpo do POST fica 33% maior que o
-// arquivo (base64). Acima de ~20 MB o envio pelo 4G ja e' lento; acima de 40 MB
-// o Safari do celular costuma abortar antes de terminar. Melhor dizer isso na
-// hora de escolher do que depois de dois minutos de barra andando.
-const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 40;
 
 el("enviar").onclick = async () => {
   const vazio = escolhidos.find(i => !i.quando);
