@@ -233,6 +233,14 @@ def main() -> None:
     if args.dry_run:
         for alvo, nome, *_ in devidos:
             log(f"[dry-run] publicaria agora ({alvo:%H:%M}): {nome}")
+        # com token no ambiente, o dry-run também confere a credencial: é o
+        # teste de fumaça do sistema, e não publica nada
+        tok = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+        if tok:
+            dentro_do_limite(os.environ.get("IG_USER_ID", "").strip()
+                             or descobrir_ig_id(tok), tok)
+        else:
+            log("[dry-run] sem IG_ACCESS_TOKEN: não dá para conferir a conta")
         return
 
     ig_id = os.environ.get("IG_USER_ID", "").strip()
