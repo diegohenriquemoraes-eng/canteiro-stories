@@ -50,10 +50,10 @@
         border:1px solid var(--linha);border-radius:14px;padding:12px;margin-bottom:10px}
   .thumb{width:62px;height:92px;border-radius:9px;object-fit:cover;background:var(--carta2);flex:none}
   .corpo{flex:1;min-width:0}
-  .nome{font-size:13px;color:var(--fraco);white-space:nowrap;overflow:hidden;
-        text-overflow:ellipsis;margin-bottom:8px}
+  .nome{font-size:13px;color:var(--texto);white-space:nowrap;overflow:hidden;
+        text-overflow:ellipsis}
   .tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:20px;
-       background:var(--carta2);color:var(--fraco);margin-left:6px}
+       background:var(--carta2);color:var(--fraco);margin:5px 0 9px}
   .remover{background:none;border:0;color:var(--fraco);font-size:22px;padding:0 4px;width:auto;line-height:1}
 
   .barra{position:fixed;left:0;right:0;bottom:0;background:rgba(18,21,26,.94);
@@ -166,6 +166,11 @@ function recado(texto, tipo = "info"){
 /* --------------------------------------------------------------- helpers -- */
 function doisDigitos(n){ return String(n).padStart(2, "0"); }
 
+function tamanho(bytes){
+  return bytes < 1e6 ? Math.max(1, Math.round(bytes/1e3)) + " KB"
+                     : (bytes/1e6).toFixed(1) + " MB";
+}
+
 function paraInput(d){
   return `${d.getFullYear()}-${doisDigitos(d.getMonth()+1)}-${doisDigitos(d.getDate())}`
        + `T${doisDigitos(d.getHours())}:${doisDigitos(d.getMinutes())}`;
@@ -227,9 +232,8 @@ function desenhar(){
     div.innerHTML = `
       <img class="thumb" alt="">
       <div class="corpo">
-        <div class="nome">${item.file.name}
-          <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${(item.file.size/1e6).toFixed(1)} MB</span>
-        </div>
+        <div class="nome">${item.file.name}</div>
+        <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${tamanho(item.file.size)}</span>
         <label>Vai ao ar em</label>
         <input type="datetime-local" value="${item.quando}" step="900">
       </div>
