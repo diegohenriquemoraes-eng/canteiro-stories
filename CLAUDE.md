@@ -16,11 +16,14 @@ no horário marcado, sem ele tocar no aparelho durante o dia. Uso no `README.md`
   duas metades é o `RE_NOME` de `fila.py`, e tem teste
   (`test_nome_que_a_pagina_de_envio_monta`): se esse formato deixar de ser
   entendido, o Story não sai com hora errada — ele é ignorado em silêncio.
-- **A fila é uma Release**, não uma pasta do repositório: vídeo commitado
-  incharia o Git para sempre, e a Graph API não aceita upload direto — ela
-  exige URL pública para vir buscar a mídia. Duas Releases (`fila` e `pronto`)
-  porque, sendo uma só, o arquivo já normalizado voltaria a ser lido como
-  entrada nova na rodada seguinte.
+- **A mídia nunca entra no histórico do Git.** Vídeo commitado incha o
+  repositório para sempre. A branch `entrada`, que a página grava, é sempre um
+  commit **órfão** reescrito a cada envio e a cada publicação: guarda só o que
+  está na fila. A Release `fila` é a outra porta (arquivo anexado à mão) e a
+  `pronto` é a hospedagem temporária — a Graph API não aceita upload direto,
+  ela exige uma URL pública para vir buscar a mídia. `fila` e `pronto` são
+  separadas porque, sendo uma só, o arquivo já normalizado voltaria a ser lido
+  como entrada nova na rodada seguinte.
 - **Repositório público**: Actions ilimitado (cron de 10 em 10 min) e URL de
   mídia pública. Consequência aceita: o que está na fila é acessível por URL
   por algumas horas — e vai virar Story público mesmo.
@@ -94,11 +97,14 @@ ser postado à mão.
 
 ## Pendências do Diego
 
-1. **Token do Instagram** (secrets `IG_USER_ID` e `IG_ACCESS_TOKEN`): passo a
+1. **Chave do GitHub na página de envio** (PAT fine-grained): o passo a passo
+   está na própria tela, em "Como criar a chave". Uma vez por aparelho. Sem
+   ela a página abre mas não consegue gravar a fila.
+2. **Token do Instagram** (secrets `IG_USER_ID` e `IG_ACCESS_TOKEN`): passo a
    passo no `README.md`. Sem eles o pipeline lê a fila e diz o que faria, mas
    não publica.
-2. **App OAuth em produção**, senão o token morre em 7 dias.
-3. *(opcional)* `REPO_PAT` para o token de 60 dias se renovar sozinho.
+3. **App OAuth em produção**, senão o token morre em 7 dias.
+4. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho.
 
 ## Contexto que não está no código
 
