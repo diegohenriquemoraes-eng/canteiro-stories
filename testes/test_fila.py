@@ -74,6 +74,26 @@ class Horario(unittest.TestCase):
         self.assertEqual(alvo.date(), TARDE.date())
         self.assertGreater(alvo, TARDE)
 
+    def test_nome_que_a_pagina_de_envio_monta(self):
+        """O contrato entre as duas metades do projeto.
+
+        A página (docs/index.html) monta `AAAA-MM-DD-HHMM-slug.ext` a partir do
+        seletor de dia e hora. Se este formato deixar de ser entendido aqui, o
+        Story não é publicado com horário errado — ele é ignorado em silêncio.
+        """
+        for nome, (dia, h, m) in {
+            "2026-09-05-0930-fundacao.jpg": (5, 9, 30),
+            "2026-09-05-1415-concretagem-do-radier.mp4": (5, 14, 15),
+            "2026-09-05-0930-fundacao-2.jpg": (5, 9, 30),   # dois no mesmo horário
+            "2026-09-05-0000-virada.jpg": (5, 0, 0),
+            "2026-09-05-2345-fim-do-dia.jpg": (5, 23, 45),
+            "2026-09-05-1200-story.jpg": (5, 12, 0),        # nome sem letras vira "story"
+        }.items():
+            with self.subTest(nome=nome):
+                alvo = alvo_do_nome(nome, MANHA, ATRASO)
+                self.assertIsNotNone(alvo, f"{nome} devia ser reconhecido")
+                self.assertEqual((alvo.day, alvo.hour, alvo.minute), (dia, h, m))
+
     def test_ordem_de_publicacao_segue_o_relogio(self):
         nomes = ["1500-c.jpg", "0930-a.jpg", "1130-b.jpg"]
         alvos = [(alvo_do_nome(n, MANHA, ATRASO), n) for n in nomes]

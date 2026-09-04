@@ -200,6 +200,11 @@ class Repo:
     def entrada_remover(self, nomes: set[str]) -> None:
         """Reescreve a branch sem os arquivos já publicados (commit órfão)."""
         restantes = [i for i in self.entrada_listar() if i["name"] not in nomes]
+        if not restantes:
+            # a API recusa criar árvore vazia ("Invalid tree info"): fila sem
+            # nada é a branch não existir, que entrada_listar já lê como vazia
+            self.sessao.delete(f"{API}/repos/{self.repo}/git/refs/heads/{ENTRADA}")
+            return
         tree = self._ok(self.sessao.post(f"{API}/repos/{self.repo}/git/trees", json={
             "tree": [{"path": i["name"], "mode": "100644", "type": "blob",
                       "sha": i["sha"]} for i in restantes]}))
