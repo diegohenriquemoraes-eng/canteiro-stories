@@ -173,7 +173,7 @@ function paraInput(d){
 
 function slug(nome){
   return nome.replace(/\.[^.]+$/, "")
-             .normalize("NFD").replace(/[̀-ͯ]/g, "")
+             .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
              .toLowerCase().replace(/[^a-z0-9]+/g, "-")
              .replace(/^-|-$/g, "").slice(0, 28) || "story";
 }
