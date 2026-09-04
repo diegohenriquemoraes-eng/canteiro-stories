@@ -96,6 +96,12 @@
   <div id="app" class="oculto">
     <div id="recado"></div>
 
+    <div id="doCartao" class="cartao oculto" style="border-color:var(--acento)">
+      <div style="font-size:12px;color:var(--acento);font-weight:700;letter-spacing:.06em">DO CANTEIRO</div>
+      <div id="cartaoTitulo" style="font-size:17px;font-weight:600;margin:4px 0 2px"></div>
+      <div id="cartaoQuando" style="font-size:14px;color:var(--fraco)"></div>
+    </div>
+
     <label class="escolher" for="arquivos">
       + Escolher fotos e vídeos
       <span>dá para marcar vários de uma vez</span>
@@ -135,10 +141,29 @@ const el = (id) => document.getElementById(id);
 let escolhidos = [];   // {file, quando, nome, id}
 let token = localStorage.getItem(CHAVE) || "";
 
+// Aberto a partir de um cartão do app Canteiro (?d=2026-09-05&h=0800&t=titulo):
+// o horário já vem decidido lá, e aqui só falta escolher a mídia. O seletor
+// continua na tela para corrigir, mas ninguém precisa tocar nele.
+const par = new URLSearchParams(location.search);
+const doCartao = /^\d{4}-\d{2}-\d{2}$/.test(par.get("d") || "")
+              && /^\d{4}$/.test(par.get("h") || "")
+  ? {dia: par.get("d"), hora: par.get("h"), titulo: (par.get("t") || "").slice(0, 60)}
+  : null;
+
 /* ---------------------------------------------------------------- token -- */
 function mostrarApp(){
   el("areaToken").classList.toggle("oculto", !!token);
   el("app").classList.toggle("oculto", !token);
+  if (doCartao){
+    const [a, m, d] = doCartao.dia.split("-");
+    const semana = ["dom","seg","ter","qua","qui","sex","sab"][new Date(+a, +m-1, +d).getDay()];
+    el("cartaoTitulo").textContent = doCartao.titulo || "Story do dia";
+    el("cartaoQuando").textContent =
+      `${semana} ${d}/${m} as ${doCartao.hora.slice(0,2)}:${doCartao.hora.slice(2)}`;
+    el("doCartao").classList.remove("oculto");
+    document.querySelector(".sub").textContent =
+      "Escolha a foto ou o video. O horario ja veio do cartao.";
+  }
   if (token) carregarFila();
 }
 el("salvarToken").onclick = () => {
@@ -186,9 +211,15 @@ function slug(nome){
 // Primeiro horário sugerido: o próximo quarto de hora com uma folga de 15 min;
 // os seguintes vão de 2 em 2 horas. É só sugestão — o seletor manda.
 function sugestao(indice){
+  if (doCartao) return null;    // veio do cartão: o horário é o de lá
   const d = new Date(Date.now() + 15*60000 + indice*2*3600000);
   d.setMinutes(Math.ceil(d.getMinutes()/15)*15, 0, 0);
   return d;
+}
+
+function quandoInicial(indice){
+  if (doCartao) return `${doCartao.dia}T${doCartao.hora.slice(0,2)}:${doCartao.hora.slice(2)}`;
+  return paraInput(sugestao(indice));
 }
 
 /* ------------------------------------------------- imagem menor no envio -- */
@@ -216,7 +247,7 @@ el("arquivos").onchange = (ev) => {
   novos.forEach((file, i) => {
     escolhidos.push({
       file, id: Math.random().toString(36).slice(2),
-      quando: paraInput(sugestao(escolhidos.length + i))
+      quando: quandoInicial(escolhidos.length + i)
     });
   });
   ev.target.value = "";
