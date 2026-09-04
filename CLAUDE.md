@@ -116,12 +116,44 @@ dry_run**. Ele confere a credencial ANTES de olhar a fila (com a fila vazia
 sairia antes de testar, que é justamente quando se quer testar) e não publica
 nada.
 
+## O token não para sozinho — como isso foi fechado (04/09/2026)
+
+O Diego pediu "de forma que nunca pare". O que derruba um pipeline assim não é
+o prazo do token (60 dias, renovável para outros 60 a cada vez) — é a renovação
+falhar **em silêncio**. Três camadas, todas no ar e testadas no mesmo dia:
+
+1. **Renovação SEMANAL** (segunda, 11:20 UTC), não mensal: dentro de uma
+   validade cabem ~8 tentativas, então uma falha isolada não custa nada.
+2. **O prazo mora no repositório** (`token.json`, commitado a cada renovação):
+   qualquer execução sabe quanto falta sem precisar do segredo, e o publicador
+   avisa no log quando entra nos últimos 21 dias (`ALERTA_DIAS`).
+3. **Falha vira issue, e issue vira e-mail** — na renovação e também na
+   publicação (`if: failure()` nos dois workflows, com guarda para não empilhar
+   issue nova a cada rodada). Foi assim que o ES perdeu metade da esteira por
+   sete dias em agosto: o vigia media silêncio, e meia-falha não é silêncio.
+
+⚠ `refresh_token.py` regrava o MESMO token quando a Meta recusa renovar por
+idade (<24 h). Parece inútil e não é: é o que prova, no dia do setup, que o
+`REPO_PAT` tem permissão de gravar secret — em vez de descobrir isso dois meses
+depois, no dia em que a renovação era necessária.
+
+Teste real de 04/09: `Pelo último registro, faltavam 59 dias. Token renovado:
+válido por mais ~59 dias. Secret IG_ACCESS_TOKEN gravado com o REPO_PAT.`
+
+**O que ainda poderia parar, e é aceito:** repositório 60 dias sem atividade faz
+o GitHub desativar os crons (improvável — cada publicação e cada renovação
+commita). E o `REPO_PAT` foi criado sem expiração de propósito: com prazo, ele
+seria a peça que vence e derruba o resto.
+
+**O caminho que nunca expira mesmo**, se um dia valer a pena: token de *System
+User* de Portfólio Comercial. Não tem prazo nenhum, mas exige a API com login do
+**Facebook** (`graph.facebook.com`), a conta vinculada a uma Página e reescrever
+a publicação. Foi apresentado ao Diego em 04/09 e ficou para depois.
+
 ## Pendências do Diego
 
-1. ~~Chave do GitHub na página de envio~~ — **feita em 04/09**, no iPhone.
-2. ~~Token do Instagram~~ — **feito em 04/09**.
-3. *(opcional)* `REPO_PAT` para o token do Instagram se renovar sozinho. Sem
-   ele, o workflow mensal falha de propósito pedindo a renovação pelo PC.
+Nenhuma. Chave do GitHub, token do Instagram e `REPO_PAT` foram feitos em
+04/09/2026.
 
 ⚠ A regra de "app OAuth precisa estar em produção senão o token morre em 7
 dias" é do **Google/YouTube**, não da Meta — foi copiada por engano para cá na

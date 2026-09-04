@@ -92,13 +92,19 @@ publica. É seguro deixar assim enquanto o token não existe.
    - *(opcional)* `REPO_PAT` = um PAT com permissão de escrever Secrets, para
      o token do Instagram se renovar sozinho todo mês.
 
-### O token vale 60 dias
+### O token se renova sozinho — e avisa se parar
 
-O workflow **Renovar token** roda dia 1º de cada mês. Com `REPO_PAT`, renova
-sozinho. Sem PAT, ele **falha de propósito** para avisar: o repositório é
-público, o log do Actions também é, e imprimir um token recém-gerado ali o
-publicaria (o mascaramento automático do GitHub só cobre o valor que já está
-cadastrado como secret). Nesse caso renove pelo PC:
+O workflow **Renovar token** roda **toda segunda-feira**. Cada renovação
+devolve outros 60 dias, então o token nunca vence enquanto isso acontecer — e
+dentro de uma validade cabem ~8 tentativas, de modo que uma falha isolada não
+custa nada. O prazo fica anotado em `token.json`, e o publicador avisa no log
+quando entra nos últimos 21 dias.
+
+**Se a renovação falhar, abre uma issue** (que vira e-mail). O mesmo vale para
+uma publicação que falhe. É de propósito: um pipeline que roda sozinho não pode
+ter modo de falha silencioso.
+
+Para renovar à mão, se algum dia precisar:
 
 ```bash
 IG_ACCESS_TOKEN=<token atual> python refresh_token.py
