@@ -1,0 +1,31 @@
+name: Renovar token
+
+# O token de longa duração do Instagram vale 60 dias. Vencido, o pipeline fica
+# mudo e o Story do dia simplesmente não sai — sem erro visível no celular.
+# Roda dia 1 de cada mês: renova sozinho se houver um PAT em REPO_PAT, e
+# imprime o token novo no log se não houver.
+on:
+  schedule:
+    - cron: "0 12 1 * *"
+  workflow_dispatch:
+
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Trocar por um token de mais 60 dias
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          REPO_PAT: ${{ secrets.REPO_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "Sem IG_ACCESS_TOKEN ainda — nada a renovar."
+            exit 0
+          fi
+          python refresh_token.py

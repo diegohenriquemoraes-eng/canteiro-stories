@@ -1,0 +1,82 @@
+name: Publicar Story
+
+# De 10 em 10 minutos. O horário real de cada Story vem do NOME do arquivo na
+# Release `fila` — o cron só pergunta "venceu alguma coisa?".
+#
+# O disparo agendado do GitHub atrasa e às vezes é engolido quando a fila de
+# runners aperta (medido no projeto irmão: um cron de hora em hora entregou 6
+# execuções por dia). Por isso a folga de 90 min em `atraso_max_min`: um Story
+# de 09:30 sai às 09:37 sem virar problema, em vez de ser pulado.
+#
+# Execução sem nada devido sai antes de qualquer chamada de API: gasta um
+# minuto de runner (ilimitado em repositório público) e zero cota do Instagram.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Só listar a fila e o que publicaria"
+        type: boolean
+        default: false
+      render_apenas:
+        description: "Baixar e normalizar sem publicar (não precisa de token)"
+        type: boolean
+        default: false
+      forcar:
+        description: "Ignorar o horário e publicar o primeiro da fila"
+        type: boolean
+        default: false
+
+concurrency:
+  group: canteiro-stories
+  cancel-in-progress: false
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write        # commit do estado + assets das Releases
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - run: pip install -r requirements.txt
+
+      - name: Pegar o estado mais recente
+        run: git pull --rebase --autostash origin main || true
+
+      - name: Publicar o que estiver vencido
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=""
+          [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
+          [ "${{ inputs.render_apenas }}" = "true" ] && args="$args --render-apenas"
+          [ "${{ inputs.forcar }}" = "true" ] && args="$args --forcar"
+          python publicar_story.py $args
+
+      - name: Guardar o estado (memória entre execuções)
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state.json publicados.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state.json publicados.md
+            git commit -m "Story publicado (auto)"
+            git pull --rebase --autostash origin main
+            git push
+          else
+            echo "Nada publicado nesta execução."
+          fi

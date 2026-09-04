@@ -1,0 +1,31 @@
+{
+  "conta": "vendanaobra",
+  "projeto": "Canteiro Venda na Obra",
+  "fuso": "America/Sao_Paulo",
+  "_nota_releases": "A fila do Diego e a midia ja normalizada moram em duas Releases separadas: se fossem a mesma, o arquivo pronto seria lido como entrada nova na rodada seguinte.",
+  "release_fila": "fila",
+  "release_pronto": "pronto",
+  "_nota_atraso": "Sem data no nome, o horario vale para a PROXIMA ocorrencia: se ja passou ha menos de atraso_max_min, e hoje (publica agora, cobrindo cron atrasado); se passou ha mais, e amanha. Para fixar o dia, prefixar o nome com AAAA-MM-DD.",
+  "atraso_max_min": 90,
+  "max_por_execucao": 2,
+  "cap_diario": 12,
+  "video": {
+    "max_s": 60.0,
+    "min_s": 3.0,
+    "dividir_longos": true,
+    "_nota_partes": "Video acima de max_s vira partes de ate 60s publicadas em sequencia na MESMA execucao (e um video so para quem gravou); as partes contam no cap_diario, nao no max_por_execucao."
+  },
+  "extensoes": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".heic",
+    ".webp",
+    ".mp4",
+    ".mov",
+    ".m4v",
+    ".3gp",
+    ".avi",
+    ".mkv"
+  ]
+}
