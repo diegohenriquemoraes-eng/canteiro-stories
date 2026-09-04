@@ -1,42 +1,50 @@
 # Canteiro Venda na Obra — Stories agendados
 
-Você sobe as fotos e os vídeos do dia de manhã, com o **horário no começo do
-nome do arquivo**, e cada um vai ao ar no Story de `@vendanaobra` na hora
-marcada. Sem pegar no celular durante o dia, sem app de terceiro, sem
-mensalidade: roda no GitHub Actions.
+Cada cartão de story no app **[Canteiro / VNO](https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136)**
+tem um botão **"Enviar a foto e agendar 08:00"**. Você toca, escolhe a mídia
+e pronto: ela vai ao ar naquele horário, sozinha. O dia e a hora já vêm do
+cartão — você não digita nem renomeia nada.
 
-O app do Instagram não agenda Story. O **Meta Business Suite** agenda (é a
-alternativa sem código, um story por vez, criando um a um). Aqui o
-agendamento é o nome do arquivo — e é isso que faz a pauta de um dia inteiro
-caber em um upload só.
+O app do Instagram não agenda Story. O **Meta Business Suite** agenda (grátis,
+um story por vez, criado um a um). Aqui o agendamento já está no cartão que
+você ia executar de qualquer jeito.
 
-## O dia a dia (é só isto)
+## O caminho, do toque ao ar
 
-1. Renomeie cada arquivo começando pelo horário: `0930-fundacao.jpg`,
-   `1130-concretagem.mp4`, `1500-entrega.jpg`.
-2. Abra no celular: **[a página da fila](../../releases/edit/fila)** ←
-   *guarde este link nos favoritos*.
-3. Anexe os arquivos (o botão de anexar aceita vários de uma vez) e salve.
-4. Pronto. Cada um sai no seu horário e some da fila depois de publicado.
+1. No Canteiro, abra a aba **Stories** do dia.
+2. No cartão, toque em **Enviar a foto e agendar**.
+3. Escolha a foto ou o vídeo (a data e a hora já vêm preenchidas).
+4. **Agendar**. Some da tela e vai ao ar na hora.
 
-Horário de Brasília. Formatos de nome que funcionam:
+Na primeira vez a página pede uma **chave de acesso do GitHub** — o passo a
+passo está na própria tela, em "Como criar a chave". É uma vez por aparelho.
+
+## Enviar sem passar pelo cartão
+
+A mesma página funciona solta, em
+<https://diegohenriquemoraes-eng.github.io/canteiro-stories/>: escolha vários
+arquivos de uma vez e marque o horário de cada um no seletor. Serve para o que
+não está na pauta do dia.
+
+## Também dá para largar o arquivo direto na fila
+
+Anexando na [Release `fila`](../../releases/edit/fila) com o horário no começo
+do nome. É o caminho de emergência — vale quando o arquivo é grande demais
+para o navegador do celular dar conta.
 
 | Nome | Vai ao ar |
 |---|---|
 | `0930-fundacao.jpg` | hoje, 09:30 |
 | `930 concreto.mp4` | hoje, 09:30 |
 | `09h30-laje.jpg` | hoje, 09:30 |
-| `1500.jpg` | hoje, 15:00 |
 | `2026-09-06-0930-laje.jpg` | dia 06/09, 09:30 |
 
 **O nome tem de COMEÇAR com o horário.** `IMG_20260904_093012.jpg` é ignorado
 de propósito — publicar "agora" uma foto que veio direto da galeria seria pior
-que não publicar. O que foi ignorado fica listado no log da execução.
+que não publicar. (Pela página isso não acontece: ela monta o nome sozinha.)
 
-Subiu depois da hora? Até **90 minutos** de atraso ele ainda publica hoje
-(cobre o atraso do próprio GitHub). Passou disso, entende que é para **amanhã**
-naquele horário — que é o que alguém quer dizer ao subir `0800-x.jpg` às duas
-da tarde. Para não deixar dúvida, use o nome com a data.
+Sem data no nome, o horário vale para a **próxima ocorrência**: passou há menos
+de 90 minutos é hoje (cobre o atraso do cron), passou há mais é amanhã.
 
 ## O que o pipeline conserta sozinho
 
@@ -123,7 +131,9 @@ python -m unittest discover -s testes
 
 | Peça | O quê |
 |---|---|
-| Release `fila` | A caixa de entrada. Cada asset é um Story esperando a hora |
+| `docs/index.html` | A página de envio (GitHub Pages). Aceita `?d=&h=&t=` para vir pronta de um cartão do Canteiro |
+| Branch `entrada` | A fila que a página grava. Sempre um commit ÓRFÃO, reescrito a cada envio e a cada publicação — nunca acumula histórico |
+| Release `fila` | A outra porta de entrada: arquivo anexado à mão, com o horário no nome |
 | Release `pronto` | Hospedagem temporária: a Graph API precisa de uma URL pública para vir buscar a mídia. O asset é apagado assim que publica |
 | `fila.py` | Lê o horário do nome do arquivo e conversa com as Releases |
 | `midia.py` | Normaliza para 1080×1920, divide vídeo longo, conserta clipe curto |

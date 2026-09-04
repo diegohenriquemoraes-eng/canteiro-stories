@@ -87,10 +87,24 @@
     <label for="token">Chave de acesso do GitHub</label>
     <input type="password" id="token" placeholder="github_pat_..." autocomplete="off">
     <p class="sub" style="margin:10px 0 12px;font-size:13px">
-      Só na primeira vez, neste aparelho. Como criar está no
-      <a href="https://github.com/diegohenriquemoraes-eng/canteiro-stories#a-página-de-envio" target="_blank">README</a>.
+      Só na primeira vez, neste aparelho. Ela fica guardada aqui no navegador e
+      é o que autoriza a página a colocar a mídia na fila.
     </p>
     <button id="salvarToken">Salvar e continuar</button>
+    <details style="margin-top:14px">
+      <summary style="font-size:13px;color:var(--acento);cursor:pointer">Como criar a chave</summary>
+      <ol style="font-size:13px;color:var(--fraco);padding-left:20px;line-height:1.7">
+        <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank">esta página do GitHub</a> (logado).</li>
+        <li><b>Token name:</b> canteiro-stories · <b>Expiration:</b> No expiration.</li>
+        <li><b>Repository access:</b> Only select repositories → <b>canteiro-stories</b>.</li>
+        <li><b>Permissions → Repository permissions → Contents:</b> Read and write.</li>
+        <li>Generate token, copie e cole aqui em cima.</li>
+      </ol>
+      <p style="font-size:12px;color:var(--fraco)">
+        Contents é a única permissão necessária — sem ela a página não consegue
+        gravar a fila, e com mais que ela a chave passa a poder o que não precisa.
+      </p>
+    </details>
   </div>
 
   <div id="app" class="oculto">

@@ -6,9 +6,16 @@ no horário marcado, sem ele tocar no aparelho durante o dia. Uso no `README.md`
 
 ## As decisões, e por que elas
 
-- **O agendamento é o NOME DO ARQUIVO** (`0930-fundacao.jpg`). Foi o que
-  permitiu a entrada pelo celular ser um upload só, sem app, sem formulário e
-  sem editar JSON no telefone. Todo o resto do desenho serve a isso.
+- **A entrada é um botão no cartão do Canteiro** (04/09/2026, 2ª rodada). A
+  primeira versão pedia que o Diego renomeasse cada arquivo para `0930-x.jpg`;
+  ele recusou — com razão, é trabalho manual num aparelho onde renomear é
+  chato. Agora cada cartão de story do app leva um botão que abre a página de
+  envio **já com o dia e a hora daquele cartão**: ele escolhe a mídia e pronto.
+- **O nome do arquivo continua sendo o agendamento por baixo** — só que agora
+  quem o monta é a página (`AAAA-MM-DD-HHMM-slug.ext`). O contrato entre as
+  duas metades é o `RE_NOME` de `fila.py`, e tem teste
+  (`test_nome_que_a_pagina_de_envio_monta`): se esse formato deixar de ser
+  entendido, o Story não sai com hora errada — ele é ignorado em silêncio.
 - **A fila é uma Release**, não uma pasta do repositório: vídeo commitado
   incharia o Git para sempre, e a Graph API não aceita upload direto — ela
   exige URL pública para vir buscar a mídia. Duas Releases (`fila` e `pronto`)
@@ -24,6 +31,33 @@ no horário marcado, sem ele tocar no aparelho durante o dia. Uso no `README.md`
   da galeria (`IMG_20260904_093012.jpg`) publicada "agora" é pior que nenhuma.
 - **1 Story por arquivo, 2 arquivos por execução, teto de 12/dia.** O limite da
   API é 100 publicações/24 h e a cota é conferida antes de cada publicação.
+
+## O Artifact não consegue publicar sozinho — e por que a página existe
+
+O Canteiro é um **Artifact**, e a plataforma bloqueia por CSP toda chamada de
+rede da página (fetch, XHR, WebSocket para qualquer host). Não há capability de
+armazenamento de arquivo que o GitHub Actions consiga ler depois: `db` só é
+lido por Claude e pelos visitantes da página, e não existe capability `assets`
+para este usuário. **Então o upload não pode acontecer dentro do Canteiro** —
+não é escolha de desenho, é limite da plataforma.
+
+O que dá para fazer, e é o que está no ar: o cartão leva um link externo com o
+dia e a hora nos parâmetros (`?d=2026-09-05&h=0800&t=Tiro+de+alerta`), e a
+página de envio abre pronta. Custa um salto de tela; poupa toda digitação.
+
+⚠ **O upload direto para uma Release é impossível do navegador**:
+`uploads.github.com` não responde ao preflight de CORS (conferido — devolve
+400). A `api.github.com` responde, e é por isso que a página grava numa branch
+por Git Data API, e não como asset de Release.
+
+⚠ A página precisa de um **PAT fine-grained** do Diego, guardado no
+localStorage do celular. Escopo mínimo: só o repo `canteiro-stories`, só
+**Contents: Read and write**. Contents não permite mexer em
+`.github/workflows` (isso exige a permissão Workflows, separada), então uma
+chave vazada não consegue trocar o que o Actions roda — mas consegue editar
+`publicar_story.py`, que roda com os secrets do Instagram no ambiente. É o
+motivo de o escopo ser o mínimo e de a chave não ir para lugar nenhum além do
+navegador dele.
 
 ## Armadilhas já pagas (04/09/2026, construção)
 
