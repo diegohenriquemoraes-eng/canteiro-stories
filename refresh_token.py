@@ -57,6 +57,25 @@ def gravar_registro(dias: int) -> None:
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def gravar_secret(valor: str, teste: bool = False) -> bool:
+    """Grava o token no secret com o PAT. False quando não há PAT."""
+    pat = os.environ.get("REPO_PAT", "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    if not (pat and repo):
+        if teste:
+            print("Sem REPO_PAT: a renovação NÃO vai ser automática. "
+                  "Cadastre o secret REPO_PAT (permissão Secrets: Read and "
+                  "write) para fechar isso.")
+        return False
+    env = dict(os.environ, GH_TOKEN=pat)
+    subprocess.run(["gh", "secret", "set", "IG_ACCESS_TOKEN",
+                    "--repo", repo, "--body", valor], env=env, check=True)
+    print("Secret IG_ACCESS_TOKEN gravado com o REPO_PAT"
+          + (" (regravado igual, só para provar que o PAT funciona)."
+             if teste else "."))
+    return True
+
+
 def dias_restantes() -> int | None:
     """Quanto falta pelo último registro. None se nunca foi renovado."""
     if not REGISTRO.exists():
@@ -86,8 +105,12 @@ def main() -> None:
         erro = str((j.get("error") or {}).get("message", j))
         if "24 hours" in erro or "24 horas" in erro:
             # a Meta só renova token com mais de 24 h de vida; recém-gerado,
-            # não há o que consertar — a rodada da semana que vem resolve
+            # não há o que consertar — a rodada da semana que vem resolve.
+            # Aproveita para provar que o PAT grava: regravar o MESMO token é
+            # inofensivo, e é o único jeito de saber HOJE se a engrenagem toda
+            # funciona, em vez de descobrir no dia em que ela for necessária.
             print(f"Token novo demais para renovar ({erro}). Sem problema.")
+            gravar_secret(token, teste=True)
             return
         if restam is not None and restam > ALERTA_DIAS:
             print(f"Não renovou desta vez ({erro}), mas ainda faltam {restam} "
@@ -98,13 +121,7 @@ def main() -> None:
     dias = int(j.get("expires_in", 0)) // 86400
     print(f"Token renovado: válido por mais ~{dias} dias.")
 
-    pat = os.environ.get("REPO_PAT", "").strip()
-    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
-    if pat and repo:
-        env = dict(os.environ, GH_TOKEN=pat)
-        subprocess.run(["gh", "secret", "set", "IG_ACCESS_TOKEN",
-                        "--repo", repo, "--body", novo], env=env, check=True)
-        print("Secret IG_ACCESS_TOKEN atualizado no repositório.")
+    if gravar_secret(novo):
         gravar_registro(dias)
     elif os.environ.get("GITHUB_ACTIONS") == "true":
         sys.exit(
