@@ -279,6 +279,9 @@ function desenhar(){
       <div class="corpo">
         <div class="nome">${item.file.name}</div>
         <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${tamanho(item.file.size)}</span>
+        ${item.file.size > AVISA_MB*MB ? `<div class="aviso erro" style="margin:6px 0 0;padding:7px 9px">
+          ${Math.round(item.file.size/MB)} MB — ${item.file.size > TETO_MB*MB
+            ? "grande demais, o envio vai falhar" : "vai demorar no 4G"}. Grave em 1080p 30fps.</div>` : ""}
         <label>Vai ao ar em</label>
         <input type="datetime-local" value="${item.quando}" step="900">
       </div>
@@ -302,18 +305,34 @@ function desenhar(){
 }
 
 /* ---------------------------------------------------------------- enviar -- */
-async function base64(blob){
-  const buf = new Uint8Array(await blob.arrayBuffer());
-  let bin = "", pedaco = 32768;
-  for (let i = 0; i < buf.length; i += pedaco){
-    bin += String.fromCharCode.apply(null, buf.subarray(i, i + pedaco));
-  }
-  return btoa(bin);
+// O navegador converte melhor do que a gente: readAsDataURL nao materializa o
+// arquivo tres vezes em JS (buffer + string binaria + base64), que era o que
+// derrubava o Safari do iPhone com video grande — "Load failed" com 45 MB, em
+// 04/09/2026. Aqui so sobra a string base64 e o corte do prefixo "data:".
+function base64(blob){
+  return new Promise((ok, erro) => {
+    const fr = new FileReader();
+    fr.onload = () => ok(String(fr.result).split(",", 2)[1]);
+    fr.onerror = () => erro(new Error("o navegador nao conseguiu ler o arquivo"));
+    fr.readAsDataURL(blob);
+  });
 }
+
+// Video vai cru para a API do GitHub e o corpo do POST fica 33% maior que o
+// arquivo (base64). Acima de ~20 MB o envio pelo 4G ja e' lento; acima de 40 MB
+// o Safari do celular costuma abortar antes de terminar. Melhor dizer isso na
+// hora de escolher do que depois de dois minutos de barra andando.
+const MB = 1024 * 1024, AVISA_MB = 20, TETO_MB = 40;
 
 el("enviar").onclick = async () => {
   const vazio = escolhidos.find(i => !i.quando);
   if (vazio) return recado("Falta marcar o dia e a hora de um dos arquivos.", "erro");
+
+  const gordo = escolhidos.find(i => i.file.size > TETO_MB * MB);
+  if (gordo) return recado(
+    `"${gordo.file.name}" tem ${Math.round(gordo.file.size/MB)} MB e nao vai passar. `
+    + "No iPhone: Ajustes -> Camera -> Gravar video -> 1080p HD, 30 fps. "
+    + "Regrave ou corte o video e tente de novo.", "erro");
 
   el("enviar").disabled = true;
   el("progresso").classList.remove("oculto");
