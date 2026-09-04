@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12151a">
+<title>Stories do Canteiro</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+<style>
+  :root{
+    --fundo:#12151a; --carta:#1b1f27; --carta2:#232936; --linha:#2e3542;
+    --texto:#eef1f6; --fraco:#98a2b3; --acento:#f5a524; --acento-t:#1a1205;
+    --ok:#3fb950; --erro:#f85149;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--fundo); color:var(--texto);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 96px);
+  }
+  .env{max-width:560px;margin:0 auto;padding:20px 16px}
+  h1{font-size:22px;margin:0 0 2px;letter-spacing:-.02em}
+  .sub{color:var(--fraco);font-size:14px;margin:0 0 20px}
+
+  .cartao{background:var(--carta);border:1px solid var(--linha);border-radius:14px;padding:14px;margin-bottom:12px}
+  label{display:block;font-size:13px;color:var(--fraco);margin-bottom:6px}
+  input[type=text],input[type=password],input[type=datetime-local]{
+    width:100%;padding:12px;border-radius:10px;border:1px solid var(--linha);
+    background:var(--carta2);color:var(--texto);font-size:16px;font-family:inherit;
+  }
+  input[type=datetime-local]{min-height:48px}
+  button{
+    font:600 16px/1 inherit;border:0;border-radius:12px;padding:15px 18px;
+    background:var(--acento);color:var(--acento-t);width:100%;cursor:pointer;
+  }
+  button:disabled{opacity:.5}
+  button.secundario{background:var(--carta2);color:var(--texto);border:1px solid var(--linha)}
+  button.mini{width:auto;padding:8px 12px;font-size:13px;border-radius:9px}
+
+  .escolher{
+    display:block;text-align:center;padding:26px 16px;border-radius:14px;
+    border:2px dashed var(--linha);background:var(--carta);color:var(--texto);
+    font-weight:600;cursor:pointer;
+  }
+  .escolher span{display:block;font-weight:400;font-size:13px;color:var(--fraco);margin-top:4px}
+  input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+
+  .item{display:flex;gap:12px;align-items:flex-start;background:var(--carta);
+        border:1px solid var(--linha);border-radius:14px;padding:12px;margin-bottom:10px}
+  .thumb{width:62px;height:92px;border-radius:9px;object-fit:cover;background:var(--carta2);flex:none}
+  .corpo{flex:1;min-width:0}
+  .nome{font-size:13px;color:var(--fraco);white-space:nowrap;overflow:hidden;
+        text-overflow:ellipsis;margin-bottom:8px}
+  .tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:20px;
+       background:var(--carta2);color:var(--fraco);margin-left:6px}
+  .remover{background:none;border:0;color:var(--fraco);font-size:22px;padding:0 4px;width:auto;line-height:1}
+
+  .barra{position:fixed;left:0;right:0;bottom:0;background:rgba(18,21,26,.94);
+         backdrop-filter:blur(8px);border-top:1px solid var(--linha);
+         padding:12px 16px calc(12px + env(safe-area-inset-bottom));}
+  .barra .env{padding:0}
+
+  .aviso{font-size:13px;padding:11px 13px;border-radius:10px;margin-bottom:12px}
+  .aviso.erro{background:#2a1416;border:1px solid #5c2427;color:#ffb4b0}
+  .aviso.ok{background:#12251a;border:1px solid #1f4a2c;color:#8ee79f}
+  .aviso.info{background:var(--carta2);border:1px solid var(--linha);color:var(--fraco)}
+
+  .fila h2{font-size:14px;color:var(--fraco);font-weight:600;margin:22px 0 10px}
+  .fila .linha{display:flex;justify-content:space-between;gap:10px;align-items:center;
+               padding:11px 13px;background:var(--carta);border:1px solid var(--linha);
+               border-radius:11px;margin-bottom:7px;font-size:14px}
+  .fila .quando{color:var(--acento);font-variant-numeric:tabular-nums;font-weight:600}
+  .fila .oque{color:var(--fraco);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .oculto{display:none}
+  a{color:var(--acento)}
+  progress{width:100%;height:8px;border-radius:4px;overflow:hidden;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="env">
+  <h1>Stories do Canteiro</h1>
+  <p class="sub">Escolha as fotos e os vídeos, marque o dia e a hora de cada um. O resto é sozinho.</p>
+
+  <!-- token ------------------------------------------------------------- -->
+  <div id="areaToken" class="cartao oculto">
+    <label for="token">Chave de acesso do GitHub</label>
+    <input type="password" id="token" placeholder="github_pat_..." autocomplete="off">
+    <p class="sub" style="margin:10px 0 12px;font-size:13px">
+      Só na primeira vez, neste aparelho. Como criar está no
+      <a href="https://github.com/diegohenriquemoraes-eng/canteiro-stories#a-página-de-envio" target="_blank">README</a>.
+    </p>
+    <button id="salvarToken">Salvar e continuar</button>
+  </div>
+
+  <div id="app" class="oculto">
+    <div id="recado"></div>
+
+    <label class="escolher" for="arquivos">
+      + Escolher fotos e vídeos
+      <span>dá para marcar vários de uma vez</span>
+    </label>
+    <input type="file" id="arquivos" accept="image/*,video/*" multiple>
+
+    <div id="lista"></div>
+
+    <div class="fila">
+      <h2 id="tituloFila">Na fila</h2>
+      <div id="filaAtual"></div>
+    </div>
+
+    <p style="text-align:center;margin-top:26px">
+      <button class="secundario mini" id="trocarToken">Trocar a chave de acesso</button>
+    </p>
+  </div>
+</div>
+
+<div class="barra oculto" id="barra">
+  <div class="env">
+    <button id="enviar">Agendar</button>
+    <progress id="progresso" class="oculto" max="100" value="0"></progress>
+  </div>
+</div>
+
+<script>
+const REPO = "diegohenriquemoraes-eng/canteiro-stories";
+const BRANCH = "entrada";
+const API = "https://api.github.com";
+const CHAVE = "canteiro_token";
+
+// O pipeline lê o nome do arquivo como horário de Brasília, e este aparelho
+// está em Brasília: o que o seletor mostra é o que vai ao ar. Se um dia isto
+// for usado de outro fuso, é aqui que a conta muda.
+const el = (id) => document.getElementById(id);
+let escolhidos = [];   // {file, quando, nome, id}
+let token = localStorage.getItem(CHAVE) || "";
+
+/* ---------------------------------------------------------------- token -- */
+function mostrarApp(){
+  el("areaToken").classList.toggle("oculto", !!token);
+  el("app").classList.toggle("oculto", !token);
+  if (token) carregarFila();
+}
+el("salvarToken").onclick = () => {
+  const v = el("token").value.trim();
+  if (!v) return;
+  token = v; localStorage.setItem(CHAVE, v); mostrarApp();
+};
+el("trocarToken").onclick = () => {
+  localStorage.removeItem(CHAVE); token = ""; el("token").value = ""; mostrarApp();
+};
+
+function api(caminho, opcoes = {}){
+  return fetch(API + caminho, {...opcoes, headers: {
+    "Authorization": "Bearer " + token,
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    ...(opcoes.headers || {})
+  }});
+}
+
+function recado(texto, tipo = "info"){
+  el("recado").innerHTML = texto ? `<div class="aviso ${tipo}">${texto}</div>` : "";
+}
+
+/* --------------------------------------------------------------- helpers -- */
+function doisDigitos(n){ return String(n).padStart(2, "0"); }
+
+function paraInput(d){
+  return `${d.getFullYear()}-${doisDigitos(d.getMonth()+1)}-${doisDigitos(d.getDate())}`
+       + `T${doisDigitos(d.getHours())}:${doisDigitos(d.getMinutes())}`;
+}
+
+function slug(nome){
+  return nome.replace(/\.[^.]+$/, "")
+             .normalize("NFD").replace(/[̀-ͯ]/g, "")
+             .toLowerCase().replace(/[^a-z0-9]+/g, "-")
+             .replace(/^-|-$/g, "").slice(0, 28) || "story";
+}
+
+// Primeiro horário sugerido: o próximo quarto de hora com uma folga de 15 min;
+// os seguintes vão de 2 em 2 horas. É só sugestão — o seletor manda.
+function sugestao(indice){
+  const d = new Date(Date.now() + 15*60000 + indice*2*3600000);
+  d.setMinutes(Math.ceil(d.getMinutes()/15)*15, 0, 0);
+  return d;
+}
+
+/* ------------------------------------------------- imagem menor no envio -- */
+// Foto de celular tem 3 a 8 MB e vai virar 1080x1920 de qualquer forma. Encolher
+// aqui deixa o envio rápido no 4G e o repositório leve. imageOrientation cuida
+// do EXIF — sem isso a foto do celular sobe deitada.
+async function encolherImagem(file){
+  try{
+    const bmp = await createImageBitmap(file, {imageOrientation: "from-image"});
+    const escala = Math.min(1, 1080/bmp.width, 1920/bmp.height);
+    const L = Math.round(bmp.width*escala), A = Math.round(bmp.height*escala);
+    const cv = document.createElement("canvas"); cv.width = L; cv.height = A;
+    cv.getContext("2d").drawImage(bmp, 0, 0, L, A);
+    const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", 0.86));
+    bmp.close();
+    return (blob && blob.size < file.size) ? blob : file;
+  }catch(e){
+    return file;   // HEIC que o navegador não abre: sobe cru, o robô converte
+  }
+}
+
+/* -------------------------------------------------------------- escolher -- */
+el("arquivos").onchange = (ev) => {
+  const novos = [...ev.target.files];
+  novos.forEach((file, i) => {
+    escolhidos.push({
+      file, id: Math.random().toString(36).slice(2),
+      quando: paraInput(sugestao(escolhidos.length + i))
+    });
+  });
+  ev.target.value = "";
+  desenhar();
+};
+
+function desenhar(){
+  el("lista").innerHTML = "";
+  escolhidos.forEach((item) => {
+    const ehVideo = item.file.type.startsWith("video");
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = `
+      <img class="thumb" alt="">
+      <div class="corpo">
+        <div class="nome">${item.file.name}
+          <span class="tag">${ehVideo ? "vídeo" : "foto"} · ${(item.file.size/1e6).toFixed(1)} MB</span>
+        </div>
+        <label>Vai ao ar em</label>
+        <input type="datetime-local" value="${item.quando}" step="900">
+      </div>
+      <button class="remover" aria-label="tirar da lista">×</button>`;
+    const img = div.querySelector("img");
+    if (ehVideo){
+      img.replaceWith(Object.assign(document.createElement("video"),
+        {className:"thumb", src:URL.createObjectURL(item.file), muted:true, playsInline:true}));
+    } else {
+      img.src = URL.createObjectURL(item.file);
+    }
+    div.querySelector("input").onchange = (e) => { item.quando = e.target.value; };
+    div.querySelector(".remover").onclick = () => {
+      escolhidos = escolhidos.filter(x => x.id !== item.id); desenhar();
+    };
+    el("lista").appendChild(div);
+  });
+  el("barra").classList.toggle("oculto", escolhidos.length === 0);
+  el("enviar").textContent = escolhidos.length === 1
+    ? "Agendar 1 story" : `Agendar ${escolhidos.length} stories`;
+}
+
+/* ---------------------------------------------------------------- enviar -- */
+async function base64(blob){
+  const buf = new Uint8Array(await blob.arrayBuffer());
+  let bin = "", pedaco = 32768;
+  for (let i = 0; i < buf.length; i += pedaco){
+    bin += String.fromCharCode.apply(null, buf.subarray(i, i + pedaco));
+  }
+  return btoa(bin);
+}
+
+el("enviar").onclick = async () => {
+  const vazio = escolhidos.find(i => !i.quando);
+  if (vazio) return recado("Falta marcar o dia e a hora de um dos arquivos.", "erro");
+
+  el("enviar").disabled = true;
+  el("progresso").classList.remove("oculto");
+  el("progresso").value = 0;
+  recado("Enviando…", "info");
+
+  try{
+    // 1) o que já está na fila, para não sobrescrever
+    let arvore = [];
+    const r = await api(`/repos/${REPO}/git/trees/${BRANCH}`);
+    if (r.ok) arvore = (await r.json()).tree.filter(n => n.type === "blob")
+                        .map(n => ({path:n.path, mode:"100644", type:"blob", sha:n.sha}));
+    const usados = new Set(arvore.map(n => n.path));
+
+    // 2) um blob por arquivo
+    let feitos = 0;
+    for (const item of escolhidos){
+      const ehVideo = item.file.type.startsWith("video");
+      const dados = ehVideo ? item.file : await encolherImagem(item.file);
+      const ext = ehVideo ? (item.file.name.match(/\.[^.]+$/)?.[0] || ".mp4").toLowerCase()
+                          : (dados === item.file ? (item.file.name.match(/\.[^.]+$/)?.[0] || ".jpg").toLowerCase() : ".jpg");
+      const [dia, hora] = item.quando.split("T");
+      let nome = `${dia}-${hora.replace(":", "")}-${slug(item.file.name)}${ext}`;
+      let n = 2;
+      while (usados.has(nome)){                       // mesmo horário, dois arquivos
+        nome = `${dia}-${hora.replace(":", "")}-${slug(item.file.name)}-${n++}${ext}`;
+      }
+      usados.add(nome);
+
+      const blob = await api(`/repos/${REPO}/git/blobs`, {
+        method:"POST",
+        body: JSON.stringify({content: await base64(dados), encoding:"base64"})
+      });
+      if (!blob.ok) throw new Error(`ao enviar ${item.file.name}: ${blob.status} ${await blob.text()}`);
+      arvore.push({path:nome, mode:"100644", type:"blob", sha:(await blob.json()).sha});
+      el("progresso").value = Math.round(++feitos / escolhidos.length * 90);
+    }
+
+    // 3) commit ÓRFÃO (sem pai): a branch nunca acumula histórico
+    const tree = await (await api(`/repos/${REPO}/git/trees`, {
+      method:"POST", body: JSON.stringify({tree: arvore})})).json();
+    const commit = await (await api(`/repos/${REPO}/git/commits`, {
+      method:"POST", body: JSON.stringify({
+        message:`fila: ${arvore.length} pendente(s)`, tree: tree.sha, parents: []})})).json();
+    let ref = await api(`/repos/${REPO}/git/refs/heads/${BRANCH}`, {
+      method:"PATCH", body: JSON.stringify({sha: commit.sha, force: true})});
+    if (!ref.ok){
+      ref = await api(`/repos/${REPO}/git/refs`, {
+        method:"POST", body: JSON.stringify({ref:`refs/heads/${BRANCH}`, sha: commit.sha})});
+      if (!ref.ok) throw new Error(`ao gravar a fila: ${ref.status} ${await ref.text()}`);
+    }
+
+    el("progresso").value = 100;
+    const n = escolhidos.length;
+    escolhidos = []; desenhar();
+    recado(`Pronto: ${n} ${n === 1 ? "story agendado" : "stories agendados"}.`, "ok");
+    carregarFila();
+  }catch(e){
+    recado("Não consegui enviar — " + e.message, "erro");
+  }finally{
+    el("enviar").disabled = false;
+    el("progresso").classList.add("oculto");
+  }
+};
+
+/* ------------------------------------------------------------- ver a fila -- */
+function lerHorario(nome){
+  const m = nome.match(/^(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})/);
+  if (!m) return null;
+  return new Date(+m[1], +m[2]-1, +m[3], +m[4], +m[5]);
+}
+
+async function carregarFila(){
+  try{
+    const r = await api(`/repos/${REPO}/git/trees/${BRANCH}`);
+    const itens = r.ok ? (await r.json()).tree.filter(n => n.type === "blob") : [];
+    const alvo = el("filaAtual");
+    if (!itens.length){
+      alvo.innerHTML = `<div class="aviso info">Nada agendado no momento.</div>`;
+      el("tituloFila").textContent = "Na fila";
+      return;
+    }
+    const linhas = itens.map(n => ({nome:n.path, quando:lerHorario(n.path)}))
+                        .sort((a,b) => (a.quando||0) - (b.quando||0));
+    el("tituloFila").textContent = `Na fila (${linhas.length})`;
+    alvo.innerHTML = linhas.map(l => {
+      const q = l.quando
+        ? `${doisDigitos(l.quando.getDate())}/${doisDigitos(l.quando.getMonth()+1)} ${doisDigitos(l.quando.getHours())}:${doisDigitos(l.quando.getMinutes())}`
+        : "—";
+      const oque = l.nome.replace(/^\d{4}-\d{2}-\d{2}-\d{4}-/, "");
+      return `<div class="linha"><span class="quando">${q}</span><span class="oque">${oque}</span></div>`;
+    }).join("");
+  }catch(e){ /* fila é informativa; falhar aqui não atrapalha o envio */ }
+}
+
+mostrarApp();
+</script>
+</body>
+</html>

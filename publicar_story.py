@@ -168,7 +168,11 @@ def main() -> None:
         st["dia"] = {"data": hoje, "n": 0}
 
     repo = filamod.Repo()
-    assets = repo.assets(cfg["release_fila"])
+    # duas portas de entrada: a página de envio grava na branch `entrada`
+    # (é a que o Diego usa) e a Release `fila` continua valendo para quem
+    # preferir anexar o arquivo direto, já com o horário no nome
+    assets = [dict(a, origem="release") for a in repo.assets(cfg["release_fila"])]
+    assets += repo.entrada_listar()
     if not assets:
         log("fila vazia — nada a publicar")
         return
@@ -230,7 +234,9 @@ def main() -> None:
 
     for alvo, nome, asset, chave in devidos:
         log(f"preparando {nome} (era para {alvo:%d/%m %H:%M})")
-        bruto = repo.baixar(asset, TRABALHO / "bruto" / nome)
+        bruto = (repo.baixar(asset, TRABALHO / "bruto" / nome)
+                 if asset["origem"] == "release"
+                 else repo.entrada_baixar(asset, TRABALHO / "bruto" / nome))
         base = f"{alvo:%Y%m%d-%H%M}-{Path(nome).stem[:40]}"
         try:
             res = midia.preparar(bruto, TRABALHO / "pronto", base, cfg["video"])
@@ -292,7 +298,10 @@ def main() -> None:
         registrar(nome, alvo, media_ids, res, falha)
         gravar(STATE, st)
 
-        repo.apagar(asset["id"])                       # sai da caixa de entrada
+        if asset["origem"] == "release":               # sai da caixa de entrada
+            repo.apagar(asset["id"])
+        else:
+            repo.entrada_remover({asset["name"]})
         for a in repo.assets(cfg["release_pronto"]):   # e da hospedagem
             if a["name"] in enviados:
                 repo.apagar(a["id"])

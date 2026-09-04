@@ -22,6 +22,7 @@ from pathlib import Path
 import requests
 
 API = "https://api.github.com"
+ENTRADA = "entrada"      # branch descartável onde a página de envio grava
 UPLOADS = "https://uploads.github.com"
 
 # Horário no começo do nome, com data opcional na frente:
@@ -162,3 +163,53 @@ class Repo:
 
     def apagar(self, asset_id: int) -> None:
         self.sessao.delete(f"{API}/repos/{self.repo}/releases/assets/{asset_id}")
+
+    # ------------------------------------------- a branch que a página usa ---
+    #
+    # A página de envio (docs/index.html) roda no navegador do celular e o
+    # upload de asset de Release é impossível de lá: uploads.github.com não
+    # responde ao preflight de CORS (conferido). A api.github.com responde, e
+    # é por ela que a página grava aqui.
+    #
+    # A branch `entrada` é SEMPRE um commit único e ÓRFÃO — sem pai. Reescrita
+    # a cada envio e a cada publicação, ela nunca acumula histórico: é o que
+    # permite trafegar vídeo por dentro do Git sem inchar o repositório para
+    # sempre, que é o motivo de a fila original ser uma Release.
+
+    def entrada_listar(self) -> list[dict]:
+        r = self.sessao.get(f"{API}/repos/{self.repo}/git/trees/{ENTRADA}")
+        if r.status_code == 404:
+            return []
+        arvore = self._ok(r).get("tree", [])
+        return sorted(({"name": n["path"], "sha": n["sha"], "size": n.get("size", 0),
+                        "origem": "branch"} for n in arvore if n["type"] == "blob"),
+                      key=lambda a: a["name"])
+
+    def entrada_baixar(self, item: dict, destino: Path) -> Path:
+        r = self.sessao.get(f"{API}/repos/{self.repo}/git/blobs/{item['sha']}",
+                            headers={"Accept": "application/vnd.github.raw"},
+                            stream=True, timeout=300)
+        if r.status_code >= 300:
+            raise FilaErro(f"não consegui baixar {item['name']}: {r.status_code}")
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        with destino.open("wb") as fh:
+            for bloco in r.iter_content(1 << 20):
+                fh.write(bloco)
+        return destino
+
+    def entrada_remover(self, nomes: set[str]) -> None:
+        """Reescreve a branch sem os arquivos já publicados (commit órfão)."""
+        restantes = [i for i in self.entrada_listar() if i["name"] not in nomes]
+        tree = self._ok(self.sessao.post(f"{API}/repos/{self.repo}/git/trees", json={
+            "tree": [{"path": i["name"], "mode": "100644", "type": "blob",
+                      "sha": i["sha"]} for i in restantes]}))
+        commit = self._ok(self.sessao.post(f"{API}/repos/{self.repo}/git/commits", json={
+            "message": f"fila: {len(restantes)} pendente(s)",
+            "tree": tree["sha"], "parents": []}))
+        r = self.sessao.patch(f"{API}/repos/{self.repo}/git/refs/heads/{ENTRADA}",
+                              json={"sha": commit["sha"], "force": True})
+        if r.status_code == 422:      # a ref pode não existir ainda
+            self._ok(self.sessao.post(f"{API}/repos/{self.repo}/git/refs", json={
+                "ref": f"refs/heads/{ENTRADA}", "sha": commit["sha"]}))
+        elif r.status_code >= 300:
+            raise FilaErro(f"não consegui atualizar a fila: {r.status_code} {r.text[:200]}")
