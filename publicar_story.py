@@ -183,6 +183,17 @@ def main() -> None:
     if st["dia"]["data"] != hoje:
         st["dia"] = {"data": hoje, "n": 0}
 
+    if args.dry_run:
+        # o diagnóstico da credencial vem ANTES da fila: fila vazia é o caso
+        # mais comum de rodar isto, e sair antes de testar o token seria
+        # justamente falhar no que o dry-run existe para responder
+        tok = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+        if tok:
+            dentro_do_limite(os.environ.get("IG_USER_ID", "").strip()
+                             or descobrir_ig_id(tok), tok)
+        else:
+            log("[dry-run] sem IG_ACCESS_TOKEN: não dá para conferir a conta")
+
     repo = filamod.Repo()
     # duas portas de entrada: a página de envio grava na branch `entrada`
     # (é a que o Diego usa) e a Release `fila` continua valendo para quem
@@ -233,14 +244,6 @@ def main() -> None:
     if args.dry_run:
         for alvo, nome, *_ in devidos:
             log(f"[dry-run] publicaria agora ({alvo:%H:%M}): {nome}")
-        # com token no ambiente, o dry-run também confere a credencial: é o
-        # teste de fumaça do sistema, e não publica nada
-        tok = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-        if tok:
-            dentro_do_limite(os.environ.get("IG_USER_ID", "").strip()
-                             or descobrir_ig_id(tok), tok)
-        else:
-            log("[dry-run] sem IG_ACCESS_TOKEN: não dá para conferir a conta")
         return
 
     ig_id = os.environ.get("IG_USER_ID", "").strip()
