@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12151a">
+<title>Abrindo…</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>➡️</text></svg>">
+<style>
+  :root{ --fundo:#12151a; --carta:#1b1f27; --linha:#2e3542; --texto:#eef1f6;
+         --fraco:#98a2b3; --acento:#D8B888; --acento-t:#1a1205; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fundo);color:var(--texto);min-height:100svh;
+    display:grid;place-items:center;padding:24px;
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .env{max-width:420px;width:100%;text-align:center}
+  h1{font-size:20px;margin:0 0 6px}
+  p{color:var(--fraco);font-size:14px;margin:0 0 18px}
+  a.b{display:block;padding:15px;border-radius:12px;background:var(--acento);
+    color:var(--acento-t);text-decoration:none;font-weight:600;margin-bottom:10px}
+  a.sec{background:var(--carta);color:var(--texto);border:1px solid var(--linha)}
+</style>
+</head>
+<body>
+<div class="env">
+  <h1 id="titulo">Abrindo o Instagram…</h1>
+  <p id="sub">Se ele não abrir sozinho, toque no botão.</p>
+  <a class="b" id="app" href="#">Abrir agora</a>
+  <a class="b sec" id="web" href="https://www.instagram.com/" target="_blank" rel="noopener">Abrir no navegador</a>
+</div>
+
+<script>
+/* Ponte para o app do Instagram. Existe porque o app Canteiro roda dentro de um
+   artifact, e de lá um endereço `instagram://` não sai — mas uma página https,
+   sim. Aqui o esquema é disparado com folga e, se o app não atender, sobra o
+   caminho web. Esquemas conferidos na documentação de deep link do Instagram. */
+const DESTINOS = {
+  story:  { app:"instagram://story-camera", web:"https://www.instagram.com/",
+            titulo:"Abrindo a câmera de Stories", sub:"Monte a arte aí mesmo: fundo, texto e sticker." },
+  camera: { app:"instagram://camera", web:"https://www.instagram.com/",
+            titulo:"Abrindo a câmera do Instagram", sub:"Grave aqui ou traga o vídeo já pronto da galeria." },
+  feed:   { app:"instagram://camera", web:"https://www.instagram.com/",
+            titulo:"Abrindo o Instagram para postar", sub:"Selecione os slides na ordem e ponha a música fixa." },
+  direct: { app:"instagram://direct-inbox", web:"https://www.instagram.com/direct/inbox/",
+            titulo:"Abrindo o Direct", sub:"Responda tudo em áudio — é a regra do método." },
+  perfil: { app:"instagram://user?username=vendanaobra", web:"https://www.instagram.com/vendanaobra/",
+            titulo:"Abrindo o seu perfil", sub:"É daqui que sai o Turbinar, pelo post que já provou." },
+};
+
+const par = new URLSearchParams(location.search);
+const d = DESTINOS[par.get("d")] || DESTINOS.story;
+
+document.getElementById("titulo").textContent = d.titulo;
+document.getElementById("sub").textContent = d.sub;
+document.getElementById("app").href = d.app;
+document.getElementById("web").href = d.web;
+
+/* dispara sozinho; o botão fica para quando o sistema pedir confirmação */
+setTimeout(() => { location.href = d.app; }, 60);
+</script>
+</body>
+</html>
