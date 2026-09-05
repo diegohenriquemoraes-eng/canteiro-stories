@@ -39,6 +39,12 @@ const DESTINOS = {
             titulo:"Abrindo a câmera de Stories", sub:"Monte a arte aí mesmo: fundo, texto e sticker." },
   camera: { app:"instagram://camera", web:"https://www.instagram.com/",
             titulo:"Abrindo a câmera do Instagram", sub:"Grave aqui ou traga o vídeo já pronto da galeria." },
+  /* O Reels é gravado e publicado pelo Edits (é o fluxo do método). A Meta não
+     documenta o esquema do app, então tentamos os candidatos em sequência: o
+     que não estiver registrado no aparelho simplesmente não faz nada. */
+  edits:  { apps:["edits://", "metaedits://", "instagramedits://", "com.instagram.edits://"],
+            app:"edits://", web:"https://apps.apple.com/app/edits/id6742463895",
+            titulo:"Abrindo o Edits", sub:"Legenda, cortar silêncios, gancho no topo, 4K/30 — e publicar de dentro dele." },
   feed:   { app:"instagram://camera", web:"https://www.instagram.com/",
             titulo:"Abrindo o Instagram para postar", sub:"Selecione os slides na ordem e ponha a música fixa." },
   direct: { app:"instagram://direct-inbox", web:"https://www.instagram.com/direct/inbox/",
@@ -55,8 +61,27 @@ document.getElementById("sub").textContent = d.sub;
 document.getElementById("app").href = d.app;
 document.getElementById("web").href = d.web;
 
-/* dispara sozinho; o botão fica para quando o sistema pedir confirmação */
-setTimeout(() => { location.href = d.app; }, 60);
+/* dispara sozinho; o botão fica para quando o sistema pedir confirmação.
+   Com vários candidatos, para na hora em que a página perde o foco — sinal de
+   que o app assumiu. */
+let vivo = true;
+document.addEventListener("visibilitychange", () => { if (document.hidden) vivo = false; });
+window.addEventListener("pagehide", () => { vivo = false; });
+
+const tentativas = d.apps || [d.app];
+tentativas.forEach((esquema, i) => setTimeout(() => {
+  if (vivo) location.href = esquema;
+}, 60 + i * 800));
+
+if (tentativas.length > 1){
+  setTimeout(() => {
+    if (vivo){
+      document.getElementById("sub").textContent =
+        "Não consegui abrir o Edits daqui. Abra o app na tela inicial — ou toque abaixo para instalar.";
+      document.getElementById("web").textContent = "Ver o Edits na App Store";
+    }
+  }, 60 + tentativas.length * 800 + 600);
+}
 </script>
 </body>
 </html>
