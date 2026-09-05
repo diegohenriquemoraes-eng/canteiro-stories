@@ -258,7 +258,12 @@ Três defesas, todas no ar:
    Minuto de runner em repositório público é ilimitado: esperar não custa nada, e é isso que
    faz o horário escrito no app valer de verdade.
 3. **`concurrency`** no workflow — com a espera, duas execuções podiam se sobrepor e publicar
-   o mesmo story duas vezes. Agora é uma de cada vez.
+   o mesmo story duas vezes. Agora é uma de cada vez, e a que chega enquanto outra roda fica
+   **pendente**: quando o vigia morre, o sucessor já está na fila e assume na hora.
+4. **Disparos de 3 em 3 horas** (`7 0,3,6,9,12,15,18,21`), contra 5h50 de vida do vigia — a
+   sobreposição é grande de propósito, porque um disparo isolado pode ser engolido.
+   ⚠ **O cron é UTC**: esses horários são 21:07, 00:07, 03:07, 06:07, 09:07, 12:07, 15:07 e
+   18:07 em Brasília. Errar isso é fácil e desloca a cobertura em três horas.
 
 O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por horas. Aí o
 `atraso_max_min` (90) garante que o story sai assim que o robô acordar, em vez de pular para o

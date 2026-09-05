@@ -17,7 +17,7 @@ on:
     # de brigar com o agendador, cada disparo ACENDE UM VIGIA que fica acordado
     # 5h50 (teto do job) olhando a fila de minuto em minuto. Os quatro horarios
     # cobrem o dia com sobra: se um atrasar duas horas, o anterior ainda esta vivo.
-    - cron: "7 1,5,9,13,17,21 * * *"
+    - cron: "7 0,3,6,9,12,15,18,21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
