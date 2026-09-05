@@ -12,11 +12,12 @@ name: Publicar Story
 # minuto de runner (ilimitado em repositório público) e zero cota do Instagram.
 on:
   schedule:
-    # 05/09/2026: `*/10` estava entregando de 6 a 9 execucoes por DIA, com buracos
-    # de 2 a 4 horas — um story marcado para as 16h so' saiu quando o Diego pediu
-    # na mao. O GitHub engole disparo agendado quando a fila aperta, e a fila
-    # aperta justamente nos minutos redondos. Minutos quebrados pegam melhor.
-    - cron: "3,13,23,33,43,53 * * * *"
+    # 05/09/2026: o cron do GitHub e' "quando der" — `*/10` entregou 6 execucoes
+    # no dia, com buracos de 4 horas, e o story das 16h nao saiu na hora. Em vez
+    # de brigar com o agendador, cada disparo ACENDE UM VIGIA que fica acordado
+    # 5h50 (teto do job) olhando a fila de minuto em minuto. Os quatro horarios
+    # cobrem o dia com sobra: se um atrasar duas horas, o anterior ainda esta vivo.
+    - cron: "7 1,5,9,13,17,21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -39,7 +40,8 @@ concurrency:
 jobs:
   story:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # o vigia fica acordado 350 min; o teto do job precisa de folga sobre isso
+    timeout-minutes: 355
     permissions:
       contents: write        # commit do estado + assets das Releases
       issues: write          # o alarme quando a publicação falha
@@ -70,6 +72,11 @@ jobs:
           [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
           [ "${{ inputs.render_apenas }}" = "true" ] && args="$args --render-apenas"
           [ "${{ inputs.forcar }}" = "true" ] && args="$args --forcar"
+          # disparo agendado acende o VIGIA (5h50, o teto do job): e' ele que faz
+          # o horario do app valer. Disparo na mao faz uma passada e sai.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            args="$args --vigia 350"
+          fi
           python publicar_story.py $args
 
       - name: Avisar se a publicação falhou

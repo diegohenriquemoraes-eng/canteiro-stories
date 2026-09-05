@@ -153,18 +153,8 @@ def registrar(nome: str, alvo: datetime, media_ids: list[str], info: dict,
 
 # ------------------------------------------------------------------ main ---
 
-def main() -> None:
-    ap = argparse.ArgumentParser(description="Publica o Story devido agora")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="mostra a fila e o que publicaria; não toca em nada")
-    ap.add_argument("--render-apenas", action="store_true",
-                    help="baixa e normaliza sem publicar (não precisa de token)")
-    ap.add_argument("--forcar", action="store_true",
-                    help="ignora o horário e publica o primeiro da fila")
-    ap.add_argument("--local", metavar="ARQUIVO",
-                    help="só testa a normalização de um arquivo do PC")
-    args = ap.parse_args()
-
+def rodada(args) -> None:
+    """Uma passada pela fila: publica o que estiver vencido e volta."""
     cfg = carregar(CONFIG, None)
     if cfg is None:
         raise SystemExit(f"config ausente: {CONFIG}")
@@ -380,6 +370,46 @@ def main() -> None:
         log(f"  {nome}: publicado e removido da fila")
 
     gravar(STATE, st)
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description="Publica o Story devido agora")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="mostra a fila e o que publicaria; não toca em nada")
+    ap.add_argument("--render-apenas", action="store_true",
+                    help="baixa e normaliza sem publicar (não precisa de token)")
+    ap.add_argument("--forcar", action="store_true",
+                    help="ignora o horário e publica o primeiro da fila")
+    ap.add_argument("--local", metavar="ARQUIVO",
+                    help="só testa a normalização de um arquivo do PC")
+    ap.add_argument("--vigia", type=int, metavar="MIN", default=0,
+                    help="fica acordado por MIN minutos, olhando a fila de minuto "
+                         "em minuto (é assim que o horário do app é cumprido)")
+    args = ap.parse_args()
+
+    if not args.vigia:
+        rodada(args)
+        return
+
+    # VIGIA: o job não morre entre uma checagem e outra, então o horário
+    # marcado no app é cumprido mesmo quando o cron do GitHub some por horas.
+    fim = time.monotonic() + args.vigia * 60
+    log(f"vigia ligado por {args.vigia} min — olhando a fila de minuto em minuto")
+    n = 0
+    while time.monotonic() < fim:
+        n += 1
+        try:
+            rodada(args)
+        except SystemExit as e:          # config ausente e afins: não insiste
+            log(f"vigia parou: {e}")
+            return
+        except Exception as e:           # falha de rede não pode derrubar o dia
+            log(f"passada {n} falhou ({type(e).__name__}: {e}); segue vigiando")
+        restam = fim - time.monotonic()
+        if restam <= 0:
+            break
+        time.sleep(min(60, restam))
+    log(f"vigia encerrado depois de {n} passadas")
 
 
 if __name__ == "__main__":
