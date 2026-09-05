@@ -1,7 +1,25 @@
 [
  {
-  "dia": "2026-09-08",
-  "dow": "Ter",
+  "dia": "2026-09-05",
+  "dow": "Sáb",
+  "hora": "16:30",
+  "n": 1,
+  "titulo": "O que fazer no sábado para vender na segunda",
+  "slides": [
+   "O cliente visita a obra no sábado. Seu comercial volta na segunda.",
+   "Sábado é quando ele anda na obra, mede com o olho e decide o que falta.",
+   "É quando ele manda mensagem — e recebe silêncio até segunda de manhã.",
+   "Segunda ele já falou com outros dois. Você virou o terceiro orçamento.",
+   "Não precisa trabalhar o fim de semana inteiro. Precisa de 20 minutos.",
+   "20 minutos no sábado: responder com PERGUNTA e marcar a visita da semana.",
+   "“Para que é a obra e até quando você precisa? Consigo terça às 10h.”",
+   "Salva isso e faz hoje. Raio-X do comercial em 3 min: link na bio."
+  ],
+  "legenda": "O cliente anda na obra no sábado. Seu comercial volta na segunda.\n\nAté lá ele já falou com outros dois — e você virou o terceiro orçamento.\n\nNão é trabalhar o fim de semana inteiro: são 20 minutos para responder com pergunta e marcar a visita.\n\nQuem responde na sua empresa no sábado?\n@vendanaobra\n\n#atendimento #vendas #construcaocivil #esquadrias"
+ },
+ {
+  "dia": "2026-09-09",
+  "dow": "Qua",
   "hora": "12:00",
   "n": 1,
   "titulo": "5 motivos pelos quais o arquiteto não te indica",
@@ -18,8 +36,8 @@
   "legenda": "Arquiteto não é cliente. É canal.\n\nCinco motivos pelos quais ele não te indica — e nenhum é preço.\n\nQual desses você reconhece na sua empresa?\n@vendanaobra\n\n#arquitetura #esquadrias #vendas #especificacao"
  },
  {
-  "dia": "2026-09-09",
-  "dow": "Qua",
+  "dia": "2026-09-10",
+  "dow": "Qui",
   "hora": "12:00",
   "n": 1,
   "titulo": "Os 5 Passos da Venda: onde a sua empresa perde",
@@ -36,8 +54,8 @@
   "legenda": "Toda empresa acha que o problema é atrair. Quase nunca é.\n\nO cliente chega — e some no diagnóstico ou no fechamento.\n\nEm qual dos 5 Passos a sua empresa sangra?\n@vendanaobra\n\n#vendas #processocomercial #construcaocivil"
  },
  {
-  "dia": "2026-09-10",
-  "dow": "Qui",
+  "dia": "2026-09-11",
+  "dow": "Sex",
   "hora": "12:00",
   "n": 1,
   "titulo": "Cadência 24h · 7 dias · 30 dias",
@@ -54,8 +72,8 @@
   "legenda": "Follow-up não é insistir. É a parte da venda que ninguém agendou.\n\n24h · 7 dias · 30 dias. Escrito, agendado, com dono.\n\nQuantas propostas suas estão sem data de retorno agora?\n@vendanaobra\n\n#followup #vendas #construcaocivil"
  },
  {
-  "dia": "2026-09-11",
-  "dow": "Sex",
+  "dia": "2026-09-12",
+  "dow": "Sáb",
   "hora": "07:00",
   "n": 1,
   "titulo": "As 3 pessoas que decidem a sua venda",
@@ -72,8 +90,8 @@
   "legenda": "Quem especifica, quem paga e quem usa quase nunca são a mesma pessoa.\n\nO vendedor médio fala com um e acha que fechou.\n\n“Além de você, quem mais decide junto?” — essa pergunta economiza semanas.\n\nQuantos decisores tinha a sua última venda perdida?\n@vendanaobra\n\n#vendas #construcaocivil #esquadrias #arquitetura"
  },
  {
-  "dia": "2026-09-11",
-  "dow": "Sex",
+  "dia": "2026-09-12",
+  "dow": "Sáb",
   "hora": "13:00",
   "n": 2,
   "titulo": "O que o arquiteto ouve quando você fala de preço",
@@ -90,8 +108,8 @@
   "legenda": "O arquiteto não gasta o dinheiro dele. Gasta a reputação dele.\n\nPor isso desconto não sensibiliza: previsibilidade sim.\n\nPrazo cumprido, medida conferida, pós-obra atendido.\n\nVocê fala de preço ou de risco quando está com o especificador?\n@vendanaobra\n\n#arquitetura #especificacao #esquadrias #vendas"
  },
  {
-  "dia": "2026-09-12",
-  "dow": "Sáb",
+  "dia": "2026-09-13",
+  "dow": "Dom",
   "hora": "07:00",
   "n": 1,
   "titulo": "Atendente x Vendedor: 7 diferenças",
@@ -108,8 +126,8 @@
   "legenda": "Atendente espera. Vendedor conduz.\n\nA diferença aparece no fim do mês, na margem — não no discurso.\n\nSete comportamentos separam um do outro. Quantos o seu time tem?\n@vendanaobra\n\n#vendas #gestaocomercial #construcaocivil #esquadrias"
  },
  {
-  "dia": "2026-09-12",
-  "dow": "Sáb",
+  "dia": "2026-09-13",
+  "dow": "Dom",
   "hora": "13:00",
   "n": 2,
   "titulo": "O roteiro da primeira conversa",
@@ -126,8 +144,8 @@
   "legenda": "Cinco perguntas antes do preço.\n\nPara que é · qual o prazo real · quem mais decide · o que não agradou antes · o que não pode acontecer.\n\nPreço sem contexto é tabela. Preço com contexto é proposta.\n\nQuantas dessas o seu vendedor faz hoje?\n@vendanaobra\n\n#vendas #processocomercial #esquadrias"
  },
  {
-  "dia": "2026-09-13",
-  "dow": "Dom",
+  "dia": "2026-09-14",
+  "dow": "Seg",
   "hora": "07:00",
   "n": 1,
   "titulo": "Por que o cliente aceita pagar mais",
@@ -144,8 +162,8 @@
   "legenda": "O cliente aceita pagar mais — só não por qualquer coisa.\n\nPrazo garantido, medida conferida, pós-obra atendido, decisão fácil.\n\nNenhum desses é produto. Todos são processo.\n\nQual deles a sua proposta comunica hoje?\n@vendanaobra\n\n#vendas #esquadrias #construcaocivil #proposta"
  },
  {
-  "dia": "2026-09-13",
-  "dow": "Dom",
+  "dia": "2026-09-14",
+  "dow": "Seg",
   "hora": "13:00",
   "n": 2,
   "titulo": "O custo real de uma semana de atraso",
@@ -162,8 +180,8 @@
   "legenda": "Uma semana de atraso apaga qualquer desconto que você deu.\n\nEquipe parada, serviços remarcados, entrega adiada.\n\nSe você cumpre prazo e não fala disso, está vendendo abaixo do que entrega.\n\nVocê comunica prazo na proposta ou só no contrato?\n@vendanaobra\n\n#prazo #obra #esquadrias #vendas"
  },
  {
-  "dia": "2026-09-14",
-  "dow": "Seg",
+  "dia": "2026-09-15",
+  "dow": "Ter",
   "hora": "07:00",
   "n": 1,
   "titulo": "O que fazer nos 7 dias depois da instalação",
@@ -180,8 +198,8 @@
   "legenda": "Os 7 dias depois da instalação decidem quantas indicações você recebe.\n\nLigar no dia 1. Foto no dia 2. Manutenção por escrito no dia 3. Pergunta no dia 5. Indicação com nome no dia 7.\n\nNada disso custa dinheiro.\n\nQuantos desses você faz hoje?\n@vendanaobra\n\n#posvenda #indicacao #esquadrias #vendas"
  },
  {
-  "dia": "2026-09-14",
-  "dow": "Seg",
+  "dia": "2026-09-15",
+  "dow": "Ter",
   "hora": "13:00",
   "n": 2,
   "titulo": "Como pedir indicação sem parecer carente",
@@ -198,8 +216,8 @@
   "legenda": "“Se souber de alguém, me indica” não é pedido. É torcida.\n\nPedido é com contexto, nome e momento: “quem mais da sua obra ainda não resolveu esquadria?”\n\nE peça uma, não uma lista.\n\nQuando foi a última indicação que você pediu de verdade?\n@vendanaobra\n\n#indicacao #vendas #construcaocivil #esquadrias"
  },
  {
-  "dia": "2026-09-15",
-  "dow": "Ter",
+  "dia": "2026-09-16",
+  "dow": "Qua",
   "hora": "07:00",
   "n": 1,
   "titulo": "O que o desconto realmente custa",
@@ -216,8 +234,8 @@
   "legenda": "5% de desconto numa margem de 10% leva METADE do lucro da venda.\n\nDesconto não sai do preço: sai do lucro.\n\nE quem dá rápido ensina o cliente a pedir de novo.\n\nQual foi o último desconto que você deu sem pedir nada em troca?\n@vendanaobra\n\n#precificacao #margem #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-15",
-  "dow": "Ter",
+  "dia": "2026-09-16",
+  "dow": "Qua",
   "hora": "13:00",
   "n": 2,
   "titulo": "5 trocas para usar no lugar do desconto",
@@ -234,8 +252,8 @@
   "legenda": "Antes de dar desconto: prazo, entrada, escopo, fechamento ou indicação.\n\nToda concessão pede contrapartida. Sem contrapartida, não é negociação — é doação.\n\nQual dessas cinco você já usou?\n@vendanaobra\n\n#negociacao #vendas #construcaocivil #esquadrias"
  },
  {
-  "dia": "2026-09-16",
-  "dow": "Qua",
+  "dia": "2026-09-17",
+  "dow": "Qui",
   "hora": "07:00",
   "n": 1,
   "titulo": "O que o vendedor novo recebe no primeiro dia",
@@ -252,8 +270,8 @@
   "legenda": "Catálogo, tabela e um “vai lá”.\n\nÉ isso que o vendedor novo recebe — e depois a gente reclama que ele só sabe dar desconto.\n\nRoteiro, objeções, cadência e limites: isso é treinamento.\n\nO que o seu entregou no primeiro dia?\n@vendanaobra\n\n#gestaocomercial #treinamento #esquadrias #vendas"
  },
  {
-  "dia": "2026-09-16",
-  "dow": "Qua",
+  "dia": "2026-09-17",
+  "dow": "Qui",
   "hora": "13:00",
   "n": 2,
   "titulo": "Os 5 números que todo dono precisa saber",
@@ -270,8 +288,8 @@
   "legenda": "Cinco números: orçamentos entrados, propostas enviadas, propostas com próximo passo, fechadas e margem média.\n\nSem o terceiro, você não tem funil. Sem o quinto, não sabe se vale vender.\n\nQuantos desses você sabe agora, de cabeça?\n@vendanaobra\n\n#gestao #indicadores #vendas #construcaocivil"
  },
  {
-  "dia": "2026-09-17",
-  "dow": "Qui",
+  "dia": "2026-09-18",
+  "dow": "Sex",
   "hora": "06:30",
   "n": 1,
   "titulo": "O que olhar numa visita além do vão",
@@ -288,8 +306,8 @@
   "legenda": "Visita técnica não é tirar medida.\n\nEntorno, estágio da obra, prumo e esquadro, quem está junto, o que já foi comprado.\n\nCada item vira argumento na proposta — ou problema na instalação.\n\nQuantos desses você olha hoje?\n@vendanaobra\n\n#visitatecnica #esquadrias #vendas #obra"
  },
  {
-  "dia": "2026-09-17",
-  "dow": "Qui",
+  "dia": "2026-09-18",
+  "dow": "Sex",
   "hora": "11:30",
   "n": 2,
   "titulo": "As 5 perguntas obrigatórias na obra",
@@ -306,8 +324,8 @@
   "legenda": "Cinco perguntas antes de sair da obra.\n\nPara que é · prazo real · quem mais decide · o que não agradou antes · o que não pode acontecer.\n\nAs respostas viram a proposta. Sem elas, você manda tabela.\n\nQuantas dessas você faz na visita?\n@vendanaobra\n\n#diagnostico #vendas #esquadrias #construcaocivil"
  },
  {
-  "dia": "2026-09-17",
-  "dow": "Qui",
+  "dia": "2026-09-18",
+  "dow": "Sex",
   "hora": "16:30",
   "n": 3,
   "titulo": "O erro de medição que custa a obra",
@@ -324,8 +342,8 @@
   "legenda": "Prumo, nível e esquadro. Se falhar em um, o vão está torto.\n\nQuem descobre no dia da instalação é o instalador — com o cliente olhando.\n\nConfira os três antes de fechar a medida e anote na proposta o que encontrou.\n\nSeu medidor confere os três?\n@vendanaobra\n\n#medicao #instalacao #esquadrias #obra"
  },
  {
-  "dia": "2026-09-18",
-  "dow": "Sex",
+  "dia": "2026-09-19",
+  "dow": "Sáb",
   "hora": "06:30",
   "n": 1,
   "titulo": "O que uma proposta boa tem (e a sua não)",
@@ -342,8 +360,8 @@
   "legenda": "Item, quantidade, preço.\n\nSe é isso que a sua proposta tem, o cliente só pode comparar por número.\n\nContexto · solução · o que inclui · o que não inclui · prazo com data · garantia.\n\nQuantos desses estão na sua proposta hoje?\n@vendanaobra\n\n#proposta #vendas #esquadrias #construcaocivil"
  },
  {
-  "dia": "2026-09-18",
-  "dow": "Sex",
+  "dia": "2026-09-19",
+  "dow": "Sáb",
   "hora": "11:30",
   "n": 2,
   "titulo": "3 frases que matam a sua proposta",
@@ -360,8 +378,8 @@
   "legenda": "“Qualquer coisa me chama.”\n“Se precisar a gente vê uma condição.”\n“Te mando no WhatsApp.”\n\nAs três matam a proposta depois de pronta.\n\nTroque por data marcada, silêncio depois do preço e apresentação de 15 minutos.\n\nQual dessas você falou essa semana?\n@vendanaobra\n\n#vendas #proposta #negociacao"
  },
  {
-  "dia": "2026-09-18",
-  "dow": "Sex",
+  "dia": "2026-09-19",
+  "dow": "Sáb",
   "hora": "16:30",
   "n": 3,
   "titulo": "Como apresentar em 15 minutos",
@@ -378,8 +396,8 @@
   "legenda": "15 minutos valem mais que qualquer PDF.\n\nRepita o que ele disse · mostre a solução ligada a isso · o que inclui e o que não inclui · o preço · silêncio · próximo passo com data.\n\nVocê apresenta ou só envia?\n@vendanaobra\n\n#proposta #apresentacao #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-19",
-  "dow": "Sáb",
+  "dia": "2026-09-20",
+  "dow": "Dom",
   "hora": "06:30",
   "n": 1,
   "titulo": "Por que o cliente trava na hora de decidir",
@@ -396,8 +414,8 @@
   "legenda": "Ele não está inseguro com você. Está inseguro com a decisão.\n\nCompra uma vez na vida, escolhe antes de ver e só descobre se acertou dois anos depois.\n\nNão dê mais opção: reduza a três e diga qual você faria — e por quê.\n\nVocê dá opção ou dá critério?\n@vendanaobra\n\n#objecao #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-19",
-  "dow": "Sáb",
+  "dia": "2026-09-20",
+  "dow": "Dom",
   "hora": "11:30",
   "n": 2,
   "titulo": "As 5 objeções que você vai ouvir",
@@ -414,8 +432,8 @@
   "legenda": "“Tá caro” · “vou pensar” · “vou falar com minha esposa” · “manda no zap” · “achei mais barato”.\n\nNenhuma se resolve com desconto. Todas se resolvem antes, no diagnóstico.\n\nQual dessas você mais ouve?\n@vendanaobra\n\n#objecao #vendas #construcaocivil #esquadrias"
  },
  {
-  "dia": "2026-09-19",
-  "dow": "Sáb",
+  "dia": "2026-09-20",
+  "dow": "Dom",
   "hora": "16:30",
   "n": 3,
   "titulo": "O que fazer quando ele diz “vou pensar”",
@@ -432,8 +450,8 @@
   "legenda": "“Vou pensar” não é não — é falta de próximo passo.\n\n“Posso te perguntar o que ainda está em aberto?” A primeira coisa que ele falar é a objeção real.\n\nDepois: data, hora e motivo do retorno.\n\nQuem sai sem data volta como cobrança.\n\nComo você responde ao “vou pensar”?\n@vendanaobra\n\n#objecao #followup #vendas"
  },
  {
-  "dia": "2026-09-20",
-  "dow": "Dom",
+  "dia": "2026-09-21",
+  "dow": "Seg",
   "hora": "06:15",
   "n": 1,
   "titulo": "O que o cliente compra quando compra esquadria",
@@ -450,8 +468,8 @@
   "legenda": "Ninguém acorda querendo comprar janela.\n\nQuer o quarto silencioso, a sala que não esquenta, a chuva sem poça, a obra entregue na data.\n\nEsquadria é o meio.\n\nO seu vendedor fala de perfil ou de consequência?\n@vendanaobra\n\n#posicionamento #vendas #esquadrias #construcaocivil"
  },
  {
-  "dia": "2026-09-20",
-  "dow": "Dom",
+  "dia": "2026-09-21",
+  "dow": "Seg",
   "hora": "13:00",
   "n": 2,
   "titulo": "Traduza ficha técnica em consequência",
@@ -468,8 +486,8 @@
   "legenda": "Ficha técnica é prova. Consequência é argumento.\n\nLaminado acústico = dormir sem ouvir a avenida. Ruptura térmica = conta de luz menor. Classe A = sem infiltração na chuva com vento.\n\nNinguém compra a primeira coluna.\n\nSeu time fala qual das duas?\n@vendanaobra\n\n#argumentacao #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-20",
-  "dow": "Dom",
+  "dia": "2026-09-21",
+  "dow": "Seg",
   "hora": "17:30",
   "n": 3,
   "titulo": "Os 5 medos do seu cliente",
@@ -486,8 +504,8 @@
   "legenda": "Ele não tem medo de gastar. Tem medo de errar.\n\nEscolher errado, atrasar a obra, ter infiltração, ficar diferente do projeto, o fornecedor sumir.\n\nCada medo é uma pergunta que você pode fazer — e um item da sua proposta.\n\nQuantos dos cinco a sua proposta responde?\n@vendanaobra\n\n#vendas #proposta #esquadrias #obra"
  },
  {
-  "dia": "2026-09-21",
-  "dow": "Seg",
+  "dia": "2026-09-22",
+  "dow": "Ter",
   "hora": "06:15",
   "n": 1,
   "titulo": "A instalação é a sua vitrine",
@@ -504,8 +522,8 @@
   "legenda": "A instalação é a única hora em que a sua empresa fica dentro da casa do cliente.\n\nComo entram, como falam quando algo não encaixa, como deixam a casa.\n\nNada disso está na proposta — e tudo isso decide a indicação.\n\nSeu instalador sabe que ele é vendedor?\n@vendanaobra\n\n#instalacao #posvenda #esquadrias #indicacao"
  },
  {
-  "dia": "2026-09-21",
-  "dow": "Seg",
+  "dia": "2026-09-22",
+  "dow": "Ter",
   "hora": "13:00",
   "n": 2,
   "titulo": "Checklist do dia da instalação",
@@ -523,8 +541,8 @@
   "legenda": "Avisar na véspera · chegar no horário · proteger piso · mostrar o que achou no vão · testar junto · explicar manutenção · sair com a casa limpa.\n\nSete itens que evitam quase toda reclamação.\n\nQuantos a sua equipe faz hoje?\n@vendanaobra\n\n#instalacao #processo #esquadrias"
  },
  {
-  "dia": "2026-09-21",
-  "dow": "Seg",
+  "dia": "2026-09-22",
+  "dow": "Ter",
   "hora": "17:30",
   "n": 3,
   "titulo": "O que fazer quando dá problema na obra",
@@ -541,8 +559,8 @@
   "legenda": "Deu problema? Os 30 minutos seguintes decidem tudo.\n\nNão discuta na frente do cliente. Assuma. Diga o prazo real. Avise você mesmo. Volte para conferir.\n\nCliente que viu você resolver confia mais que cliente sem problema.\n\nComo a sua equipe reage quando dá errado?\n@vendanaobra\n\n#posvenda #instalacao #atendimento"
  },
  {
-  "dia": "2026-09-22",
-  "dow": "Ter",
+  "dia": "2026-09-23",
+  "dow": "Qua",
   "hora": "06:15",
   "n": 1,
   "titulo": "Por que preço por m² te machuca",
@@ -559,8 +577,8 @@
   "legenda": "Preço por m² transforma projetos diferentes na mesma unidade — e apaga tudo que você faz diferente.\n\nSobra um número, e sempre tem alguém com número menor.\n\nApresente por solução: o cliente compra ambientes, não metros.\n\nComo você apresenta preço hoje?\n@vendanaobra\n\n#precificacao #proposta #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-22",
-  "dow": "Ter",
+  "dia": "2026-09-23",
+  "dow": "Qua",
   "hora": "13:00",
   "n": 2,
   "titulo": "3 formas de apresentar o mesmo preço",
@@ -577,8 +595,8 @@
   "legenda": "Mesmo valor, três formas de dizer. Só uma vende.\n\n“R$ 1.100 o metro” vira comparação. “R$ 48.000” vira susto.\n\n“A suíte e a sala ficam resolvidas por R$ 48.000, com instalação, arremate e garantia de 5 anos” vira decisão.\n\nQual você usa?\n@vendanaobra\n\n#precificacao #proposta #vendas"
  },
  {
-  "dia": "2026-09-22",
-  "dow": "Ter",
+  "dia": "2026-09-23",
+  "dow": "Qua",
   "hora": "17:30",
   "n": 3,
   "titulo": "Quando dar desconto (e quando não)",
@@ -595,8 +613,8 @@
   "legenda": "Não dê desconto logo depois do preço, nem para “destravar” indeciso, nem no WhatsApp.\n\nDê contra data de fechamento, contra escopo ou contra indicação com nome.\n\nConcessão sem contrapartida é doação.\n\nQual foi o último desconto que você trocou por alguma coisa?\n@vendanaobra\n\n#negociacao #desconto #vendas #esquadrias"
  },
  {
-  "dia": "2026-09-23",
-  "dow": "Qua",
+  "dia": "2026-09-24",
+  "dow": "Qui",
   "hora": "06:00",
   "n": 1,
   "titulo": "Os 5 sinais do cliente que vai dar prejuízo",
@@ -613,8 +631,8 @@
   "legenda": "Fala mal de todos os fornecedores · pede preço antes de você entender a obra · muda escopo três vezes · some e volta com urgência · negocia depois do serviço pronto.\n\nUm sinal é alerta. Três é prejuízo.\n\nQuantos desses o seu último cliente ruim tinha?\n@vendanaobra\n\n#qualificacao #vendas #gestao #esquadrias"
  },
  {
-  "dia": "2026-09-23",
-  "dow": "Qua",
+  "dia": "2026-09-24",
+  "dow": "Qui",
   "hora": "12:00",
   "n": 2,
   "titulo": "A conta do cliente ruim",
@@ -631,8 +649,8 @@
   "legenda": "Três visitas em vez de uma. Duas mudanças de projeto. 40 dias de atraso. Duas idas extras na entrega.\n\nE paga o mesmo de quem fechou na primeira visita.\n\nA margem de 12% virou 3% — e ninguém viu porque ninguém mede.\n\nVocê calcula isso?\n@vendanaobra\n\n#margem #gestao #vendas #construcaocivil"
  },
  {
-  "dia": "2026-09-23",
-  "dow": "Qua",
+  "dia": "2026-09-24",
+  "dow": "Qui",
   "hora": "18:00",
   "n": 3,
   "titulo": "Como dizer não sem perder a ponte",
@@ -649,8 +667,8 @@
   "legenda": "“Pelo que você me contou, o meu processo não é o que você precisa agora.”\n\nDizer não é habilidade comercial, não grosseria.\n\nQuem diz não para o errado tem agenda para o certo — e quem ouve um não honesto lembra de você depois.\n\nQuando foi o seu último não?\n@vendanaobra\n\n#qualificacao #postura #vendas"
  },
  {
-  "dia": "2026-09-24",
-  "dow": "Qui",
+  "dia": "2026-09-25",
+  "dow": "Sex",
   "hora": "06:00",
   "n": 1,
   "titulo": "A ligação que ninguém faz",
@@ -667,8 +685,8 @@
   "legenda": "O cliente disse não? Ligue depois de uma semana — não para insistir, para aprender.\n\n“Só queria entender: o que pesou na escolha?” E fique calado.\n\nNove em cada dez respondem, porque ninguém pergunta.\n\nVocê liga para quem disse não?\n@vendanaobra\n\n#vendas #processocomercial #construcaocivil"
  },
  {
-  "dia": "2026-09-24",
-  "dow": "Qui",
+  "dia": "2026-09-25",
+  "dow": "Sex",
   "hora": "12:00",
   "n": 2,
   "titulo": "Os 4 motivos reais de perder venda",
@@ -685,8 +703,8 @@
   "legenda": "Demorou · não entendeu a obra · faltou segurança · não teve próximo passo.\n\nPreço só aparece quando nenhum dos quatro foi resolvido.\n\nAnote o motivo de cada perda por 30 dias: o padrão aparece sozinho.\n\nQual desses quatro é o seu?\n@vendanaobra\n\n#vendas #gestaocomercial #esquadrias"
  },
  {
-  "dia": "2026-09-24",
-  "dow": "Qui",
+  "dia": "2026-09-25",
+  "dow": "Sex",
   "hora": "18:00",
   "n": 3,
   "titulo": "O que fazer com o não, na prática",
