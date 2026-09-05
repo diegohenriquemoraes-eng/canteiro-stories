@@ -25,6 +25,7 @@
 <div class="env">
   <h1 id="titulo">Abrindo o Instagram…</h1>
   <p id="sub">Se ele não abrir sozinho, toque no botão.</p>
+  <p id="fecha" style="display:none;color:var(--fraco);font-size:13px">Pode fechar esta aba — o app já abriu.</p>
   <a class="b" id="app" href="#">Abrir agora</a>
   <a class="b sec" id="web" href="https://www.instagram.com/" target="_blank" rel="noopener">Abrir no navegador</a>
 </div>
@@ -68,10 +69,24 @@ let vivo = true;
 document.addEventListener("visibilitychange", () => { if (document.hidden) vivo = false; });
 window.addEventListener("pagehide", () => { vivo = false; });
 
+/* Some sozinha assim que o app assume. Só dá para fechar uma aba que foi aberta
+   por script — por isso o app abre esta página com window.open, e não com um
+   link comum. Se o navegador recusar, os botões continuam aí. */
+function sumir(){
+  try { window.close(); } catch(e) {}
+  setTimeout(() => {
+    if (!document.hidden) return;          // já saiu para o app: nada a fazer
+    try { window.close(); } catch(e) {}
+  }, 400);
+}
+document.addEventListener("visibilitychange", () => { if (document.hidden) setTimeout(sumir, 900); });
+
 const tentativas = d.apps || [d.app];
 tentativas.forEach((esquema, i) => setTimeout(() => {
   if (vivo) location.href = esquema;
 }, 60 + i * 800));
+
+setTimeout(() => { if (document.hidden) sumir(); }, 2500);
 
 if (tentativas.length > 1){
   setTimeout(() => {
