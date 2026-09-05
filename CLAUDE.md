@@ -203,3 +203,25 @@ API, com receio de a automação prejudicar a entrega do perfil. Ele pediu esta
 automação de Stories mesmo assim, em 04/09 — e Story é caso diferente
 (efêmero, fora do ranking do feed). Se a entrega do perfil cair, esta é a
 primeira variável a olhar.
+
+## Artes do carrossel (04/09/2026) — `docs/carrossel.html`
+
+O carrossel é o **único post que o Diego publica à mão**: a Graph API não coloca música em
+nada que publica, e é a música fixa que joga o carrossel na aba de Reels (exigência da ROTA
+100K). Reels e Stories continuam automáticos.
+
+Como funciona: `exportar_carrosseis.py` lê os slides já escritos no app Canteiro
+(`Desktop\Perffec\Claude\Canteiro\canteiro-vno.html`, avaliando o array `DIAS` com node) e
+grava `docs/carrosseis.json`. A página desenha as artes **em canvas, no próprio celular** —
+1080x1350, fundo branco, navy `#071025`, acento champagne `#D8B888`, fonte Archivo, `@vendanaobra`
+e `n/total` no rodapé; o último slide inverte para navy, que é o CTA.
+
+**Nenhuma imagem é commitada, de propósito**: 3 carrosséis/dia × 8 slides encheriam o repositório
+para sempre. O texto pesa alguns KB; o pixel nasce e morre no aparelho.
+
+Botões: *Salvar as imagens* (uma a cada 400 ms — o Chrome recusa rajada de download),
+*Compartilhar* (`navigator.share` com arquivos, que no celular manda direto para o Instagram) e
+*Copiar a legenda*.
+
+⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
+senão a página segue mostrando os slides antigos.
