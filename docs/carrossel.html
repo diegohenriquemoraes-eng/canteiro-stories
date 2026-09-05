@@ -53,10 +53,11 @@
   <div class="cartao">
     <label for="qual">Carrossel</label>
     <select id="qual"></select>
-    <button id="salvar">Salvar as imagens</button>
-    <button id="compartilhar" class="sec">Compartilhar (mandar pro Instagram)</button>
+    <button id="salvar">Salvar as 8 no rolo da câmera</button>
+    <button id="baixar" class="sec">Baixar uma a uma (computador)</button>
     <button id="copiar" class="sec">Copiar a legenda</button>
     <p class="aviso" id="aviso"></p>
+    <p class="aviso" id="dica"></p>
   </div>
 
   <div class="grade" id="grade"></div>
@@ -71,7 +72,7 @@ const L = 1080, A = 1350;          // 4:5, o formato que ocupa mais tela no feed
 const NAVY = "#071025", CHAMP = "#D8B888", BRANCO = "#ffffff";
 const FONTE = "Archivo";
 
-let dados = [], atual = null, imagens = [];
+let dados = [], atual = null, imagens = [], arquivos = [];
 
 const $ = s => document.querySelector(s);
 
@@ -144,13 +145,21 @@ async function montar(){
     imagens.push({ nome, url, cv });
     const div = document.createElement("div");
     div.className = "slide";
-    div.innerHTML = `<img src="${url}" alt="slide ${i + 1}"><a download="${nome}" href="${url}">salvar</a>`;
+    div.innerHTML = `<img src="${url}" alt="slide ${i + 1}" title="segure para salvar"><a download="${nome}" href="${url}">salvar</a>`;
     $("#grade").appendChild(div);
   }
   $("#aviso").textContent = `${imagens.length} slides prontos · ${c.dia} ${c.hora}`;
+  /* os arquivos sao preparados AGORA: no iOS, gerar blob dentro do clique
+     estoura o gesto do usuario e o compartilhamento e' recusado. */
+  arquivos = [];
+  for (const im of imagens){
+    const blob = await new Promise(r => im.cv.toBlob(r, "image/jpeg", 0.92));
+    arquivos.push(new File([blob], im.nome, { type: "image/jpeg" }));
+  }
 }
 
 function baixarTodas(){
+  $("#dica").textContent = "";
   imagens.forEach((im, k) => setTimeout(() => {
     const a = document.createElement("a");
     a.href = im.url; a.download = im.nome;
@@ -159,24 +168,22 @@ function baixarTodas(){
   $("#aviso").textContent = "Salvando… confira a pasta de downloads do celular.";
 }
 
-async function arquivos(){
-  const out = [];
-  for (const im of imagens){
-    const blob = await new Promise(r => im.cv.toBlob(r, "image/jpeg", 0.92));
-    out.push(new File([blob], im.nome, { type: "image/jpeg" }));
-  }
-  return out;
-}
-
-async function compartilhar(){
-  try {
-    const files = await arquivos();
-    if (navigator.canShare && navigator.canShare({ files })){
-      await navigator.share({ files, text: atual.legenda || "" });
-    } else {
-      $("#aviso").textContent = "Este aparelho não compartilha arquivos — use Salvar as imagens.";
+async function salvar(){
+  if (navigator.canShare && navigator.canShare({ files: arquivos })){
+    try {
+      await navigator.share({ files: arquivos });
+      $("#aviso").textContent = "Na folha que abriu, toque em Salvar em Fotos — vão as 8 de uma vez.";
+      return;
+    } catch(e){
+      if (e.name === "AbortError") return;
+      $("#aviso").textContent = "O compartilhamento falhou aqui: " + e.message;
     }
-  } catch(e){ if (e.name !== "AbortError") $("#aviso").textContent = "Não deu: " + e.message; }
+  }
+  /* sem Web Share (webview de app, navegador antigo): o caminho que nunca falha */
+  $("#aviso").textContent = "Este navegador não deixa salvar direto.";
+  $("#dica").innerHTML = "<b>Segure o dedo em cada imagem abaixo</b> e toque em " +
+    "“Adicionar às Fotos”. Se você abriu por dentro de outro app, o melhor é tocar " +
+    "nos “…” do topo e escolher <b>Abrir no Safari</b> — lá o botão dourado salva as 8 de uma vez.";
 }
 
 async function iniciar(){
@@ -199,12 +206,22 @@ async function iniciar(){
   sel.onchange = async () => { atual = dados[sel.value]; await montar(); };
 }
 
-$("#salvar").onclick = baixarTodas;
-$("#compartilhar").onclick = compartilhar;
+$("#salvar").onclick = salvar;
+$("#baixar").onclick = baixarTodas;
 $("#copiar").onclick = async () => {
   try { await navigator.clipboard.writeText(atual.legenda || ""); $("#aviso").textContent = "Legenda copiada."; }
   catch(e){ $("#aviso").textContent = "Copie da caixa abaixo."; }
 };
+
+/* webview de app (Instagram, WhatsApp, o proprio Claude) nao baixa arquivo:
+   avisa antes de o Diego clicar e nao entender por que nada aconteceu. */
+const NO_APP = /(FBAN|FBAV|Instagram|Line|WhatsApp|Snapchat)/i.test(navigator.userAgent) ||
+  (/iPhone|iPad/.test(navigator.userAgent) && !/Safari/.test(navigator.userAgent));
+if (NO_APP && !(navigator.canShare && navigator.canShare({ files: [new File([], "x.jpg", {type:"image/jpeg"})] }))){
+  $("#dica").innerHTML = "Você abriu esta página <b>dentro de outro app</b>, e aí o iPhone não " +
+    "deixa salvar arquivo. Toque nos “…” do topo e escolha <b>Abrir no Safari</b> — " +
+    "ou segure o dedo em cada imagem e toque em “Adicionar às Fotos”.";
+}
 
 iniciar().catch(e => { $("#aviso").textContent = "Erro ao carregar: " + e.message; });
 </script>
