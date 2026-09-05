@@ -219,9 +219,17 @@ e `n/total` no rodapé; o último slide inverte para navy, que é o CTA.
 **Nenhuma imagem é commitada, de propósito**: 3 carrosséis/dia × 8 slides encheriam o repositório
 para sempre. O texto pesa alguns KB; o pixel nasce e morre no aparelho.
 
-Botões: *Salvar as imagens* (uma a cada 400 ms — o Chrome recusa rajada de download),
-*Compartilhar* (`navigator.share` com arquivos, que no celular manda direto para o Instagram) e
-*Copiar a legenda*.
+Botões: **Salvar as 8 no rolo da câmera** (`navigator.share` com os arquivos), *Baixar uma a uma*
+(para o computador; uma a cada 400 ms, porque o Chrome recusa rajada) e *Copiar a legenda*.
+
+⚠ **Armadilha paga em 05/09/2026**: o Diego clicou em salvar no iPhone e nada desceu — ele tinha
+aberto a página num **navegador embutido de app** (o print mostrava o "X" no topo, não a barra do
+Safari), e webview não baixa arquivo. Mesmo no Safari, `<a download>` com `data:` vai para
+Arquivos, não para Fotos, e uma rajada de 8 é bloqueada. O que funciona no iPhone é
+`navigator.share({files})` — e os `File[]` têm de estar **prontos antes do clique**: gerar blob
+dentro do handler estoura o gesto do usuário e o iOS recusa o compartilhamento. Onde nem Web
+Share existe, a página passa a ensinar o caminho que nunca falha: segurar o dedo na imagem →
+"Adicionar às Fotos"; e detecta webview para avisar antes do clique.
 
 ⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
 senão a página segue mostrando os slides antigos.
