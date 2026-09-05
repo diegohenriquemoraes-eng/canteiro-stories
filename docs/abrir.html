@@ -40,12 +40,14 @@ const DESTINOS = {
             titulo:"Abrindo a câmera de Stories", sub:"Monte a arte aí mesmo: fundo, texto e sticker." },
   camera: { app:"instagram://camera", web:"https://www.instagram.com/",
             titulo:"Abrindo a câmera do Instagram", sub:"Grave aqui ou traga o vídeo já pronto da galeria." },
-  /* O Reels é gravado e publicado pelo Edits (é o fluxo do método). A Meta não
-     documenta o esquema do app, então tentamos os candidatos em sequência: o
-     que não estiver registrado no aparelho simplesmente não faz nada. */
-  edits:  { apps:["edits://", "metaedits://", "instagramedits://", "com.instagram.edits://"],
-            app:"edits://", web:"https://apps.apple.com/app/edits/id6742463895",
-            titulo:"Abrindo o Edits", sub:"Legenda, cortar silêncios, gancho no topo, 4K/30 — e publicar de dentro dele." },
+  /* O Reels é gravado e publicado pelo Edits. A Meta não publica esquema nem
+     universal link do app (conferido em 05/09/2026), então NÃO dá para abri-lo
+     de fora: tentar às cegas só fazia o iOS alertar "endereço inválido" a cada
+     tentativa. Aqui o botão avisa e deixa o caminho do Instagram à mão. */
+  edits:  { app:"instagram://camera", web:"https://apps.apple.com/app/edits/id6742463895",
+            titulo:"Abra o Edits na tela inicial",
+            sub:"O iPhone não deixa outro app abrir o Edits. Toque nele no seu celular — o roteiro e o texto da tela já estão copiados.",
+            manual:true },
   feed:   { app:"instagram://camera", web:"https://www.instagram.com/",
             titulo:"Abrindo o Instagram para postar", sub:"Selecione os slides na ordem e ponha a música fixa." },
   direct: { app:"instagram://direct-inbox", web:"https://www.instagram.com/direct/inbox/",
@@ -83,21 +85,12 @@ function sumir(){
 }
 document.addEventListener("visibilitychange", () => { if (document.hidden) setTimeout(sumir, 900); });
 
-const tentativas = d.apps || [d.app];
-tentativas.forEach((esquema, i) => setTimeout(() => {
-  if (vivo) location.href = esquema;
-}, 60 + i * 800));
+if (!d.manual) setTimeout(() => { if (vivo) location.href = d.app; }, 60);
 
-setTimeout(() => { if (document.hidden) sumir(); }, 2500);
-
-if (tentativas.length > 1){
-  setTimeout(() => {
-    if (vivo){
-      document.getElementById("sub").textContent =
-        "Não consegui abrir o Edits daqui. Abra o app na tela inicial — ou toque abaixo para instalar.";
-      document.getElementById("web").textContent = "Ver o Edits na App Store";
-    }
-  }, 60 + tentativas.length * 800 + 600);
+if (d.manual){
+  document.getElementById("app").textContent = "Abrir a câmera do Instagram";
+  document.getElementById("web").textContent = "Não tenho o Edits — instalar";
+  document.getElementById("web").hidden = false;
 }
 </script>
 </body>
