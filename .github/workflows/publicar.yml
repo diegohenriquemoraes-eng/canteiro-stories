@@ -12,7 +12,11 @@ name: Publicar Story
 # minuto de runner (ilimitado em repositório público) e zero cota do Instagram.
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    # 05/09/2026: `*/10` estava entregando de 6 a 9 execucoes por DIA, com buracos
+    # de 2 a 4 horas — um story marcado para as 16h so' saiu quando o Diego pediu
+    # na mao. O GitHub engole disparo agendado quando a fila aperta, e a fila
+    # aperta justamente nos minutos redondos. Minutos quebrados pegam melhor.
+    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
