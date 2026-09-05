@@ -48,7 +48,7 @@
 <body>
 <div class="env">
   <h1>Artes do carrossel</h1>
-  <p class="sub">Os slides são desenhados aqui no seu celular. Salve, abra o Instagram e poste com a música fixa.</p>
+  <p class="sub">Os slides são desenhados aqui no seu celular. Salve em Fotos, abra o Instagram e poste com a música fixa. <span id="ver" style="opacity:.5"></span></p>
 
   <div class="cartao">
     <label for="qual">Carrossel</label>
@@ -165,7 +165,7 @@ function baixarTodas(){
     a.href = im.url; a.download = im.nome;
     document.body.appendChild(a); a.click(); a.remove();
   }, k * 400));   // o Chrome recusa a rajada: um a cada 400ms
-  $("#aviso").textContent = "Salvando… confira a pasta de downloads do celular.";
+  $("#aviso").textContent = "Baixando para a pasta de downloads. No celular, o certo é o botão dourado — ele salva em Fotos.";
 }
 
 async function salvar(){
@@ -208,6 +208,14 @@ async function iniciar(){
 
 $("#salvar").onclick = salvar;
 $("#baixar").onclick = baixarTodas;
+$("#ver").textContent = "v2";
+
+/* onde o aparelho sabe compartilhar (todo iPhone atual), o botao de DOWNLOAD
+   some: ele salva em Arquivos e nao em Fotos, e foi por ele que o Diego clicou
+   sem conseguir postar. */
+if (navigator.canShare && navigator.canShare({ files: [new File([], "x.jpg", { type: "image/jpeg" })] })){
+  $("#baixar").hidden = true;
+}
 $("#copiar").onclick = async () => {
   try { await navigator.clipboard.writeText(atual.legenda || ""); $("#aviso").textContent = "Legenda copiada."; }
   catch(e){ $("#aviso").textContent = "Copie da caixa abaixo."; }
