@@ -28,6 +28,10 @@ on:
         description: "Baixar e normalizar sem publicar (não precisa de token)"
         type: boolean
         default: false
+      vigia:
+        description: "Minutos acordado olhando a fila (0 = uma passada só)"
+        type: string
+        default: "0"
       forcar:
         description: "Ignorar o horário e publicar o primeiro da fila"
         type: boolean
@@ -76,6 +80,8 @@ jobs:
           # o horario do app valer. Disparo na mao faz uma passada e sai.
           if [ "${{ github.event_name }}" = "schedule" ]; then
             args="$args --vigia 350"
+          elif [ -n "${{ inputs.vigia }}" ] && [ "${{ inputs.vigia }}" != "0" ]; then
+            args="$args --vigia ${{ inputs.vigia }}"
           fi
           python publicar_story.py $args
 
