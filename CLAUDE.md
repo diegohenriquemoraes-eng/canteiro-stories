@@ -231,5 +231,11 @@ dentro do handler estoura o gesto do usuário e o iOS recusa o compartilhamento.
 Share existe, a página passa a ensinar o caminho que nunca falha: segurar o dedo na imagem →
 "Adicionar às Fotos"; e detecta webview para avisar antes do clique.
 
+**Validado no iPhone do Diego em 05/09/2026**: botão dourado → folha do iOS → *Salvar em Fotos*,
+as 8 de uma vez. Duas coisas foram necessárias além do Web Share: o botão de download **some no
+celular** (era nele que ele clicava, e salva em Arquivos, não em Fotos) e o link do app carrega
+`?v=` — o Safari tinha segurado a versão anterior em cache e ele via os botões antigos. Ao mexer
+nesta página, subir o número da versão no `linkArtes()` do app.
+
 ⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
 senão a página segue mostrando os slides antigos.
