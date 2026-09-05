@@ -244,6 +244,20 @@ def main() -> None:
     for alvo, nome, *_ in futuros:
         log(f"agendado para {alvo:%d/%m %H:%M}: {nome}")
 
+    # acordou ANTES da hora e o proximo esta' logo ali: espera e publica no
+    # minuto certo. E' o que faz o horario do app valer, mesmo com o cron do
+    # GitHub chegando quando quer.
+    espera_max = cfg.get("esperar_ate_min", 0)
+    if not devidos and futuros and espera_max and not args.dry_run:
+        alvo_prox, nome_prox, *_ = futuros[0]
+        faltam = (alvo_prox - agora).total_seconds()
+        if 0 < faltam <= espera_max * 60:
+            log(f"esperando {faltam/60:.0f} min até {alvo_prox:%H:%M} para publicar "
+                f"na hora certa: {nome_prox}")
+            time.sleep(faltam)
+            agora = datetime.now(tz)
+            devidos = [futuros.pop(0)]
+
     if not devidos and not args.forcar:
         log(f"nada vencido às {agora:%H:%M} — {len(futuros)} na fila")
         gravar(STATE, st)

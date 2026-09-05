@@ -239,3 +239,28 @@ nesta página, subir o número da versão no `linkArtes()` do app.
 
 ⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
 senão a página segue mostrando os slides antigos.
+
+## O horário do story: o que dá para prometer (05/09/2026)
+
+O Diego perguntou se o story sai na hora exata. A resposta honesta é **quase sempre, não
+sempre** — e vale saber por quê.
+
+**O cron do GitHub não é pontual.** Medido em 05/09: `*/10 * * * *` entregou execuções às
+03:04, 07:29, 10:30, 13:13 e 15:20 — de 6 a 9 por dia, com buracos de até 4 horas. O story
+marcado para as 16h só saiu (16h09) porque a execução foi disparada à mão. O GitHub engole
+disparo agendado quando a fila de runners aperta, e ela aperta nos minutos redondos.
+
+Três defesas, todas no ar:
+
+1. **Cron em minutos quebrados** (`3,13,23,33,43,53`) — pega melhor que os redondos.
+2. **O robô espera a hora certa.** Se ele acorda antes e o próximo story está dentro de
+   `esperar_ate_min` (25 min), o job **dorme até o horário** e publica no minuto marcado.
+   Minuto de runner em repositório público é ilimitado: esperar não custa nada, e é isso que
+   faz o horário escrito no app valer de verdade.
+3. **`concurrency`** no workflow — com a espera, duas execuções podiam se sobrepor e publicar
+   o mesmo story duas vezes. Agora é uma de cada vez.
+
+O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por horas. Aí o
+`atraso_max_min` (90) garante que o story sai assim que o robô acordar, em vez de pular para o
+dia seguinte. Se isso incomodar, o passo seguinte é um despertador fora do GitHub (Cloudflare
+Worker ou cron-job.org chamando `workflow_dispatch`) — depende de o Diego criar a conta.
