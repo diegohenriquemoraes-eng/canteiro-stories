@@ -60,7 +60,9 @@ const d = DESTINOS[par.get("d")] || DESTINOS.story;
 document.getElementById("titulo").textContent = d.titulo;
 document.getElementById("sub").textContent = d.sub;
 document.getElementById("app").href = d.app;
-document.getElementById("web").href = d.web;
+const bWeb = document.getElementById("web");
+bWeb.href = d.web;
+if (!d.apps) bWeb.hidden = true;   // Instagram é sempre pelo app
 
 /* dispara sozinho; o botão fica para quando o sistema pedir confirmação.
    Com vários candidatos, para na hora em que a página perde o foco — sinal de
