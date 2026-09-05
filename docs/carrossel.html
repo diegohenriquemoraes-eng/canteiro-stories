@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12151a">
+<title>Artes do carrossel</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎞️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --fundo:#12151a; --carta:#1b1f27; --carta2:#232936; --linha:#2e3542;
+    --texto:#eef1f6; --fraco:#98a2b3; --acento:#D8B888; --acento-t:#1a1205;
+    --ok:#3fb950; --erro:#f85149;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--fundo); color:var(--texto);
+    font:16px/1.5 Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 24px);
+  }
+  .env{max-width:560px;margin:0 auto;padding:20px 16px}
+  h1{font-size:22px;margin:0 0 2px;letter-spacing:-.02em}
+  .sub{color:var(--fraco);font-size:14px;margin:0 0 18px}
+  .cartao{background:var(--carta);border:1px solid var(--linha);border-radius:14px;padding:14px;margin-bottom:12px}
+  select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--linha);
+    background:var(--carta2);color:var(--texto);font:16px/1.4 inherit}
+  label{display:block;font-size:13px;color:var(--fraco);margin-bottom:6px}
+  button{
+    width:100%;padding:14px;border-radius:12px;border:0;font:600 16px/1 Archivo,sans-serif;
+    background:var(--acento);color:var(--acento-t);cursor:pointer;margin-top:10px;
+  }
+  button.sec{background:var(--carta2);color:var(--texto);border:1px solid var(--linha)}
+  button:disabled{opacity:.5}
+  .grade{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .slide{position:relative;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--linha)}
+  .slide img{display:block;width:100%;height:auto}
+  .slide a{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.65);color:#fff;
+    text-decoration:none;font-size:12px;padding:6px 9px;border-radius:8px}
+  .aviso{font-size:13px;color:var(--fraco);margin-top:12px}
+  .leg{white-space:pre-wrap;font-size:14px;color:var(--fraco);margin-top:10px;
+    background:var(--carta2);border-radius:10px;padding:12px;max-height:180px;overflow:auto}
+</style>
+</head>
+<body>
+<div class="env">
+  <h1>Artes do carrossel</h1>
+  <p class="sub">Os slides são desenhados aqui no seu celular. Salve, abra o Instagram e poste com a música fixa.</p>
+
+  <div class="cartao">
+    <label for="qual">Carrossel</label>
+    <select id="qual"></select>
+    <button id="salvar">Salvar as imagens</button>
+    <button id="compartilhar" class="sec">Compartilhar (mandar pro Instagram)</button>
+    <button id="copiar" class="sec">Copiar a legenda</button>
+    <p class="aviso" id="aviso"></p>
+  </div>
+
+  <div class="grade" id="grade"></div>
+  <div class="leg" id="legenda"></div>
+</div>
+
+<script>
+/* Identidade fixa (exigência do método): uma fonte só, fundo branco, navy da
+   marca no texto e champagne como único acento. O último slide é o CTA e
+   inverte as cores — é o que fecha todo carrossel. */
+const L = 1080, A = 1350;          // 4:5, o formato que ocupa mais tela no feed
+const NAVY = "#071025", CHAMP = "#D8B888", BRANCO = "#ffffff";
+const FONTE = "Archivo";
+
+let dados = [], atual = null, imagens = [];
+
+const $ = s => document.querySelector(s);
+
+function quebrar(ctx, texto, largura){
+  const linhas = [];
+  for (const paragrafo of texto.split("\n")){
+    let linha = "";
+    for (const p of paragrafo.split(" ")){
+      const t = linha ? linha + " " + p : p;
+      if (ctx.measureText(t).width > largura && linha){ linhas.push(linha); linha = p; }
+      else linha = t;
+    }
+    linhas.push(linha);
+  }
+  return linhas;
+}
+
+function desenhar(texto, i, total){
+  const capa = i === 0, cta = i === total - 1;
+  const cv = document.createElement("canvas");
+  cv.width = L; cv.height = A;
+  const c = cv.getContext("2d");
+
+  c.fillStyle = cta ? NAVY : BRANCO;
+  c.fillRect(0, 0, L, A);
+
+  // barra de acento no topo — a mesma em todos, é a assinatura visual
+  c.fillStyle = CHAMP;
+  c.fillRect(90, 96, capa ? 320 : 120, 10);
+
+  const margem = 90, largura = L - margem * 2;
+  let tam = capa ? 82 : 62;
+  const peso = capa ? 800 : 500;
+  let linhas;
+  do {
+    c.font = `${peso} ${tam}px ${FONTE}, sans-serif`;
+    linhas = quebrar(c, texto, largura);
+    if (linhas.length * tam * 1.22 <= A - 460) break;
+    tam -= 3;
+  } while (tam > 30);
+
+  c.fillStyle = cta ? BRANCO : NAVY;
+  c.textBaseline = "top";
+  const alturaBloco = linhas.length * tam * 1.22;
+  let y = Math.max(190, (A - alturaBloco) / 2 - 40);
+  for (const linha of linhas){ c.fillText(linha, margem, y); y += tam * 1.22; }
+
+  // rodapé: número do slide e o @ — some no CTA, que já é a assinatura
+  c.font = `500 34px ${FONTE}, sans-serif`;
+  c.fillStyle = cta ? "rgba(255,255,255,.75)" : "#9aa3ad";
+  c.fillText("@vendanaobra", margem, A - 150);
+  if (!cta){
+    const n = `${i + 1}/${total}`;
+    c.fillStyle = CHAMP;
+    c.fillText(n, L - margem - c.measureText(n).width, A - 150);
+  }
+  return cv;
+}
+
+async function montar(){
+  const c = atual;
+  imagens = [];
+  $("#grade").innerHTML = "";
+  $("#legenda").textContent = c.legenda || "";
+  await document.fonts.ready;
+  for (let i = 0; i < c.slides.length; i++){
+    const cv = desenhar(c.slides[i], i, c.slides.length);
+    const url = cv.toDataURL("image/jpeg", 0.92);
+    const nome = `${c.dia}-carrossel${c.n}-${String(i + 1).padStart(2, "0")}.jpg`;
+    imagens.push({ nome, url, cv });
+    const div = document.createElement("div");
+    div.className = "slide";
+    div.innerHTML = `<img src="${url}" alt="slide ${i + 1}"><a download="${nome}" href="${url}">salvar</a>`;
+    $("#grade").appendChild(div);
+  }
+  $("#aviso").textContent = `${imagens.length} slides prontos · ${c.dia} ${c.hora}`;
+}
+
+function baixarTodas(){
+  imagens.forEach((im, k) => setTimeout(() => {
+    const a = document.createElement("a");
+    a.href = im.url; a.download = im.nome;
+    document.body.appendChild(a); a.click(); a.remove();
+  }, k * 400));   // o Chrome recusa a rajada: um a cada 400ms
+  $("#aviso").textContent = "Salvando… confira a pasta de downloads do celular.";
+}
+
+async function arquivos(){
+  const out = [];
+  for (const im of imagens){
+    const blob = await new Promise(r => im.cv.toBlob(r, "image/jpeg", 0.92));
+    out.push(new File([blob], im.nome, { type: "image/jpeg" }));
+  }
+  return out;
+}
+
+async function compartilhar(){
+  try {
+    const files = await arquivos();
+    if (navigator.canShare && navigator.canShare({ files })){
+      await navigator.share({ files, text: atual.legenda || "" });
+    } else {
+      $("#aviso").textContent = "Este aparelho não compartilha arquivos — use Salvar as imagens.";
+    }
+  } catch(e){ if (e.name !== "AbortError") $("#aviso").textContent = "Não deu: " + e.message; }
+}
+
+async function iniciar(){
+  const r = await fetch("carrosseis.json?" + Date.now());
+  dados = await r.json();
+  const hoje = new Date(Date.now() - 3 * 3600e3).toISOString().slice(0, 10);
+  const sel = $("#qual");
+  dados.forEach((c, i) => {
+    const o = document.createElement("option");
+    o.value = i;
+    o.textContent = `${c.dia.slice(8)}/${c.dia.slice(5,7)} ${c.hora} · ${c.titulo}`;
+    sel.appendChild(o);
+  });
+  const par = new URLSearchParams(location.search);
+  let idx = dados.findIndex(c => c.dia === par.get("d") && String(c.n) === (par.get("n") || "1"));
+  if (idx < 0) idx = Math.max(0, dados.findIndex(c => c.dia >= hoje));
+  sel.value = idx;
+  atual = dados[idx];
+  await montar();
+  sel.onchange = async () => { atual = dados[sel.value]; await montar(); };
+}
+
+$("#salvar").onclick = baixarTodas;
+$("#compartilhar").onclick = compartilhar;
+$("#copiar").onclick = async () => {
+  try { await navigator.clipboard.writeText(atual.legenda || ""); $("#aviso").textContent = "Legenda copiada."; }
+  catch(e){ $("#aviso").textContent = "Copie da caixa abaixo."; }
+};
+
+iniciar().catch(e => { $("#aviso").textContent = "Erro ao carregar: " + e.message; });
+</script>
+</body>
+</html>
