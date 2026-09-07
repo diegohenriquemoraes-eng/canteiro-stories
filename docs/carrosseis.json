@@ -2,7 +2,7 @@
  {
   "dia": "2026-09-05",
   "dow": "Sáb",
-  "hora": "16:30",
+  "hora": "18:15",
   "n": 1,
   "titulo": "O que fazer no sábado para vender na segunda",
   "slides": [
@@ -20,7 +20,7 @@
  {
   "dia": "2026-09-07",
   "dow": "Seg",
-  "hora": "13:30",
+  "hora": "10:45",
   "n": 1,
   "titulo": "Carisma não é método: 6 sinais",
   "slides": [
@@ -38,7 +38,7 @@
  {
   "dia": "2026-09-07",
   "dow": "Seg",
-  "hora": "16:30",
+  "hora": "16:15",
   "n": 2,
   "titulo": "O que sai da empresa junto com o vendedor",
   "slides": [
@@ -56,7 +56,7 @@
  {
   "dia": "2026-09-08",
   "dow": "Ter",
-  "hora": "10:30",
+  "hora": "10:45",
   "n": 1,
   "titulo": "Quem decide a sua venda não está na conversa",
   "slides": [
@@ -74,7 +74,7 @@
  {
   "dia": "2026-09-08",
   "dow": "Ter",
-  "hora": "16:30",
+  "hora": "16:15",
   "n": 2,
   "titulo": "O que fazer quando some o decisor",
   "slides": [
@@ -92,25 +92,7 @@
  {
   "dia": "2026-09-09",
   "dow": "Qua",
-  "hora": "12:00",
-  "n": 2,
-  "titulo": "5 motivos pelos quais o arquiteto não te indica",
-  "slides": [
-   "5 motivos pelos quais o arquiteto não te indica (e nenhum é preço)",
-   "1. Você trata ele como cliente. Cliente final é uma oportunidade; arquiteto é uma carteira.",
-   "2. Você entra vendendo. Prospecção de arquiteto entra por conhecimento e experiência.",
-   "3. Você some depois da obra. Relacionamento morre de silêncio, não de briga.",
-   "4. Você não deu motivo para ele arriscar o nome. Indicação é reputação emprestada.",
-   "5. Você chega no orçamento, não no projeto. A decisão já foi tomada em outra mesa.",
-   "Cadência 24h / 7 dias / 30 dias. Escrito, agendado, com dono.",
-   "Salva e manda para quem vende esquadria. Raio-X do comercial: link na bio."
-  ],
-  "legenda": "Arquiteto não é cliente. É canal.\n\nCinco motivos pelos quais ele não te indica — e nenhum é preço.\n\nQual desses você reconhece na sua empresa?\n@vendanaobra\n\n#arquitetura #esquadrias #vendas #especificacao"
- },
- {
-  "dia": "2026-09-09",
-  "dow": "Qua",
-  "hora": "16:30",
+  "hora": "11:30",
   "n": 1,
   "titulo": "5 coisas que o arquiteto quer ouvir de você",
   "slides": [
@@ -126,27 +108,27 @@
   "legenda": "O arquiteto não indica quem é barato. Indica quem não o faz passar vergonha.\n\nMedida conferida · projeto respeitado · aviso antes do cliente · pós-obra assumido · foto do executado.\n\nNenhuma fala de preço. Todas falam de risco.\n\nQuantas dessas você entrega hoje?\n@vendanaobra\n\n#arquitetura #especificacao #esquadrias #indicacao"
  },
  {
-  "dia": "2026-09-10",
-  "dow": "Qui",
-  "hora": "12:00",
+  "dia": "2026-09-09",
+  "dow": "Qua",
+  "hora": "18:30",
   "n": 2,
-  "titulo": "Os 5 Passos da Venda: onde a sua empresa perde",
+  "titulo": "5 motivos pelos quais o arquiteto não te indica",
   "slides": [
-   "Os 5 Passos da Venda — e o passo onde quase toda empresa da construção perde",
-   "1. Atração. O cliente chega. Na maioria das empresas que eu abro, isto está OK.",
-   "2. Conexão. Ele conversa, pede orçamento. Também costuma estar OK.",
-   "3. Diagnóstico. Aqui some: a proposta sai antes da hora e vira tabela de preço.",
-   "4. Oferta. Valor antes do preço — e silêncio depois dele.",
-   "5. Decisão. Aqui some de novo: a conversa acaba sem próximo passo.",
-   "Atrair quase nunca é o que precisa de conserto. Passo 3 e Passo 5 são.",
-   "Descobrir em qual você perde leva 3 minutos. Raio-X na bio."
+   "5 motivos pelos quais o arquiteto não te indica (e nenhum é preço)",
+   "1. Você trata ele como cliente. Cliente final é uma oportunidade; arquiteto é uma carteira.",
+   "2. Você entra vendendo. Prospecção de arquiteto entra por conhecimento e experiência.",
+   "3. Você some depois da obra. Relacionamento morre de silêncio, não de briga.",
+   "4. Você não deu motivo para ele arriscar o nome. Indicação é reputação emprestada.",
+   "5. Você chega no orçamento, não no projeto. A decisão já foi tomada em outra mesa.",
+   "Cadência 24h / 7 dias / 30 dias. Escrito, agendado, com dono.",
+   "Salva e manda para quem vende esquadria. Raio-X do comercial: link na bio."
   ],
-  "legenda": "Toda empresa acha que o problema é atrair. Quase nunca é.\n\nO cliente chega — e some no diagnóstico ou no fechamento.\n\nEm qual dos 5 Passos a sua empresa sangra?\n@vendanaobra\n\n#vendas #processocomercial #construcaocivil"
+  "legenda": "Arquiteto não é cliente. É canal.\n\nCinco motivos pelos quais ele não te indica — e nenhum é preço.\n\nQual desses você reconhece na sua empresa?\n@vendanaobra\n\n#arquitetura #esquadrias #vendas #especificacao"
  },
  {
   "dia": "2026-09-10",
   "dow": "Qui",
-  "hora": "16:30",
+  "hora": "11:30",
   "n": 1,
   "titulo": "Os 3 números que revelam o buraco",
   "slides": [
@@ -162,27 +144,27 @@
   "legenda": "Entraram · viraram proposta apresentada · têm próximo passo com data.\n\nSe o primeiro é alto e o segundo é baixo, você perde no diagnóstico. Se o segundo é alto e o terceiro é baixo, perde no follow-up.\n\nTrês números e o buraco aparece.\n\nVocê sabe os seus?\n@vendanaobra\n\n#gestaocomercial #indicadores #vendas #construcaocivil"
  },
  {
-  "dia": "2026-09-11",
-  "dow": "Sex",
-  "hora": "12:00",
+  "dia": "2026-09-10",
+  "dow": "Qui",
+  "hora": "18:30",
   "n": 2,
-  "titulo": "Cadência 24h · 7 dias · 30 dias",
+  "titulo": "Os 5 Passos da Venda: onde a sua empresa perde",
   "slides": [
-   "A cadência que faz proposta parada virar caixa: 24h · 7 dias · 30 dias",
-   "24 horas depois da conversa: um contato. Curto. Só para a proposta não esfriar.",
-   "7 dias depois: outro contato, com valor — uma informação, um caso, uma pergunta.",
-   "30 dias depois: relacionamento estruturado. Escrito, agendado, com dono.",
-   "Sem data marcada, a proposta tem prazo de validade: a memória do cliente.",
-   "Follow-up não é insistir. É a parte da venda que ninguém agendou.",
-   "Some as propostas dos últimos 30 dias sem resposta. Esse número é o seu caixa parado.",
-   "Quer saber onde o seu comercial perde? Raio-X, 3 minutos, na bio."
+   "Os 5 Passos da Venda — e o passo onde quase toda empresa da construção perde",
+   "1. Atração. O cliente chega. Na maioria das empresas que eu abro, isto está OK.",
+   "2. Conexão. Ele conversa, pede orçamento. Também costuma estar OK.",
+   "3. Diagnóstico. Aqui some: a proposta sai antes da hora e vira tabela de preço.",
+   "4. Oferta. Valor antes do preço — e silêncio depois dele.",
+   "5. Decisão. Aqui some de novo: a conversa acaba sem próximo passo.",
+   "Atrair quase nunca é o que precisa de conserto. Passo 3 e Passo 5 são.",
+   "Descobrir em qual você perde leva 3 minutos. Raio-X na bio."
   ],
-  "legenda": "Follow-up não é insistir. É a parte da venda que ninguém agendou.\n\n24h · 7 dias · 30 dias. Escrito, agendado, com dono.\n\nQuantas propostas suas estão sem data de retorno agora?\n@vendanaobra\n\n#followup #vendas #construcaocivil"
+  "legenda": "Toda empresa acha que o problema é atrair. Quase nunca é.\n\nO cliente chega — e some no diagnóstico ou no fechamento.\n\nEm qual dos 5 Passos a sua empresa sangra?\n@vendanaobra\n\n#vendas #processocomercial #construcaocivil"
  },
  {
   "dia": "2026-09-11",
   "dow": "Sex",
-  "hora": "16:30",
+  "hora": "11:30",
   "n": 1,
   "titulo": "O que escrever no follow-up (sem parecer cobrança)",
   "slides": [
@@ -196,6 +178,24 @@
    "Salva e usa nas propostas paradas. Raio-X: link na bio."
   ],
   "legenda": "“E aí, decidiu?” é cobrança — e cobrança some com o cliente.\n\n24h por escrito · 7 dias com algo útil · 15 dias perguntando a dúvida nova · 30 dias sobre o prazo da obra.\n\nCada contato dá um motivo novo para ele responder.\n\nQuantas propostas suas estão paradas agora?\n@vendanaobra\n\n#followup #vendas #esquadrias #construcaocivil"
+ },
+ {
+  "dia": "2026-09-11",
+  "dow": "Sex",
+  "hora": "18:30",
+  "n": 2,
+  "titulo": "Cadência 24h · 7 dias · 30 dias",
+  "slides": [
+   "A cadência que faz proposta parada virar caixa: 24h · 7 dias · 30 dias",
+   "24 horas depois da conversa: um contato. Curto. Só para a proposta não esfriar.",
+   "7 dias depois: outro contato, com valor — uma informação, um caso, uma pergunta.",
+   "30 dias depois: relacionamento estruturado. Escrito, agendado, com dono.",
+   "Sem data marcada, a proposta tem prazo de validade: a memória do cliente.",
+   "Follow-up não é insistir. É a parte da venda que ninguém agendou.",
+   "Some as propostas dos últimos 30 dias sem resposta. Esse número é o seu caixa parado.",
+   "Quer saber onde o seu comercial perde? Raio-X, 3 minutos, na bio."
+  ],
+  "legenda": "Follow-up não é insistir. É a parte da venda que ninguém agendou.\n\n24h · 7 dias · 30 dias. Escrito, agendado, com dono.\n\nQuantas propostas suas estão sem data de retorno agora?\n@vendanaobra\n\n#followup #vendas #construcaocivil"
  },
  {
   "dia": "2026-09-12",
@@ -218,7 +218,7 @@
  {
   "dia": "2026-09-12",
   "dow": "Sáb",
-  "hora": "13:00",
+  "hora": "16:00",
   "n": 2,
   "titulo": "O que o arquiteto ouve quando você fala de preço",
   "slides": [
@@ -254,7 +254,7 @@
  {
   "dia": "2026-09-13",
   "dow": "Dom",
-  "hora": "13:00",
+  "hora": "16:00",
   "n": 2,
   "titulo": "O roteiro da primeira conversa",
   "slides": [
@@ -290,7 +290,7 @@
  {
   "dia": "2026-09-14",
   "dow": "Seg",
-  "hora": "13:00",
+  "hora": "16:00",
   "n": 2,
   "titulo": "O custo real de uma semana de atraso",
   "slides": [
@@ -326,7 +326,7 @@
  {
   "dia": "2026-09-15",
   "dow": "Ter",
-  "hora": "13:00",
+  "hora": "18:30",
   "n": 2,
   "titulo": "Como pedir indicação sem parecer carente",
   "slides": [
@@ -362,7 +362,7 @@
  {
   "dia": "2026-09-16",
   "dow": "Qua",
-  "hora": "13:00",
+  "hora": "18:30",
   "n": 2,
   "titulo": "5 trocas para usar no lugar do desconto",
   "slides": [
@@ -398,7 +398,7 @@
  {
   "dia": "2026-09-17",
   "dow": "Qui",
-  "hora": "13:00",
+  "hora": "18:30",
   "n": 2,
   "titulo": "Os 5 números que todo dono precisa saber",
   "slides": [
@@ -434,7 +434,7 @@
  {
   "dia": "2026-09-18",
   "dow": "Sex",
-  "hora": "11:30",
+  "hora": "14:00",
   "n": 2,
   "titulo": "As 5 perguntas obrigatórias na obra",
   "slides": [
@@ -452,7 +452,7 @@
  {
   "dia": "2026-09-18",
   "dow": "Sex",
-  "hora": "16:30",
+  "hora": "19:00",
   "n": 3,
   "titulo": "O erro de medição que custa a obra",
   "slides": [
@@ -488,7 +488,7 @@
  {
   "dia": "2026-09-19",
   "dow": "Sáb",
-  "hora": "11:30",
+  "hora": "14:00",
   "n": 2,
   "titulo": "3 frases que matam a sua proposta",
   "slides": [
@@ -506,7 +506,7 @@
  {
   "dia": "2026-09-19",
   "dow": "Sáb",
-  "hora": "16:30",
+  "hora": "19:00",
   "n": 3,
   "titulo": "Como apresentar em 15 minutos",
   "slides": [
@@ -542,7 +542,7 @@
  {
   "dia": "2026-09-20",
   "dow": "Dom",
-  "hora": "11:30",
+  "hora": "14:00",
   "n": 2,
   "titulo": "As 5 objeções que você vai ouvir",
   "slides": [
@@ -560,7 +560,7 @@
  {
   "dia": "2026-09-20",
   "dow": "Dom",
-  "hora": "16:30",
+  "hora": "19:00",
   "n": 3,
   "titulo": "O que fazer quando ele diz “vou pensar”",
   "slides": [
@@ -614,7 +614,7 @@
  {
   "dia": "2026-09-21",
   "dow": "Seg",
-  "hora": "17:30",
+  "hora": "19:45",
   "n": 3,
   "titulo": "Os 5 medos do seu cliente",
   "slides": [
@@ -669,7 +669,7 @@
  {
   "dia": "2026-09-22",
   "dow": "Ter",
-  "hora": "17:30",
+  "hora": "19:45",
   "n": 3,
   "titulo": "O que fazer quando dá problema na obra",
   "slides": [
@@ -723,7 +723,7 @@
  {
   "dia": "2026-09-23",
   "dow": "Qua",
-  "hora": "17:30",
+  "hora": "19:45",
   "n": 3,
   "titulo": "Quando dar desconto (e quando não)",
   "slides": [
@@ -759,7 +759,7 @@
  {
   "dia": "2026-09-24",
   "dow": "Qui",
-  "hora": "12:00",
+  "hora": "14:00",
   "n": 2,
   "titulo": "A conta do cliente ruim",
   "slides": [
@@ -777,7 +777,7 @@
  {
   "dia": "2026-09-24",
   "dow": "Qui",
-  "hora": "18:00",
+  "hora": "20:00",
   "n": 3,
   "titulo": "Como dizer não sem perder a ponte",
   "slides": [
@@ -813,7 +813,7 @@
  {
   "dia": "2026-09-25",
   "dow": "Sex",
-  "hora": "12:00",
+  "hora": "14:00",
   "n": 2,
   "titulo": "Os 4 motivos reais de perder venda",
   "slides": [
@@ -831,7 +831,7 @@
  {
   "dia": "2026-09-25",
   "dow": "Sex",
-  "hora": "18:00",
+  "hora": "20:00",
   "n": 3,
   "titulo": "O que fazer com o não, na prática",
   "slides": [
