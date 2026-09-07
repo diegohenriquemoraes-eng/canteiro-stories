@@ -60,7 +60,7 @@
   "n": 1,
   "titulo": "Quem decide a sua venda não está na conversa",
   "slides": [
-   "Quem pede o orçamento quase nunca decide sozinho. Pergunte logo: “além de você, quem mais decide junto?”",
+   "Você está negociando com quem não pode dizer sim — e vai negociar de novo com quem não estava lá.",
    "Em obra, quem pede o orçamento quase nunca decide sozinho.",
    "Tem o arquiteto, que especificou antes de você chegar.",
    "Tem quem paga, que só olha número e risco.",
@@ -78,7 +78,7 @@
   "n": 2,
   "titulo": "O que fazer quando some o decisor",
   "slides": [
-   "“Vou falar com meu sócio” não é o fim: é a hora de sair com data. “Te retorno quinta às dez, pode ser?”",
+   "Quem não está na mesa decide com o que sobrou da sua explicação.",
    "1. Não aceite a conversa terminar sem data: “te retorno quinta às dez, pode ser?”",
    "2. Ofereça estar junto: “dez minutos com vocês dois resolve mais que um PDF”.",
    "3. Mande material que ELE consiga apresentar — não a sua proposta técnica.",
@@ -114,7 +114,7 @@
   "n": 2,
   "titulo": "5 motivos pelos quais o arquiteto não te indica",
   "slides": [
-   "O arquiteto não te indica porque você trata ele como cliente. Cliente é oportunidade; arquiteto é carteira.",
+   "Indicação é reputação emprestada. O arquiteto não empresta a dele para quem some depois da obra.",
    "1. Você trata ele como cliente. Cliente final é uma oportunidade; arquiteto é uma carteira.",
    "2. Você entra vendendo. Prospecção de arquiteto entra por conhecimento e experiência.",
    "3. Você some depois da obra. Relacionamento morre de silêncio, não de briga.",
@@ -222,7 +222,7 @@
   "n": 2,
   "titulo": "O que o arquiteto ouve quando você fala de preço",
   "slides": [
-   "Você diz “consigo um valor melhor”. O arquiteto ouve “esse fornecedor oscila”.",
+   "O arquiteto não gasta o dinheiro dele: gasta a reputação. Por isso o argumento com ele nunca é preço.",
    "Você diz: “consigo um valor melhor”. Ele ouve: “esse fornecedor negocia — logo, oscila”.",
    "Você diz: “é o mais barato do mercado”. Ele ouve: “se der problema, sobra pra mim”.",
    "O arquiteto não gasta o dinheiro dele. Ele gasta a reputação dele.",
@@ -276,7 +276,7 @@
   "n": 1,
   "titulo": "Por que o cliente aceita pagar mais",
   "slides": [
-   "O cliente paga mais por prazo garantido, medida conferida e pós-obra atendido. Nenhum deles é o produto.",
+   "O cliente aceita pagar mais — mas por processo, nunca por produto.",
    "Ele paga mais por PRAZO garantido: obra parada custa mais que a esquadria.",
    "Ele paga mais por MEDIDA conferida: retrabalho atrasa tudo que vem depois.",
    "Ele paga mais por PÓS-OBRA atendido: ninguém quer caçar fornecedor sumido.",
@@ -330,7 +330,7 @@
   "n": 2,
   "titulo": "Como pedir indicação sem parecer carente",
   "slides": [
-   "“Se souber de alguém, me indica” não é pedido, é torcida. Peça uma indicação com nome.",
+   "Indicação não se pede em lista. Pede-se uma, com nome e momento.",
    "Errado: “se souber de alguém, me indica”. Isso não é pedido, é torcida.",
    "Certo: pedido com contexto, nome e momento.",
    "“Quem mais da sua obra ainda não resolveu esquadria?”",
@@ -456,7 +456,7 @@
   "n": 3,
   "titulo": "O erro de medição que custa a obra",
   "slides": [
-   "Medir o vão sem conferir prumo, nível e esquadro é o erro que vira quebra-quebra no dia da instalação.",
+   "Erro de medição não aparece na medição. Aparece no dia da instalação, com o cliente olhando.",
    "Medir o vão sem conferir prumo, nível e esquadro.",
    "O vão tem 1,20 na base e 1,18 no topo — e você prometeu peça única.",
    "Quem descobre isso é o instalador, no dia, com o cliente olhando.",
@@ -492,7 +492,7 @@
   "n": 2,
   "titulo": "3 frases que matam a sua proposta",
   "slides": [
-   "“Qualquer coisa me chama” devolve o controle e encerra a conversa. É a frase que mata a proposta pronta.",
+   "As três frases que matam a proposta depois de pronta são ditas por você, não pelo cliente.",
    "“Qualquer coisa me chama.” — devolve o controle e encerra a conversa.",
    "“Se precisar, a gente vê uma condição.” — você negociou sozinho, contra você.",
    "“Te mando por WhatsApp e você dá uma olhada.” — vira PDF solto e instrumento de barganha.",
@@ -510,7 +510,7 @@
   "n": 3,
   "titulo": "Como apresentar em 15 minutos",
   "slides": [
-   "15 minutos apresentando valem mais que o PDF solto: repita o que ele disse, mostre a solução, fale o preço e cale a boca.",
+   "15 minutos apresentando valem mais que o PDF solto: repita o que ele disse, fale o preço e cale a boca.",
    "Minuto 1-3: repita o que ELE te disse. Prazo, uso, medo. Ele precisa se ouvir.",
    "Minuto 4-8: mostre a solução ligada a cada coisa que ele falou.",
    "Minuto 9-11: o que está incluso e o que não está. Sem pressa nessa parte.",
@@ -546,7 +546,7 @@
   "n": 2,
   "titulo": "As 5 objeções que você vai ouvir",
   "slides": [
-   "“Tá caro” = não vi o risco que isso evita. “Vou pensar” = falta um critério para decidir.",
+   "Toda objeção que você ouve no fim foi criada no começo, no diagnóstico.",
    "“Tá caro.” = não vi o risco que isso evita.",
    "“Vou pensar.” = falta um critério para decidir.",
    "“Vou falar com minha esposa.” = tem outro decisor que você não conheceu.",
@@ -582,7 +582,7 @@
   "n": 1,
   "titulo": "O que o cliente compra quando compra esquadria",
   "slides": [
-   "Ninguém acorda querendo comprar janela. Ele quer o quarto silencioso e a obra entregue na data prometida.",
+   "Ninguém acorda querendo comprar janela — e nenhuma frase que vende esquadria tem a palavra “perfil”.",
    "Ele quer o quarto silencioso na avenida movimentada.",
    "Quer a sala que não esquenta às três da tarde.",
    "Quer a chuva de vento sem poça no chão.",
@@ -600,7 +600,7 @@
   "n": 2,
   "titulo": "Traduza ficha técnica em consequência",
   "slides": [
-   "“Vidro laminado com PVB acústico” não vende. “Você dorme sem ouvir a avenida” vende.",
+   "Nenhum cliente compra a ficha técnica. Todos compram a consequência dela.",
    "“Vidro laminado com PVB acústico” → “é o que faz você dormir sem ouvir a avenida”.",
    "“Perfil com ruptura térmica” → “o ar-condicionado liga menos e a conta cai”.",
    "“Classe A na NBR 10821” → “é o que evita infiltração na chuva com vento”.",
@@ -618,7 +618,7 @@
   "n": 3,
   "titulo": "Os 5 medos do seu cliente",
   "slides": [
-   "Ele não tem medo de gastar. Tem medo de escolher errado e descobrir só depois de instalado.",
+   "Ele não tem medo de gastar. Tem medo de errar sozinho numa decisão que ele faz uma vez na vida.",
    "1. Escolher errado e descobrir só depois de instalado.",
    "2. Atrasar a obra inteira esperando a esquadria.",
    "3. Ter infiltração e não saber de quem cobrar.",
@@ -636,7 +636,7 @@
   "n": 1,
   "titulo": "A instalação é a sua vitrine",
   "slides": [
-   "Na instalação o cliente vê o sapato da equipe, o papelão no chão e como vocês falam quando algo não encaixa.",
+   "A sua vitrine não é o showroom. É o dia da instalação, dentro da casa do cliente.",
    "Ele vê como a sua equipe entra: uniforme, sapato, papelão no chão.",
    "Vê como vocês falam entre si quando algo não encaixa.",
    "Vê o que acontece quando o vão está torto — se vira problema dele ou seu.",
@@ -654,7 +654,7 @@
   "n": 2,
   "titulo": "Checklist do dia da instalação",
   "slides": [
-   "Avisar na véspera, chegar no horário, proteger o piso e sair com a casa limpa evita quase toda reclamação.",
+   "Quase toda reclamação de instalação não é sobre a esquadria. É sobre o que ninguém combinou antes.",
    "Avisar o cliente na véspera: horário, quantas pessoas, quanto tempo.",
    "Chegar no horário. Se atrasar, avisar antes — não depois.",
    "Proteger piso e móveis antes de abrir a primeira caixa.",
@@ -673,7 +673,7 @@
   "n": 3,
   "titulo": "O que fazer quando dá problema na obra",
   "slides": [
-   "Deu problema na obra: assuma antes de saber de quem é a culpa e diga o prazo real. Nunca discuta na frente do cliente.",
+   "Quem assume antes de saber de quem é a culpa sai maior do problema do que entrou nele.",
    "1. Não discuta na frente do cliente. Nunca.",
    "2. Assuma antes de saber de quem é a culpa: “eu resolvo”.",
    "3. Diga o prazo real da solução, não o desejado.",
@@ -709,7 +709,7 @@
   "n": 2,
   "titulo": "3 formas de apresentar o mesmo preço",
   "slides": [
-   "“R$ 1.100 o metro” vira comparação. “A suíte e a sala resolvidas por R$ 48.000, com garantia” vira decisão.",
+   "Mesmo número, três formas de dizer. Duas viram comparação; só uma vira decisão.",
    "1. “São R$ 48.000, ou R$ 1.100 o metro.” — vira comparação.",
    "2. “São R$ 48.000 no total.” — vira susto sem contexto.",
    "3. “A suíte e a sala ficam resolvidas por R$ 48.000, com instalação, arremate e garantia de 5 anos.” — vira decisão.",
@@ -727,7 +727,7 @@
   "n": 3,
   "titulo": "Quando dar desconto (e quando não)",
   "slides": [
-   "Desconto dado logo depois do preço ensina o cliente a pedir sempre. Dê contra data de fechamento, nunca contra pedido.",
+   "Concessão sem contrapartida é doação. Desconto se dá contra data, escopo ou indicação — nunca contra pedido.",
    "NÃO dê: logo depois de falar o preço — ensina o cliente a pedir sempre.",
    "NÃO dê: para “destravar” quem ainda não decidiu — ele não travou no preço.",
    "NÃO dê: por WhatsApp, sem contrapartida, no meio da conversa.",
@@ -745,7 +745,7 @@
   "n": 1,
   "titulo": "Os 5 sinais do cliente que vai dar prejuízo",
   "slides": [
-   "Cliente que fala mal de todos os fornecedores anteriores vai falar de você. É o primeiro sinal de prejuízo.",
+   "Um sinal é alerta. Três é conta no vermelho — e todos aparecem já na primeira conversa.",
    "1. Fala mal de todos os fornecedores anteriores. Você será o próximo.",
    "2. Pede preço antes de deixar você entender a obra.",
    "3. Muda o escopo três vezes antes de fechar.",
@@ -763,7 +763,7 @@
   "n": 2,
   "titulo": "A conta do cliente ruim",
   "slides": [
-   "O cliente que dá trabalho paga o mesmo e consome 3 visitas, 2 retrabalhos e 40 dias. A margem de 12% vira 3%.",
+   "Cliente ruim não custa paciência. Custa margem — e ninguém mede isso.",
    "Ele consome 3 visitas em vez de 1.",
    "Muda o projeto 2 vezes: retrabalho de medição e de proposta.",
    "Atrasa a decisão em 40 dias: sua equipe fica parada ou remanejada.",
@@ -799,7 +799,7 @@
   "n": 1,
   "titulo": "A ligação que ninguém faz",
   "slides": [
-   "O cliente disse não? Ligue uma semana depois — não para insistir, para perguntar o que pesou na escolha.",
+   "Nove em cada dez clientes que disseram não explicam por quê. Porque ninguém pergunta.",
    "Não é para insistir. É para aprender.",
    "“Só queria entender: o que pesou na escolha?”",
    "Cale a boca e anote. Não defenda, não explique, não ofereça.",
@@ -835,7 +835,7 @@
   "n": 3,
   "titulo": "O que fazer com o não, na prática",
   "slides": [
-   "Perdeu a venda: registre o motivo com as palavras do cliente e marque para ligar daqui a 90 dias.",
+   "O não só custa duas vezes se ninguém registrar por que ele veio.",
    "1. Registre o motivo, com as palavras do cliente.",
    "2. Marque para ligar daqui a 90 dias. Obra atrasa, fornecedor falha.",
    "3. Mande uma mensagem sem oferta: “qualquer coisa, estou aqui”.",
