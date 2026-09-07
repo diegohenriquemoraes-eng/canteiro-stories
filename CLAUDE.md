@@ -62,6 +62,22 @@ chave vazada não consegue trocar o que o Actions roda — mas consegue editar
 motivo de o escopo ser o mínimo e de a chave não ir para lugar nenhum além do
 navegador dele.
 
+## O calendário assinado do iPhone (07/09/2026)
+
+`docs/canteiro-stories.ics` não é do robô: é o **alerta** que avisa o Diego de subir cada
+story no horário, com o roteiro do cartão dentro do evento. O iPhone dele **assina**
+`https://diegohenriquemoraes-eng.github.io/canteiro-stories/canteiro-stories.ics` (o Pages
+serve como `text/calendar`), então o arquivo no ar É o calendário — nada é importado à mão.
+
+Quem gera é `Perffec\Claude\Canteiro\gerar_ics.py`, no PC, lendo o próprio Canteiro
+(`canteiro-vno.html`, fora deste repo): ele escreve aqui, commita e dá push. **Toda mudança de
+quantidade ou horário de story obriga a rodar o script** — a versão anterior ficou tocando 5
+alertas por dia com o Canteiro já em 9, e ninguém viu por semanas.
+
+⚠ Nada neste repo regenera esse arquivo: se o Canteiro mudar e o script não rodar, o calendário
+mente em silêncio. E o push precisa de `git pull --rebase` antes — o publicador commita da nuvem
+a cada story.
+
 ## Arquivo grande sobe em pedaços (04/09/2026)
 
 Um vídeo de 75 MB levou **422** da API de blobs — *"Sorry, your input was too
