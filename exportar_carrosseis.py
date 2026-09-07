@@ -58,6 +58,9 @@ def main():
                 "hora": c.get("hora", ""),
                 "n": i + 1,
                 "titulo": c.get("titulo", ""),
+                # bio = carrossel de dono/gestor (CTA manda para o Raio-X)
+                # compartilhar = carrossel de vendedor (CTA pede salvar/mandar)
+                "publico": c.get("publico", ""),
                 "slides": c.get("slides", []),
                 "legenda": c.get("legenda", ""),
             })
