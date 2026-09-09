@@ -32,3 +32,9 @@ publicação. Escrito por `publicar_story.py`.
 - Tipo: imagem
 - Stories: 17935863534366254
 - Publicado em: 2026-09-08T17:30:20
+
+## 08/09/2026 17:30 — 2026-09-08-1730-7efc8256-b38f-4fc6-abe0-80b4.jpg
+
+- Tipo: imagem
+- Stories: 18389819926164638
+- Publicado em: 2026-09-08T20:30:19
