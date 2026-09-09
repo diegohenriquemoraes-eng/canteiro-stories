@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -20,16 +21,43 @@ from zoneinfo import ZoneInfo
 import fila as filamod
 
 BASE = Path(__file__).parent
-API = ("https://api.github.com/repos/diegohenriquemoraes-eng/"
-       "canteiro-stories/contents/?ref=entrada")
+REPO = "https://api.github.com/repos/diegohenriquemoraes-eng/canteiro-stories"
+API = f"{REPO}/contents/?ref=entrada"
+API_RELEASE = f"{REPO}/releases/tags/fila"
 TETO_MB = 90
 
 
 def _fila_publica():
-    """A branch `entrada` é pública: dá para conferir sem token nenhum."""
-    with urllib.request.urlopen(API, timeout=30) as r:
-        dados = json.loads(r.read())
+    """A branch `entrada` é pública: dá para conferir sem token nenhum.
+
+    Fila vazia é a branch NÃO EXISTIR (`entrada_remover` apaga a ref quando não
+    sobra nada), e aí a API devolve 404 — que aqui é fila vazia, não erro.
+    """
+    try:
+        with urllib.request.urlopen(API, timeout=30) as r:
+            dados = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return []
+        raise
     return [d for d in dados if d.get("type") == "file"]
+
+
+def _fila_release():
+    """A outra porta: arquivo anexado à mão na Release `fila`.
+
+    O publicador lê as DUAS (`publicar_story.py`), e até 08/09/2026 este
+    conferidor lia só a branch — foi assim que um story ficou de pé depois de
+    o dia ter sido \"cancelado\" pelo que a tela de envio mostrava.
+    """
+    try:
+        with urllib.request.urlopen(API_RELEASE, timeout=30) as r:
+            dados = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return []
+        raise
+    return [{"name": a["name"], "size": a["size"]} for a in dados.get("assets", [])]
 
 
 def conferir():
@@ -39,7 +67,7 @@ def conferir():
     agora = datetime.now(tz)
 
     saida = []
-    for it in sorted(_fila_publica(), key=lambda x: x["name"]):
+    for it in sorted(_fila_publica() + _fila_release(), key=lambda x: x["name"]):
         nome, tam = it["name"], it["size"]
         alvo = filamod.alvo_do_nome(nome, agora, cfg["atraso_max_min"])
         problemas = []

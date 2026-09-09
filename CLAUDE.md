@@ -150,9 +150,11 @@ Achado em 08/09, ao cancelar os stories de 09/09: a página mostrava 2 na fila
 `2026-09-09-1100-indice.jpg`, anexado à Release em 07/09. Ou seja, **cancelar
 pelo que a página mostra não cancela o dia**.
 
-Enquanto a página não listar as duas portas, conferir a fila de verdade com
-`python conferir_fila.py` ou pela API:
-`releases/tags/fila` (assets) **e** `contents?ref=entrada`.
+Correção do mesmo dia: **`conferir_fila.py` passou a ler as DUAS portas** (era só a
+branch) e a tratar o 404 da branch inexistente como fila vazia — `entrada_remover`
+apaga a ref quando não sobra nada, e o conferidor quebrava justamente no dia em que
+a fila zerava. A página (`docs/index.html`) continua mostrando só a branch: quem quer
+saber o que vai ao ar amanhã roda `python conferir_fila.py`.
 
 ## O que NÃO existe, e não adianta procurar
 
