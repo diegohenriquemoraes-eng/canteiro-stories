@@ -139,6 +139,21 @@ acesa durante o envio (tela apagando é o Safari suspendendo a aba).
   `pillow-heif`. Sem isso o Story morreria num erro de codec que só apareceria
   à noite, com o perfil vazio.
 
+## A página mostra METADE da fila (08/09/2026)
+
+O publicador lê **duas portas** (`publicar_story.py`): a Release `fila` e a branch
+`entrada`. A página de envio (`docs/index.html`) lê **só a branch** — o `Na fila (N)`
+que o Diego vê no celular ignora tudo o que estiver anexado à Release.
+
+Achado em 08/09, ao cancelar os stories de 09/09: a página mostrava 2 na fila
+(07:30 e 09:30, os dois removidos) e havia um terceiro invisível para ele,
+`2026-09-09-1100-indice.jpg`, anexado à Release em 07/09. Ou seja, **cancelar
+pelo que a página mostra não cancela o dia**.
+
+Enquanto a página não listar as duas portas, conferir a fila de verdade com
+`python conferir_fila.py` ou pela API:
+`releases/tags/fila` (assets) **e** `contents?ref=entrada`.
+
 ## O que NÃO existe, e não adianta procurar
 
 **Story publicado por API é mídia pura**: sem sticker de link, enquete, quiz,
