@@ -6,3442 +6,1394 @@ METHOD:PUBLISH
 X-WR-CALNAME:Canteiro · Stories
 X-WR-CALDESC:Alertas dos Stories do dia e do Reset — @vendanaobra
 BEGIN:VEVENT
-UID:canteiro-20260907-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T083000
-DTEND:20260907T084000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto do café de segunda. Escreva: "
- Toda segunda começa no escuro pra maioria dos donos de empresa. Hoje eu
-  explico por quê."\n\nSegunda permite 8h30. Peça oculta: a mesma xíca
- ra aparecendo\, sem comentário.\n\nDia: O vendedor que só tem carisma\
- nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
- a9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T103000
-DTEND:20260907T104000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Descobrir o resultado
-  do mês quando o mês acabou não é gestão. É torcida."\n\nSó texto
- . Frase dura\, segunda aguenta.\n\nDia: O vendedor que só tem carisma\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T123000
-DTEND:20260907T124000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\nEnquete: "Você sabe hoje quanto vai
-  faturar em setembro?" — Sim / Não faço ideia\n\nInteração do dia.
-  O resultado vira conteúdo já no story seguinte.\n\nDia: O vendedor qu
- e só tem carisma\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T143000
-DTEND:20260907T144000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto do segunda real: o caderno aber
- to\, a mesa da cozinha\, o quintal. Escreva por cima o que você está r
- evendo hoje antes da semana começar.\n\nDia: O vendedor que só tem car
- isma\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
- 9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T160000
-DTEND:20260907T161000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint do resultado parcial da enquet
- e\, comentado.\n\nO que a sua audiência responde já é um retrato do s
- etor — use.\n\nDia: O vendedor que só tem carisma\nAbrir o Canteiro: 
- https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T173000
-DTEND:20260907T174000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um elogio\, resultado ou me
- nsagem recebida (direct\, comentário ou WhatsApp de aluno do Venda 10x)
- \, com uma frase sua por cima dizendo o que a pessoa fez de diferente. S
- em print novo hoje: use um do banco de provas.\n\nProva social todo dia 
- — é regra do método. Tampe o nome se precisar.\n\nDia: O vendedor qu
- e só tem carisma\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T190000
-DTEND:20260907T191000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: dono que quer previsib
- ilidade. Para quem não é: quem prefere depender do vendedor iluminado.
- \n\nFundo liso. Filtra quem vai comprar e prepara a oferta do próximo s
- tory.\n\nDia: O vendedor que só tem carisma\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T200000
-DTEND:20260907T201000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Previsibilidade é 
- processo: quantas oportunidades entram\, quantas avançam\, quantas fech
- am e por que as outras morreram. Fecha anunciando a parte 2: "e agora ve
- m o que resolve isso."\n\nSegunda à noite é o melhor horário da seman
- a para essa oferta — é quando o dono senta e pensa no negócio.\n\nDi
- a: O vendedor que só tem carisma\nAbrir o Canteiro: https://claude.ai/c
- ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260907-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260907T200200
-DTEND:20260907T201200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. A oferta do dia: "f
- az o Raio-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a 
- nota do seu comercial em cada um dos 5 Passos. Link na bio." Fale devaga
- r. É o único momento do dia em que você pede alguma coisa.\n\nA ofert
- a fica SÓ aqui\, no último story do dia.\n\nDia: O vendedor que só te
- m carisma\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
- ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T083000
-DTEND:20260908T084000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto sua em casa\, expressão pensat
- iva. Escreva: "A frase que mais mata venda tem três palavras. Hoje eu m
- ostro como responder."\n\nFeriado permite 8h30. Peça oculta: repita um 
- objeto que já apareceu na semana — a repetição é o que faz pergunt
- arem.\n\nDia: Preciso falar com outra pessoa\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T103000
-DTEND:20260908T104000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "'Vou pensar.' E o ven
- dedor responde: 'claro\, fico à disposição'. Acabou ali."\n\nSó text
- o. Retrata a cena que todo mundo já viveu.\n\nDia: Preciso falar com ou
- tra pessoa\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
- 9ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T123000
-DTEND:20260908T124000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\nCaixinha: "Qual objeção você mais
-  ouve? Me manda que eu respondo aqui."\n\nRende material de conteúdo pa
- ra semanas. Guarde tudo que chegar.\n\nDia: Preciso falar com outra pess
- oa\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b
- -bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T143000
-DTEND:20260908T144000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto do feriado do jeito que ele est
- á sendo: a rua vazia\, a mesa\, a família de longe (sem rosto de ningu
- ém). Uma frase curta\, sem lição de moral.\n\nDia: Preciso falar com 
- outra pessoa\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d
- -79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T160000
-DTEND:20260908T161000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de uma objeção recebida + su
- a resposta escrita\, terminando com uma nova pergunta.\n\nManter a conve
- rsa ativa é o que transforma story em direct.\n\nDia: Preciso falar com
-  outra pessoa\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
- d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T173000
-DTEND:20260908T174000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um elogio\, resultado ou me
- nsagem recebida (direct\, comentário ou WhatsApp de aluno do Venda 10x)
- \, com uma frase sua por cima dizendo o que a pessoa fez de diferente. S
- em print novo hoje: use um do banco de provas.\n\nProva social todo dia 
- — é regra do método. Tampe o nome se precisar.\n\nDia: Preciso falar
-  com outra pessoa\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T184500
-DTEND:20260908T185500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem cansou de "vou pe
- nsar". Para quem não é: quem responde "fico à disposição" e acha qu
- e vendeu.\n\nFundo liso. Filtra quem vai comprar e prepara a oferta do p
- róximo story.\n\nDia: Preciso falar com outra pessoa\nAbrir o Canteiro:
-  https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T193000
-DTEND:20260908T194000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. "Pensar no quê\, e
- xatamente?" — e as quatro trilhas: preço\, decisor\, insegurança\, p
- razo. Mais a regra: saia com data\, nunca "me chama quando decidir". Fec
- ha anunciando a parte 2: "e agora vem o que resolve isso."\n\nAs quatro 
- trilhas em ritmo\, depois desacelera na regra final.\n\nDia: Preciso fal
- ar com outra pessoa\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260908-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260908T193200
-DTEND:20260908T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VENDA 
- 10X
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Hoje a oferta é a 
- aula ao vivo do Venda 10x\, daqui a pouco\, às 20h: "é toda terça\, u
- ma hora\, ao vivo comigo. R$ 698 no ano — menos de R$ 58 por mês. Lin
- k na bio." Diga que a de hoje é sobre o gargalo do seu funil.\n\nTerça
-  é o único dia com oferta paga no story. Nos outros\, Raio-X.\n\nDia: 
- Preciso falar com outra pessoa\nAbrir o Canteiro: https://claude.ai/code
- /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VE
- NDA 10X
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T073000
-DTEND:20260909T074000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de um projeto ou planta em cima
-  da mesa. Escreva: "O arquiteto especificou o concorrente. E não foi po
- r preço."\n\nO tiro de alerta mais forte da semana. Peça oculta: uma t
- rena ou escalímetro na foto\, sem comentar.\n\nDia: Arquiteto não é c
- liente. É canal.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T093000
-DTEND:20260909T094000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O fornecedor atendeu 
- bem\, entregou bem\, o cara elogiou. E sumiu da lista."\n\nSó texto. Se
- m entregar a cadência ainda.\n\nDia: Arquiteto não é cliente. É cana
- l.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b
- -bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T120000
-DTEND:20260909T121000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Quantos arquitetos te indicaram nos
-  últimos 90 dias? Me manda aqui no direct."\n\nChamada para o direct é
-  a interação que mais gera conversa comercial. Responda todas em áudi
- o.\n\nDia: Arquiteto não é cliente. É canal.\nAbrir o Canteiro: https
- ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T140000
-DTEND:20260909T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto da estrada\, do carro ou da rec
- epção de um escritório — o deslocamento entre uma visita e outra. F
- rase curta sobre para onde você está indo.\n\nDia: Arquiteto não é c
- liente. É canal.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T153000
-DTEND:20260909T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct que chegou hoje\,
-  comentado.\n\nDe preferência de alguém que respondeu a pergunta das 1
- 3h.\n\nDia: Arquiteto não é cliente. É canal.\nAbrir o Canteiro: http
- s://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T170000
-DTEND:20260909T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um elogio\, resultado ou me
- nsagem recebida (direct\, comentário ou WhatsApp de aluno do Venda 10x)
- \, com uma frase sua por cima dizendo o que a pessoa fez de diferente. S
- em print novo hoje: use um do banco de provas.\n\nProva social todo dia 
- — é regra do método. Tampe o nome se precisar.\n\nDia: Arquiteto nã
- o é cliente. É canal.\nAbrir o Canteiro: https://claude.ai/code/artifa
- ct/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T183000
-DTEND:20260909T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem quer arquiteto in
- dicando toda semana. Para quem não é: quem só manda catálogo e pede 
- indicação.\n\nFundo liso. Filtra quem vai comprar e prepara a oferta d
- o próximo story.\n\nDia: Arquiteto não é cliente. É canal.\nAbrir o 
- Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6
- aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T193000
-DTEND:20260909T194000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Revela a cadência 
- 24h / 7 dias / 30 dias e o princípio: relacionamento precisa de método
- \, não de boa vontade. Fecha anunciando a parte 2: "e agora vem o que r
- esolve isso."\n\nMarque os três números com os dedos. E fale da aula c
- om hora: "daqui a meia hora" converte melhor que "toda quarta".\n\nDia: 
- Arquiteto não é cliente. É canal.\nAbrir o Canteiro: https://claude.a
- i/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T193200
-DTEND:20260909T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do s
- eu comercial nos 5 Passos. Link na bio."\n\nA oferta fica só aqui\, no 
- último story do dia.\n\nDia: Arquiteto não é cliente. É canal.\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260909-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260909T230000
-DTEND:20260909T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:canteiro-20260910-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T073000
-DTEND:20260910T074000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260910T084500
+DTEND:20260910T085500
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto do seu caderno de reunião aber
- to\, com anotação à mão. Escreva: "Já perdi a conta de quantos come
- rciais eu abri. Tem um padrão que se repete e quase ninguém acredita."
- \n\nO caderno é mais forte que um painel — é prova de campo. Peça o
- culta: a credencial da FESQUA aparecendo\, sem comentar.\n\nDia: O burac
- o não está onde você acha\nAbrir o Canteiro: https://claude.ai/code/a
- rtifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto do crachá de influenciador da 
+ FESQUA\, na mão. Escreva por cima: "2º dia de FESQUA. Hoje eu vou te c
+ ontar o que ninguém fala em corredor de feira."\n\nPromessa sem entrega
+ r. O crachá é a peça oculta: aparece\, não se comenta.\n\nDia: Feira
+  não fecha. Feira agenda.\nAbrir o Canteiro: https://claude.ai/code/art
+ ifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260910-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T093000
-DTEND:20260910T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260910T120000
+DTEND:20260910T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Toda reunião começa
-  com 'preciso de mais cliente'. Aí a gente abre o funil e vê outra coi
- sa."\n\nSó texto. Problematiza pela experiência\, sem revelar qual pas
- so.\n\nDia: O buraco não está onde você acha\nAbrir o Canteiro: https
- ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "A maioria sai de feir
+ a com sacola de catálogo e zero data marcada." Por cima\, a enquete: "V
+ ocê vai a feira pra quê? Ver produto / Fechar negócio / Ser lembrado"
+ .\n\nA única interação do dia. Anote o resultado — é dado seu.\n\n
+ Dia: Feira não fecha. Feira agenda.\nAbrir o Canteiro: https://claude.a
+ i/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260910-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T120000
-DTEND:20260910T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260910T160000
+DTEND:20260910T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\nEnquete: "Onde você acha que sua em
- presa perde mais? Atrair / Fechar".\n\nO resultado dessa enquete é o co
- meço do seu banco de dados próprio. Anote o número.\n\nDia: O buraco 
- não está onde você acha\nAbrir o Canteiro: https://claude.ai/code/art
- ifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social · no pavilhão
+DESCRIPTION:imagem · só a frase\n\nFoto sua com quem você gravou hoje 
+ (embaixador ou expositor). Escreva: "Gravei com @fulano. Sai hoje às 19
+ h."\n\nProva social de feira: quem está com quem. Se ainda não gravou\
+ , foto com um cliente ou aluno que encontrou lá.\n\nDia: Feira não fec
+ ha. Feira agenda.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
+ a235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social · no pavilhão
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260910-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T140000
-DTEND:20260910T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFESQUA: foto do corredor\, de um est
- ande ou do crachá. Se você não estiver na feira\, foto do escritório
-  com uma frase sobre o que está acompanhando de lá.\n\nDia: O buraco n
- ão está onde você acha\nAbrir o Canteiro: https://claude.ai/code/arti
- fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260910-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T153000
-DTEND:20260910T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct da semana\, comen
- tado — de preferência de alguém que reagiu a um dos temas dos últim
- os dias.\n\nAinda não use print de Raio-X: sem volume\, prova social es
- cassa enfraquece em vez de fortalecer.\n\nDia: O buraco não está onde 
- você acha\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
- 9ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260910-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T170000
-DTEND:20260910T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um elogio\, resultado ou me
- nsagem recebida (direct\, comentário ou WhatsApp de aluno do Venda 10x)
- \, com uma frase sua por cima dizendo o que a pessoa fez de diferente. S
- em print novo hoje: use um do banco de provas.\n\nProva social todo dia 
- — é regra do método. Tampe o nome se precisar.\n\nDia: O buraco não
-  está onde você acha\nAbrir o Canteiro: https://claude.ai/code/artifac
- t/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260910-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T183000
-DTEND:20260910T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: empresa que quer saber
-  em qual passo perde. Para quem não é: quem só quer "mais cliente".\n
- \nFundo liso. Filtra quem vai comprar e prepara a oferta do próximo sto
- ry.\n\nDia: O buraco não está onde você acha\nAbrir o Canteiro: https
- ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260910-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260910T193000
 DTEND:20260910T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Revela: o buraco es
- tá no diagnóstico e no fechamento — Passos 3 e 5. O cliente chega e 
- some no meio. Fecha no Raio-X e emenda a FESQUA: "estou na FESQUA até s
- exta\, me chama no direct." Fecha anunciando a parte 2: "e agora vem o q
- ue resolve isso."\n\nFecha a semana ligando conteúdo\, produto e palco.
- \n\nDia: O buraco não está onde você acha\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado no pavilhão\, 30–
+ 45 s. "Saí de cada conversa de hoje com uma data marcada. Feira não fe
+ cha — feira agenda." Emenda: "faz o Raio-X — 15 perguntas\, 3 minuto
+ s\, de graça\, e você recebe a nota do seu comercial nos 5 Passos. Lin
+ k na bio." Fecha: "amanhã estou aqui de novo — me chama no direct."\n
+ \nÚnico vídeo do dia\, depois das 16h. A oferta fica SÓ aqui.\n\nDia:
+  Feira não fecha. Feira agenda.\nAbrir o Canteiro: https://claude.ai/co
+ de/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260910-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260910T193200
-DTEND:20260910T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. A oferta do dia: "f
- az o Raio-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a 
- nota do seu comercial em cada um dos 5 Passos. Link na bio." Fale devaga
- r. É o único momento do dia em que você pede alguma coisa.\n\nA ofert
- a fica SÓ aqui\, no último story do dia.\n\nDia: O buraco não está o
- nde você acha\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da23
- 5d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260911-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260911T073000
 DTEND:20260911T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma pilha de propostas impre
- ssas na mesa. Escreva por cima: "Tem R$ 180 mil parados nessa foto. Todo
- s disseram 'vou pensar'."\n\nAjuste o valor para o real. Peça oculta do
-  dia: deixe uma caneta específica aparecendo na foto — e não comente
-  sobre ela em nenhum momento.\n\nDia: O orçamento que virou pó\nAbrir 
- o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778c
- f6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma pilha de catálogos que 
+ você pegou na feira (ou da sacola). Escreva por cima: "Tem 40 catálogo
+ s nessa sacola. Nenhum deles vai fechar uma venda. Hoje eu explico."\n\n
+ Use o número real da sua sacola.\n\nDia: Todo estande mostra produto. O
+  cliente não compra produto.\nAbrir o Canteiro: https://claude.ai/code/
+ artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260911-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T093000
-DTEND:20260911T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260911T120000
+DTEND:20260911T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro só com a frase: "Na ma
- ioria das vezes o cliente não sumiu. A conversa acabou sem próximo pas
- so."\n\nProblematiza sem resolver. Você não aparece — é texto sobre
-  fundo liso\, feito no próprio Stories.\n\nDia: O orçamento que virou 
- pó\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9
- b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O cliente não compra
+  perfil\, vidro nem ferragem. Compra a certeza de não errar na obra." E
+ nquete: "O que mais pesa na decisão do seu cliente? Preço / Prazo / Me
+ do de errar".\n\nA única interação do dia.\n\nDia: Todo estande mostr
+ a produto. O cliente não compra produto.\nAbrir o Canteiro: https://cla
+ ude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260911-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T120000
-DTEND:20260911T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260911T160000
+DTEND:20260911T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\nFrase "Quantas propostas suas estão
-  sem data de retorno agora?" com a caixinha de perguntas por cima.\n\nÉ
-  a única interação do dia. Responda as respostas depois\, no direct\,
-  em áudio.\n\nDia: O orçamento que virou pó\nAbrir o Canteiro: https:
- //claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social · no pavilhão
+DESCRIPTION:imagem · só a frase\n\nFoto sua com o embaixador ou exposit
+ or de hoje. Escreva: "Colab de hoje com @fulano — sai às 19h."\n\nSem
+  colab: print de alguém que te chamou no direct por causa do Reels de o
+ ntem.\n\nDia: Todo estande mostra produto. O cliente não compra produto
+ .\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-
+ bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social · no pavilhão
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260911-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T140000
-DTEND:20260911T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFESQUA\, 3º dia: foto de algo que v
- ocê viu na feira e achou relevante — um sistema\, um detalhe\, uma co
- nversa. Sem citar marca de concorrente.\n\nDia: O orçamento que virou p
- ó\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b
- -bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260911-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T153000
-DTEND:20260911T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de uma resposta que chegou no 
- direct\, com seu comentário escrito embaixo.\n\nTampe o nome se precisa
- r. Mostra para quem está vendo que interagir com você tem retorno.\n\n
- Dia: O orçamento que virou pó\nAbrir o Canteiro: https://claude.ai/cod
- e/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260911-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T170000
-DTEND:20260911T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um elogio\, resultado ou me
- nsagem recebida (direct\, comentário ou WhatsApp de aluno do Venda 10x)
- \, com uma frase sua por cima dizendo o que a pessoa fez de diferente. S
- em print novo hoje: use um do banco de provas.\n\nProva social todo dia 
- — é regra do método. Tampe o nome se precisar.\n\nDia: O orçamento 
- que virou pó\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
- d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260911-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T183000
-DTEND:20260911T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem tem proposta para
- da e quer caixa. Para quem não é: quem acha que follow-up é insistir.
- \n\nFundo liso. Filtra quem vai comprar e prepara a oferta do próximo s
- tory.\n\nDia: O orçamento que virou pó\nAbrir o Canteiro: https://clau
- de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260911-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260911T193000
 DTEND:20260911T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega a resposta 
- do tiro de alerta: todo contato sai com data marcada — cadência 24h /
-  7 dias / 30 dias. Fecha anunciando a parte 2: "e agora vem o que resolv
- e isso."\n\nO único vídeo do dia\, e é o que vende. 30 a 45 segundos\
- , celular na mão. A oferta vem só depois de você ter entregado.\n\nDi
- a: O orçamento que virou pó\nAbrir o Canteiro: https://claude.ai/code/
- artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado no pavilhão\, 30–
+ 45 s. "Quem fala de produto compete com todo mundo daqui. Quem fala do r
+ isco do cliente compete com ninguém." Emenda: "faz o Raio-X — 15 perg
+ untas\, 3 minutos\, de graça\, e você recebe a nota do seu comercial n
+ os 5 Passos. Link na bio." Fecha: "amanhã é o último dia\, até as 18
+ h — me chama."\n\nÚnico vídeo do dia. A oferta só aqui. Reset às 2
+ 3h.\n\nDia: Todo estande mostra produto. O cliente não compra produto.\
+ nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
+ a9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260911-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260911T193200
-DTEND:20260911T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. A oferta do dia: "f
- az o Raio-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a 
- nota do seu comercial em cada um dos 5 Passos. Link na bio." Fale devaga
- r. É o único momento do dia em que você pede alguma coisa.\n\nA ofert
- a fica SÓ aqui\, no último story do dia.\n\nDia: O orçamento que viro
- u pó\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4
- c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260911-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260911T230000
 DTEND:20260911T231000
 TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
  ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
  x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
  era não custa nada — é só não postar nada solto esta noite.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
+DESCRIPTION:🧹 Reset de Stories — apague os 4
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260912-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260912T073000
 DTEND:20260912T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto do corredor da feira cheio. Esc
- reva por cima: "3 pessoas decidiram a sua venda. Você falou com uma."\n
- \nPlanejado ontem à noite. Peça oculta 1: um post-it colado no canto c
- om algo escrito bem pequeno — não comente nunca.\n\nDia: Quem decide 
- não é quem paga\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto do seu caderno com a lista de c
+ onversas da feira (nomes tampados). Escreva: "Último dia de FESQUA. Est
+ a lista vale mais que todos os catálogos do pavilhão. À noite eu expl
+ ico."\n\nA lista é a peça oculta — mostra\, não explica.\n\nDia: Ú
+ ltimo dia. O que vale é o que você agendou.\nAbrir o Canteiro: https:/
+ /claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260912-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T093000
-DTEND:20260912T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260912T120000
+DTEND:20260912T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro com a frase: "Quem espe
- cifica não paga. Quem paga não usa. E você mandou proposta pra um só
- ."\n\nProblematiza sem resolver. Texto sobre fundo liso\, feito no próp
- rio Stories.\n\nDia: Quem decide não é quem paga\nAbrir o Canteiro: ht
- tps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Segunda-feira\, 80% d
+ o que você viu na feira já foi esquecido. O que sobra é o que tem dat
+ a." Enquete: "Você agenda o próximo contato antes de sair da conversa?
+  Sempre / Às vezes / Nunca".\n\nA única interação do dia.\n\nDia: Ú
+ ltimo dia. O que vale é o que você agendou.\nAbrir o Canteiro: https:/
+ /claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260912-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T120000
-DTEND:20260912T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260912T160000
+DTEND:20260912T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Na sua última venda perdida\, quan
- tas pessoas decidiam?" com a enquete: 1 · 2 · 3 ou mais.Cliffhanger: e
- screva embaixo “sabe aquele detalhe que todo mundo ignora nessa hora? 
- Ele está derrubando as suas vendas agora. Mostro às 19h30.”\n\nÚnic
- a interação do dia. As respostas viram conteúdo do direct\, em áudio
- . Peça oculta 2: uma frase espelhada no canto\, que só dá para ler pr
- estando atenção.\n\nDia: Quem decide não é quem paga\nAbrir o Cantei
- ro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social · no pavilhão
+DESCRIPTION:imagem · só a frase\n\nFoto sua com quem encontrou hoje —
+  cliente\, aluno do Venda 10x ou embaixador. Escreva: "Quem estava na FE
+ SQUA e me encontrou." Se alguém te chamou pelo Reels\, print do direct 
+ por cima.\n\nSábado tem menos gente: qualquer encontro vira prova.\n\nD
+ ia: Último dia. O que vale é o que você agendou.\nAbrir o Canteiro: h
+ ttps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social · no pavilhão
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260912-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T140000
-DTEND:20260912T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFESQUA: foto de um detalhe técnico 
- que te chamou atenção. Sem marca de concorrente no quadro.\n\nDia: Que
- m decide não é quem paga\nAbrir o Canteiro: https://claude.ai/code/art
- ifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260912-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T153000
-DTEND:20260912T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2 do dia: escreva “Passo 2
- ” em cima do print\, sem explicar o que é.\n\nDia: Quem decide não 
- é quem paga\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d
- -79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260912-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T170000
-DTEND:20260912T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de elogio\, resultado ou mensa
- gem recebida com uma frase sua por cima dizendo o que a pessoa fez de di
- ferente.\n\nProva social é diária no método. Tampe o nome se precisar
- .\n\nDia: Quem decide não é quem paga\nAbrir o Canteiro: https://claud
- e.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260912-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T183000
-DTEND:20260912T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem vende para obra c
- om mais de um decisor. Para quem não é: quem acha que basta mandar o p
- reço certo.\n\nFundo liso. Filtra e prepara a oferta do próximo story.
- \n\nDia: Quem decide não é quem paga\nAbrir o Canteiro: https://claude
- .ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260912-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260912T193000
 DTEND:20260912T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega a resposta 
- da enquete: mapear decisor na primeira conversa — “além de você\, 
- quem mais decide junto?”. Fecha anunciando a parte 2.\n\nSigla 2 de 2:
-  diga “isso é o Passo 2 do método” sem explicar o método inteiro.
-  30 a 45 segundos.\n\nDia: Quem decide não é quem paga\nAbrir o Cantei
- ro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s\, ainda 
+ na feira ou no carro. "Feira acabou. O que eu levo é uma lista com data
+ . Se você foi e saiu sem nenhuma\, o problema não é a feira — é o 
+ seu processo." Emenda: "faz o Raio-X — 15 perguntas\, 3 minutos\, de g
+ raça\, e você recebe a nota do seu comercial nos 5 Passos. Link na bio
+ ."\n\nÚnico vídeo do dia. A oferta só aqui.\n\nDia: Último dia. O qu
+ e vale é o que você agendou.\nAbrir o Canteiro: https://claude.ai/code
+ /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260912-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260912T193200
-DTEND:20260912T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta do dia: "faz
-  o Raio-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a no
- ta do seu comercial nos 5 Passos. Link na bio."\n\nA oferta fica SÓ aqu
- i\, no último story do dia. Depois disso\, reset às 23h.\n\nDia: Quem 
- decide não é quem paga\nAbrir o Canteiro: https://claude.ai/code/artif
- act/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260913-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260913T073000
 DTEND:20260913T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto do celular com notificações d
- e WhatsApp acumuladas. Escreva por cima: "Enquanto você lê isso\, trê
- s clientes seus estão esperando resposta."\n\nPlanejado ontem. Peça oc
- ulta 1: uma xícara com mensagem discreta na estampa\, sem comentar.\n\n
- Dia: Atendente tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nPrint de uma conversa de WhatsApp (n
+ ome tampado) terminando em "qualquer coisa me chama". Escreva: "Essa fra
+ se custou uma venda. Hoje eu mostro a que substitui."\n\nSe não tiver p
+ rint real\, fundo neutro só com a frase.\n\nDia: Atendente tira pedido.
+  Vendedor conduz.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
+ a235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260913-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T093000
-DTEND:20260913T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260913T120000
+DTEND:20260913T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "17 horas. É o tempo 
- médio para responder um cliente no Brasil."\n\nSó o número. Sem solu
- ção ainda.\n\nDia: Atendente tira pedido. Vendedor conduz.\nAbrir o Ca
- nteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6ab
- a136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Atendente responde. V
+ endedor pergunta. A diferença aparece no fim do mês." Enquete: "Sua eq
+ uipe termina a conversa com data marcada? Sempre / Às vezes / Nunca".\n
+ \nA única interação do dia.\n\nDia: Atendente tira pedido. Vendedor c
+ onduz.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-
+ 4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260913-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T120000
-DTEND:20260913T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260913T160000
+DTEND:20260913T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Quanto tempo o seu comercial leva p
- ra responder?" com a enquete: minutos · horas · no outro dia.Cliffhang
- er: “e se eu te disser que a chave não é responder mais rápido? Às
-  19h30 eu mostro o que é.”\n\nÚnica interação do dia.\n\nDia: Aten
- dente tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://claude.ai
- /code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um aluno ou cliente contand
+ o que fechou depois de marcar data (ou qualquer elogio do banco de prova
+ s). Escreva por cima o que a pessoa fez de diferente.\n\nProva social to
+ do dia. Tampe o nome se precisar.\n\nDia: Atendente tira pedido. Vendedo
+ r conduz.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
+ ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260913-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T140000
-DTEND:20260913T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nDepois da FESQUA: foto sua no pavilh
- ão ou com alguém do setor\, do acervo dos quatro dias. Sem marca de co
- ncorrente no quadro.\n\nDia: Atendente tira pedido. Vendedor conduz.\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260913-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T153000
-DTEND:20260913T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 1” em 
- cima do print\, sem explicar.\n\nDia: Atendente tira pedido. Vendedor co
- nduz.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4
- c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260913-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T170000
-DTEND:20260913T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de elogio\, resultado ou mensa
- gem recebida com sua frase por cima dizendo o que a pessoa fez de difere
- nte.\n\nSe não tiver print novo\, use um do banco de provas.\n\nDia: At
- endente tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://claude.
- ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260913-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T183000
-DTEND:20260913T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem tem equipe respon
- dendo cliente. Para quem não é: quem acha que vendedor bom é o que re
- sponde rápido.\n\nFundo liso.\n\nDia: Atendente tira pedido. Vendedor c
- onduz.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-
- 4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260913-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260913T193000
 DTEND:20260913T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega: responder 
- rápido com PERGUNTA\, não com preço — “para que é a obra e até 
- quando você precisa?”. Fecha anunciando a parte 2.\n\nSigla 2 de 2: 
- “isso é o Passo 1 do método”. 30 a 45 segundos.\n\nDia: Atendente 
- tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://claude.ai/code/
- artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta do tir
+ o de alerta: 'te ligo quinta às dez'. Depois\, a oferta.\n\nDia: Atende
+ nte tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://claude.ai/c
+ ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260913-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260913T193200
-DTEND:20260913T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nA oferta fica só aqui.\n\nDia: Atenden
- te tira pedido. Vendedor conduz.\nAbrir o Canteiro: https://claude.ai/co
- de/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260914-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260914T073000
 DTEND:20260914T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma obra parada (andaime\, p
- iso sem esquadria). Escreva por cima: "Cada dia dessa obra parada custa 
- mais que o seu desconto de 5%."\n\nPlanejado ontem. Peça oculta 1: um o
- bjeto de cor neon que destoa de todo o resto do ambiente.\n\nDia: Prazo 
- é o novo preço\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da
- 235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de um cronograma de obra (papel
+  ou tela). Escreva: "O cliente não te trocou por preço. Te trocou por 
+ isto aqui. Conto hoje."\n\nPlanejado na véspera. O cronograma é a peç
+ a oculta.\n\nDia: Prazo é o novo preço\nAbrir o Canteiro: https://clau
+ de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260914-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T093000
-DTEND:20260914T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260914T120000
+DTEND:20260914T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Você deu 5% de desco
- nto e atrasou uma semana. O cliente ficou no prejuízo — e a culpa é 
- sua."\n\nSem solução ainda.\n\nDia: Prazo é o novo preço\nAbrir o Ca
- nteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6ab
- a136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Seu orçamento tem pr
+ eço. Tem data de cada etapa?" Enquete: "Sua proposta traz cronograma? S
+ im / Só o prazo final / Não".\n\nA única interação do dia.\n\nDia: 
+ Prazo é o novo preço\nAbrir o Canteiro: https://claude.ai/code/artifac
+ t/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260914-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T120000
-DTEND:20260914T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260914T160000
+DTEND:20260914T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você promete prazo com folga ou co
- m esperança?" com a caixinha.Cliffhanger: “foi aí que eu percebi que
-  estava cometendo um erro que custava obra. Conto às 19h30.”\n\nÚnic
- a interação do dia. Responda em áudio no direct. Peça oculta 2: um c
- ódigo numérico escondido no meio do texto da tela.\n\nDia: Prazo é o 
- novo preço\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
- 79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente elogiando entrega n
+ o prazo ou aviso antecipado (ou elogio do banco de provas). Escreva por 
+ cima o que foi feito para merecer.\n\nProva social todo dia.\n\nDia: Pra
+ zo é o novo preço\nAbrir o Canteiro: https://claude.ai/code/artifact/c
+ 6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260914-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T140000
-DTEND:20260914T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nSegunda: foto da sua rotina real (fa
- mília\, treino\, igreja\, churrasco — o que for verdade).\n\nOs 20% d
- e pauta livre também valem no story. Nada de conteúdo aqui.\n\nDia: Pr
- azo é o novo preço\nAbrir o Canteiro: https://claude.ai/code/artifact/
- c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260914-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T153000
-DTEND:20260914T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 5” no 
- print\, sem explicar.\n\nDia: Prazo é o novo preço\nAbrir o Canteiro: 
- https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260914-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T170000
-DTEND:20260914T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de elogio\, resultado ou mensa
- gem com sua frase por cima dizendo o que a pessoa fez de diferente.\n\nD
- iário. Tampe o nome se precisar.\n\nDia: Prazo é o novo preço\nAbrir 
- o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778c
- f6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260914-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T183000
-DTEND:20260914T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem entrega no prazo 
- e não cobra por isso. Para quem não é: quem promete data para ganhar 
- o pedido.\n\nFundo liso.\n\nDia: Prazo é o novo preço\nAbrir o Canteir
- o: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260914-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260914T193000
 DTEND:20260914T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega: prometa co
- m folga\, comunique antes — e coloque o prazo na proposta como argumen
- to\, não como cláusula. Anuncia a parte 2.\n\nSigla 2 de 2: “esse é
-  o Passo 5”. 30 a 45 segundos.\n\nDia: Prazo é o novo preço\nAbrir o
-  Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf
- 6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: data 
+ escrita etapa por etapa e aviso antes de atrasar. Depois\, a oferta.\n\n
+ Dia: Prazo é o novo preço\nAbrir o Canteiro: https://claude.ai/code/ar
+ tifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260914-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260914T193200
-DTEND:20260914T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você vê a nota do seu 
- comercial nos 5 Passos. Link na bio."\n\nSó aqui.\n\nDia: Prazo é o no
- vo preço\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
- ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260915-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260915T073000
 DTEND:20260915T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
 DESCRIPTION:imagem · só a frase\n\nFoto de uma instalação recém-term
- inada. Escreva por cima: "Essa obra vale mais 3 vendas. Você vai perder
-  as três."\n\nPlanejado ontem. Peça oculta 1: uma logomarca parcialmen
- te visível no canto da tela — cortada pela metade.\n\nDia: Depois do 
- sim começa a próxima venda\nAbrir o Canteiro: https://claude.ai/code/a
- rtifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+ inada. Escreva: "Essa obra vale mais 3 vendas. A maioria perde as três.
+  Hoje eu explico."\n\nPlanejado na véspera.\n\nDia: Depois do sim come
+ ça a próxima venda\nAbrir o Canteiro: https://claude.ai/code/artifact/
+ c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260915-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T093000
-DTEND:20260915T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260915T120000
+DTEND:20260915T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
 DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Instalou\, mandou a n
- ota\, sumiu. E depois liga pedindo indicação três meses depois."\n\nS
- ó o problema.\n\nDia: Depois do sim começa a próxima venda\nAbrir o C
- anteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6a
- ba136
+ ota\, sumiu." Enquete: "Quantas indicações você pediu esse mês? Nenh
+ uma / 1 a 3 / Mais de 3".\n\nA única interação do dia. Anote o result
+ ado.\n\nDia: Depois do sim começa a próxima venda\nAbrir o Canteiro: h
+ ttps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260915-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T120000
-DTEND:20260915T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260915T160000
+DTEND:20260915T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Quantas indicações você pediu es
- se mês?" com a enquete: nenhuma · 1 a 3 · mais de 3.Cliffhanger: “n
- o fim\, a frase que faz o cliente indicar era tão simples que eu me sen
- ti bobo. Ela vem às 19h30.”\n\nÚnica interação do dia.\n\nDia: Dep
- ois do sim começa a próxima venda\nAbrir o Canteiro: https://claude.ai
- /code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de uma indicação recebida ou
+  de um elogio pós-instalação. Escreva por cima o que foi feito para m
+ erecer.\n\nProva social todo dia.\n\nDia: Depois do sim começa a próxi
+ ma venda\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79c
+ a-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260915-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T140000
-DTEND:20260915T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto do seu dia real: mesa\, obra\, 
- reunião de equipe.\n\nDia: Depois do sim começa a próxima venda\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260915-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T153000
-DTEND:20260915T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 5” no 
- print\, sem explicar.\n\nDia: Depois do sim começa a próxima venda\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260915-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T170000
-DTEND:20260915T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de indicação recebida ou elo
- gio pós-instalação\, com sua frase por cima dizendo o que foi feito p
- ara merecer aquilo.\n\nProva social é diária. Tampe o nome se precisar
- .\n\nDia: Depois do sim começa a próxima venda\nAbrir o Canteiro: http
- s://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260915-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T183000
-DTEND:20260915T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem entrega bem e mes
- mo assim não é indicado. Para quem não é: quem acha que indicação 
- é sorte.\n\nFundo liso.\n\nDia: Depois do sim começa a próxima venda\
- nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
- a9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260915-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260915T193000
 DTEND:20260915T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega a frase: 
- “quem mais da sua obra ainda não resolveu esquadria?” — pedida no
-  7º dia depois da instalação. Anuncia a parte 2.\n\nSigla 2 de 2: “
- esse é o Passo 5”. 30 a 45 segundos.\n\nDia: Depois do sim começa a 
- próxima venda\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da23
- 5d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
+ "hoje às 20h tem aula ao vivo do Venda 10x — toda terça\, uma hora\,
+  ao vivo comigo. R$ 698 no ano\, menos de R$ 58 por mês. Link na bio." 
+ Diga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta do últ
+ imo story é o Venda 10x (aula ao vivo 20h)\, não o Raio-X. Assunto da 
+ aula: pedir indicação na entrega.\n\nDia: Depois do sim começa a pró
+ xima venda\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
+ 9ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260915-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260915T193200
-DTEND:20260915T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VENDA 
- 10X
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Hoje a oferta é a 
- aula ao vivo do Venda 10x\, daqui a pouco\, às 20h: "é toda terça\, u
- ma hora\, ao vivo comigo. R$ 698 no ano — menos de R$ 58 por mês. Lin
- k na bio." Diga que a de hoje é sobre desconto e margem.\n\nTerça é o
-  único dia com oferta paga no story. Nos outros\, Raio-X.\n\nDia: Depoi
- s do sim começa a próxima venda\nAbrir o Canteiro: https://claude.ai/c
- ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VE
- NDA 10X
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
+ 0X
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260916-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260916T073000
 DTEND:20260916T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma proposta com o valor à 
- mostra (tampe o nome). Escreva por cima: "O desconto que você deu aqui 
- levou metade do lucro dessa obra."\n\nPlanejado ontem. Peça oculta 1: u
- ma palavra embaralhada escrita pequena no canto da tela.\n\nDia: Sua tab
- ela ensina o cliente a pechinchar\nAbrir o Canteiro: https://claude.ai/c
- ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma calculadora com "5%" no 
+ visor (ou fundo neutro). Escreva: "Esse número aqui levou metade do luc
+ ro de uma obra. Hoje eu mostro a conta."\n\nPlanejado na véspera.\n\nDi
+ a: Sua tabela ensina o cliente a pechinchar\nAbrir o Canteiro: https://c
+ laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260916-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T093000
-DTEND:20260916T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260916T120000
+DTEND:20260916T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro com a conta: "R$ 40.000
-  · margem 10% = R$ 4.000. Desconto de 5% = R$ 2.000."\n\nSó a conta. S
- em solução ainda.\n\nDia: Sua tabela ensina o cliente a pechinchar\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Sua tabela de preço 
+ tem uma coluna que ensina o cliente a pechinchar." Enquete: "Seu vendedo
+ r dá desconto sem te perguntar? Sim / Até um limite / Nunca".\n\nA ún
+ ica interação do dia.\n\nDia: Sua tabela ensina o cliente a pechinchar
+ \nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-b
+ ca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260916-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T120000
-DTEND:20260916T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260916T160000
+DTEND:20260916T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você dá desconto em quantos por c
- ento das vendas?" com a enquete: quase todas · metade · quase nenhuma.
- Cliffhanger: “descobri 5 trocas simples que substituem o desconto sem 
- perder a venda. Espere até o fim do dia.”\n\nÚnica interação do di
- a.\n\nDia: Sua tabela ensina o cliente a pechinchar\nAbrir o Canteiro: h
- ttps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno ou cliente que seguro
+ u o preço e fechou (ou elogio do banco de provas). Escreva por cima o q
+ ue ele fez de diferente.\n\nProva social todo dia.\n\nDia: Sua tabela en
+ sina o cliente a pechinchar\nAbrir o Canteiro: https://claude.ai/code/ar
+ tifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260916-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T140000
-DTEND:20260916T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto de uma anotação ou print da a
- ula de ontem — o que mais rendeu pergunta.\n\nMostra a mentoria por de
- ntro sem vender nada hoje.\n\nDia: Sua tabela ensina o cliente a pechinc
- har\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9
- b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260916-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T153000
-DTEND:20260916T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 4” no 
- print\, sem explicar.\n\nDia: Sua tabela ensina o cliente a pechinchar\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260916-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T170000
-DTEND:20260916T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de aluno do Venda 10x — resu
- ltado\, elogio ou mensagem — com sua frase por cima dizendo o que a pe
- ssoa mudou.\n\nHoje a prova social prepara a oferta da mentoria. Tampe o
-  nome se precisar.\n\nDia: Sua tabela ensina o cliente a pechinchar\nAbr
- ir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-7
- 78cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260916-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T183000
-DTEND:20260916T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem vende bem e não 
- vê o dinheiro sobrar. Para quem não é: quem acha que o problema é se
- mpre o preço do concorrente.\n\nFundo liso. Prepara a oferta do Venda 1
- 0x.\n\nDia: Sua tabela ensina o cliente a pechinchar\nAbrir o Canteiro: 
- https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260916-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260916T193000
 DTEND:20260916T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega as 5 trocas
-  no lugar do desconto: prazo\, entrada\, escopo\, fechamento\, indicaç
- ão. Anuncia a parte 2.\n\nSigla 2 de 2: “isso é o Passo 4”. 30 a 4
- 5 segundos.\n\nDia: Sua tabela ensina o cliente a pechinchar\nAbrir o Ca
- nteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6ab
- a136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: valor
+  antes do preço\, silêncio depois dele\, limite de desconto escrito. D
+ epois\, a oferta. Reset às 23h.\n\nDia: Sua tabela ensina o cliente a p
+ echinchar\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
+ ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260916-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260916T193200
-DTEND:20260916T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do s
- eu comercial nos 5 Passos. Link na bio."\n\nA oferta fica só aqui\, no 
- último story do dia.\n\nDia: Sua tabela ensina o cliente a pechinchar\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260916-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260916T230000
 DTEND:20260916T231000
 TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
  ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
  x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
  era não custa nada — é só não postar nada solto esta noite.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
+DESCRIPTION:🧹 Reset de Stories — apague os 4
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260917-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260917T073000
 DTEND:20260917T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto da mesa de um vendedor (catálo
- go\, tabela\, celular). Escreva por cima: "Foi isso que você entregou p
- ra ele no primeiro dia. E cobra meta."\n\nPlanejado ontem. Peça oculta 
- 1: uma data escrita de forma discreta no fundo da cena.\n\nDia: Você n
- ão tem time. Tem tirador de pedido.\nAbrir o Canteiro: https://claude.a
- i/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto da sua mesa com um catálogo e 
+ uma tabela de preço. Escreva: "Foi isso que o seu vendedor recebeu no p
+ rimeiro dia. Hoje eu mostro o que faltou."\n\nPlanejado na véspera.\n\n
+ Dia: Você não tem time. Tem tirador de pedido.\nAbrir o Canteiro: http
+ s://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260917-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T093000
-DTEND:20260917T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260917T120000
+DTEND:20260917T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Ele improvisa porque 
- ninguém escreveu o que era pra fazer. E improviso vira desconto."\n\nS
- ó o problema.\n\nDia: Você não tem time. Tem tirador de pedido.\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Vendedor sem roteiro 
+ vira tirador de pedido. Não é culpa dele." Enquete: "Seu comercial tem
+  roteiro escrito? Sim / Na cabeça / Não".\n\nA única interação do d
+ ia.\n\nDia: Você não tem time. Tem tirador de pedido.\nAbrir o Canteir
+ o: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260917-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T120000
-DTEND:20260917T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260917T160000
+DTEND:20260917T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Seu comercial anda sem você por um
- a semana?" com a enquete: anda · trava · para de vez.Cliffhanger: “o
-  que eu fiz nas 24 horas seguintes mudou o jogo — e cabe em 5 números
- . 19h30.”\n\nÚnica interação do dia.\n\nDia: Você não tem time. T
- em tirador de pedido.\nAbrir o Canteiro: https://claude.ai/code/artifact
- /c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um aluno do Venda 10x conta
+ ndo o que mudou depois de ter roteiro (ou elogio do banco de provas). Es
+ creva o que ele fez de diferente.\n\nProva social todo dia.\n\nDia: Voc
+ ê não tem time. Tem tirador de pedido.\nAbrir o Canteiro: https://clau
+ de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260917-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T140000
-DTEND:20260917T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto de uma reunião de equipe ou do
-  quadro de metas real da empresa.\n\nDia: Você não tem time. Tem tirad
- or de pedido.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
- d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260917-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T153000
-DTEND:20260917T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 3” no 
- print\, sem explicar.\n\nDia: Você não tem time. Tem tirador de pedido
- .\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-
- bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260917-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T170000
-DTEND:20260917T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de elogio\, resultado ou mensa
- gem de dono que arrumou o processo\, com sua frase por cima.\n\nDiária.
-  Tampe o nome se precisar.\n\nDia: Você não tem time. Tem tirador de p
- edido.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-
- 4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260917-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T183000
-DTEND:20260917T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: dono que já trocou de
-  vendedor e o problema voltou. Para quem não é: quem acha que é só c
- ontratar melhor.\n\nFundo liso.\n\nDia: Você não tem time. Tem tirador
-  de pedido.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
- 79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260917-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260917T193000
 DTEND:20260917T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega os 5 númer
- os: orçamentos entrados\, propostas enviadas\, propostas com próximo p
- asso\, fechadas e margem média. Anuncia a parte 2.\n\nSigla 2 de 2: “
- esse é o Passo 3”. 30 a 45 segundos.\n\nDia: Você não tem time. Tem
-  tirador de pedido.\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: rotei
+ ro\, objeções\, limite de desconto e follow-up escritos. Depois\, a of
+ erta.\n\nDia: Você não tem time. Tem tirador de pedido.\nAbrir o Cante
+ iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
+ 6
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260917-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260917T193200
-DTEND:20260917T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do s
- eu comercial nos 5 Passos. Link na bio."\n\nSó aqui. Reset às 23h hoje
- .\n\nDia: Você não tem time. Tem tirador de pedido.\nAbrir o Canteiro:
-  https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260918-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260918T073000
 DTEND:20260918T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de um vão de obra ainda sem es
- quadria. Escreva por cima: "Esse vão está torto. Quem vai descobrir é
-  o instalador\, no dia."\n\nPlanejado ontem. Peça oculta 1: um objeto f
- ora de lugar (capacete em cima do armário\, por exemplo).\n\nDia: A vis
- ita técnica que fecha sozinha\nAbrir o Canteiro: https://claude.ai/code
- /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto sua na obra (ou de uma trena so
+ bre a bancada). Escreva: "15 minutos dentro da obra decidem a venda. A m
+ aioria usa pra tirar medida. Hoje eu mostro as 4 perguntas."\n\nPlanejad
+ o na véspera.\n\nDia: A visita técnica que fecha sozinha\nAbrir o Cant
+ eiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba1
+ 36
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260918-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T093000
-DTEND:20260918T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260918T120000
+DTEND:20260918T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Seu vendedor saiu da 
- obra com a medida. E só."\n\nSó o problema.\n\nDia: A visita técnica 
- que fecha sozinha\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
- a235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Medida qualquer um ti
+ ra. Diagnóstico só quem pergunta." Enquete: "Sua proposta vai por What
+ sApp ou apresentada? WhatsApp / Apresentada / Depende".\n\nA única inte
+ ração do dia.\n\nDia: A visita técnica que fecha sozinha\nAbrir o Can
+ teiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba
+ 136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260918-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T120000
-DTEND:20260918T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260918T160000
+DTEND:20260918T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"O que o seu vendedor traz da visita
-  além da medida?" com a caixinha de perguntas.Cliffhanger: “espere at
- é ver as 5 perguntas do próximo story. Elas cabem em 15 minutos dentro
-  da obra.”\n\nÚnica interação do dia. Responda em áudio no direct.
- \n\nDia: A visita técnica que fecha sozinha\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPlacar de sexta: print do comentári
+ o ou direct mais forte da semana\, com o nome do seguidor (se ele topar)
+ . Escreva: "Comentário da semana."\n\nSexta: bonificação do seguidor 
+ mais engajado — é regra do método.\n\nDia: A visita técnica que fec
+ ha sozinha\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
+ 9ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260918-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T140000
-DTEND:20260918T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto sua numa obra ou no galpão\, n
- o meio do dia.\n\nDia: A visita técnica que fecha sozinha\nAbrir o Cant
- eiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba1
- 36
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260918-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T153000
-DTEND:20260918T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 2” no 
- print\, sem explicar.\n\nDia: A visita técnica que fecha sozinha\nAbrir
-  o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778
- cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260918-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T170000
-DTEND:20260918T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de elogio ou resultado com sua
-  frase por cima dizendo o que a pessoa fez de diferente.\n\nDiária.\n\n
- Dia: A visita técnica que fecha sozinha\nAbrir o Canteiro: https://clau
- de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260918-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T183000
-DTEND:20260918T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem faz visita técni
- ca e sai só com número. Para quem não é: quem acha que medir é diag
- nosticar.\n\nFundo liso.\n\nDia: A visita técnica que fecha sozinha\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260918-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260918T193000
 DTEND:20260918T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega as 5 pergun
- tas da visita: para que é · prazo real · quem decide junto · o que n
- ão agradou antes · o que não pode acontecer. Anuncia a parte 2.\n\nSi
- gla 2 de 2: “esse é o Passo 2”. 30 a 45 segundos.\n\nDia: A visita 
- técnica que fecha sozinha\nAbrir o Canteiro: https://claude.ai/code/art
- ifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: as 4 
+ perguntas da visita e a proposta apresentada. Depois\, a oferta. Reset 
+ às 23h.\n\nDia: A visita técnica que fecha sozinha\nAbrir o Canteiro: 
+ https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260918-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260918T193200
-DTEND:20260918T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do s
- eu comercial nos 5 Passos. Link na bio."\n\nSó aqui.\n\nDia: A visita t
- écnica que fecha sozinha\nAbrir o Canteiro: https://claude.ai/code/arti
- fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260918-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260918T230000
 DTEND:20260918T231000
 TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
  ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
  x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
  era não custa nada — é só não postar nada solto esta noite.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
+DESCRIPTION:🧹 Reset de Stories — apague os 4
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260919-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260919T073000
 DTEND:20260919T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de duas propostas lado a lado (
- a sua e uma genérica)\, com os valores tampados. Escreva: "Adivinha qua
- l dessas o cliente escolheu. Nenhuma das duas dava pra escolher por outr
- a coisa."\n\nPlanejado ontem. Peça oculta 1: um post-it com um número 
- escrito no canto\, sem comentar.\n\nDia: Sua proposta parece a de qualqu
- er um\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4
- c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de três propostas lado a lado 
+ (nomes tampados). Escreva: "Três empresas\, três propostas\, um só je
+ ito de decidir: o total. Hoje eu mostro como sair dessa."\n\nPlanejado n
+ a véspera.\n\nDia: Sua proposta parece a de qualquer um\nAbrir o Cantei
+ ro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260919-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T093000
-DTEND:20260919T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260919T120000
+DTEND:20260919T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Item\, quantidade\, v
- alor. É isso que a sua proposta tem — e é por isso que só sobra o p
- reço."\n\nSó o problema.\n\nDia: Sua proposta parece a de qualquer um\
- nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
- a9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O cliente não compar
+ a empresas. Compara o que consegue entender." Enquete: "Sua proposta tem
+  seção de 'não incluso'? Sim / Não / Nunca pensei nisso".\n\nA únic
+ a interação do dia.\n\nDia: Sua proposta parece a de qualquer um\nAbri
+ r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
+ 8cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260919-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T120000
-DTEND:20260919T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260919T160000
+DTEND:20260919T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"A sua proposta tem prazo com data o
- u “dias úteis a combinar”?" com a enquete.Cliffhanger: “tem 6 ite
- ns que separam proposta de tabela. No fim do dia eu mostro os seis.”\n
- \nÚnica interação do dia.\n\nDia: Sua proposta parece a de qualquer u
- m\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-
- bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente que fechou sem pedi
+ r desconto depois de proposta apresentada (ou elogio do banco de provas)
+ . Escreva o que foi feito de diferente.\n\nProva social todo dia.\n\nDia
+ : Sua proposta parece a de qualquer um\nAbrir o Canteiro: https://claude
+ .ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260919-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T140000
-DTEND:20260919T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto da sua sábado real: obra\, mes
- a\, equipe\, estrada.\n\nDia: Sua proposta parece a de qualquer um\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260919-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T153000
-DTEND:20260919T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 4” no 
- print\, sem explicar.\n\nDia: Sua proposta parece a de qualquer um\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260919-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T170000
-DTEND:20260919T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um cliente elogiando a clar
- eza da proposta ou o atendimento\, com sua frase por cima.\n\nDiária. T
- ampe o nome se precisar.\n\nDia: Sua proposta parece a de qualquer um\nA
- brir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9
- -778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260919-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T183000
-DTEND:20260919T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem perde venda e ouv
- e “achei mais barato”. Para quem não é: quem acha que proposta é 
- só o número.\n\nFundo liso.\n\nDia: Sua proposta parece a de qualquer 
- um\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b
- -bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260919-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260919T193000
 DTEND:20260919T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega os 6 itens:
-  contexto · solução · o que inclui · o que não inclui · prazo com
-  data · garantia. Anuncia a parte 2.\n\nSigla 2 de 2: “esse é o Pass
- o 4”. 30 a 45 segundos.\n\nDia: Sua proposta parece a de qualquer um\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: propo
+ sta começa pela obra dele\, preço no fim\, seção de não incluso. De
+ pois\, a oferta.\n\nDia: Sua proposta parece a de qualquer um\nAbrir o C
+ anteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6a
+ ba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260919-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260919T193200
-DTEND:20260919T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nSó aqui. Reset às 23h.\n\nDia: Sua pr
- oposta parece a de qualquer um\nAbrir o Canteiro: https://claude.ai/code
- /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260920-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260920T073000
 DTEND:20260920T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nPrint (tampado) de uma conversa que 
- terminou em “vou pensar”. Escreva: "Essa conversa morreu aqui. E nã
- o foi por preço."\n\nPlanejado ontem. Peça oculta 1: uma frase espelha
- da escrita pequena no canto.\n\nDia: Cliente indeciso não precisa de ma
- is informação\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da2
- 35d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nPrint de um "vou pensar" no WhatsApp
+  (nome tampado). Escreva: "Essa frase não é um não. É um pedido. Hoj
+ e eu mostro o quê."\n\nPlanejado na véspera.\n\nDia: Cliente indeciso 
+ não precisa de mais informação\nAbrir o Canteiro: https://claude.ai/c
+ ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260920-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T093000
-DTEND:20260920T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260920T120000
+DTEND:20260920T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Ele disse que ia pens
- ar. Você mandou mais três fotos. Ele sumiu."\n\nSó o problema.\n\nDia
- : Cliente indeciso não precisa de mais informação\nAbrir o Canteiro: 
- https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Cliente indeciso não
+  está sem informação. Está sem segurança." Enquete: "O que você fa
+ z no 'vou pensar'? Mando mais material / Pergunto o que falta / Espero".
+ \n\nA única interação do dia.\n\nDia: Cliente indeciso não precisa d
+ e mais informação\nAbrir o Canteiro: https://claude.ai/code/artifact/c
+ 6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260920-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T120000
-DTEND:20260920T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260920T160000
+DTEND:20260920T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Quando ouve ‘vou pensar’\, voc
- ê manda mais informação ou faz uma pergunta?" com a enquete.Cliffhang
- er: “no final\, a resposta era tão simples que eu me senti bobo por n
- ão ter pensado antes. Mostro às 19h30.”\n\nÚnica interação do dia
- .\n\nDia: Cliente indeciso não precisa de mais informação\nAbrir o Ca
- nteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6ab
- a136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente que voltou depois d
+ o "vou pensar" (ou elogio do banco de provas). Escreva o que foi feito d
+ e diferente.\n\nProva social todo dia.\n\nDia: Cliente indeciso não pre
+ cisa de mais informação\nAbrir o Canteiro: https://claude.ai/code/arti
+ fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260920-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T140000
-DTEND:20260920T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto do seu domingo real.\n\nOs 20% 
- de pauta livre valem no story também.\n\nDia: Cliente indeciso não pre
- cisa de mais informação\nAbrir o Canteiro: https://claude.ai/code/arti
- fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260920-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T153000
-DTEND:20260920T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 3” no 
- print\, sem explicar.\n\nDia: Cliente indeciso não precisa de mais info
- rmação\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79c
- a-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260920-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T170000
-DTEND:20260920T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um cliente que estava indec
- iso e fechou\, com uma frase sua sobre o que destravou.\n\nDiária.\n\nD
- ia: Cliente indeciso não precisa de mais informação\nAbrir o Canteiro
- : https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260920-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T183000
-DTEND:20260920T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem tem proposta para
- da em “vou pensar”. Para quem não é: quem acha que insistir resolv
- e.\n\nFundo liso.\n\nDia: Cliente indeciso não precisa de mais informa
- ção\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4
- c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260920-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260920T193000
 DTEND:20260920T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega: pergunte 
- “o que ainda está em aberto?”\, escute a primeira coisa (é a obje
- ção real) e saia com data. Anuncia a parte 2.\n\nSigla 2 de 2: “esse
-  é o Passo 3”. 30 a 45 segundos.\n\nDia: Cliente indeciso não precis
- a de mais informação\nAbrir o Canteiro: https://claude.ai/code/artifac
- t/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: 'o qu
+ e te faria decidir hoje?' e a permissão com garantia escrita. Depois\, 
+ a oferta.\n\nDia: Cliente indeciso não precisa de mais informação\nAb
+ rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
+ 778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260920-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260920T193200
-DTEND:20260920T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nSó aqui.\n\nDia: Cliente indeciso não
-  precisa de mais informação\nAbrir o Canteiro: https://claude.ai/code/
- artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260921-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260921T073000
 DTEND:20260921T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma janela instalada numa sa
- la bonita. Escreva: "Ele não comprou isso aqui. Comprou não ouvir a av
- enida às 6 da manhã."\n\nPlanejado ontem. Peça oculta 1: um objeto de
-  cor neon que destoa do ambiente.\n\nDia: Você vende esquadria ou obra 
- sem dor de cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma janela com infiltração
+  ou porta empenada (obra de reforma que você atendeu). Escreva: "O clie
+ nte não tem medo do seu preço. Tem medo disto. Hoje eu mostro como usa
+ r."\n\nPlanejado na véspera.\n\nDia: Você vende esquadria ou obra sem 
+ dor de cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da2
+ 35d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260921-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T093000
-DTEND:20260921T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260921T120000
+DTEND:20260921T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Seu vendedor passou 2
- 0 minutos falando de perfil. O cliente queria saber se a obra atrasa."\n
- \nSó o problema.\n\nDia: Você vende esquadria ou obra sem dor de cabe
- ça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
- 9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Perfil\, espessura\, 
+ linha. O cliente não quer comprar nada disso." Enquete: "O que mais apa
+ rece na sua proposta? Produto / Prazo / O que o cliente evita".\n\nA ún
+ ica interação do dia.\n\nDia: Você vende esquadria ou obra sem dor de
+  cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
+ ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260921-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T120000
-DTEND:20260921T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260921T160000
+DTEND:20260921T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você vende esquadria ou vende obra
-  sem dor de cabeça?" com a enquete.Cliffhanger: “sabe aquele detalhe 
- que todo mundo ignora na visita? Ele decide a venda. Mostro às 19h30.
- ”\n\nÚnica interação do dia.\n\nDia: Você vende esquadria ou obra 
- sem dor de cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente contando que escolh
+ eu você por segurança\, não por preço (ou elogio do banco de provas)
+ . Escreva o que foi feito de diferente.\n\nProva social todo dia.\n\nDia
+ : Você vende esquadria ou obra sem dor de cabeça?\nAbrir o Canteiro: h
+ ttps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260921-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T140000
-DTEND:20260921T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nSegunda: foto da sua rotina real (fa
- mília\, treino\, igreja\, descanso).\n\nOs 20% valem no story também.\
- n\nDia: Você vende esquadria ou obra sem dor de cabeça?\nAbrir o Cante
- iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
- 6
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260921-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T153000
-DTEND:20260921T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 1” no 
- print\, sem explicar.\n\nDia: Você vende esquadria ou obra sem dor de c
- abeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca
- -4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260921-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T170000
-DTEND:20260921T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de cliente falando do resultad
- o (silêncio\, conforto\, prazo cumprido) — não do produto.\n\nCombin
- a com o tema do dia.\n\nDia: Você vende esquadria ou obra sem dor de ca
- beça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-
- 4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260921-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T183000
-DTEND:20260921T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem quer sair da comp
- aração por preço. Para quem não é: quem acha que catálogo bom vend
- e sozinho.\n\nFundo liso.\n\nDia: Você vende esquadria ou obra sem dor 
- de cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
- 79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260921-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260921T193000
 DTEND:20260921T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega: traduza to
- da ficha técnica em consequência\, e responda os 5 medos na proposta. 
- Anuncia a parte 2.\n\nSigla 2 de 2: “esse é o Passo 1”. 30 a 45 seg
- undos.\n\nDia: Você vende esquadria ou obra sem dor de cabeça?\nAbrir 
- o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778c
- f6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: a per
+ gunta 'o que deu errado na última esquadria' e a proposta que fala do m
+ edo dele. Depois\, a oferta.\n\nDia: Você vende esquadria ou obra sem d
+ or de cabeça?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da23
+ 5d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260921-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260921T193200
-DTEND:20260921T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nSó aqui.\n\nDia: Você vende esquadria
-  ou obra sem dor de cabeça?\nAbrir o Canteiro: https://claude.ai/code/a
- rtifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260922-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260922T073000
 DTEND:20260922T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma instalação em andament
- o (papelão no chão\, equipe trabalhando). Escreva: "A venda de amanhã
-  está sendo decidida aqui\, e o vendedor nem está na sala."\n\nPlaneja
- do ontem. Peça oculta 1: uma data escrita discretamente no fundo da cen
- a.\n\nDia: O instalador vende mais que o vendedor\nAbrir o Canteiro: htt
- ps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto da sua equipe de instalação (
+ ou da van). Escreva: "O melhor vendedor da empresa está nesta foto. E n
+ ão é o vendedor. Hoje eu explico."\n\nPlanejado na véspera.\n\nDia: O
+  instalador vende mais que o vendedor\nAbrir o Canteiro: https://claude.
+ ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260922-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T093000
-DTEND:20260922T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260922T120000
+DTEND:20260922T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Seu vendedor fica 40 
- minutos com o cliente. Sua equipe fica 4 horas dentro da casa dele."\n\n
- Só o problema.\n\nDia: O instalador vende mais que o vendedor\nAbrir o 
- Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6
- aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O instalador passa do
+ is dias na casa do cliente. O vendedor\, uma hora." Enquete: "Seu instal
+ ador foi treinado pra pedir indicação? Sim / Nunca pensei nisso / Não
+ ".\n\nA única interação do dia.\n\nDia: O instalador vende mais que o
+  vendedor\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
+ ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260922-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T120000
-DTEND:20260922T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260922T160000
+DTEND:20260922T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Sua equipe de instalação foi trei
- nada para atender ou só para instalar?" com a caixinha.Cliffhanger: “
- tem um checklist de 7 itens que evita quase toda reclamação. Vem às 1
- 9h30.”\n\nÚnica interação do dia.\n\nDia: O instalador vende mais q
- ue o vendedor\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
- d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente elogiando a equipe 
+ de instalação (ou elogio do banco de provas). Escreva o que a equipe f
+ ez de diferente.\n\nProva social todo dia.\n\nDia: O instalador vende ma
+ is que o vendedor\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
+ a235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260922-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T140000
-DTEND:20260922T141000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260922T193000
+DTEND:20260922T194000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto da equipe\, da van\, do galpão
-  — o bastidor real da terça.\n\nDia: O instalador vende mais que o ve
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
+ "hoje às 20h tem aula ao vivo do Venda 10x — toda terça\, uma hora\,
+  ao vivo comigo. R$ 698 no ano\, menos de R$ 58 por mês. Link na bio." 
+ Diga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta do últ
+ imo story é o Venda 10x (aula ao vivo 20h). Assunto da aula: a entrega 
+ como início da próxima venda.\n\nDia: O instalador vende mais que o ve
  ndedor\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-
  4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260922-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T153000
-DTEND:20260922T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 5” no 
- print\, sem explicar.\n\nDia: O instalador vende mais que o vendedor\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260922-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T170000
-DTEND:20260922T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de cliente elogiando a equipe 
- de instalação — limpeza\, pontualidade\, cuidado.\n\nCasa com o tema
-  do dia. Tampe o nome se precisar.\n\nDia: O instalador vende mais que o
-  vendedor\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79
- ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260922-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T183000
-DTEND:20260922T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem tem equipe própr
- ia ou terceirizada instalando. Para quem não é: quem acha que instala
- ção é serviço\, não venda.\n\nFundo liso.\n\nDia: O instalador vend
- e mais que o vendedor\nAbrir o Canteiro: https://claude.ai/code/artifact
- /c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260922-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T193000
-DTEND:20260922T194000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega o checklist
- : avisar na véspera · chegar no horário · proteger piso · mostrar o
-  vão · testar junto · explicar manutenção · sair com a casa limpa.
-  Anuncia a parte 2.\n\nSigla 2 de 2: “esse é o Passo 5”. 30 a 45 se
- gundos.\n\nDia: O instalador vende mais que o vendedor\nAbrir o Canteiro
- : https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260922-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260922T193200
-DTEND:20260922T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VENDA 
- 10X
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Hoje a oferta é a 
- aula ao vivo do Venda 10x\, daqui a pouco\, às 20h: "é toda terça\, u
- ma hora\, ao vivo comigo. R$ 698 no ano — menos de R$ 58 por mês. Lin
- k na bio." Diga que a de hoje é sobre como apresentar preço.\n\nTerça
-  é o único dia com oferta paga no story. Nos outros\, Raio-X.\n\nDia: 
- O instalador vende mais que o vendedor\nAbrir o Canteiro: https://claude
- .ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2 · TERÇA = VE
- NDA 10X
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
+ 0X
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260923-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260923T073000
 DTEND:20260923T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma planilha ou orçamento c
- om “R$/m²” à mostra. Escreva: "Esse número aqui é o que faz voc
- ê virar igual a todo mundo."\n\nPlanejado ontem. Peça oculta 1: uma pa
- lavra embaralhada escrita pequena no canto.\n\nDia: Preço fechado ou pr
- eço por metro?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da2
- 35d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma trena esticada ou de uma
+  planta com m². Escreva: "Esta unidade de medida está te fazendo perde
+ r venda. Hoje eu explico."\n\nPlanejado na véspera.\n\nDia: Preço fech
+ ado ou preço por metro?\nAbrir o Canteiro: https://claude.ai/code/artif
+ act/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260923-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T093000
-DTEND:20260923T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260923T120000
+DTEND:20260923T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Metro quadrado apaga 
- linha\, vidro\, ferragem\, instalação\, prazo e garantia. Sobra o núm
- ero."\n\nSó o problema.\n\nDia: Preço fechado ou preço por metro?\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Preço por metro é a
+  régua que o cliente usa pra te comparar." Enquete: "Sua proposta é po
+ r metro ou por obra fechada? Metro / Obra / Os dois".\n\nA única intera
+ ção do dia.\n\nDia: Preço fechado ou preço por metro?\nAbrir o Cante
+ iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
+ 6
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260923-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T120000
-DTEND:20260923T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260923T160000
+DTEND:20260923T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você passa preço por metro ou por
-  solução?" com a enquete.Cliffhanger: “tem três formas de dizer o m
- esmo valor e só uma vende. Mostro às 19h30.”\n\nÚnica interação d
- o dia.\n\nDia: Preço fechado ou preço por metro?\nAbrir o Canteiro: ht
- tps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente que fechou sem comp
+ arar por metro (ou elogio do banco de provas). Escreva o que foi feito d
+ e diferente.\n\nProva social todo dia.\n\nDia: Preço fechado ou preço 
+ por metro?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
+ 9ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260923-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T140000
-DTEND:20260923T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nPrint ou anotação da aula de ontem
-  — o trecho que mais gerou pergunta.\n\nMostra a mentoria por dentro s
- em vender hoje.\n\nDia: Preço fechado ou preço por metro?\nAbrir o Can
- teiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba
- 136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260923-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T153000
-DTEND:20260923T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 4” no 
- print\, sem explicar.\n\nDia: Preço fechado ou preço por metro?\nAbrir
-  o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778
- cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260923-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T170000
-DTEND:20260923T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de aluno do Venda 10x com resu
- ltado — prepara a oferta da mentoria.\n\nQuarta a prova social serve 
- à oferta paga.\n\nDia: Preço fechado ou preço por metro?\nAbrir o Can
- teiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba
- 136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260923-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T183000
-DTEND:20260923T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem perde venda no 
- “achei mais barato”. Para quem não é: quem acha que preço se defe
- nde no fim.\n\nFundo liso.\n\nDia: Preço fechado ou preço por metro?\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260923-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260923T193000
 DTEND:20260923T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega as três fo
- rmas de apresentar o mesmo valor e a ordem certa: contexto · solução 
- · escopo · prazo · garantia · valor. Anuncia a parte 2.\n\nSigla 2 d
- e 2: “esse é o Passo 4”. 30 a 45 segundos.\n\nDia: Preço fechado o
- u preço por metro?\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: preç
+ o fechado por obra e a ordem risco → prazo → incluso → número. De
+ pois\, a oferta. Reset às 23h.\n\nDia: Preço fechado ou preço por met
+ ro?\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9
+ b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260923-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260923T193200
-DTEND:20260923T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do s
- eu comercial nos 5 Passos. Link na bio."\n\nA oferta fica só aqui\, no 
- último story do dia.\n\nDia: Preço fechado ou preço por metro?\nAbrir
-  o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778
- cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260923-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260923T230000
 DTEND:20260923T231000
 TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
  ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
  x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
  era não custa nada — é só não postar nada solto esta noite.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
+DESCRIPTION:🧹 Reset de Stories — apague os 4
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260924-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260924T073000
 DTEND:20260924T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma agenda cheia de visitas.
-  Escreva: "Metade dessas visitas não vai virar venda. E você já sabia
-  disso na primeira conversa."\n\nPlanejado ontem. Peça oculta 1: um pos
- t-it com letra miúda colado no canto.\n\nDia: Escolher cliente é a dec
- isão mais rentável do ano\nAbrir o Canteiro: https://claude.ai/code/ar
- tifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma pilha de orçamentos ou 
+ da tela do CRM cheia de cards. Escreva: "Metade disto aqui nunca ia fech
+ ar. Hoje eu mostro como saber antes de orçar."\n\nPlanejado na véspera
+ .\n\nDia: Escolher cliente é a decisão mais rentável do ano\nAbrir o 
+ Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6
+ aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260924-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T093000
-DTEND:20260924T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260924T120000
+DTEND:20260924T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Três visitas\, duas 
- mudanças de projeto\, 40 dias de indecisão — e pagou o mesmo que que
- m fechou na primeira."\n\nSó o problema.\n\nDia: Escolher cliente é a 
- decisão mais rentável do ano\nAbrir o Canteiro: https://claude.ai/code
- /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Cliente ruim não apa
+ rece do nada. Você aceitou os sinais na primeira conversa." Enquete: "V
+ ocê orça para todo mundo que pede? Sim / Só com visita / Só depois d
+ e 3 perguntas".\n\nA única interação do dia.\n\nDia: Escolher cliente
+  é a decisão mais rentável do ano\nAbrir o Canteiro: https://claude.a
+ i/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260924-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T120000
-DTEND:20260924T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260924T160000
+DTEND:20260924T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você já recusou um cliente esse a
- no?" com a enquete: já · nunca · nem sabia que podia.Cliffhanger: “
- tem 5 sinais que aparecem na primeira conversa. Espere até o próximo s
- tory ver os cinco.”\n\nÚnica interação do dia.\n\nDia: Escolher cli
- ente é a decisão mais rentável do ano\nAbrir o Canteiro: https://clau
- de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de cliente bom contando por qu
+ e escolheu você (ou elogio do banco de provas). Escreva: "É esse clien
+ te que a gente escolhe atender."\n\nProva social todo dia.\n\nDia: Escol
+ her cliente é a decisão mais rentável do ano\nAbrir o Canteiro: https
+ ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260924-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T140000
-DTEND:20260924T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto da quinta real: obra\, galpão\
- , reunião.\n\nDia: Escolher cliente é a decisão mais rentável do ano
- \nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-b
- ca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260924-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T153000
-DTEND:20260924T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 2” no 
- print\, sem explicar.\n\nDia: Escolher cliente é a decisão mais rentá
- vel do ano\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
- 9ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260924-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T170000
-DTEND:20260924T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um cliente do perfil certo 
- — obra que fluiu\, decisão rápida — com sua frase sobre o que fez 
- dar certo.\n\nProva social pelo avesso: mostra o cliente bom.\n\nDia: Es
- colher cliente é a decisão mais rentável do ano\nAbrir o Canteiro: ht
- tps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260924-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T183000
-DTEND:20260924T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem tem agenda cheia 
- e caixa vazio. Para quem não é: quem acha que recusar cliente é luxo.
- \n\nFundo liso.\n\nDia: Escolher cliente é a decisão mais rentável do
-  ano\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
- 9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260924-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260924T193000
 DTEND:20260924T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega os 5 sinais
-  e as três perguntas antes de marcar visita: prazo\, escopo\, quem deci
- de. Anuncia a parte 2.\n\nSigla 2 de 2: “esse é o Passo 2”. 30 a 45
-  segundos.\n\nDia: Escolher cliente é a decisão mais rentável do ano\
- nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
- a9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: as tr
+ ês perguntas antes de orçar. Depois\, a oferta.\n\nDia: Escolher clien
+ te é a decisão mais rentável do ano\nAbrir o Canteiro: https://claude
+ .ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260924-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260924T193200
-DTEND:20260924T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nSó aqui. Reset às 23h.\n\nDia: Escolh
- er cliente é a decisão mais rentável do ano\nAbrir o Canteiro: https:
- //claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260925-1@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260925T073000
 DTEND:20260925T074000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/9 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de uma proposta arquivada ou ma
- rcada como perdida. Escreva: "Você sabe por que perdeu essa aqui? Prova
- velmente não."\n\nPlanejado ontem. Peça oculta 1: um objeto fora de lu
- gar no canto do quadro.\n\nDia: O que fazer quando você perde a venda\n
- Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
- 9-778cf6aba136
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de um caderno com uma lista de 
+ nomes riscados (ou fundo neutro). Escreva: "Cinco vendas perdidas este m
+ ês. Só uma foi por preço. Hoje eu mostro como descobrir as outras qua
+ tro."\n\nUse os seus números reais ou os de um aluno\, com permissão.\
+ n\nDia: O que fazer quando você perde a venda\nAbrir o Canteiro: https:
+ //claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/9 · Tiro de alerta
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260925-2@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T093000
-DTEND:20260925T094000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260925T120000
+DTEND:20260925T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/9 · P · Problema
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "“Ficou caro” é a
-  resposta educada. O motivo real é outro — e ninguém perguntou."\n\n
- Só o problema.\n\nDia: O que fazer quando você perde a venda\nAbrir o 
- Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6
- aba136
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "'Fechei com outro' e 
+ você respondeu 'tudo bem'. Aí você nunca vai saber." Enquete: "Você 
+ liga pra quem disse não? Sempre / Às vezes / Nunca".\n\nA única inter
+ ação do dia.\n\nDia: O que fazer quando você perde a venda\nAbrir o C
+ anteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6a
+ ba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/9 · P · Problema
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260925-3@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T120000
-DTEND:20260925T121000
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
+DTSTART:20260925T160000
+DTEND:20260925T161000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/9 · I · Indagação + interação
-DESCRIPTION:imagem · só a frase\n\n"Você liga para o cliente que disse
-  não?" com a enquete: ligo · nunca liguei · nem sabia que dava.Cliffh
- anger: “o que eu fiz nas 24 horas seguintes a uma perda mudou o meu m
- ês. Conto às 19h30.”\n\nÚltima interação do ciclo.\n\nDia: O que 
- fazer quando você perde a venda\nAbrir o Canteiro: https://claude.ai/co
- de/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPlacar de sexta: print do comentári
+ o ou direct mais forte da semana. Escreva: "Comentário da semana."\n\nB
+ onificação do seguidor mais engajado — regra do método.\n\nDia: O q
+ ue fazer quando você perde a venda\nAbrir o Canteiro: https://claude.ai
+ /code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/9 · I · Indagação + interação
+DESCRIPTION:🖼 Story 3/4 · Prova social
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260925-4@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T140000
-DTEND:20260925T141000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 4/9 · Solto · bastidor
-DESCRIPTION:imagem · só a frase\n\nFoto do fechamento da semana: planil
- ha\, quadro\, café.\n\nDia: O que fazer quando você perde a venda\nAbr
- ir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-7
- 78cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 4/9 · Solto · bastidor
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260925-5@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T153000
-DTEND:20260925T154000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 5/9 · Comunidade
-DESCRIPTION:imagem · só a frase\n\nPrint de um direct respondido em áu
- dio\, com sua frase por cima.\n\nSigla 1 de 2: escreva “Passo 3” no 
- print\, sem explicar.\n\nDia: O que fazer quando você perde a venda\nAb
- rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
- 778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 5/9 · Comunidade
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260925-6@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T170000
-DTEND:20260925T171000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/9 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um cliente que voltou depoi
- s de ter dito não — é a prova social perfeita para hoje.\n\nSe não 
- tiver\, use um elogio recente do banco de provas.\n\nDia: O que fazer qu
- ando você perde a venda\nAbrir o Canteiro: https://claude.ai/code/artif
- act/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/9 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260925-7@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T183000
-DTEND:20260925T184000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 7/9 · Para quem é · para quem não é
-DESCRIPTION:imagem · só a frase\n\nPara quem é: quem perde e não sabe
-  por quê. Para quem não é: quem acha que perdeu por preço e pronto.\
- n\nFundo liso.\n\nDia: O que fazer quando você perde a venda\nAbrir o C
- anteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6a
- ba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 7/9 · Para quem é · para quem não é
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260925-8@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260925T193000
 DTEND:20260925T194000
 TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 8/9 · S · Solução — parte 1 de 2
-DESCRIPTION:vídeo · você falando\n\nVocê falando. Entrega: ligue uma 
- semana depois\, pergunte “o que pesou?”\, não venda nessa ligação
- \, registre o motivo com as palavras dele. Anuncia a parte 2.\n\nSigla 2
-  de 2: “esse é o Passo 3”. 30 a 45 segundos.\n\nDia: O que fazer qu
- ando você perde a venda\nAbrir o Canteiro: https://claude.ai/code/artif
- act/c6da235d-79ca-4c9b-bca9-778cf6aba136
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "faz o Rai
+ o-X — 15 perguntas\, 3 minutos\, de graça\, e você recebe a nota do 
+ seu comercial em cada um dos 5 Passos. Link na bio." Fale devagar. É o 
+ único momento do dia em que você pede alguma coisa.\n\nResposta: a lig
+ ação de uma semana depois e a lista de motivos. Depois\, a oferta. Res
+ et às 23h. Fim do ciclo: amanhã o placar.\n\nDia: O que fazer quando v
+ ocê perde a venda\nAbrir o Canteiro: https://claude.ai/code/artifact/c6
+ da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🎥 Story 8/9 · S · Solução — parte 1 de 2
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260925-9@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
-DTSTART:20260925T193200
-DTEND:20260925T194200
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 9/9 · S · Oferta — parte 2 de 2
-DESCRIPTION:vídeo · você falando\n\nVídeo falado. Oferta: "faz o Raio
- -X — 15 perguntas\, 3 minutos\, de graça\, com a nota do seu comercia
- l nos 5 Passos. Link na bio."\n\nSó aqui. Fim do ciclo: amanhã sai o p
- lacar da semana.\n\nDia: O que fazer quando você perde a venda\nAbrir o
-  Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf
- 6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 9/9 · S · Oferta — parte 2 de 2
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260925-reset@vendanaobra
-DTSTAMP:20260907T224047Z
-SEQUENCE:3
+DTSTAMP:20260910T113123Z
+SEQUENCE:4
 DTSTART:20260925T230000
 DTEND:20260925T231000
 TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 9
-DESCRIPTION:Apague a sequência inteira do dia (os 9\, não só o último
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
  ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
  x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
  era não custa nada — é só não postar nada solto esta noite.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 9
+DESCRIPTION:🧹 Reset de Stories — apague os 4
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
