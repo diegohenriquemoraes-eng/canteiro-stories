@@ -104,7 +104,9 @@ function desenhar(texto, i, total){
   c.fillRect(90, 96, capa ? 320 : 120, 10);
 
   const margem = 90, largura = L - margem * 2;
-  let tam = capa ? 82 : 62;
+  // 14/09/2026: frases curtas (capa ≤ 8 palavras, slide ≤ 8) — a letra sobe junto,
+  // senão sobra meia tela vazia. O laço abaixo ainda encolhe se não couber.
+  let tam = capa ? 100 : 78;
   const peso = capa ? 800 : 500;
   let linhas;
   do {

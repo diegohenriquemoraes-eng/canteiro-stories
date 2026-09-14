@@ -270,6 +270,13 @@ celular** (era nele que ele clicava, e salva em Arquivos, não em Fotos) e o lin
 `?v=` — o Safari tinha segurado a versão anterior em cache e ele via os botões antigos. Ao mexer
 nesta página, subir o número da versão no `linkArtes()` do app.
 
+**Frases curtas (14/09/2026).** O Diego viu o carrossel do dia ("Uma semana de atraso…", 15
+palavras na capa) e pediu texto mais curto — a regra vale para o @vendanaobra e para a Perffec.
+Os 11 carrosséis de 15/09 a 25/09 foram reescritos no app: **capa ≤ 8 palavras, slide ≤ 8, uma
+ideia só** (mediana caiu de 12 para 8 palavras). A letra subiu junto em `carrossel.html` (capa
+82→100 px, slide 62→78), senão sobrava meia tela vazia; o laço ainda encolhe quando não cabe.
+Toda peça nova segue esta régua; o `linkArtes` foi para `?v=3`.
+
 ⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
 senão a página segue mostrando os slides antigos.
 
