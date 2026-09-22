@@ -237,6 +237,41 @@ automação de Stories mesmo assim, em 04/09 — e Story é caso diferente
 (efêmero, fora do ranking do feed). Se a entrega do perfil cair, esta é a
 primeira variável a olhar.
 
+## O conteúdo virou construção civil, não esquadria (22/09/2026)
+
+Decisão do Diego, respondendo a pendência aberta desde 14/08 ("nicho estreito
+ou construção inteira?"): **construção inteira**. Os 4 dias que restavam no
+Canteiro (22 a 25/09) foram refeitos e o ciclo foi até **21/10** — 30 dias.
+
+- Pauta: **marketing, vendas e posicionamento**. Instalação saiu.
+- Vocabulário técnico de esquadria (perfil, espessura de vidro, nome de linha)
+  fora do texto: o exemplo é a empresa da construção, qualquer que seja o
+  produto que ela vende.
+- O Reel da manhã deixou de ser "história da Fesqua" e virou **"história com
+  número"**: caso real da operação, contado pelo Diego. É o formato que a
+  síntese mensal do cérebro mediu como o que mais entrega (mediana 485 contra
+  125 dos demais Reels maduros). Número redondo, sem nome de cliente.
+- Quantidade e formato **não mudaram**: 1 carrossel 12h30 (8 slides, capa
+  ≤ 8 palavras), 2 Reels (07h30 e 19h30, ≤ 30 s, sem música) e 4 stories
+  (07h30 alerta · 12h enquete · 16h prova social · 19h30 solução + oferta).
+  Reset de stories na quarta e na sexta; terça a oferta é o Venda 10x.
+
+Dois ajustes no app no mesmo dia:
+
+- **Saiu o botão "Copiar gancho + CTA (teleprompter)"** dos Reels — o Diego não
+  usa mais. O CTA era visível SÓ por esse botão, então passou a aparecer dentro
+  de "Roteiro completo"; sem isso ele sumiria do app inteiro.
+- **"Copiar a frase da tela"** nos cartões com enquete copiava a frase base
+  **mais** a pergunta **e** as opções. Agora `fraseDoStory` corta no primeiro
+  marcador de sticker (`enquete`, `caixinha`, `quiz`, `cliffhanger`) e devolve
+  só o que vem antes; quando o sticker é o cartão inteiro, devolve só a
+  pergunta dele, sem as opções. Sem aspas em lugar nenhum, devolve a instrução
+  inteira — cortar no marcador deixaria um pedaço de frase.
+
+⚠ Depois de mexer no conteúdo: `python exportar_carrosseis.py` (aqui) **e**
+`python Perffec\Claude\Canteiro\gerar_ics.py` — o segundo faz pull, commit e
+push sozinho, mas exige este repo limpo antes.
+
 ## Artes do carrossel (04/09/2026) — `docs/carrossel.html`
 
 O carrossel é o **único post que o Diego publica à mão**: a Graph API não coloca música em
