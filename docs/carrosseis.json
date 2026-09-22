@@ -346,76 +346,569 @@
   "dow": "Ter",
   "hora": "12:30",
   "n": 1,
-  "titulo": "Checklist do dia da instalação",
-  "publico": "compartilhar",
+  "titulo": "O dinheiro do mês já está no funil",
+  "publico": "bio",
   "slides": [
-   "Reclamação de instalação é o que ninguém combinou antes.",
-   "Avisar na véspera: horário, pessoas, tempo.",
-   "Chegar no horário. Atrasou? Avisa antes.",
-   "Proteger piso e móveis antes da primeira caixa.",
-   "Mostrar o que achou no vão, com foto.",
-   "Testar todas as folhas com ele junto.",
-   "Explicar limpeza: trilho, borracha, vedação.",
-   "Sair com a casa limpa. Vale mais que brinde.",
-   "Imprime e cola no carro da equipe."
+   "O dinheiro deste mês já está no seu funil.",
+   "Proposta pronta que ninguém chegou a apresentar.",
+   "Data de decisão vencida sem uma ligação.",
+   "Negociação parada há 30 dias sem tarefa.",
+   "Cliente grande pausado, sem mensagem nenhuma.",
+   "Não falta cliente. Falta alguém ligar.",
+   "Abra o funil hoje e conte quantos.",
+   "Onde o comercial vaza: Raio-X, link na bio."
   ],
-  "legenda": "Avisar na véspera · chegar no horário · proteger piso · mostrar o que achou no vão · testar junto · explicar manutenção · sair com a casa limpa.\n\nSete itens que evitam quase toda reclamação.\n\nQuantos a sua equipe faz hoje?\n@vendanaobra\n\n#instalacao #processo #esquadrias"
+  "legenda": "Eu ensino isso — e mesmo assim achei mais de meio milhão parado no meu próprio funil.\n\nNão era falta de cliente. Era proposta pronta que ninguém apresentou, data de decisão vencida sem ligação e negociação grande pausada sem uma mensagem sequer.\n\nAntes de investir em anúncio para trazer gente nova, abre o funil e conta quantas oportunidades já estão lá dentro esperando alguém encostar.\n\nQuantas propostas prontas estão paradas na sua empresa agora?\n@vendanaobra\n\n#gestaocomercial #vendas #construcaocivil #funildevendas #crm"
  },
  {
   "dia": "2026-09-23",
   "dow": "Qua",
   "hora": "12:30",
   "n": 1,
-  "titulo": "3 formas de apresentar o mesmo preço",
+  "titulo": "A conta do desconto que ninguém faz",
   "publico": "compartilhar",
   "slides": [
-   "Mesmo preço, três formas. Só uma vira decisão.",
-   "1. “R$ 48 mil, ou R$ 1.100 o metro.” Vira comparação.",
-   "2. “R$ 48 mil no total.” Vira susto.",
-   "3. “Suíte e sala resolvidas por R$ 48 mil, instaladas, com 5 anos de garantia.”",
-   "A terceira dá escopo e segurança na mesma frase.",
-   "E abre o parcelamento sem parecer defesa.",
-   "Mesmo número. Outra conversa.",
-   "Salva para a próxima proposta."
+   "Você acha que deu 10%. Deu 21%.",
+   "Desconto não sai do faturamento. Sai do lucro.",
+   "Contrato de R$ 50 mil, 10% = R$ 5 mil.",
+   "Esses R$ 5 mil saem inteiros da margem.",
+   "Para empatar, você vende mais R$ 10 mil.",
+   "Um cliente a menos por mês, de graça.",
+   "Faça essa conta antes da próxima concessão.",
+   "Salva e mostra pro teu vendedor amanhã."
   ],
-  "legenda": "Mesmo valor, três formas de dizer. Só uma vende.\n\n“R$ 1.100 o metro” vira comparação. “R$ 48.000” vira susto.\n\n“A suíte e a sala ficam resolvidas por R$ 48.000, com instalação, arremate e garantia de 5 anos” vira decisão.\n\nQual você usa?\n@vendanaobra\n\n#precificacao #proposta #vendas"
+  "legenda": "Você dá 10% de desconto achando que perdeu 10%. Perdeu 21% do lucro.\n\nDesconto não sai do faturamento, sai da margem: num contrato de R$ 50 mil, os R$ 5 mil saem inteiros do que sobra — e você precisa vender outros R$ 10 mil só para voltar ao ponto de antes.\n\nNão é discurso contra desconto. É que ele tem preço, e quase nenhuma empresa da construção calculou o dele.\n\nVocê já fez essa conta na sua margem?\n@vendanaobra\n\n#precificacao #margem #vendas #construcaocivil #gestaocomercial"
  },
  {
   "dia": "2026-09-24",
   "dow": "Qui",
   "hora": "12:30",
   "n": 1,
-  "titulo": "Os 5 sinais do cliente que vai dar prejuízo",
+  "titulo": "6 perguntas para ele levar ao concorrente",
   "publico": "bio",
   "slides": [
-   "Um sinal é alerta. Três é conta no vermelho.",
-   "1. Fala mal de todos os fornecedores anteriores.",
-   "2. Pede preço antes de você entender a obra.",
-   "3. Muda o escopo três vezes antes de fechar.",
-   "4. Some por semanas e volta com urgência.",
-   "5. Negocia o valor com o serviço pronto.",
-   "Todos aparecem na primeira conversa.",
-   "Onde o seu comercial sangra? Raio-X, link na bio."
+   "Ele vai comparar. Ensine ele a comparar.",
+   "1. O que exatamente está incluso no preço?",
+   "2. Qual o prazo, e o que acontece se atrasar?",
+   "3. Quem responde se der problema depois?",
+   "4. A garantia está escrita no contrato?",
+   "5. O que NÃO está no orçamento?",
+   "6. Quem executa: equipe própria ou terceiro?",
+   "Quem tem medo de comparação vende commodity."
   ],
-  "legenda": "Fala mal de todos os fornecedores · pede preço antes de você entender a obra · muda escopo três vezes · some e volta com urgência · negocia depois do serviço pronto.\n\nUm sinal é alerta. Três é prejuízo.\n\nQuantos desses o seu último cliente ruim tinha?\n@vendanaobra\n\n#qualificacao #vendas #gestao #esquadrias"
+  "legenda": "Cliente disse que vai fazer outro orçamento? Diz: ótimo.\n\nE entrega as perguntas: o que está incluso, qual o prazo e o que acontece se atrasar, quem responde se der problema, se a garantia está no contrato, o que NÃO está no orçamento, quem executa.\n\nA objeção vira um retorno com data marcada — e a comparação sai do preço.\n\nQuem tem medo de ser comparado está vendendo commodity.\n\nVocê entrega critério ou torce para ele não comparar?\n@vendanaobra\n\n#vendas #proposta #posicionamento #construcaocivil #gestaocomercial"
  },
  {
   "dia": "2026-09-25",
   "dow": "Sex",
   "hora": "12:30",
   "n": 1,
-  "titulo": "Os 4 motivos reais de perder venda",
+  "titulo": "Onde o vendedor bom realmente está",
+  "publico": "compartilhar",
+  "slides": [
+   "Varri 12 sites de emprego. Só um serviu.",
+   "Banco de currículo virou assinatura de empresa.",
+   "Grupo de Facebook devolve mão de obra, não vendedor.",
+   "Google e Instagram devolvem empresa, não candidato.",
+   "199 perfis viraram 19 disponíveis e 3 reais.",
+   "O funil de contratação é estreito. Sempre.",
+   "Quem quer vendedor: busca ativa, um por um.",
+   "Manda pra quem está contratando errado."
+  ],
+  "legenda": "Precisei contratar vendedor e varri doze sites de emprego, um por um.\n\nBanco de currículo virou assinatura de empresa. Grupo de Facebook do setor devolve mão de obra, não vendedor. Google e Instagram devolvem empresa anunciando vaga.\n\nO que funcionou foi busca ativa: 199 perfis do setor, 19 com o selo de disponível, 3 que realmente vendem.\n\nO funil de contratação é estreito. Esperar dezenas de nomes é irreal.\n\nComo você achou o seu último vendedor?\n@vendanaobra\n\n#contratacao #gestao #vendas #construcaocivil #time"
+ },
+ {
+  "dia": "2026-09-26",
+  "dow": "Sáb",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "A frase que troca desconto por decisão",
   "publico": "bio",
   "slides": [
-   "Você acha que perdeu por preço. Não foi.",
-   "1. Demorou. Outro respondeu primeiro.",
-   "2. Não entendeu a obra. Proposta genérica.",
-   "3. Faltou segurança: quem responde se der problema?",
-   "4. Sem próximo passo. Ninguém marcou nada.",
-   "Preço aparece quando os quatro falharam.",
-   "Anote o motivo de cada perda por 30 dias.",
-   "O diagnóstico dos quatro: Raio-X, link na bio."
+   "Nunca dê desconto antes desta frase.",
+   "Pergunte: \"o que te impede de fechar agora?\"",
+   "Cale a boca e deixe ele responder.",
+   "Ele falou. Agora condicione: \"se eu conseguir isso...\"",
+   "\"...a gente fecha hoje?\"",
+   "Disse sim: negocie. Disse não: a condição some.",
+   "Concessão aberta vira arma na mão do concorrente.",
+   "Salva essa frase e usa segunda-feira."
   ],
-  "legenda": "Demorou · não entendeu a obra · faltou segurança · não teve próximo passo.\n\nPreço só aparece quando nenhum dos quatro foi resolvido.\n\nAnote o motivo de cada perda por 30 dias: o padrão aparece sozinho.\n\nQual desses quatro é o seu?\n@vendanaobra\n\n#vendas #gestaocomercial #esquadrias"
+  "legenda": "A concessão se troca por decisão, nunca por esperança.\n\nPrimeiro: \"o que te impede de fechar agora?\" — e silêncio.\nDepois: \"se eu conseguir o que você falou, a gente fecha hoje?\"\n\nDisse sim, você negocia. Disse não, a condição deixa de existir — e volta a investigar a objeção real.\n\nDesconto que fica aberto \"até amanhã\" vira arma na mão do concorrente.\n\nVocê negocia contra compromisso ou dá e torce?\n@vendanaobra\n\n#negociacao #vendas #fechamento #construcaocivil #gestaocomercial"
+ },
+ {
+  "dia": "2026-09-27",
+  "dow": "Dom",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "O cliente mais barato do mundo é o vizinho",
+  "publico": "compartilhar",
+  "slides": [
+   "Sua obra entregue fica visível por dez anos.",
+   "E não gera uma indicação sequer.",
+   "Quem constrói ao lado tem o mesmo padrão.",
+   "Muitas vezes é o mesmo projetista, o mesmo orçamento.",
+   "Anúncio custa milhares por cliente novo.",
+   "O vizinho custa uma conversa.",
+   "Anote o condomínio de cada obra ganha.",
+   "Marca alguém que entrega e não volta lá."
+  ],
+  "legenda": "Toda obra que você entrega fica dentro de um lugar onde há outras obras.\n\nMesmo condomínio, mesmo padrão, muitas vezes o mesmo projetista e o mesmo orçamento. E a sua entrega fica visível da rua por anos sem gerar uma indicação.\n\nCliente novo por anúncio custa milhares. O vizinho custa uma conversa.\n\nComeça pelo mais barato: anote em que condomínio ou loteamento cada obra ganha aconteceu. O mapa aparece sozinho.\n\nVocê sabe quantas obras já entregou no mesmo endereço?\n@vendanaobra\n\n#prospeccao #marketing #construcaocivil #vendas #indicacao"
+ },
+ {
+  "dia": "2026-09-28",
+  "dow": "Seg",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Troque presença por mecanismo",
+  "publico": "bio",
+  "slides": [
+   "Enquanto você lembra, a empresa é você.",
+   "Lembrar vira tarefa com data no CRM.",
+   "Cobrar vira alerta automático no celular.",
+   "Revisar vira playbook escrito, não conversa.",
+   "Decidir vira regra: 30 dias sem tarefa, sobe.",
+   "Aprovar vira alçada definida antes, não caso a caso.",
+   "Medir vira painel, não sensação.",
+   "Empresa boa vende sem o dono na sala."
+  ],
+  "legenda": "Enquanto você precisa lembrar, cobrar, revisar, decidir e aprovar, a empresa é você.\n\nPara cada verbo de presença existe um mecanismo: lembrar vira tarefa com data, cobrar vira alerta, revisar vira playbook, decidir vira regra escrita, aprovar vira alçada definida antes, medir vira painel.\n\nNão é delegar. É trocar presença por mecanismo.\n\nEmpresa boa vende sem o dono na sala.\n\nQual desses cinco verbos ainda é você?\n@vendanaobra\n\n#gestao #processocomercial #empreendedorismo #construcaocivil #lideranca"
+ },
+ {
+  "dia": "2026-09-29",
+  "dow": "Ter",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Tudo que você dá de graça e nunca cobrou",
+  "publico": "compartilhar",
+  "slides": [
+   "Todo favor tem preço. Você só não cobrou.",
+   "A visita a mais: de graça.",
+   "O terceiro levantamento: de graça.",
+   "O projeto refeito porque mudou de ideia: de graça.",
+   "A urgência que virou hora extra: de graça.",
+   "O erro não é cobrar. É cobrar em silêncio.",
+   "Coloque no orçamento, nem que seja zerado.",
+   "Manda pra quem trabalha de graça sem perceber."
+  ],
+  "legenda": "Todo favor é um investimento com preço embutido que nunca foi dito.\n\nA visita a mais, o terceiro levantamento, o projeto refeito porque o cliente mudou de ideia, a urgência que virou hora extra. Tudo isso tem custo — e sai do seu bolso em silêncio.\n\nO erro não é cobrar. É cobrar sem avisar, acumular e explodir depois.\n\nColoque cada extra no orçamento, mesmo que com valor zerado e a palavra \"cortesia\". O cliente precisa enxergar o que recebeu.\n\nQuanto você deu de graça esse mês sem registrar?\n@vendanaobra\n\n#precificacao #gestaocomercial #vendas #construcaocivil #margem"
+ },
+ {
+  "dia": "2026-09-30",
+  "dow": "Qua",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Sua meta é compromisso ou desejo?",
+  "publico": "bio",
+  "slides": [
+   "Bateu ou não bateu dá na mesma? Não é meta.",
+   "Meta é número com prazo e consequência.",
+   "O vendedor precisa ver o que falta todo dia.",
+   "Placar visível, não planilha guardada.",
+   "Bônus premia consistência, não pico isolado.",
+   "Reunião semanal com os mesmos indicadores.",
+   "Combine antes para poder cobrar depois.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Se bater ou não bater a meta dá na mesma, o que você tem é desejo.\n\nMeta é número com prazo e consequência: o \"falta vender\" visível todo dia, placar que todo mundo enxerga, bônus que premia meses consecutivos e não pico isolado, reunião semanal com os mesmos indicadores.\n\nE cobrar sem virar hostilidade tem um truque só: combinar antes. Ninguém se revolta com o que aceitou.\n\nA sua meta muda alguma coisa na prática?\n@vendanaobra\n\n#metas #gestaocomercial #lideranca #construcaocivil #time"
+ },
+ {
+  "dia": "2026-10-01",
+  "dow": "Qui",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Lead não é quem pediu preço",
+  "publico": "compartilhar",
+  "slides": [
+   "Pedir preço não transforma ninguém em lead.",
+   "Lead tem obra, tem prazo e tem decisão.",
+   "Sem os três, é curiosidade com telefone.",
+   "Três perguntas separam um do outro.",
+   "Para que é a obra e em que fase está?",
+   "Até quando você precisa resolver isso?",
+   "Quem mais decide junto com você?",
+   "Quem não responde, não vira orçamento."
+  ],
+  "legenda": "Pedir preço não transforma ninguém em lead.\n\nLead é quem tem obra, tem prazo e tem poder de decidir. Sem os três, é curiosidade com número de telefone — e orçamento leva horas da sua equipe.\n\nTrês perguntas separam um do outro: para que é a obra e em que fase está, até quando precisa resolver, quem mais decide junto.\n\nQuem não responde, não vira orçamento. Não é arrogância: é escolher onde o time gasta as horas.\n\nQuantos orçamentos do mês foram pra quem não decide?\n@vendanaobra\n\n#qualificacao #marketing #vendas #construcaocivil #gestaocomercial"
+ },
+ {
+  "dia": "2026-10-02",
+  "dow": "Sex",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Perdeu por preço? Quase nunca é isso",
+  "publico": "bio",
+  "slides": [
+   "\"Perdeu por preço\" é o motivo mais mentiroso.",
+   "Demorou. Outro respondeu antes de você.",
+   "Não entendeu a obra: proposta igual a qualquer uma.",
+   "Faltou segurança: quem responde se der problema?",
+   "Sem próximo passo. Ninguém combinou nada.",
+   "Preço só aparece quando os quatro falharam.",
+   "Anote o motivo real por 30 dias.",
+   "O padrão aparece sozinho. E dói."
+  ],
+  "legenda": "\"Perdeu por preço\" é o motivo mais registrado e o mais mentiroso do comercial da construção.\n\nNa prática são quatro: demorou e outro chegou antes; não entendeu a obra e mandou proposta genérica; faltou segurança sobre quem responde se der problema; não marcou o próximo passo.\n\nPreço só aparece quando nenhum desses foi resolvido.\n\nAnote o motivo real de cada perda por 30 dias. O padrão aparece sozinho — e aí você tem o que consertar, não o que reclamar.\n\nQual desses quatro é o seu?\n@vendanaobra\n\n#vendas #gestaocomercial #indicadores #construcaocivil #processocomercial"
+ },
+ {
+  "dia": "2026-10-03",
+  "dow": "Sáb",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Ser lembrado vale mais que ser barato",
+  "publico": "compartilhar",
+  "slides": [
+   "Ninguém cota com quem não lembrou.",
+   "A decisão começa meses antes da cotação.",
+   "Quem aparece durante a obra entra na lista.",
+   "Quem chega na hora do preço, compete no preço.",
+   "Presença não é anúncio. É estar por perto.",
+   "Conteúdo, visita, grupo, indicação: tudo é lembrança.",
+   "O barato disputa a lista. Você monta a lista.",
+   "Salva e pensa: quem te lembra hoje?"
+  ],
+  "legenda": "Ninguém cota com quem não lembrou.\n\nA decisão de quem vai fornecer começa meses antes da cotação — na conversa com o projetista, com o vizinho, com quem já passou pela obra.\n\nQuem aparece durante esse tempo entra na lista. Quem só aparece na hora do preço, compete no preço.\n\nPresença não é anúncio. É estar por perto: conteúdo, visita, grupo, indicação.\n\nO mais barato disputa a lista. Quem é lembrado monta a lista.\n\nQuem lembra da sua empresa quando a obra começa?\n@vendanaobra\n\n#marketing #posicionamento #vendas #construcaocivil #marca"
+ },
+ {
+  "dia": "2026-10-04",
+  "dow": "Dom",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Por que conteúdo encurta a venda",
+  "publico": "bio",
+  "slides": [
+   "Conteúdo não fecha venda. Encurta ela.",
+   "Quem te acompanha chega com metade das dúvidas.",
+   "Ele já sabe como você pensa e trabalha.",
+   "A conversa começa na confiança, não na desconfiança.",
+   "E preço deixa de ser o primeiro assunto.",
+   "Não é aparecer todo dia com novidade.",
+   "É responder em público o que perguntam no privado.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Conteúdo não fecha venda. Encurta ela.\n\nQuem acompanha a sua empresa chega na conversa com metade das dúvidas resolvidas: já sabe como você pensa, como trabalha e o que espera do cliente.\n\nA conversa começa na confiança em vez de começar na desconfiança — e preço deixa de ser o primeiro assunto.\n\nNão é aparecer todo dia com novidade. É responder, em público, o que o cliente já te pergunta no privado.\n\nQual pergunta você mais responde por WhatsApp?\n@vendanaobra\n\n#marketing #conteudo #posicionamento #construcaocivil #vendas"
+ },
+ {
+  "dia": "2026-10-05",
+  "dow": "Seg",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Se o preço muda com o humor, não é tabela",
+  "publico": "compartilhar",
+  "slides": [
+   "Mesmo serviço, dois clientes, dois preços.",
+   "Isso não é negociação. É falta de política.",
+   "Tabela existe pra você não decidir na emoção.",
+   "Defina o que pode ser dado, e contra o quê.",
+   "Defina quem pode autorizar cada faixa.",
+   "Escreva. Política que só você sabe não existe.",
+   "O cliente sente quando o número é chutado.",
+   "Manda pra quem ainda precifica no feeling."
+  ],
+  "legenda": "Mesmo serviço, dois clientes, dois preços — e nenhuma razão escrita para a diferença.\n\nIsso não é negociação, é ausência de política. E o cliente sente: preço que muda com o humor ensina que dá pra insistir mais um pouco.\n\nTabela existe pra você não decidir na emoção. Defina o que pode ser concedido, contra qual contrapartida e quem pode autorizar cada faixa.\n\nE escreva. Política que só o dono sabe não existe.\n\nO seu preço é tabela ou é humor?\n@vendanaobra\n\n#precificacao #gestaocomercial #vendas #construcaocivil #processocomercial"
+ },
+ {
+  "dia": "2026-10-06",
+  "dow": "Ter",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "O cliente não some. Ele é abandonado.",
+  "publico": "bio",
+  "slides": [
+   "Ninguém some depois de uma conversa boa.",
+   "No dia seguinte: mande o combinado por escrito.",
+   "Em sete dias: traga algo novo, não um \"e aí?\".",
+   "Em trinta dias: encerre com postura, não com silêncio.",
+   "\"Vou encerrar essa proposta. Faz sentido?\"",
+   "Essa é a mensagem que mais recupera venda.",
+   "Cobrança some. Cadência funciona.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Ninguém some depois de uma conversa boa. O cliente some depois de uma proposta que ninguém conduziu.\n\nA cadência que resolve tem três toques: no dia seguinte, o combinado por escrito; em sete dias, algo novo (não um \"e aí, pensou?\"); em trinta dias, o encerramento com postura.\n\nE é justamente a mensagem de encerramento — \"vou encerrar essa proposta, faz sentido?\" — a que mais faz gente voltar.\n\nQuantos clientes seus estão parados há mais de 30 dias sem uma mensagem?\n@vendanaobra\n\n#followup #vendas #gestaocomercial #construcaocivil #processocomercial"
+ },
+ {
+  "dia": "2026-10-07",
+  "dow": "Qua",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "O pedido de indicação que funciona",
+  "publico": "compartilhar",
+  "slides": [
+   "Indicação não cai do céu. Ela se pede.",
+   "O pior pedido: \"se souber de alguém, me avisa\".",
+   "Isso não é pedido. É desejo em voz alta.",
+   "O pedido bom é específico e tem número.",
+   "\"Me indica duas pessoas que estão construindo.\"",
+   "Peça no dia do fechamento, não meses depois.",
+   "E conduza a indicação: você liga, não ele.",
+   "Manda pro vendedor que nunca pede."
+  ],
+  "legenda": "O pior pedido de indicação do mundo é \"se souber de alguém, me avisa\". Isso não é pedido, é desejo em voz alta.\n\nO que funciona é específico e tem número: \"já que te ajudei a tomar essa decisão, preciso da sua ajuda agora — me indica duas pessoas que estão construindo\".\n\nPeça no dia do fechamento, quando a satisfação está no pico. E conduza: quem liga pro indicado é você, não ele.\n\nQuantas indicações você pediu essa semana?\n@vendanaobra\n\n#indicacao #vendas #prospeccao #construcaocivil #gestaocomercial"
+ },
+ {
+  "dia": "2026-10-08",
+  "dow": "Qui",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Prospecção que dá antes de pedir",
+  "publico": "bio",
+  "slides": [
+   "\"Gostaria de apresentar minha empresa\" é o pior início.",
+   "Ninguém abriu a agenda pra ouvir isso.",
+   "Troque a apresentação por um convite.",
+   "Convite para ver, aprender ou conhecer algo.",
+   "A pergunta vira: \"quer saber como funciona?\"",
+   "E quem diz não recebe outra pergunta.",
+   "\"Como tem sido sua experiência com fornecedor?\"",
+   "Recusa vira diagnóstico. Ninguém perde nada."
+  ],
+  "legenda": "\"Gostaria de apresentar a minha empresa\" é o pior início de conversa da construção civil. Ninguém abriu a agenda pra ouvir isso.\n\nTroque a apresentação por um convite: algo pra ver, aprender ou conhecer. O pedido vira uma micropergunta — \"quer saber como funciona?\" — e o custo de dizer sim fica baixo.\n\nE quem diz não recebe outra pergunta: \"como tem sido a sua experiência com fornecedor desse tipo?\". A recusa vira diagnóstico.\n\nComo começa a sua primeira mensagem?\n@vendanaobra\n\n#prospeccao #vendas #relacionamento #construcaocivil #marketing"
+ },
+ {
+  "dia": "2026-10-09",
+  "dow": "Sex",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Seus melhores vendedores não trabalham pra você",
+  "publico": "compartilhar",
+  "slides": [
+   "Quando a obra chega em você, seis já passaram.",
+   "Quem faz fundação sabe da obra meses antes.",
+   "Quem faz estrutura e cobertura, também.",
+   "Cada um deles conhece a sua próxima venda.",
+   "Escolha 8 parceiros que chegam antes de você.",
+   "Combine o que cada um leva por mês.",
+   "Placar visível dos dois lados. Sem favor.",
+   "Marca um parceiro que chega antes de você."
+  ],
+  "legenda": "Quando a obra chega até você, meia dúzia de fornecedores já passou por ela: fundação, estrutura, alvenaria, cobertura, instalações.\n\nCada um deles sabe, com meses de antecedência, quais obras da região vão precisar do que você vende. Hoje essa informação existe e não chega até a sua empresa.\n\nMonte um grupo pequeno de fornecedores não concorrentes, dê preferência a quem chega ANTES de você na linha do tempo da obra, combine o que cada um leva por mês e deixe o placar visível dos dois lados.\n\nQuem chega na obra antes de você?\n@vendanaobra\n\n#parcerias #prospeccao #construcaocivil #vendas #marketing"
+ },
+ {
+  "dia": "2026-10-10",
+  "dow": "Sáb",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Sua garantia só trabalha quando dá errado",
+  "publico": "bio",
+  "slides": [
+   "Sua garantia só trabalha quando dá errado.",
+   "Nos outros dias ela fica calada na gaveta.",
+   "E é nesses anos que o cliente reforma de novo.",
+   "É quando ele indica o vizinho e o irmão.",
+   "A concessionária marca a revisão. Você não.",
+   "Uma visita por ano, marcada por você.",
+   "Manutenção, venda nova, indicação e prova social.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Sua garantia só trabalha quando algo dá errado: o cliente reclama e vira custo.\n\nNos outros anos ela fica muda — justamente no período em que ele reforma outra parte da casa, indica o vizinho e escolhe fornecedor para o próximo projeto.\n\nA concessionária não espera o carro quebrar: ela marca a revisão. E é nessa visita que ela vende.\n\nUma visita por ano, marcada por você, tem quatro colheitas: manutenção, venda nova, indicação e prova social.\n\nQuando foi a última vez que você voltou numa obra entregue?\n@vendanaobra\n\n#posvenda #relacionamento #vendas #construcaocivil #recorrencia"
+ },
+ {
+  "dia": "2026-10-11",
+  "dow": "Dom",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Dê o que ele não consegue comprar",
+  "publico": "compartilhar",
+  "slides": [
+   "Todo fornecedor oferece desconto. Todo mundo.",
+   "Quase ninguém oferece o que o parceiro precisa.",
+   "Projetista vive de portfólio e reputação.",
+   "Fotos boas da obra pronta valem mais que comissão.",
+   "Entregue sem pedir nada em troca.",
+   "\"Use como quiser, com ou sem crédito.\"",
+   "Reciprocidade trabalha sozinha depois disso.",
+   "Manda pra quem só sabe oferecer desconto."
+  ],
+  "legenda": "Todo fornecedor da construção oferece desconto e comissão. Todo mundo.\n\nQuase ninguém oferece o que o parceiro realmente precisa: portfólio e reputação.\n\nObra entregue, com o projeto bonito e a luz certa, rende 15 a 20 fotos boas. Entregue essas fotos pra quem projetou, sem pedir nada em troca: \"use como quiser, com ou sem o nosso crédito\".\n\nCusta pouco pra você e vale muito pra ele. E reciprocidade trabalha sozinha.\n\nO que você oferece que não é desconto?\n@vendanaobra\n\n#parcerias #relacionamento #marketing #construcaocivil #indicacao"
+ },
+ {
+  "dia": "2026-10-12",
+  "dow": "Seg",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Você não perdeu pro concorrente. Perdeu pro adiamento.",
+  "publico": "bio",
+  "slides": [
+   "A maioria das vendas não é perdida. É adiada.",
+   "Adiar é sempre mais confortável que decidir.",
+   "Então mostre o custo de não decidir agora.",
+   "O que muda na obra se isso ficar pra depois?",
+   "Prazo, cronograma, equipe parada, retrabalho.",
+   "Sem risco visível, não existe urgência real.",
+   "Urgência honesta é fato, não pressão.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "A maioria das vendas não é perdida para o concorrente. É perdida para o adiamento.\n\nAdiar é sempre mais confortável do que decidir — e o cliente só sai do conforto quando enxerga o custo de esperar.\n\nO que acontece na obra dele se isso ficar pra depois? Prazo, cronograma, equipe parada, retrabalho. Números, não adjetivos.\n\nSem risco visível não existe urgência real — e pressão sem fato o cliente sente de longe.\n\nVocê mostra o custo de não decidir?\n@vendanaobra\n\n#vendas #fechamento #negociacao #construcaocivil #gestaocomercial"
+ },
+ {
+  "dia": "2026-10-13",
+  "dow": "Ter",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Ferramenta não conserta disciplina",
+  "publico": "bio",
+  "slides": [
+   "Comprei a ferramenta. O problema continuou.",
+   "Funil sem dono vira depósito de card.",
+   "Card sem valor preenchido some do relatório.",
+   "Negociação sem próxima tarefa morre em silêncio.",
+   "Antes da ferramenta: nomeie um dono.",
+   "Depois: defina uma meta e um ritual semanal.",
+   "Sem isso, o CRM vira caderno caro.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Criei um funil novo no meu CRM, cheio de cards. Em 30 dias estava morto.\n\nNão foi culpa da ferramenta. Ficou sem dono e sem meta — e funil sem dono vira depósito.\n\nTecnologia não conserta disciplina de preenchimento. Antes de comprar qualquer sistema: nomeie um dono, defina uma meta e crie um ritual semanal de revisão.\n\nSem isso, o CRM vira um caderno caro que ninguém abre.\n\nQuem é o dono do seu funil hoje?\n@vendanaobra\n\n#crm #gestaocomercial #processocomercial #construcaocivil #vendas"
+ },
+ {
+  "dia": "2026-10-14",
+  "dow": "Qua",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "O escopo cresce e o preço fica igual",
+  "publico": "compartilhar",
+  "slides": [
+   "\"Já que você está aqui, faz mais isso?\"",
+   "Sozinho, cada extra é pequeno demais pra recusar.",
+   "Somados, eles comem a margem da obra inteira.",
+   "Não é o cliente agindo de má-fé.",
+   "É a sua empresa nunca ter dito o preço.",
+   "Todo extra é orçado. Sempre. Mesmo que zerado.",
+   "\"Consigo fazer. Vou te passar o valor.\"",
+   "Manda pra quem faz tudo e cobra só o combinado."
+  ],
+  "legenda": "\"Já que você está aqui, faz mais isso?\"\n\nSozinho, cada pedido extra é pequeno demais pra recusar. Somados, eles comem a margem da obra inteira — e ninguém percebe porque nunca foram somados.\n\nNão é má-fé do cliente. É a sua empresa nunca ter dito o preço.\n\nRegra simples: todo extra é orçado, sempre, mesmo que com valor zerado. \"Consigo fazer sim. Vou te passar o valor.\"\n\nQuanto de escopo extra você fez de graça esse mês?\n@vendanaobra\n\n#margem #precificacao #gestaocomercial #construcaocivil #negociacao"
+ },
+ {
+  "dia": "2026-10-15",
+  "dow": "Qui",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Divida a carteira em A, B e C",
+  "publico": "bio",
+  "slides": [
+   "Tratar todo mundo igual é desperdiçar tempo.",
+   "A: traz obra grande e indica sozinho.",
+   "B: compra bem, indica quando lembrado.",
+   "C: compra uma vez e some.",
+   "O A merece visita, evento, presença.",
+   "O C merece uma mensagem automática por mês.",
+   "Tempo é o único recurso que não volta.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Tratar todos os clientes e parceiros igual parece justo. Na prática é desperdiçar o único recurso que não volta: tempo.\n\nDivida a carteira: A traz obra grande e indica sozinho; B compra bem e indica quando lembrado; C compra uma vez e some.\n\nO A merece visita, evento e presença. O C merece uma mensagem automática por mês — e está ótimo assim.\n\nA classificação define quem; a cadência define quando.\n\nVocê sabe quem são os seus A?\n@vendanaobra\n\n#gestaocomercial #relacionamento #carteira #construcaocivil #vendas"
+ },
+ {
+  "dia": "2026-10-16",
+  "dow": "Sex",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Marketing e venda não são a mesma coisa",
+  "publico": "compartilhar",
+  "slides": [
+   "Marketing faz as pessoas certas te conhecerem.",
+   "Venda ajuda essas pessoas a decidir bem.",
+   "Confundir os dois quebra empresa dos dois jeitos.",
+   "Sem marketing, o vendedor vira caçador de sorte.",
+   "Sem venda, o anúncio vira despesa recorrente.",
+   "Marketing errado traz gente que não decide.",
+   "Venda errada perde quem chegou pronto.",
+   "Manda pra quem culpa só um dos dois."
+  ],
+  "legenda": "Marketing é fazer as pessoas certas conhecerem o que você faz. Venda é ajudar essas pessoas a tomar uma boa decisão.\n\nConfundir os dois quebra a empresa dos dois lados: sem marketing, o vendedor vira caçador de sorte; sem venda, o anúncio vira despesa recorrente.\n\nE o diagnóstico muda tudo: marketing errado traz gente que não decide; venda errada perde quem já chegou pronto.\n\nAntes de aumentar a verba, descubra qual dos dois está furado.\n\nQual dos dois é o seu gargalo?\n@vendanaobra\n\n#marketing #vendas #gestaocomercial #construcaocivil #posicionamento"
+ },
+ {
+  "dia": "2026-10-17",
+  "dow": "Sáb",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Seus diferenciais estão invisíveis",
+  "publico": "bio",
+  "slides": [
+   "Você faz coisas que o mercado não faz.",
+   "E não escreveu nenhuma delas na proposta.",
+   "Prazo fechado, com consequência se atrasar.",
+   "Garantia maior do que a obrigação legal.",
+   "Visitas incluídas, acompanhamento, retorno.",
+   "Se não está escrito, não existe pro cliente.",
+   "Liste 4 e coloque na próxima proposta.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Quase toda empresa da construção faz alguma coisa acima do padrão do setor — e não escreveu nenhuma delas na proposta.\n\nPrazo fechado com consequência se atrasar. Garantia maior do que a obrigação legal. Visitas incluídas. Acompanhamento depois da entrega.\n\nSe não está escrito, não existe na cabeça de quem recebe. E aí a proposta vira um número solto, igual à de qualquer outro.\n\nListe quatro coisas que você faz e o concorrente não assina. Coloque na próxima proposta.\n\nQuais são os seus quatro?\n@vendanaobra\n\n#proposta #posicionamento #vendas #construcaocivil #marketing"
+ },
+ {
+  "dia": "2026-10-18",
+  "dow": "Dom",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "O dono que vende melhor é o teto da empresa",
+  "publico": "compartilhar",
+  "slides": [
+   "O dono vende melhor. Todo mundo sabe disso.",
+   "Inclusive o cliente, que só quer falar com ele.",
+   "Aí o crescimento para no tamanho da sua agenda.",
+   "Não é dom. É contexto que ninguém documentou.",
+   "Grave as suas conversas por uma semana.",
+   "Escreva o que você pergunta e em que ordem.",
+   "Isso vira o roteiro de quem entra.",
+   "Manda pro dono que não consegue sair do comercial."
+  ],
+  "legenda": "Se o dono é o melhor vendedor da empresa, o crescimento tem o tamanho da agenda dele.\n\nE não é dom: é contexto acumulado que ninguém nunca documentou. O dono sabe o que perguntar, em que ordem, e quando calar a boca.\n\nGrave as suas próprias conversas por uma semana. Escreva o que você pergunta e em que sequência. Isso vira o roteiro de quem entra.\n\nO que está na sua cabeça não escala. O que está escrito, sim.\n\nQuanto da venda da sua empresa ainda passa por você?\n@vendanaobra\n\n#gestao #processocomercial #lideranca #construcaocivil #empreendedorismo"
+ },
+ {
+  "dia": "2026-10-19",
+  "dow": "Seg",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Escolher cliente é decisão de preço",
+  "publico": "bio",
+  "slides": [
+   "Quem você atende define quanto você cobra.",
+   "Empresa que atende todo mundo cobra preço de todo mundo.",
+   "Escolha o tipo de obra que você faz melhor.",
+   "Fale só com quem tem esse problema.",
+   "Recuse o resto sem drama e sem discurso.",
+   "Menos orçamento, mais fechamento, melhor margem.",
+   "Nicho não é limitar. É ser escolhido.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Quem você atende define quanto você consegue cobrar.\n\nEmpresa que atende todo mundo cobra preço de todo mundo — porque para o cliente ela é igual a qualquer outra que também atende todo mundo.\n\nEscolha o tipo de obra que você faz melhor do que a média, fale só com quem tem esse problema e recuse o resto sem drama.\n\nO resultado costuma ser o mesmo: menos orçamento, mais fechamento e margem melhor.\n\nQual obra a sua empresa faz melhor que todo mundo?\n@vendanaobra\n\n#posicionamento #precificacao #marketing #construcaocivil #gestaocomercial"
+ },
+ {
+  "dia": "2026-10-20",
+  "dow": "Ter",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Estar perto é mais barato que anunciar",
+  "publico": "compartilhar",
+  "slides": [
+   "A obra começou. Alguém vai ser procurado.",
+   "Se não for você, é porque não te acharam.",
+   "Ficha da empresa atualizada onde procuram.",
+   "Fotos de obra recentes, não de 2019.",
+   "Avaliações pedidas, não esperadas.",
+   "Quem responde rápido aparece mais.",
+   "Isso não é anúncio. É existir direito.",
+   "Manda pra quem só investe em anúncio."
+  ],
+  "legenda": "Toda semana começa obra na sua região e alguém vai ser procurado.\n\nSe não for você, muitas vezes não é preço: é que não te acharam, ou acharam uma ficha sem foto recente, sem avaliação e sem ninguém respondendo.\n\nAtualizar onde a sua empresa aparece custa quase nada e dura: fotos de obra recentes, dados certos, avaliações pedidas (não esperadas) e alguém respondendo rápido.\n\nIsso não é anúncio. É existir direito.\n\nQuando foi a última vez que você procurou a sua própria empresa?\n@vendanaobra\n\n#marketing #presencadigital #construcaocivil #vendas #posicionamento"
+ },
+ {
+  "dia": "2026-10-21",
+  "dow": "Qua",
+  "hora": "12:30",
+  "n": 1,
+  "titulo": "Três prioridades. Trinta dias. Só.",
+  "publico": "bio",
+  "slides": [
+   "Quinze frentes abertas é nenhuma frente pronta.",
+   "Escolha três prioridades para os próximos 30 dias.",
+   "Escreva onde todo mundo vê.",
+   "O resto entra na fila, não na semana.",
+   "Em 30 dias, meça: avançou ou não?",
+   "O que não avançou volta ou morre.",
+   "Boa ideia demais competindo é o pior gargalo.",
+   "Onde seu comercial trava: Raio-X, link na bio."
+  ],
+  "legenda": "Quinze frentes abertas ao mesmo tempo é a forma mais educada de não terminar nenhuma.\n\nO problema de quase todo dono de empresa da construção não é falta de boa ideia. É boa ideia demais competindo pela mesma atenção.\n\nEscolha três prioridades para os próximos 30 dias, escreva onde todo mundo vê e coloque o resto na fila. Em 30 dias, meça: avançou ou não? O que não avançou volta ou morre.\n\nQuais são as suas três deste mês?\n@vendanaobra\n\n#foco #gestao #produtividade #construcaocivil #empreendedorismo"
  }
 ]
