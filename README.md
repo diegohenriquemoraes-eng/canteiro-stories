@@ -1,6 +1,6 @@
 # Canteiro Venda na Obra — Stories agendados
 
-Cada cartão de story no app **[Canteiro / VNO](https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136)**
+Cada cartão de story no app **[Canteiro / VNO](https://canteiro-vno.vercel.app)**
 tem um botão **"Enviar a foto e agendar 08:00"**. Você toca, escolhe a mídia
 e pronto: ela vai ao ar naquele horário, sozinha. O dia e a hora já vêm do
 cartão — você não digita nem renomeia nada.
