@@ -407,7 +407,13 @@ job VERDE, o alarme de issue nunca disparou. A fila não estava vazia — tinha 
 - story com data no nome vencido há mais de `vencido_max_h` (24) fica **SEGURADO** na fila (não
   publica, não apaga; log `SEGURADO`). Sem isso, a volta do token despejaria no perfil stories
   de dez dias atrás. Para publicar um segurado: renomear com a data nova; para descartar: apagar
-  o asset. Os três acima estão segurados esperando decisão do Diego.
+  o asset. Os três acima foram **apagados** em 26/09 por decisão do Diego.
+
+**Regra do Diego (26/09/2026): o ÚNICO story automático é o que ele mesmo sobe e agenda** pela
+página de envio (o botão do cartão de story no app Canteiro leva para ela). Nenhum outro robô
+põe mídia na fila: o card semanal do Índice do setor (`lp-vendanaobra`, `indice-semanal.yml`)
+deixou de ser enviado para cá. O carrossel sai **só no feed** (`carrossel.py`), nunca no story.
+Não ligar nenhuma nova fonte automática de story sem ele pedir.
 
 ⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
 robô publica, não o app.
