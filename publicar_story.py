@@ -192,6 +192,10 @@ def registrar(nome: str, alvo: datetime, media_ids: list[str], info: dict,
 
 # ------------------------------------------------------------------ main ---
 
+def vencido_demais(alvo: datetime, agora: datetime, max_h: float) -> bool:
+    return (agora - alvo).total_seconds() > max_h * 3600
+
+
 def rodada(args) -> None:
     """Uma passada pela fila: publica o que estiver vencido e volta."""
     cfg = carregar(CONFIG, None)
@@ -252,7 +256,11 @@ def rodada(args) -> None:
         log("fila vazia — nada a publicar")
         return
 
-    devidos, futuros, sem_horario = [], [], []
+    # story é do dia: um que venceu há dias (robô parado, token caído) não
+    # sai sozinho quando o robô volta — fica na fila, segurado, até alguém
+    # decidir (renomear com a data nova publica; apagar descarta)
+    vencido_max = cfg.get("vencido_max_h", 24)
+    devidos, futuros, sem_horario, velhos = [], [], [], []
     for a in assets:
         if Path(a["name"]).suffix.lower() not in cfg["extensoes"]:
             continue
@@ -263,6 +271,9 @@ def rodada(args) -> None:
         chave = f"{alvo.date().isoformat()}|{a['name']}"
         if chave in st["publicados"]:
             continue
+        if vencido_demais(alvo, agora, vencido_max):
+            velhos.append((alvo, a["name"]))
+            continue
         (devidos if alvo <= agora else futuros).append((alvo, a["name"], a, chave))
 
     devidos.sort(key=lambda t: (t[0], t[1]))
@@ -272,6 +283,9 @@ def rodada(args) -> None:
         if nome not in st["ignorados"]:
             st["ignorados"] = (st["ignorados"] + [nome])[-50:]
             log(f"IGNORADO (nome não começa com o horário): {nome}")
+    for alvo, nome in velhos:
+        log(f"SEGURADO (venceu em {alvo:%d/%m %H:%M}, mais de {vencido_max} h "
+            f"atrás; não publico sozinho): {nome}")
     for alvo, nome, *_ in futuros:
         log(f"agendado para {alvo:%d/%m %H:%M}: {nome}")
 
@@ -440,9 +454,13 @@ def main() -> None:
         n += 1
         try:
             rodada(args)
-        except SystemExit as e:          # config ausente e afins: não insiste
+        except SystemExit as e:
+            # token caído, config ausente: não insiste — e FALHA o job. Até
+            # 26/09 isto era `return`: o job ficava verde, o alarme de issue
+            # nunca disparava, e nenhum story saiu de 16/09 a 26/09 sem que
+            # ninguém soubesse.
             log(f"vigia parou: {e}")
-            return
+            raise
         except Exception as e:           # falha de rede não pode derrubar o dia
             log(f"passada {n} falhou ({type(e).__name__}: {e}); segue vigiando")
         restam = fim - time.monotonic()

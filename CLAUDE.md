@@ -397,6 +397,18 @@ Facebook, e o 17841... não vale no do Instagram — por isso o `IG_USER_ID` é 
 - Diagnóstico continua sendo **Publicar Story → Run workflow → dry_run**: diz
   `conta do token (META_TOKEN): @vendanaobra` e a cota, sem publicar nada.
 
+⚠ **Nenhum story saiu de 16/09 a 26/09/2026 e ninguém soube.** O token de login já estava
+invalidado em 20/09 (não 26/09), e o vigia tratava `SystemExit` com `return`: log "vigia parou",
+job VERDE, o alarme de issue nunca disparou. A fila não estava vazia — tinha três stories presos
+(`2026-09-16-1100-indice.jpg` e `2026-09-23-1100-indice.jpg` na Release `fila`,
+`2026-09-18-1600-5bf6….jpg` na branch `entrada`). Corrigido junto:
+
+- o vigia agora **re-levanta** o `SystemExit` → job vermelho → issue "Story não foi publicado";
+- story com data no nome vencido há mais de `vencido_max_h` (24) fica **SEGURADO** na fila (não
+  publica, não apaga; log `SEGURADO`). Sem isso, a volta do token despejaria no perfil stories
+  de dez dias atrás. Para publicar um segurado: renomear com a data nova; para descartar: apagar
+  o asset. Os três acima estão segurados esperando decisão do Diego.
+
 ⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
 robô publica, não o app.
 

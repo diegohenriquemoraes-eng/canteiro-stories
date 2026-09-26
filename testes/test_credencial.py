@@ -36,5 +36,15 @@ class TestCredencial(unittest.TestCase):
         self.assertFalse(refresh_token.token_morto("Please retry in 24 hours"))
 
 
+class TestVencido(unittest.TestCase):
+    def test_story_de_dias_atras_fica_segurado(self):
+        from datetime import datetime, timedelta
+        from zoneinfo import ZoneInfo
+        agora = datetime(2026, 9, 26, 13, 0, tzinfo=ZoneInfo("America/Sao_Paulo"))
+        self.assertTrue(publicar_story.vencido_demais(agora - timedelta(days=10), agora, 24))
+        self.assertFalse(publicar_story.vencido_demais(agora - timedelta(hours=3), agora, 24))
+        self.assertFalse(publicar_story.vencido_demais(agora + timedelta(hours=1), agora, 24))
+
+
 if __name__ == "__main__":
     unittest.main()
