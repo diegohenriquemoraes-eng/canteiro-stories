@@ -38,3 +38,8 @@ publicação. Escrito por `publicar_story.py`.
 - Tipo: imagem
 - Stories: 18389819926164638
 - Publicado em: 2026-09-08T20:30:19
+
+## 26/09/2026 12:30 — carrossel: A frase que troca desconto por decisão
+
+- Carrossel: 18354495076217403 (8 slides, sem música)
+- Publicado em: 2026-09-26T13:15:51-03:00
