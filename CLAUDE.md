@@ -252,7 +252,7 @@ Canteiro (22 a 25/09) foram refeitos e o ciclo foi até **21/10** — 30 dias.
   síntese mensal do cérebro mediu como o que mais entrega (mediana 485 contra
   125 dos demais Reels maduros). Número redondo, sem nome de cliente.
 - Quantidade e formato **não mudaram**: 1 carrossel 12h30 (8 slides, capa
-  ≤ 8 palavras), 2 Reels (07h30 e 19h30, ≤ 30 s, sem música) e 4 stories
+  ≤ 15 palavras, slide 12-18 — régua de 26/09), 2 Reels (07h30 e 19h30, ≤ 30 s, sem música) e 4 stories
   (07h30 alerta · 12h enquete · 16h prova social · 19h30 solução + oferta).
   Reset de stories na quarta e na sexta; terça a oferta é o Venda 10x.
 
@@ -311,6 +311,20 @@ Os 11 carrosséis de 15/09 a 25/09 foram reescritos no app: **capa ≤ 8 palavra
 ideia só** (mediana caiu de 12 para 8 palavras). A letra subiu junto em `carrossel.html` (capa
 82→100 px, slide 62→78), senão sobrava meia tela vazia; o laço ainda encolhe quando não cabe.
 Toda peça nova segue esta régua; o `linkArtes` foi para `?v=3`.
+
+**Frase concreta (26/09/2026) — substitui a régua de 14/09.** Medição pela Graph API de 31
+carrosséis de 6-9 slides: alcance não responde a texto (mediana 125 na mini-aula, 169 na frase
+média de 05-13/09, 145 na frase curta), mas o engajamento por pessoa alcançada caiu junto com o
+texto — salvos + compartilhados por 1.000 alcançados: 16 → 15,6 → **9,4**. Os melhores tinham
+número, fala entre aspas ou cena; a régua de 8 palavras empurrava para o aforismo. Com o sim do
+Diego, os 26 carrosséis de 26/09 a 21/10 foram reescritos: **slide de 12 a 18 palavras com um
+elemento concreto obrigatório** (número, fala entre aspas, cena com hora/lugar ou passo numerado),
+**capa ≤ 15 palavras** entregando a conclusão, **um slide "para usar amanhã"**, legenda de **700 a
+1.500 caracteres** com o aprofundamento. Número inventado continua proibido: conta de exemplo leva
+"Exemplo:". A letra não mudou (78/100 px; o laço encolhe e coube em todos). O de 17/10 trocou de
+ângulo ("Diferencial sem prova não vende") porque repetia o de 25/09, o pior do mês.
+Régua em **10/10/2026**: salvos + compartilhados por 1.000 alcançados ≥ 15. Relatório:
+`Perffec\Claude\Instagram-vendanaobra\Analise-carrosseis-texto-curto-vs-longo-2026-09-26.md`.
 
 ⚠ **Depois de mexer nos carrosséis do app, rodar `python exportar_carrosseis.py` e dar push** —
 senão a página segue mostrando os slides antigos.
