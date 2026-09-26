@@ -399,3 +399,12 @@ Facebook, e o 17841... não vale no do Instagram — por isso o `IG_USER_ID` é 
 
 ⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
 robô publica, não o app.
+
+## Story das 16h vira "comentário do dia" (26/09/2026)
+
+O Diego quase nunca cumpria o story de prova social das 16h (print de aluno, foto de obra). A
+prova social diária continua (regra do método), mas a fonte mudou para o que existe todo dia:
+**print de um comentário ou direct que chegou hoje ou ontem, com uma linha de resposta**; sem
+comentário, **print dos números do Reel de ontem** com a frase "Isso aqui rodou ontem. Quem ainda
+não viu, está no perfil." De 15 a 25/09 só um dia ficou sem comentário. Aplicado de 26/09 a 21/10
+(23 dias); as sextas seguem com o "Comentário da semana" do placar. Calendário regerado.
