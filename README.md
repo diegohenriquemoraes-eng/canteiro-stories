@@ -72,6 +72,12 @@ precise de sticker tem de ser postado à mão, no app.
 Sem os secrets abaixo, o pipeline roda, lê a fila e diz o que faria — mas não
 publica. É seguro deixar assim enquanto o token não existe.
 
+> **Desde 26/09/2026 o que publica é o secret `META_TOKEN`** — token de System User do
+> Portfólio Comercial da Meta, que não expira, via `graph.facebook.com` e o id business
+> `17841470188725651` (stories e carrossel). O roteiro abaixo é o do token de login do
+> Instagram, que ficou só como fallback depois de a troca de senha invalidá-lo; o
+> **Renovar token** deixou de ser agendado.
+
 1. **Conta profissional**: `@vendanaobra` no app do Instagram → Configurações
    → Tipo de conta → **Empresa** ou **Criador**. É pré-requisito da API.
 2. **App na Meta**: <https://developers.facebook.com/apps> → Criar app → tipo

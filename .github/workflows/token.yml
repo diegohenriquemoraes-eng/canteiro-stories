@@ -1,5 +1,13 @@
 name: Renovar token
 
+# 26/09/2026: DESLIGADO do agendamento. A troca de senha do Instagram invalidou
+# o IG_ACCESS_TOKEN, e os stories e o carrossel passaram para o META_TOKEN
+# (token de sistema da Meta, que não expira — não há o que renovar). O
+# IG_ACCESS_TOKEN ficou só como fallback; se um dia for gerado outro, este
+# workflow volta a servir pelo Run workflow. Token invalidado não abre issue.
+#
+# O texto abaixo é do desenho original (04/09), válido para o token de login:
+#
 # O token do Instagram vale 60 dias e cada renovação devolve outros 60 — então
 # o prazo nunca é o problema. O problema seria a renovação falhar em silêncio.
 #
@@ -8,8 +16,6 @@ name: Renovar token
 # falha: issue vira e-mail, e um pipeline que publica sozinho não pode ter
 # modo de falha silencioso.
 on:
-  schedule:
-    - cron: "20 11 * * 1"     # toda segunda, 11:20 UTC (8h20 de Brasília)
   workflow_dispatch:
 
 jobs:

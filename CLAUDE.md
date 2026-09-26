@@ -179,6 +179,10 @@ App Meta **vendanaobra** (id 1910368269635506, já existia) com o caso de uso
 funciona — é `28458102257148998`. É por isso que `IG_USER_ID` deixou de ser
 cadastrado à mão: `descobrir_ig_id()` pergunta ao próprio token.
 
+⚠ **Desde 26/09/2026 o que publica é o `META_TOKEN`** (token de sistema, graph.facebook.com,
+id 17841470188725651) — ver "Carrossel publicado sozinho". Este bloco e o seguinte descrevem o
+token de login, hoje invalidado e mantido só como fallback.
+
 Para diagnosticar depois: **Actions → Publicar Story → Run workflow →
 dry_run**. Ele confere a credencial ANTES de olhar a fila (com a fila vazia
 sairia antes de testar, que é justamente quando se quer testar) e não publica
@@ -375,11 +379,23 @@ continua em `DIAS[].carrosseis`, que é de onde `exportar_carrosseis.py` lê).
 
 Primeiro publicado: 26/09/2026 13:15, `18354495076217403` (8 slides).
 
-⚠ **O `IG_ACCESS_TOKEN` deste repo está INVALIDADO desde a troca de senha** (erro "The session
-has been invalidated because the user changed their password"). O carrossel não depende mais
-dele, mas os **stories da fila** dependem: o workflow Publicar Story segue verde porque a fila está
-vazia, e vai falhar no primeiro story enviado. Saída: passar o `publicar_story.py` para o
-`META_TOKEN` do mesmo jeito.
+**Os stories também saem pelo `META_TOKEN` desde 26/09/2026.** O `IG_ACCESS_TOKEN` (login do
+Instagram) foi invalidado pela troca de senha ("The session has been invalidated because the user
+changed their password"); `publicar_story.py` passou a usar o token de sistema do mesmo jeito que o
+carrossel — `credencial()` escolhe `META_TOKEN` + `graph.facebook.com/v21.0` + id business
+`17841470188725651`, e só sem ele cai no par `IG_ACCESS_TOKEN`/`IG_USER_ID` do
+`graph.instagram.com`. **Cada token com o seu id**: o `IG_USER_ID` (28458...) não vale no Graph do
+Facebook, e o 17841... não vale no do Instagram — por isso o `IG_USER_ID` é ignorado com o
+`META_TOKEN`. O fluxo do story é o mesmo nos dois: `POST /{id}/media` com `media_type=STORIES` +
+`image_url`/`video_url`, espera `status_code FINISHED`, `POST /media_publish`.
+
+- O **Renovar token** (`token.yml`) saiu do agendamento: o token de sistema não expira, e o de
+  login morto não tem renovação que salve. Ficou manual para o dia em que alguém gerar outro
+  token de login; token invalidado ali é aviso no log (`refresh_token.token_morto`), não issue.
+- O aviso de "token vence em N dias" (`token.json`) só aparece quando o publicador está no
+  fallback — com `META_TOKEN` não há prazo.
+- Diagnóstico continua sendo **Publicar Story → Run workflow → dry_run**: diz
+  `conta do token (META_TOKEN): @vendanaobra` e a cota, sem publicar nada.
 
 ⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
 robô publica, não o app.

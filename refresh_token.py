@@ -21,10 +21,11 @@ de propósito: o repositório é público, o log do Actions também é, e o toke
 recém-gerado NÃO é mascarado (o mascaramento automático só cobre o valor já
 cadastrado como secret), então imprimi-lo ali seria publicá-lo.
 
-Alternativa sem validade nenhuma: um token de System User de um Portfólio
-Comercial não expira — mas exige a API com login do FACEBOOK
-(graph.facebook.com) e a conta vinculada a uma Página, que é outra
-arquitetura. Ver o README.
+26/09/2026: este token virou FALLBACK. A troca de senha do Instagram o
+invalidou, e os stories e o carrossel passaram para o META_TOKEN (token de
+System User do Portfólio Comercial, graph.facebook.com), que não expira. O
+workflow "Renovar token" deixou de ser agendado; token invalidado aqui é
+aviso no log, não issue — ninguém depende dele enquanto o META_TOKEN existir.
 """
 
 from __future__ import annotations
@@ -76,6 +77,13 @@ def gravar_secret(valor: str, teste: bool = False) -> bool:
     return True
 
 
+def token_morto(erro: str) -> bool:
+    """Sessão invalidada (troca de senha) ou token vencido: renovar não salva."""
+    e = erro.lower()
+    return ("session has been invalidated" in e or "has expired" in e
+            or "changed their password" in e)
+
+
 def dias_restantes() -> int | None:
     """Quanto falta pelo último registro. None se nunca foi renovado."""
     if not REGISTRO.exists():
@@ -103,6 +111,13 @@ def main() -> None:
     novo = j.get("access_token")
     if not novo:
         erro = str((j.get("error") or {}).get("message", j))
+        if token_morto(erro):
+            # só um token NOVO resolve (painel da Meta -> Gerar token). Como é
+            # fallback do META_TOKEN, não há o que renovar nem por que alarmar.
+            print(f"Token de login invalidado ({erro}). É só o fallback do "
+                  f"META_TOKEN: nada a renovar. Para reativá-lo, gerar outro no "
+                  f"painel da Meta e regravar o secret IG_ACCESS_TOKEN.")
+            return
         if "24 hours" in erro or "24 horas" in erro:
             # a Meta só renova token com mais de 24 h de vida; recém-gerado,
             # não há o que consertar — a rodada da semana que vem resolve.

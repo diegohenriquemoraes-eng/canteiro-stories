@@ -68,6 +68,8 @@ jobs:
 
       - name: Publicar o que estiver vencido
         env:
+          # META_TOKEN (token de sistema, não expira) manda; o par IG_* é fallback
+          META_TOKEN: ${{ secrets.META_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GH_TOKEN: ${{ github.token }}
@@ -106,10 +108,10 @@ jobs:
 
           O que costuma ser, em ordem:
 
-          1. **Token do Instagram vencido ou revogado** — rode Actions →
-          Publicar Story → Run workflow → \`dry_run\`: ele diz qual conta o token
-          abre. Se reclamar, gere outro no painel da Meta e regrave o secret
-          \`IG_ACCESS_TOKEN\`.
+          1. **Token revogado** — rode Actions → Publicar Story → Run workflow →
+          \`dry_run\`: ele diz qual conta o token abre. O que publica é o secret
+          \`META_TOKEN\` (token de sistema da Meta, não expira; só cai se for
+          revogado no Portfólio Comercial). \`IG_ACCESS_TOKEN\` é só fallback.
           2. **Cota de 100 publicações/24 h estourada** — o \`dry_run\` mostra o
           consumo.
           3. **Arquivo que o Instagram recusou** — o log diz qual.

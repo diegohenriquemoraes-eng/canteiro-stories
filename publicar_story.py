@@ -11,8 +11,11 @@ O caminho de um arquivo:
                     ->  apaga os dois assets  ->  grava o estado
 
 Segredos (Secrets do repositório):
-  IG_USER_ID       - id de graph.instagram.com/me da conta profissional
-  IG_ACCESS_TOKEN  - token de longa duração com instagram_business_content_publish
+  META_TOKEN       - token de sistema da Meta (não expira, instagram_content_publish);
+                     fala com graph.facebook.com e o id business 17841470188725651.
+                     É o caminho principal desde 26/09/2026.
+  IG_ACCESS_TOKEN  - fallback: token de login do Instagram (graph.instagram.com),
+  IG_USER_ID         60 dias, renovável. Invalidado pela troca de senha de 26/09.
 
 Sem os secrets o script não quebra: lê a fila, diz o que faria e sai — dá para
 testar a esteira inteira antes de existir token.
@@ -43,13 +46,19 @@ STATE = AQUI / "state.json"
 REGISTRO = AQUI / "publicados.md"
 TRABALHO = AQUI / "saida"
 GRAPH = "https://graph.instagram.com"
+# 26/09/2026: o IG_ACCESS_TOKEN (login do Instagram) caiu com a troca de senha.
+# O caminho principal passou a ser o TOKEN DE SISTEMA da Meta, igual ao
+# carrossel.py: não expira, não cai com senha, e usa o id business (17841...),
+# que no graph.instagram.com não funciona — cada token com o seu id.
+GRAPH_META = "https://graph.facebook.com/v21.0"
+IG_BUSINESS_ID = "17841470188725651"
 
 
 def log(msg: str) -> None:
     # o repositório é público e o log do Actions também: mensagem de erro do
     # requests carrega a URL inteira, e nos GET o token vai na query string
     texto = str(msg)
-    for chave in ("IG_ACCESS_TOKEN", "GH_TOKEN", "GITHUB_TOKEN"):
+    for chave in ("META_TOKEN", "IG_ACCESS_TOKEN", "GH_TOKEN", "GITHUB_TOKEN"):
         segredo = os.environ.get(chave, "").strip()
         if len(segredo) > 8:
             texto = texto.replace(segredo, "***")
@@ -75,6 +84,35 @@ def estado() -> dict:
 
 # ------------------------------------------------------------ Instagram ----
 
+def credencial() -> tuple[str, str, str] | None:
+    """(graph, ig_id, token) do melhor token disponível; None se não há nenhum.
+
+    META_TOKEN primeiro. O IG_USER_ID só vale com o token de login: é o id de
+    graph.instagram.com/me, que o graph.facebook.com não reconhece.
+    """
+    token = os.environ.get("META_TOKEN", "").strip()
+    if token:
+        ig_id = os.environ.get("IG_BUSINESS_ID", "").strip() or IG_BUSINESS_ID
+        return GRAPH_META, ig_id, token
+    token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+    if token:
+        return GRAPH, os.environ.get("IG_USER_ID", "").strip(), token
+    return None
+
+
+def conferir_conta(graph: str, ig_id: str, token: str) -> str:
+    """Diz no log qual conta o token abre — e devolve o id que a API aceita."""
+    if graph == GRAPH_META:
+        j = requests.get(f"{graph}/{ig_id}", params={"fields": "id,username",
+                                                     "access_token": token},
+                         timeout=30).json()
+        if "id" not in j:
+            raise SystemExit(f"o META_TOKEN não abriu a conta {ig_id}: {j}")
+        log(f"conta do token (META_TOKEN): @{j.get('username', '?')} (id {j['id']})")
+        return j["id"]
+    return ig_id or descobrir_ig_id(token)
+
+
 def descobrir_ig_id(token: str) -> str:
     """O id da conta sai do próprio token — não precisa ser cadastrado à mão.
 
@@ -91,9 +129,9 @@ def descobrir_ig_id(token: str) -> str:
     return j["id"]
 
 
-def dentro_do_limite(ig_id: str, token: str) -> bool:
+def dentro_do_limite(graph: str, ig_id: str, token: str) -> bool:
     try:
-        r = requests.get(f"{GRAPH}/{ig_id}/content_publishing_limit",
+        r = requests.get(f"{graph}/{ig_id}/content_publishing_limit",
                          params={"fields": "quota_usage,config",
                                  "access_token": token}, timeout=30)
         d = (r.json().get("data") or [{}])[0]
@@ -106,10 +144,11 @@ def dentro_do_limite(ig_id: str, token: str) -> bool:
         return True
 
 
-def publicar_story(ig_id: str, token: str, url: str, eh_video: bool) -> str:
+def publicar_story(graph: str, ig_id: str, token: str, url: str,
+                   eh_video: bool) -> str:
     dados = {"media_type": "STORIES", "access_token": token}
     dados["video_url" if eh_video else "image_url"] = url
-    j = requests.post(f"{GRAPH}/{ig_id}/media", data=dados, timeout=120).json()
+    j = requests.post(f"{graph}/{ig_id}/media", data=dados, timeout=120).json()
     if "id" not in j:
         raise SystemExit(f"falha ao criar o container: {j}")
     creation_id = j["id"]
@@ -118,7 +157,7 @@ def publicar_story(ig_id: str, token: str, url: str, eh_video: bool) -> str:
     # devolve erro genérico que não diz o que houve
     limite = 60 if eh_video else 12          # ~10 min de vídeo, ~2 min de foto
     for tentativa in range(limite):
-        s = requests.get(f"{GRAPH}/{creation_id}",
+        s = requests.get(f"{graph}/{creation_id}",
                          params={"fields": "status_code,status",
                                  "access_token": token}, timeout=30).json()
         code = s.get("status_code")
@@ -132,7 +171,7 @@ def publicar_story(ig_id: str, token: str, url: str, eh_video: bool) -> str:
     else:
         raise SystemExit("tempo esgotado esperando o Instagram processar")
 
-    p = requests.post(f"{GRAPH}/{ig_id}/media_publish",
+    p = requests.post(f"{graph}/{ig_id}/media_publish",
                       data={"creation_id": creation_id,
                             "access_token": token}, timeout=60).json()
     if "id" not in p:
@@ -173,12 +212,13 @@ def rodada(args) -> None:
     if st["dia"]["data"] != hoje:
         st["dia"] = {"data": hoje, "n": 0}
 
-    # o prazo do token está anotado em token.json (sem segredo nenhum): dá
-    # para avisar cedo, em vez de descobrir no dia em que o story não sai
+    # o prazo do token de login está anotado em token.json (sem segredo
+    # nenhum): dá para avisar cedo. Com o META_TOKEN não há prazo a vigiar.
     try:
         import refresh_token
         faltam = refresh_token.dias_restantes()
-        if faltam is not None and faltam <= refresh_token.ALERTA_DIAS:
+        if (not os.environ.get("META_TOKEN", "").strip()
+                and faltam is not None and faltam <= refresh_token.ALERTA_DIAS):
             log(f"ATENÇÃO: o token do Instagram vence em {faltam} dias e a "
                 f"renovação semanal não está pegando. Ver o workflow "
                 f"'Renovar token'.")
@@ -189,12 +229,13 @@ def rodada(args) -> None:
         # o diagnóstico da credencial vem ANTES da fila: fila vazia é o caso
         # mais comum de rodar isto, e sair antes de testar o token seria
         # justamente falhar no que o dry-run existe para responder
-        tok = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-        if tok:
-            dentro_do_limite(os.environ.get("IG_USER_ID", "").strip()
-                             or descobrir_ig_id(tok), tok)
+        cred = credencial()
+        if cred:
+            graph, ig_id, tok = cred
+            dentro_do_limite(graph, conferir_conta(graph, ig_id, tok), tok)
         else:
-            log("[dry-run] sem IG_ACCESS_TOKEN: não dá para conferir a conta")
+            log("[dry-run] sem META_TOKEN nem IG_ACCESS_TOKEN: não dá para "
+                "conferir a conta")
 
     repo = filamod.Repo()
     # duas portas de entrada: a página de envio grava na branch `entrada`
@@ -267,18 +308,17 @@ def rodada(args) -> None:
             log(f"[dry-run] publicaria agora ({alvo:%H:%M}): {nome}")
         return
 
-    ig_id = os.environ.get("IG_USER_ID", "").strip()
-    token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+    graph, ig_id, token = credencial() or (GRAPH, "", "")
     if not args.render_apenas and not token:
-        log("SEM IG_ACCESS_TOKEN nos secrets — a fila está lida e correta, "
-            "mas não há como publicar. Ver README.md.")
+        log("SEM META_TOKEN nem IG_ACCESS_TOKEN nos secrets — a fila está lida "
+            "e correta, mas não há como publicar. Ver CLAUDE.md.")
         for alvo, nome, *_ in devidos:
             log(f"  publicaria agora: {nome}")
         return
-    if token and not ig_id and not args.render_apenas:
-        ig_id = descobrir_ig_id(token)
+    if token and not args.render_apenas:
+        ig_id = conferir_conta(graph, ig_id, token)
 
-    if not args.render_apenas and not dentro_do_limite(ig_id, token):
+    if not args.render_apenas and not dentro_do_limite(graph, ig_id, token):
         log("cota de publicação esgotada nas últimas 24 h; segurando a fila")
         return
 
@@ -330,7 +370,7 @@ def rodada(args) -> None:
                 enviados.append(nome_asset)
                 log(f"  subindo parte {i}/{len(partes)}")
                 media_ids.append(publicar_story(
-                    ig_id, token, url, arquivo.suffix.lower() == ".mp4"))
+                    graph, ig_id, token, url, arquivo.suffix.lower() == ".mp4"))
                 log(f"  no ar: {media_ids[-1]}")
             except (SystemExit, filamod.FilaErro, requests.RequestException) as exc:
                 # com parte já no ar, repetir o arquivo inteiro na próxima
