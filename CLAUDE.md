@@ -358,3 +358,28 @@ O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por h
 `atraso_max_min` (90) garante que o story sai assim que o robô acordar, em vez de pular para o
 dia seguinte. Se isso incomodar, o passo seguinte é um despertador fora do GitHub (Cloudflare
 Worker ou cron-job.org chamando `workflow_dispatch`) — depende de o Diego criar a conta.
+
+## Carrossel publicado sozinho, 12h30, sem música (26/09/2026)
+
+Decisão do Diego: o carrossel deixou de ser a única tarefa manual do dia. A música (que a Graph
+API não põe) era o único motivo de ser manual, e a medição de 26/09 não mostrou ganho de alcance
+com ela — ele preferiu assumir o risco. O cartão do carrossel **saiu do app Canteiro** (o texto
+continua em `DIAS[].carrosseis`, que é de onde `exportar_carrosseis.py` lê).
+
+| Peça | Onde |
+|---|---|
+| Publicador | `carrossel.py`: lê `docs/carrosseis.json`, desenha os slides igual a `docs/carrossel.html` (Pillow + `fontes/Archivo.ttf`), hospeda na Release `pronto`, cria os containers `is_carousel_item` + `CAROUSEL` com a legenda e publica |
+| Workflow | `carrossel.yml`: disparos 11:11, 11:47, 12:13, 12:29 BRT (quem acorda antes DORME até 12:30) e repescagem 13:41 e 15:07; `agora` no Run workflow publica o de hoje na hora |
+| Estado | `state_carrossel.json` (versionado). Antes de publicar, confere o PERFIL: legenda igual nas últimas 30 h = já publicado |
+| Token | secret **`META_TOKEN`** = token de sistema da Meta (não expira, `instagram_content_publish`), via `graph.facebook.com/v21.0` e id business `17841470188725651` |
+
+Primeiro publicado: 26/09/2026 13:15, `18354495076217403` (8 slides).
+
+⚠ **O `IG_ACCESS_TOKEN` deste repo está INVALIDADO desde a troca de senha** (erro "The session
+has been invalidated because the user changed their password"). O carrossel não depende mais
+dele, mas os **stories da fila** dependem: o workflow Publicar Story segue verde porque a fila está
+vazia, e vai falhar no primeiro story enviado. Saída: passar o `publicar_story.py` para o
+`META_TOKEN` do mesmo jeito.
+
+⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
+robô publica, não o app.

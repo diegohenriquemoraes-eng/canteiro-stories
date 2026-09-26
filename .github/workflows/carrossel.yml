@@ -68,10 +68,10 @@ jobs:
       - name: Guardar o estado
         if: always()
         run: |
-          if [ -n "$(git status --porcelain state_carrossel.json publicados.md)" ]; then
+          if [ -n "$(git status --porcelain state_carrossel.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add state_carrossel.json publicados.md
+            git add state_carrossel.json
             git commit -m "Carrossel publicado (auto)"
             for i in 1 2 3; do
               git pull --rebase --autostash origin main && git push && break

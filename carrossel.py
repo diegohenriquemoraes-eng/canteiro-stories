@@ -13,7 +13,7 @@ O caminho:
       -> desenha os 8 slides (mesmo desenho de docs/carrossel.html)
       -> Release `pronto` (URL pública que o Instagram vem buscar)
       -> 8 containers is_carousel_item -> container CAROUSEL com a legenda
-      -> media_publish -> apaga as imagens da Release -> grava o estado
+      -> media_publish -> apaga as imagens da Release -> grava state_carrossel.json
 
 Proteções contra post duplicado: o estado em `state_carrossel.json` e, antes
 de publicar, uma conferência no PERFIL (legenda igual nas últimas 30 h) — se o
@@ -49,7 +49,6 @@ import fila as filamod        # noqa: E402
 FUSO = ZoneInfo("America/Sao_Paulo")
 DADOS = AQUI / "docs" / "carrosseis.json"
 STATE = AQUI / "state_carrossel.json"
-REGISTRO = AQUI / "publicados.md"
 SAIDA = AQUI / "saida" / "carrossel"
 FONTE = AQUI / "fontes" / "Archivo.ttf"
 GRAPH = "https://graph.instagram.com"
@@ -331,10 +330,10 @@ def main() -> None:
         "titulo": c["titulo"],
     }
     gravar_estado(st)
-    with REGISTRO.open("a", encoding="utf-8") as fh:
-        fh.write(f"\n## {alvo:%d/%m/%Y %H:%M} — carrossel: {c['titulo']}\n\n"
-                 f"- Carrossel: {media_id} ({len(urls)} slides, sem música)\n"
-                 f"- Publicado em: {datetime.now(FUSO).isoformat(timespec='seconds')}\n")
+    # o registro humano fica no próprio estado: publicados.md é escrito pelo
+    # workflow dos stories, e dois workflows anexando no mesmo arquivo dão
+    # conflito de rebase na hora do push.
+
 
 
 if __name__ == "__main__":
