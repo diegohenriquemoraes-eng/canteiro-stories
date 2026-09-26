@@ -1,0 +1,106 @@
+name: Publicar carrossel
+
+# O carrossel do dia (docs/carrosseis.json, exportado do app Canteiro) sai
+# sozinho às 12h30 de Brasília, sem música — decisão do Diego em 26/09/2026.
+#
+# O cron do GitHub é "quando der" (já entregou buracos de 4 h neste repo), então
+# são vários disparos em minutos quebrados: o primeiro que acordar antes das
+# 12h30 DORME até a hora e publica no minuto certo; os seguintes veem o estado
+# e saem sem fazer nada; os das 13h41 e 15h07 são repescagem se os da manhã
+# forem engolidos. O script ainda confere o PERFIL antes de publicar (legenda
+# igual nas últimas 30 h), então um estado não commitado não vira post duplo.
+on:
+  schedule:
+    - cron: "11 14 * * *"    # 11:11 BRT — acorda e espera até 12:30
+    - cron: "47 14 * * *"    # 11:47
+    - cron: "13 15 * * *"    # 12:13
+    - cron: "29 15 * * *"    # 12:29
+    - cron: "41 16 * * *"    # 13:41 — repescagem
+    - cron: "7 18 * * *"     # 15:07 — repescagem
+  workflow_dispatch:
+    inputs:
+      agora:
+        description: "Publicar o carrossel de HOJE já, sem esperar a hora"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Só dizer o que faria"
+        type: boolean
+        default: false
+
+concurrency:
+  group: canteiro-carrossel
+  cancel-in-progress: false
+
+jobs:
+  carrossel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write        # estado + assets da Release `pronto`
+      issues: write          # alarme quando falha
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pegar o estado mais recente
+        run: git pull --rebase --autostash origin main || true
+
+      - name: Publicar o carrossel devido
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=""
+          [ "${{ inputs.agora }}" = "true" ] && args="$args --agora"
+          [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
+          python carrossel.py $args
+
+      - name: Guardar o estado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state_carrossel.json publicados.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state_carrossel.json publicados.md
+            git commit -m "Carrossel publicado (auto)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              sleep 5
+            done
+          else
+            echo "Nada publicado nesta execução."
+          fi
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="Carrossel não foi publicado"
+          if gh issue list --state open --search "$titulo in:title" \
+               --json number -q '.[0].number' | grep -q .; then
+            echo "Já existe issue aberta sobre isso."
+            exit 0
+          fi
+          corpo=$(cat <<TXT
+          A execução de $(date -u '+%d/%m %H:%M UTC') falhou ao publicar o carrossel do dia.
+
+          Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          O que costuma ser: token do Instagram vencido (ver o workflow Renovar
+          token), cota de 100 publicações/24 h, ou o Instagram recusando uma
+          imagem (o log diz qual). A repescagem das 13h41 e das 15h07 tenta de
+          novo sozinha; para forçar, Actions → Publicar carrossel → Run workflow
+          → agora.
+          TXT
+          )
+          gh issue create --title "$titulo" --body "$corpo"
