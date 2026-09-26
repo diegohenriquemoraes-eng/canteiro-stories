@@ -53,6 +53,12 @@ REGISTRO = AQUI / "publicados.md"
 SAIDA = AQUI / "saida" / "carrossel"
 FONTE = AQUI / "fontes" / "Archivo.ttf"
 GRAPH = "https://graph.instagram.com"
+# 26/09/2026: o IG_ACCESS_TOKEN deste repo (login do Instagram) foi invalidado por
+# troca de senha. O carrossel usa o TOKEN DE SISTEMA da Meta (META_TOKEN): não
+# expira, não cai com troca de senha e tem instagram_content_publish. Ele fala
+# com graph.facebook.com e com o id de conta business (17841...).
+GRAPH_META = "https://graph.facebook.com/v21.0"
+IG_BUSINESS_ID = "17841470188725651"
 RELEASE = "pronto"
 
 # Janela: acordou até ESPERA_MIN antes da hora -> dorme e publica no minuto
@@ -70,7 +76,7 @@ LARGURA = L - MARGEM * 2
 
 def log(msg: str) -> None:
     texto = str(msg)
-    for chave in ("IG_ACCESS_TOKEN", "GH_TOKEN", "GITHUB_TOKEN"):
+    for chave in ("META_TOKEN", "IG_ACCESS_TOKEN", "GH_TOKEN", "GITHUB_TOKEN"):
         segredo = os.environ.get(chave, "").strip()
         if len(segredo) > 8:
             texto = texto.replace(segredo, "***")
@@ -284,10 +290,16 @@ def main() -> None:
             f"({len(c['slides'])} slides, legenda {len(c['legenda'])} caracteres)")
         return
 
-    token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-    if not token:
-        raise SystemExit("sem IG_ACCESS_TOKEN — não há como publicar")
-    ig_id = os.environ.get("IG_USER_ID", "").strip() or ig_id_do_token(token)
+    global GRAPH
+    token = os.environ.get("META_TOKEN", "").strip()
+    if token:
+        GRAPH = GRAPH_META
+        ig_id = os.environ.get("IG_BUSINESS_ID", "").strip() or IG_BUSINESS_ID
+    else:
+        token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+        if not token:
+            raise SystemExit("sem META_TOKEN nem IG_ACCESS_TOKEN — não há como publicar")
+        ig_id = os.environ.get("IG_USER_ID", "").strip() or ig_id_do_token(token)
 
     ja = ja_no_perfil(ig_id, token, c["legenda"])
     if ja:

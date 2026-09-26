@@ -55,6 +55,7 @@ jobs:
 
       - name: Publicar o carrossel devido
         env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GH_TOKEN: ${{ github.token }}
@@ -96,8 +97,7 @@ jobs:
 
           Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-          O que costuma ser: token do Instagram vencido (ver o workflow Renovar
-          token), cota de 100 publicações/24 h, ou o Instagram recusando uma
+          O que costuma ser: secret META_TOKEN (token de sistema da Meta) revogado, cota de 100 publicações/24 h, ou o Instagram recusando uma
           imagem (o log diz qual). A repescagem das 13h41 e das 15h07 tenta de
           novo sozinha; para forçar, Actions → Publicar carrossel → Run workflow
           → agora.
