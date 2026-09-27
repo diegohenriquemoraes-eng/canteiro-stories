@@ -427,6 +427,14 @@ Não ligar nenhuma nova fonte automática de story sem ele pedir.
 ⚠ Mudou texto de carrossel no app? `python exportar_carrosseis.py` e push — é o JSON do repo que o
 robô publica, não o app.
 
+## Foto avulsa no feed, agendada (27/09/2026)
+
+Pedido do Diego: foto dele no ACM Talks (Itu, 25/09), recortada 4:5, com legenda no padrão do
+Canteiro sobre produzir conteúdo na construção. `feed.py` + `feed.yml` publicam o que estiver em
+`feed_agendado.json` (imagem como asset da Release `feed`, apagada depois de publicar). Só feed,
+nunca story. A 1ª saiu em 27/09 20:35 (`17987753538117821`); a 2ª está marcada para **04/10
+20:35**, com crons fixos nessa data. Item novo com outra data pede cron novo no `feed.yml`.
+
 ## Story das 16h vira "comentário do dia" (26/09/2026)
 
 O Diego quase nunca cumpria o story de prova social das 16h (print de aluno, foto de obra). A
