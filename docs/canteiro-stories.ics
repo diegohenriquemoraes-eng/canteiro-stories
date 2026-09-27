@@ -6,94 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Canteiro · Stories
 X-WR-CALDESC:Alertas dos Stories do dia e do Reset — @vendanaobra
 BEGIN:VEVENT
-UID:canteiro-20260926-1@vendanaobra
-DTSTAMP:20260926T162225Z
-SEQUENCE:5
-DTSTART:20260926T073000
-DTEND:20260926T074000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/4 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto sua com expressão de quem lemb
- rou de algo ruim. Escreva por cima: "Dei um desconto e ele usou pra nego
- ciar com o meu concorrente. Hoje eu conto o que mudei."\n\nPlanejado na 
- véspera.\n\nDia: Desconto só depois do sim\nAbrir o Canteiro: https://
- claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260926-2@vendanaobra
-DTSTAMP:20260926T162225Z
-SEQUENCE:5
-DTSTART:20260926T120000
-DTEND:20260926T121000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/4 · P · Problema + enquete
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Condição especial q
- ue fica aberta até amanhã vira arma na mão do concorrente." Enquete: 
- "Você dá desconto antes ou depois do sim? Antes / Depois / Não dou".\
- n\nA única interação do dia.\n\nDia: Desconto só depois do sim\nAbri
- r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
- 8cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260926-3@vendanaobra
-DTSTAMP:20260926T162225Z
-SEQUENCE:5
-DTSTART:20260926T160000
-DTEND:20260926T161000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/4 · Prova social
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
- e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
- a respondendo. Sem comentário novo: print dos números do Reel de ontem
-  (visualizações ou compartilhamentos) com a frase "Isso aqui rodou ont
- em. Quem ainda não viu\, está no perfil."\n\nProva social todo dia\, s
- em caçar print: de 15 a 25/09 só um dia ficou sem comentário. Leva 20
-  segundos\, tudo dentro do Instagram.\n\nDia: Desconto só depois do sim
- \nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-b
- ca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/4 · Prova social
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20260926-4@vendanaobra
-DTSTAMP:20260926T162225Z
-SEQUENCE:5
-DTSTART:20260926T193000
-DTEND:20260926T194000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/4 · S · Solução + oferta
-DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
-  a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
- e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
- uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
-  Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
- momento do dia em que você pede alguma coisa.\n\nResposta: as duas perg
- untas na ordem\, e a condição que morre se o sim não vier. Depois\, a
-  oferta.\n\nDia: Desconto só depois do sim\nAbrir o Canteiro: https://c
- laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:canteiro-20260927-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260927T073000
 DTEND:20260927T074000
@@ -113,7 +27,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260927-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260927T120000
 DTEND:20260927T121000
@@ -133,7 +47,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260927-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260927T160000
 DTEND:20260927T161000
@@ -156,7 +70,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260927-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260927T193000
 DTEND:20260927T194000
@@ -165,7 +79,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: anotar o con
@@ -181,7 +95,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260928-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260928T073000
 DTEND:20260928T074000
@@ -201,7 +115,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260928-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260928T120000
 DTEND:20260928T121000
@@ -221,7 +135,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260928-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260928T160000
 DTEND:20260928T161000
@@ -244,7 +158,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260928-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260928T193000
 DTEND:20260928T194000
@@ -253,7 +167,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: um mecanismo
@@ -268,18 +182,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260929-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260929T073000
 DTEND:20260929T074000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 1/4 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de um orçamento impresso ou da
-  agenda cheia. Escreva por cima: "Somei o que a minha empresa dá de gra
- ça todo mês. O número me assustou. Hoje eu conto."\n\nPlanejado na v
- éspera.\n\nDia: Você não é bom. É caro — e não manda a conta.\nA
- brir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9
- -778cf6aba136
+DESCRIPTION:imagem · só a frase\n\nFoto do seu celular com o painel abe
+ rto\, de longe\, sem dar para ler número. Escreva por cima: "Uso IA tod
+ o dia na minha empresa e nunca para escrever post. Hoje eu mostro para q
+ uê."\n\nPlanejado na véspera. Nenhum valor legível na foto.\n\nDia: E
+ u uso IA todo dia na gestão comercial. Nenhuma vez para escrever post.\
+ nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
+ a9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
@@ -288,18 +203,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260929-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260929T120000
 DTEND:20260929T121000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 2/4 · P · Problema + enquete
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O erro não é cobrar
- . É cobrar em silêncio." Enquete: "Você registra as cortesias no orç
- amento? Sempre / Às vezes / Nunca".\n\nA única interação do dia.\n\n
- Dia: Você não é bom. É caro — e não manda a conta.\nAbrir o Cante
- iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
- 6
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Dono que decide sem n
+ úmero decide pela última conversa que teve." Enquete: "Você usa IA na
+  gestão da empresa? Uso / Só para texto / Ainda não".\n\nA única int
+ eração do dia.\n\nDia: Eu uso IA todo dia na gestão comercial. Nenhum
+ a vez para escrever post.\nAbrir o Canteiro: https://claude.ai/code/arti
+ fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
@@ -308,7 +223,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260929-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260929T160000
 DTEND:20260929T161000
@@ -319,10 +234,10 @@ DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
  a respondendo. Sem comentário novo: print dos números do Reel de ontem
   (visualizações ou compartilhamentos) com a frase "Isso aqui rodou ont
  em. Quem ainda não viu\, está no perfil."\n\nProva social todo dia\, s
- em caçar print: de 15 a 25/09 só um dia ficou sem comentário. Leva 20
-  segundos\, tudo dentro do Instagram.\n\nDia: Você não é bom. É caro
-  — e não manda a conta.\nAbrir o Canteiro: https://claude.ai/code/art
- ifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+ em caçar print. Leva 20 segundos\, tudo dentro do Instagram.\n\nDia: Eu
+  uso IA todo dia na gestão comercial. Nenhuma vez para escrever post.\n
+ Abrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca
+ 9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 3/4 · Prova social
@@ -331,20 +246,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260929-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260929T193000
 DTEND:20260929T194000
 TRANSP:TRANSPARENT
 SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
-DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
- "hoje às 20h tem aula ao vivo do Venda 10x — toda terça\, uma hora\,
-  ao vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." 
- Diga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Ve
- nda 10x. Assunto da aula: como cobrar o extra sem perder o cliente.\n\nD
- ia: Você não é bom. É caro — e não manda a conta.\nAbrir o Cantei
- ro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+ "hoje às 20h tem aula ao vivo do Venda 10x\, toda terça\, uma hora\, a
+ o vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." Di
+ ga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Vend
+ a 10x. Assunto da aula: IA na gestão comercial\, do CRM ao painel do do
+ no.\n\nDia: Eu uso IA todo dia na gestão comercial. Nenhuma vez para es
+ crever post.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d
+ -79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
@@ -354,7 +270,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260930-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260930T073000
 DTEND:20260930T074000
@@ -373,7 +289,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260930-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260930T120000
 DTEND:20260930T121000
@@ -393,7 +309,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260930-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260930T160000
 DTEND:20260930T161000
@@ -416,7 +332,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260930-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260930T193000
 DTEND:20260930T194000
@@ -425,7 +341,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: meta com pra
@@ -441,7 +357,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20260930-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20260930T230000
 DTEND:20260930T231000
@@ -459,7 +375,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261001-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261001T073000
 DTEND:20261001T074000
@@ -479,7 +395,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261001-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261001T120000
 DTEND:20261001T121000
@@ -499,7 +415,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261001-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261001T160000
 DTEND:20261001T161000
@@ -522,7 +438,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261001-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261001T193000
 DTEND:20261001T194000
@@ -531,7 +447,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: as três per
@@ -546,7 +462,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261002-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261002T073000
 DTEND:20261002T074000
@@ -566,7 +482,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261002-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261002T120000
 DTEND:20261002T121000
@@ -586,7 +502,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261002-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261002T160000
 DTEND:20261002T161000
@@ -605,7 +521,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261002-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261002T193000
 DTEND:20261002T194000
@@ -614,7 +530,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: a ligação 
@@ -629,7 +545,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261002-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261002T230000
 DTEND:20261002T231000
@@ -647,7 +563,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261003-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261003T073000
 DTEND:20261003T074000
@@ -666,7 +582,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261003-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261003T120000
 DTEND:20261003T121000
@@ -686,7 +602,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261003-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261003T160000
 DTEND:20261003T161000
@@ -709,7 +625,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261003-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261003T193000
 DTEND:20261003T194000
@@ -718,7 +634,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: presença an
@@ -734,7 +650,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261004-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261004T073000
 DTEND:20261004T074000
@@ -754,7 +670,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261004-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261004T120000
 DTEND:20261004T121000
@@ -774,7 +690,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261004-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261004T160000
 DTEND:20261004T161000
@@ -797,7 +713,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261004-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261004T193000
 DTEND:20261004T194000
@@ -806,7 +722,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: responder em
@@ -822,7 +738,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261005-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261005T073000
 DTEND:20261005T074000
@@ -841,7 +757,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261005-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261005T120000
 DTEND:20261005T121000
@@ -861,7 +777,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261005-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261005T160000
 DTEND:20261005T161000
@@ -884,7 +800,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261005-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261005T193000
 DTEND:20261005T194000
@@ -893,7 +809,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: política es
@@ -909,18 +825,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261006-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261006T073000
 DTEND:20261006T074000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 1/4 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto da tela do CRM de longe ou de u
- ma pilha de propostas. Escreva por cima: "Tenho dezenas de propostas par
- adas e nenhuma recebeu a última mensagem. Hoje eu mostro qual é."\n\nP
- lanejado na véspera.\n\nDia: O cliente não sumiu. Ele nunca foi conduz
- ido.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
- 9b-bca9-778cf6aba136
+DESCRIPTION:imagem · só a frase\n\nFoto de um projeto aberto na mesa ou
+  de uma obra. Escreva por cima: "Minha empresa dá aula para arquiteto t
+ oda semana\, de graça. Hoje eu conto por quê."\n\nPlanejado na vésper
+ a.\n\nDia: Minha empresa tem um braço educacional para arquitetos.\nAbr
+ ir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-7
+ 78cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
@@ -929,18 +845,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261006-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261006T120000
 DTEND:20261006T121000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 2/4 · P · Problema + enquete
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Ninguém some depois 
- de uma conversa boa. Some depois de uma proposta sem condução." Enquet
- e: "Quantos toques você dá depois da proposta? Um / Dois ou três / Ne
- nhum".\n\nA única interação do dia.\n\nDia: O cliente não sumiu. Ele
-  nunca foi conduzido.\nAbrir o Canteiro: https://claude.ai/code/artifact
- /c6da235d-79ca-4c9b-bca9-778cf6aba136
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O arquiteto recebe ca
+ tálogo de todo mundo. Aula\, de quase ninguém." Enquete: "Como você a
+ borda arquiteto? Mando catálogo / Ofereço conteúdo / Não abordo".\n\
+ nA única interação do dia.\n\nDia: Minha empresa tem um braço educac
+ ional para arquitetos.\nAbrir o Canteiro: https://claude.ai/code/artifac
+ t/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
@@ -949,7 +865,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261006-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261006T160000
 DTEND:20261006T161000
@@ -958,12 +874,10 @@ SUMMARY:🖼 Story 3/4 · Prova social
 DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
  e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
  a respondendo. Sem comentário novo: print dos números do Reel de ontem
-  (visualizações ou compartilhamentos) com a frase "Isso aqui rodou ont
- em. Quem ainda não viu\, está no perfil."\n\nProva social todo dia\, s
- em caçar print: de 15 a 25/09 só um dia ficou sem comentário. Leva 20
-  segundos\, tudo dentro do Instagram.\n\nDia: O cliente não sumiu. Ele 
- nunca foi conduzido.\nAbrir o Canteiro: https://claude.ai/code/artifact/
- c6da235d-79ca-4c9b-bca9-778cf6aba136
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: Minha empresa 
+ tem um braço educacional para arquitetos.\nAbrir o Canteiro: https://cl
+ aude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 3/4 · Prova social
@@ -972,21 +886,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261006-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261006T193000
 DTEND:20261006T194000
 TRANSP:TRANSPARENT
 SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
-DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
- "hoje às 20h tem aula ao vivo do Venda 10x — toda terça\, uma hora\,
-  ao vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." 
- Diga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Ve
- nda 10x. Assunto da aula: a cadência D+1\, D+7 e D+30 aplicada ao funil
-  da empresa.\n\nDia: O cliente não sumiu. Ele nunca foi conduzido.\nAbr
- ir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-7
- 78cf6aba136
+ "hoje às 20h tem aula ao vivo do Venda 10x\, toda terça\, uma hora\, a
+ o vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." Di
+ ga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Vend
+ a 10x. Assunto da aula: o braço educacional para arquitetos.\n\nDia: Mi
+ nha empresa tem um braço educacional para arquitetos.\nAbrir o Canteiro
+ : https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
@@ -996,7 +909,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261007-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261007T073000
 DTEND:20261007T074000
@@ -1016,7 +929,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261007-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261007T120000
 DTEND:20261007T121000
@@ -1036,7 +949,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261007-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261007T160000
 DTEND:20261007T161000
@@ -1059,7 +972,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261007-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261007T193000
 DTEND:20261007T194000
@@ -1068,7 +981,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: o pedido esp
@@ -1084,7 +997,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261007-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261007T230000
 DTEND:20261007T231000
@@ -1102,7 +1015,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261008-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261008T073000
 DTEND:20261008T074000
@@ -1122,7 +1035,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261008-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261008T120000
 DTEND:20261008T121000
@@ -1142,7 +1055,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261008-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261008T160000
 DTEND:20261008T161000
@@ -1165,7 +1078,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261008-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261008T193000
 DTEND:20261008T194000
@@ -1174,7 +1087,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: convite no l
@@ -1190,7 +1103,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261009-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261009T073000
 DTEND:20261009T074000
@@ -1210,7 +1123,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261009-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261009T120000
 DTEND:20261009T121000
@@ -1230,7 +1143,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261009-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261009T160000
 DTEND:20261009T161000
@@ -1249,7 +1162,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261009-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261009T193000
 DTEND:20261009T194000
@@ -1258,7 +1171,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: oito parceir
@@ -1274,7 +1187,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261009-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261009T230000
 DTEND:20261009T231000
@@ -1292,7 +1205,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261010-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261010T073000
 DTEND:20261010T074000
@@ -1312,7 +1225,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261010-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261010T120000
 DTEND:20261010T121000
@@ -1332,7 +1245,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261010-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261010T160000
 DTEND:20261010T161000
@@ -1355,7 +1268,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261010-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261010T193000
 DTEND:20261010T194000
@@ -1364,7 +1277,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: a visita anu
@@ -1379,7 +1292,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261011-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261011T073000
 DTEND:20261011T074000
@@ -1398,7 +1311,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261011-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261011T120000
 DTEND:20261011T121000
@@ -1418,7 +1331,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261011-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261011T160000
 DTEND:20261011T161000
@@ -1441,7 +1354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261011-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261011T193000
 DTEND:20261011T194000
@@ -1450,7 +1363,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: as fotos da 
@@ -1465,17 +1378,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261012-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261012T073000
 DTEND:20261012T074000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 1/4 · Tiro de alerta
-DESCRIPTION:imagem · só a frase\n\nFoto de um calendário ou de uma age
- nda com datas passadas. Escreva por cima: "Seu maior concorrente não te
- m CNPJ. Hoje eu digo o nome dele."\n\nPlanejado na véspera.\n\nDia: Seu
-  maior concorrente é o "deixa pra depois"\nAbrir o Canteiro: https://cl
- aude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+DESCRIPTION:imagem · só a frase\n\nFoto de uma folha em branco com uma 
+ caneta. Escreva por cima: "O processo comercial da sua empresa cabe nest
+ a folha. Hoje eu mostro como."\n\nPlanejado na véspera.\n\nDia: Process
+ o comercial é cada etapa com dono e prazo.\nAbrir o Canteiro: https://c
+ laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
@@ -1484,18 +1397,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261012-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261012T120000
 DTEND:20261012T121000
 TRANSP:TRANSPARENT
 SUMMARY:🖼 Story 2/4 · P · Problema + enquete
-DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O cliente não escolh
- eu o concorrente. Ele escolheu não escolher." Enquete: "Seus motivos de
-  perda dizem o nome do concorrente? Quase nunca / Às vezes / Sempre".\n
- \nA única interação do dia.\n\nDia: Seu maior concorrente é o "deixa
-  pra depois"\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d
- -79ca-4c9b-bca9-778cf6aba136
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Etapa sem dono é eta
+ pa que espera alguém lembrar." Enquete: "Cada etapa do seu funil tem um
+  responsável? Tem / Algumas / Nenhuma".\n\nA única interação do dia.
+ \n\nDia: Processo comercial é cada etapa com dono e prazo.\nAbrir o Can
+ teiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba
+ 136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
@@ -1504,7 +1417,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261012-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261012T160000
 DTEND:20261012T161000
@@ -1513,12 +1426,10 @@ SUMMARY:🖼 Story 3/4 · Prova social
 DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
  e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
  a respondendo. Sem comentário novo: print dos números do Reel de ontem
-  (visualizações ou compartilhamentos) com a frase "Isso aqui rodou ont
- em. Quem ainda não viu\, está no perfil."\n\nProva social todo dia\, s
- em caçar print: de 15 a 25/09 só um dia ficou sem comentário. Leva 20
-  segundos\, tudo dentro do Instagram.\n\nDia: Seu maior concorrente é o
-  "deixa pra depois"\nAbrir o Canteiro: https://claude.ai/code/artifact/c
- 6da235d-79ca-4c9b-bca9-778cf6aba136
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: Processo comer
+ cial é cada etapa com dono e prazo.\nAbrir o Canteiro: https://claude.a
+ i/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🖼 Story 3/4 · Prova social
@@ -1527,23 +1438,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261012-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261012T193000
 DTEND:20261012T194000
 TRANSP:TRANSPARENT
 SUMMARY:🎥 Story 4/4 · S · Solução + oferta
-DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
- uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
-  Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
- momento do dia em que você pede alguma coisa.\n\nResposta: mostrar o cu
- sto de esperar + a pergunta que separa preço de prioridade. Depois\, a 
- oferta.\n\nDia: Seu maior concorrente é o "deixa pra depois"\nAbrir o C
- anteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6a
- ba136
+ \, 79 páginas\, trilha de 30 dias\, com o processo em 5 passos. R$ 39\,
+ 90\, acesso na hora. Link aqui no story." Sticker de link: vendanaobra.c
+ om.br/caderno.\n\nResposta: cinco etapas\, um nome e um prazo em cada. D
+ epois\, a oferta.\n\nDia: Processo comercial é cada etapa com dono e pr
+ azo.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
+ 9b-bca9-778cf6aba136
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
@@ -1552,7 +1461,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261013-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261013T073000
 DTEND:20261013T074000
@@ -1571,7 +1480,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261013-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261013T120000
 DTEND:20261013T121000
@@ -1591,7 +1500,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261013-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261013T160000
 DTEND:20261013T161000
@@ -1614,7 +1523,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261013-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261013T193000
 DTEND:20261013T194000
@@ -1638,7 +1547,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261014-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261014T073000
 DTEND:20261014T074000
@@ -1658,7 +1567,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261014-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261014T120000
 DTEND:20261014T121000
@@ -1678,7 +1587,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261014-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261014T160000
 DTEND:20261014T161000
@@ -1701,7 +1610,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261014-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261014T193000
 DTEND:20261014T194000
@@ -1710,7 +1619,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: todo extra o
@@ -1726,7 +1635,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261014-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261014T230000
 DTEND:20261014T231000
@@ -1744,7 +1653,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261015-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261015T073000
 DTEND:20261015T074000
@@ -1764,7 +1673,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261015-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261015T120000
 DTEND:20261015T121000
@@ -1784,7 +1693,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261015-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261015T160000
 DTEND:20261015T161000
@@ -1807,7 +1716,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261015-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261015T193000
 DTEND:20261015T194000
@@ -1816,7 +1725,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: A\, B e C co
@@ -1831,7 +1740,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261016-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261016T073000
 DTEND:20261016T074000
@@ -1850,7 +1759,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261016-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261016T120000
 DTEND:20261016T121000
@@ -1870,7 +1779,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261016-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261016T160000
 DTEND:20261016T161000
@@ -1889,7 +1798,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261016-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261016T193000
 DTEND:20261016T194000
@@ -1898,7 +1807,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: o diagnósti
@@ -1914,7 +1823,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261016-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261016T230000
 DTEND:20261016T231000
@@ -1932,7 +1841,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261017-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261017T073000
 DTEND:20261017T074000
@@ -1951,7 +1860,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261017-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261017T120000
 DTEND:20261017T121000
@@ -1971,7 +1880,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261017-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261017T160000
 DTEND:20261017T161000
@@ -1994,7 +1903,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261017-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261017T193000
 DTEND:20261017T194000
@@ -2003,7 +1912,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: listar quatr
@@ -2019,7 +1928,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261018-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261018T073000
 DTEND:20261018T074000
@@ -2038,7 +1947,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261018-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261018T120000
 DTEND:20261018T121000
@@ -2058,7 +1967,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261018-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261018T160000
 DTEND:20261018T161000
@@ -2081,7 +1990,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261018-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261018T193000
 DTEND:20261018T194000
@@ -2090,7 +1999,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: gravar as pr
@@ -2106,7 +2015,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261019-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261019T073000
 DTEND:20261019T074000
@@ -2125,7 +2034,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261019-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261019T120000
 DTEND:20261019T121000
@@ -2145,7 +2054,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261019-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261019T160000
 DTEND:20261019T161000
@@ -2168,7 +2077,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261019-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261019T193000
 DTEND:20261019T194000
@@ -2177,7 +2086,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: escolher o t
@@ -2193,7 +2102,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261020-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261020T073000
 DTEND:20261020T074000
@@ -2212,7 +2121,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261020-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261020T120000
 DTEND:20261020T121000
@@ -2232,7 +2141,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261020-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261020T160000
 DTEND:20261020T161000
@@ -2255,7 +2164,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261020-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261020T193000
 DTEND:20261020T194000
@@ -2278,7 +2187,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-1@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261021T073000
 DTEND:20261021T074000
@@ -2297,7 +2206,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-2@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261021T120000
 DTEND:20261021T121000
@@ -2317,7 +2226,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-3@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261021T160000
 DTEND:20261021T161000
@@ -2340,7 +2249,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-4@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261021T193000
 DTEND:20261021T194000
@@ -2349,7 +2258,7 @@ SUMMARY:🎥 Story 4/4 · S · Solução + oferta
 DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
   a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
  e eu sei de vender pra obra está no Caderno do Vendedor da Construção
-  — 69 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
+  — 79 páginas\, trilha de 30 dias\, serve pra marcenaria\, gesso\, il
  uminação\, esquadria. R$ 39\,90\, acesso na hora. Link aqui no story."
   Sticker de link: vendanaobra.com.br/caderno. Fale devagar. É o único 
  momento do dia em que você pede alguma coisa.\n\nResposta: três priori
@@ -2365,10 +2274,1228 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-reset@vendanaobra
-DTSTAMP:20260926T162225Z
+DTSTAMP:20260927T152454Z
 SEQUENCE:5
 DTSTART:20261021T230000
 DTEND:20261021T231000
+TRANSP:TRANSPARENT
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
+ ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
+ x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
+ era não custa nada — é só não postar nada solto esta noite.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🧹 Reset de Stories — apague os 4
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261022-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261022T073000
+DTEND:20261022T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto do seu celular com uma notifica
+ ção na tela (sem nome de cliente). Escreva por cima: "Esse aviso chego
+ u sozinho. Ninguém na minha empresa precisa lembrar de nada. Hoje eu mo
+ stro como."\n\nPlanejado na véspera. Tampe nomes.\n\nDia: O CRM que tra
+ balha sozinho tira a gestão da memória.\nAbrir o Canteiro: https://cla
+ ude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261022-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261022T120000
+DTEND:20261022T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "CRM que só guarda da
+ do é caderno caro." Enquete: "Seu CRM tem automação? Tem / Pouca / Ne
+ nhuma".\n\nA única interação do dia.\n\nDia: O CRM que trabalha sozin
+ ho tira a gestão da memória.\nAbrir o Canteiro: https://claude.ai/code
+ /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261022-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261022T160000
+DTEND:20261022T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
+ e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
+ a respondendo. Sem comentário novo: print dos números do Reel de ontem
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: O CRM que trab
+ alha sozinho tira a gestão da memória.\nAbrir o Canteiro: https://clau
+ de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261022-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261022T193000
+DTEND:20261022T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
+ e eu sei de vender pra obra está no Caderno do Vendedor da Construção
+ \, 79 páginas\, trilha de 30 dias\, com checklist em cada capítulo. R$
+  39\,90\, acesso na hora. Link aqui no story." Sticker de link: vendanao
+ bra.com.br/caderno.\n\nResposta: as quatro automações e a conferência
+  mensal. Depois\, a oferta.\n\nDia: O CRM que trabalha sozinho tira a ge
+ stão da memória.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6
+ da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261023-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261023T073000
+DTEND:20261023T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nPrint (borrado) do seu CRM com negoc
+ iações em aberto. Escreva por cima: "Toda sexta eu olho um número ant
+ es de qualquer outro. Hoje eu mostro qual."\n\nPlanejado na véspera.\n\
+ nDia: Negociação sem próxima tarefa é venda perdida que ainda não s
+ abe.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
+ 9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261023-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261023T120000
+DTEND:20261023T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O cliente não sumiu.
+  Ninguém era dono do próximo passo." Enquete: "Todas as suas negociaç
+ ões têm próxima tarefa? Sim / Nem perto".\n\nA única interação do 
+ dia.\n\nDia: Negociação sem próxima tarefa é venda perdida que ainda
+  não sabe.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
+ 79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261023-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261023T160000
+DTEND:20261023T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que zerou as negocia
+ ções sem tarefa (ou elogio do banco de provas). Escreva quanto ele ach
+ ou parado.\n\nProva social todo dia.\n\nDia: Negociação sem próxima t
+ arefa é venda perdida que ainda não sabe.\nAbrir o Canteiro: https://c
+ laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261023-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261023T193000
+DTEND:20261023T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta e emenda a oferta: "o Caderno do Vendedor 
+ da Construção tem esse ritual e um guia pro dono implantar com a equip
+ e em 7 dias\, com os números da reunião semanal. 79 páginas\, R$ 39\,
+ 90. Link aqui no story." Sticker de link: vendanaobra.com.br/caderno.\n\
+ nResposta: negociações sem próxima tarefa — o certo é zero. Depois
+ \, a oferta. Reset às 23h.\n\nDia: Negociação sem próxima tarefa é 
+ venda perdida que ainda não sabe.\nAbrir o Canteiro: https://claude.ai/
+ code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261023-reset@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261023T230000
+DTEND:20261023T231000
+TRANSP:TRANSPARENT
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
+ ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
+ x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
+ era não custa nada — é só não postar nada solto esta noite.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🧹 Reset de Stories — apague os 4
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261024-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261024T073000
+DTEND:20261024T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto sua de braços cruzados. Escrev
+ a por cima: "'Aqui é tudo indicação' me preocupa. Hoje eu explico por
+  quê."\n\nPlanejado na véspera.\n\nDia: Viver de indicação não é s
+ ucesso. É dependência.\nAbrir o Canteiro: https://claude.ai/code/artif
+ act/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261024-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261024T120000
+DTEND:20261024T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Quando quase tudo vem
+  de indicação\, a meta depende de alguém lembrar de você." Enquete: 
+ "Quanto das suas obras vem de indicação? Quase tudo / Metade / Pouco".
+ \n\nA única interação do dia.\n\nDia: Viver de indicação não é su
+ cesso. É dependência.\nAbrir o Canteiro: https://claude.ai/code/artifa
+ ct/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261024-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261024T160000
+DTEND:20261024T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que abriu um canal al
+ ém da indicação (ou elogio do banco de provas). Escreva qual canal.\n
+ \nProva social todo dia.\n\nDia: Viver de indicação não é sucesso. 
+ É dependência.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da
+ 235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261024-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261024T193000
+DTEND:20261024T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Entrega
+  a resposta do tiro de alerta e emenda a oferta: "no Caderno do Vendedor
+  da Construção tem um capítulo inteiro de carteira de arquitetos e de
+  como pedir indicação no momento certo. 79 páginas\, R$ 39\,90. Link 
+ aqui no story." Sticker de link: vendanaobra.com.br/caderno.\n\nResposta
+ : indicação sempre\, mas nunca como canal único — e medir a origem.
+  Depois\, a oferta.\n\nDia: Viver de indicação não é sucesso. É dep
+ endência.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-7
+ 9ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261025-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261025T073000
+DTEND:20261025T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto dos números de um Reel seu (vi
+ sualizações). Escreva por cima: "Medi todos os meus vídeos com IA. Um
+  detalhe multiplica por dez. Hoje eu conto qual."\n\nPlanejado na véspe
+ ra.\n\nDia: Marketing sem número é opinião. Medi os meus vídeos com 
+ IA.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9
+ b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261025-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261025T120000
+DTEND:20261025T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Marketing sem número
+  é opinião. E opinião de dono custa caro." Enquete: "Você sabe de on
+ de veio cada cliente? Sei / Mais ou menos / Não".\n\nA única interaç
+ ão do dia.\n\nDia: Marketing sem número é opinião. Medi os meus víd
+ eos com IA.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
+ 79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261025-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261025T160000
+DTEND:20261025T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
+ e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
+ a respondendo. Sem comentário novo: print dos números do Reel de ontem
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: Marketing sem 
+ número é opinião. Medi os meus vídeos com IA.\nAbrir o Canteiro: htt
+ ps://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261025-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261025T193000
+DTEND:20261025T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
+ e eu sei de vender pra obra está no Caderno do Vendedor da Construção
+ \, 79 páginas\, trilha de 30 dias. R$ 39\,90\, acesso na hora. Link aqu
+ i no story." Sticker de link: vendanaobra.com.br/caderno.\n\nResposta: o
+ s 15 segundos e o campo origem no CRM. Depois\, a oferta.\n\nDia: Market
+ ing sem número é opinião. Medi os meus vídeos com IA.\nAbrir o Cante
+ iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
+ 6
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261026-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261026T073000
+DTEND:20261026T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma mesa de reunião vazia. 
+ Escreva por cima: "Toda segunda eu vejo reunião comercial virar convers
+ a. Hoje eu mostro como começa a minha."\n\nPlanejado na véspera.\n\nDi
+ a: Reunião comercial começa pelos números\, não por “como foi a se
+ mana”.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79c
+ a-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261026-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261026T120000
+DTEND:20261026T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Número não tem vers
+ ão. História tem." Enquete: "Sua equipe tem reunião comercial toda se
+ mana? Sim / Quando dá / Não".\n\nA única interação do dia.\n\nDia: 
+ Reunião comercial começa pelos números\, não por “como foi a seman
+ a”.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4
+ c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261026-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261026T160000
+DTEND:20261026T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que começou a reuni
+ ão semanal (ou elogio do banco de provas). Escreva o primeiro número q
+ ue ele passou a olhar.\n\nProva social todo dia.\n\nDia: Reunião comerc
+ ial começa pelos números\, não por “como foi a semana”.\nAbrir o 
+ Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6
+ aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261026-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261026T193000
+DTEND:20261026T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "o Caderno do Vendedor da Construção
+  agora tem o guia do dono: os sete primeiros dias com a equipe e os nove
+  números da reunião semanal. 79 páginas\, R$ 39\,90. Link aqui no sto
+ ry." Sticker de link: vendanaobra.com.br/caderno.\n\nResposta: a reuniã
+ o começa pela tela e termina com tarefa. Depois\, a oferta.\n\nDia: Reu
+ nião comercial começa pelos números\, não por “como foi a semana
+ ”.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c
+ 9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261027-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261027T073000
+DTEND:20261027T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nPrint de um mapa com vários pontos 
+ marcados (sem nomes legíveis). Escreva por cima: "326 escritórios de a
+ rquitetura\, 16 cidades\, zero lista comprada. Hoje eu conto como."\n\nP
+ lanejado na véspera.\n\nDia: Arquiteto não é cliente. É canal\, e ca
+ nal se gerencia.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da
+ 235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261027-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261027T120000
+DTEND:20261027T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Tratar todo arquiteto
+  igual é gastar tempo no lugar errado." Enquete: "Sua empresa tem carte
+ ira de arquitetos? Tem / Na cabeça / Não tem".\n\nA única interação
+  do dia.\n\nDia: Arquiteto não é cliente. É canal\, e canal se gerenc
+ ia.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9
+ b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261027-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261027T160000
+DTEND:20261027T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
+ e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
+ a respondendo. Sem comentário novo: print dos números do Reel de ontem
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: Arquiteto não
+  é cliente. É canal\, e canal se gerencia.\nAbrir o Canteiro: https://
+ claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261027-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261027T193000
+DTEND:20261027T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
+ "hoje às 20h tem aula ao vivo do Venda 10x\, toda terça\, uma hora\, a
+ o vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." Di
+ ga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Vend
+ a 10x. Assunto da aula: a carteira de arquitetos em A\, B e C.\n\nDia: A
+ rquiteto não é cliente. É canal\, e canal se gerencia.\nAbrir o Cante
+ iro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba13
+ 6
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
+ 0X
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261028-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261028T073000
+DTEND:20261028T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de uma calculadora. Escreva por
+  cima: "Tem dois números que\, juntos\, mostram quem da equipe está da
+ ndo a margem embora. Hoje eu mostro."\n\nPlanejado na véspera.\n\nDia: 
+ Ticket caindo e desconto subindo no mesmo mês não é o mercado.\nAbrir
+  o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778
+ cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261028-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261028T120000
+DTEND:20261028T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "O desconto não apare
+ ce nas vendas. Aparece na margem\, três meses depois." Enquete: "Você 
+ sabe o desconto médio da sua equipe? Sei / Não faço ideia".\n\nA úni
+ ca interação do dia.\n\nDia: Ticket caindo e desconto subindo no mesmo
+  mês não é o mercado.\nAbrir o Canteiro: https://claude.ai/code/artif
+ act/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261028-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261028T160000
+DTEND:20261028T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que passou a trocar d
+ esconto por prazo ou à vista (ou elogio do banco de provas).\n\nProva s
+ ocial todo dia.\n\nDia: Ticket caindo e desconto subindo no mesmo mês n
+ ão é o mercado.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6d
+ a235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261028-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261028T193000
+DTEND:20261028T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "a conta do desconto e a tabela do que
+  pedir de volta estão no Caderno do Vendedor da Construção. 79 págin
+ as\, R$ 39\,90. Link aqui no story." Sticker de link: vendanaobra.com.br
+ /caderno.\n\nResposta: ticket médio e desconto médio\, juntos\, por ve
+ ndedor. Depois\, a oferta. Reset às 23h.\n\nDia: Ticket caindo e descon
+ to subindo no mesmo mês não é o mercado.\nAbrir o Canteiro: https://c
+ laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261028-reset@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261028T230000
+DTEND:20261028T231000
+TRANSP:TRANSPARENT
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
+ ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
+ x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
+ era não custa nada — é só não postar nada solto esta noite.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🧹 Reset de Stories — apague os 4
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261029-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261029T073000
+DTEND:20261029T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto da tela do computador com um gr
+ áfico\, de longe\, sem números legíveis. Escreva por cima: "Esse grá
+ fico mentia e parecia certo. Hoje eu conto o que estava errado."\n\nPlan
+ ejado na véspera.\n\nDia: IA lendo dado errado erra mais rápido.\nAbri
+ r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
+ 8cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261029-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261029T120000
+DTEND:20261029T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "IA lendo dado errado 
+ só erra mais rápido." Enquete: "Sua equipe preenche o CRM direito? Pre
+ enche / Mais ou menos / Nem abre".\n\nA única interação do dia.\n\nDi
+ a: IA lendo dado errado erra mais rápido.\nAbrir o Canteiro: https://cl
+ aude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261029-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261029T160000
+DTEND:20261029T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
+ e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
+ a respondendo. Sem comentário novo: print dos números do Reel de ontem
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: IA lendo dado 
+ errado erra mais rápido.\nAbrir o Canteiro: https://claude.ai/code/arti
+ fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261029-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261029T193000
+DTEND:20261029T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta: "tudo o qu
+ e eu sei de vender pra obra está no Caderno do Vendedor da Construção
+ \, 79 páginas\, trilha de 30 dias. R$ 39\,90\, acesso na hora. Link aqu
+ i no story." Sticker de link: vendanaobra.com.br/caderno.\n\nResposta: t
+ rês campos obrigatórios e a revisão de sexta. Depois\, a oferta.\n\nD
+ ia: IA lendo dado errado erra mais rápido.\nAbrir o Canteiro: https://c
+ laude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261030-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261030T073000
+DTEND:20261030T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de um calendário. Escreva por 
+ cima: "Existe um número que diz se a sua meta de dezembro é possível.
+  E dá pra calcular hoje."\n\nPlanejado na véspera.\n\nDia: Quantos dia
+ s a sua venda leva? Esse número decide a meta.\nAbrir o Canteiro: https
+ ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261030-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261030T120000
+DTEND:20261030T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Funil vazio hoje é d
+ ezembro vazio." Enquete: "Você sabe quantos dias sua venda leva? Sei / 
+ Nunca contei".\n\nA única interação do dia.\n\nDia: Quantos dias a su
+ a venda leva? Esse número decide a meta.\nAbrir o Canteiro: https://cla
+ ude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261030-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261030T160000
+DTEND:20261030T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que mediu o ciclo de 
+ venda (ou elogio do banco de provas). Escreva o número que ele achou.\n
+ \nProva social todo dia.\n\nDia: Quantos dias a sua venda leva? Esse nú
+ mero decide a meta.\nAbrir o Canteiro: https://claude.ai/code/artifact/c
+ 6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261030-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261030T193000
+DTEND:20261030T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "o guia do dono do Caderno do Vendedor
+  da Construção traz os nove números da reunião semanal\, o ciclo de 
+ venda entre eles. 79 páginas\, R$ 39\,90. Link aqui no story." Sticker 
+ de link: vendanaobra.com.br/caderno.\n\nResposta: o ciclo de venda — a
+ s últimas 10 vendas\, a mediana dos dias. Depois\, a oferta. Reset às 
+ 23h.\n\nDia: Quantos dias a sua venda leva? Esse número decide a meta.\
+ nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bc
+ a9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261030-reset@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261030T230000
+DTEND:20261030T231000
+TRANSP:TRANSPARENT
+SUMMARY:🧹 Reset de Stories — apague os 4
+DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
+ ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
+ x por semana.\n\nO próximo story é às 07:30 de amanhã\, então a esp
+ era não custa nada — é só não postar nada solto esta noite.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🧹 Reset de Stories — apague os 4
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261031-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261031T073000
+DTEND:20261031T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nPrint (borrado) de uma bio genérica
+ . Escreva por cima: "Essa bio atrai exatamente o cliente que a empresa n
+ ão quer. Hoje eu mostro as três linhas certas."\n\nPlanejado na véspe
+ ra.\n\nDia: Seu nome e sua bio atraem o cliente que você não quer.\nAb
+ rir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-
+ 778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261031-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261031T120000
+DTEND:20261031T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Posicionamento é o c
+ liente certo se reconhecer em três segundos." Enquete: "Sua bio diz o q
+ ue você faz e pra quem? Diz / Não diz".\n\nA única interação do dia
+ .\n\nDia: Seu nome e sua bio atraem o cliente que você não quer.\nAbri
+ r o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-77
+ 8cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261031-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261031T160000
+DTEND:20261031T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que refez a bio ou as
+  fotos do perfil (ou elogio do banco de provas).\n\nProva social todo di
+ a.\n\nDia: Seu nome e sua bio atraem o cliente que você não quer.\nAbr
+ ir o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-7
+ 78cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261031-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261031T193000
+DTEND:20261031T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "como se posicionar com cliente\, arqu
+ iteto e construtora está no Caderno do Vendedor da Construção. 79 pá
+ ginas\, R$ 39\,90. Link aqui no story." Sticker de link: vendanaobra.com
+ .br/caderno.\n\nResposta: o que faz\, pra quem e onde\, e uma prova com 
+ número real. Depois\, a oferta.\n\nDia: Seu nome e sua bio atraem o cli
+ ente que você não quer.\nAbrir o Canteiro: https://claude.ai/code/arti
+ fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261101-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261101T073000
+DTEND:20261101T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto sua sentado\, como numa entrevi
+ sta. Escreva por cima: "Já contratei vendedor pela lábia e me arrepend
+ i. Hoje eu conto o que olho agora."\n\nPlanejado na véspera.\n\nDia: L
+ ábia não é perfil de vendedor.\nAbrir o Canteiro: https://claude.ai/c
+ ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261101-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261101T120000
+DTEND:20261101T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Lábia sem execução
+  vira só uma boa conversa." Enquete: "Seu vendedor liga ou só manda me
+ nsagem? Liga / Só mensagem".\n\nA única interação do dia.\n\nDia: L
+ ábia não é perfil de vendedor.\nAbrir o Canteiro: https://claude.ai/c
+ ode/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261101-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261101T160000
+DTEND:20261101T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que padronizou a abor
+ dagem da equipe (ou elogio do banco de provas).\n\nProva social todo dia
+ .\n\nDia: Lábia não é perfil de vendedor.\nAbrir o Canteiro: https://
+ claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261101-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261101T193000
+DTEND:20261101T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "o Caderno do Vendedor da Construção
+  é o treinamento de entrada que eu entregaria pro vendedor novo — com
+  checklist por capítulo pra você conferir. 79 páginas\, R$ 39\,90. Li
+ nk aqui no story." Sticker de link: vendanaobra.com.br/caderno.\n\nRespo
+ sta: fome\, estudo e o que ele faz depois do não. Depois\, a oferta.\n\
+ nDia: Lábia não é perfil de vendedor.\nAbrir o Canteiro: https://clau
+ de.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261102-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261102T073000
+DTEND:20261102T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de um calendário com o dia 25 
+ circulado. Escreva por cima: "Dia 25 não é dia de descobrir que a meta
+  não vai sair. Hoje eu mostro a conta."\n\nPlanejado na véspera. Feria
+ do: pode agendar tudo na véspera.\n\nDia: Meta do mês sem número da s
+ emana é susto no dia 25.\nAbrir o Canteiro: https://claude.ai/code/arti
+ fact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261102-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261102T120000
+DTEND:20261102T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Quem descobre no fim 
+ do mês só tem desculpa." Enquete: "Sua equipe sabe o número da semana
+ ? Sabe / Só o do mês".\n\nA única interação do dia.\n\nDia: Meta do
+  mês sem número da semana é susto no dia 25.\nAbrir o Canteiro: https
+ ://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261102-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261102T160000
+DTEND:20261102T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que quebrou a meta em
+  número semanal (ou elogio do banco de provas).\n\nProva social todo di
+ a.\n\nDia: Meta do mês sem número da semana é susto no dia 25.\nAbrir
+  o Canteiro: https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778
+ cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261102-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261102T193000
+DTEND:20261102T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. A respo
+ sta do tiro de alerta e a oferta: "os números que o dono olha toda sema
+ na estão no guia do dono do Caderno do Vendedor da Construção. 79 pá
+ ginas\, R$ 39\,90. Link aqui no story." Sticker de link: vendanaobra.com
+ .br/caderno.\n\nResposta: meta ÷ ticket ÷ conversão = número da sema
+ na. Depois\, a oferta.\n\nDia: Meta do mês sem número da semana é sus
+ to no dia 25.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
+ d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261103-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261103T073000
+DTEND:20261103T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto do seu celular com o WhatsApp a
+ berto\, de longe\, sem nenhuma conversa legível. Escreva por cima: "A I
+ A leu 343 conversas minhas e achou cliente sem resposta. Hoje eu conto."
+ \n\nPlanejado na véspera. Nada legível na foto.\n\nDia: A IA leu o meu
+  WhatsApp e achou cliente esperando resposta.\nAbrir o Canteiro: https:/
+ /claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261103-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261103T120000
+DTEND:20261103T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "A IA não liga para o
+  cliente. Ela entrega a lista." Enquete: "Quanto tempo você gasta procu
+ rando o que está parado? Horas / Minutos / Nem procuro".\n\nA única in
+ teração do dia.\n\nDia: A IA leu o meu WhatsApp e achou cliente espera
+ ndo resposta.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235
+ d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261103-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261103T160000
+DTEND:20261103T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de um comentário ou direct qu
+ e chegou hoje ou ontem\, de qualquer post. Escreva por cima uma linha su
+ a respondendo. Sem comentário novo: print dos números do Reel de ontem
+  com a frase "Isso aqui rodou ontem. Quem ainda não viu\, está no perf
+ il."\n\nProva social todo dia\, sem caçar print.\n\nDia: A IA leu o meu
+  WhatsApp e achou cliente esperando resposta.\nAbrir o Canteiro: https:/
+ /claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261103-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261103T193000
+DTEND:20261103T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 10X
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30 a 45 s. Entrega
+  a resposta do tiro de alerta em uma frase e emenda a oferta de TERÇA: 
+ "hoje às 20h tem aula ao vivo do Venda 10x\, toda terça\, uma hora\, a
+ o vivo comigo. R$ 998 no ano\, menos de R$ 84 por mês. Link na bio." Di
+ ga em uma frase o assunto da aula de hoje.\n\nTerça: a oferta é o Vend
+ a 10x. Assunto da aula: a rotina semanal do dono com IA.\n\nDia: A IA le
+ u o meu WhatsApp e achou cliente esperando resposta.\nAbrir o Canteiro: 
+ https://claude.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta · TERÇA = VENDA 1
+ 0X
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261104-1@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261104T073000
+DTEND:20261104T074000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 1/4 · Tiro de alerta
+DESCRIPTION:imagem · só a frase\n\nFoto de um post-it amarelo em branco
+  colado no monitor. Escreva por cima: "Tudo o que eu olho do comercial t
+ oda semana cabe aqui. Hoje eu mostro o que vai escrito."\n\nPlanejado na
+  véspera.\n\nDia: Painel com 40 gráficos ninguém olha. Cinco números
+  cabem num post-it.\nAbrir o Canteiro: https://claude.ai/code/artifact/c
+ 6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 1/4 · Tiro de alerta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261104-2@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261104T120000
+DTEND:20261104T121000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 2/4 · P · Problema + enquete
+DESCRIPTION:imagem · só a frase\n\nFundo neutro: "Painel que mostra tud
+ o não mostra nada." Enquete: "Você olha os números do comercial toda 
+ semana? Toda semana / Quando dá / Nunca".\n\nA única interação do di
+ a.\n\nDia: Painel com 40 gráficos ninguém olha. Cinco números cabem n
+ um post-it.\nAbrir o Canteiro: https://claude.ai/code/artifact/c6da235d-
+ 79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 2/4 · P · Problema + enquete
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261104-3@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261104T160000
+DTEND:20261104T161000
+TRANSP:TRANSPARENT
+SUMMARY:🖼 Story 3/4 · Prova social
+DESCRIPTION:imagem · só a frase\n\nPrint de aluno que montou o painel s
+ emanal (ou elogio do banco de provas). Escreva os números que ele escol
+ heu.\n\nProva social todo dia.\n\nDia: Painel com 40 gráficos ninguém 
+ olha. Cinco números cabem num post-it.\nAbrir o Canteiro: https://claud
+ e.ai/code/artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🖼 Story 3/4 · Prova social
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261104-4@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261104T193000
+DTEND:20261104T194000
+TRANSP:TRANSPARENT
+SUMMARY:🎥 Story 4/4 · S · Solução + oferta
+DESCRIPTION:vídeo · você falando\n\nVídeo falado\, 30–45 s. Os cinc
+ o números em uma frase e a oferta: "o guia do dono do Caderno do Vended
+ or da Construção tem os números da reunião semanal e os sete primeir
+ os dias com a equipe. 79 páginas\, R$ 39\,90. Link aqui no story." Stic
+ ker de link: vendanaobra.com.br/caderno.\n\nResposta: dinheiro parado\, 
+ sem tarefa\, apresentadas\, falta vender\, motivo de perda. Depois\, a o
+ ferta. Reset às 23h.\n\nDia: Painel com 40 gráficos ninguém olha. Cin
+ co números cabem num post-it.\nAbrir o Canteiro: https://claude.ai/code
+ /artifact/c6da235d-79ca-4c9b-bca9-778cf6aba136
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎥 Story 4/4 · S · Solução + oferta
+TRIGGER;VALUE=DURATION:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:canteiro-20261104-reset@vendanaobra
+DTSTAMP:20260927T152454Z
+SEQUENCE:5
+DTSTART:20261104T230000
+DTEND:20261104T231000
 TRANSP:TRANSPARENT
 SUMMARY:🧹 Reset de Stories — apague os 4
 DESCRIPTION:Apague a sequência inteira do dia (os 4\, não só o último
