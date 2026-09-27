@@ -1,0 +1,82 @@
+name: Publicar foto no feed
+
+# Fotos avulsas do Diego no feed do @vendanaobra (feed_agendado.json), pedido de
+# 27/09/2026. Só feed, nunca story. O cron é UTC e mira o item de 04/10 às 20:40
+# BRT (23:40 UTC): quem acordar antes DORME até a hora; os de depois são
+# repescagem. Item novo com outra data pede cron novo aqui.
+on:
+  schedule:
+    - cron: "13 21 4 10 *"   # 18:13 BRT, acorda e espera
+    - cron: "47 21 4 10 *"
+    - cron: "19 22 4 10 *"
+    - cron: "3 23 4 10 *"
+    - cron: "31 23 4 10 *"
+    - cron: "17 0 5 10 *"    # 21:17 BRT, repescagem
+    - cron: "49 1 5 10 *"    # 22:49 BRT, repescagem
+  workflow_dispatch:
+    inputs:
+      agora:
+        description: "id do item para publicar já (vazio = o que estiver devido)"
+        type: string
+        default: ""
+      dry_run:
+        description: "Só dizer o que faria"
+        type: boolean
+        default: false
+
+concurrency:
+  group: canteiro-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pegar o estado mais recente
+        run: git pull --rebase --autostash origin main || true
+
+      - name: Publicar a foto devida
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=""
+          [ -n "${{ inputs.agora }}" ] && args="$args --agora ${{ inputs.agora }}"
+          [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
+          python feed.py $args
+
+      - name: Guardar o estado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain feed_agendado.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add feed_agendado.json
+            git commit -m "Foto publicada no feed (auto)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              sleep 5
+            done
+          fi
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Foto do feed não foi publicada" \
+            --body "Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. Para forçar: Actions, Publicar foto no feed, Run workflow com o id do item."
