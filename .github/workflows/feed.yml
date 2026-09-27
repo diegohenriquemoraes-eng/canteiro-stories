@@ -1,8 +1,8 @@
 name: Publicar foto no feed
 
 # Fotos avulsas do Diego no feed do @vendanaobra (feed_agendado.json), pedido de
-# 27/09/2026. Só feed, nunca story. O cron é UTC e mira o item de 04/10 às 20:40
-# BRT (23:40 UTC): quem acordar antes DORME até a hora; os de depois são
+# 27/09/2026. Só feed, nunca story. O cron é UTC e mira o item de 04/10 às 20:35
+# BRT (23:35 UTC): quem acordar antes DORME até a hora; os de depois são
 # repescagem. Item novo com outra data pede cron novo aqui.
 on:
   schedule:
