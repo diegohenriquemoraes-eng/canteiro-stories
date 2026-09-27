@@ -62,6 +62,15 @@ chave vazada não consegue trocar o que o Actions roda — mas consegue editar
 motivo de o escopo ser o mínimo e de a chave não ir para lugar nenhum além do
 navegador dele.
 
+## Pontuação de mercado: sem travessão e sem ponto e vírgula (27/09/2026)
+
+Pedido do Diego, o mesmo aplicado ao site vendanaobra.com.br: slide e legenda não levam travessão
+nem ponto e vírgula, porque os perfis e sites grandes do mercado não usam. O texto nasce limpo no
+app Canteiro (as legendas de Reels e carrosséis e os slides foram reescritos frase a frase em
+27/09), e `carrossel.py` passa tudo por `sem_pontuacao_pesada` antes de desenhar e publicar. O
+teste `test_sem_travessao_nem_ponto_e_virgula` reprova o `docs/carrosseis.json` que voltar a ter
+algum dos dois.
+
 ## O calendário assinado do iPhone (07/09/2026)
 
 `docs/canteiro-stories.ics` não é do robô: é o **alerta** que avisa o Diego de subir cada

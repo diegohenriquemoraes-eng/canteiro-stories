@@ -16,6 +16,19 @@ class TestCarrossel(unittest.TestCase):
             self.assertTrue(2 <= len(c["slides"]) <= 10, c["dia"])   # limite da API
             self.assertLessEqual(len(c["legenda"]), 2200, c["dia"])  # limite do IG
 
+    def test_sem_travessao_nem_ponto_e_virgula(self):
+        # pedido do Diego, 27/09/2026: pontuação de mercado no texto de slide e legenda
+        dados = json.loads(carrossel.DADOS.read_text(encoding="utf-8"))
+        for c in dados:
+            if c["dia"] < "2026-09-28":
+                continue
+            for texto in c["slides"] + [c["legenda"]]:
+                self.assertNotRegex(texto, "[—–;]", c["dia"])
+        self.assertEqual(carrossel.sem_pontuacao_pesada("Tudo é da empresa — se escrito; ok"),
+                         "Tudo é da empresa, se escrito. Ok")
+        self.assertEqual(carrossel.sem_pontuacao_pesada("lembrar;\n— item"), "lembrar\n· item")
+        self.assertEqual(carrossel.sem_pontuacao_pesada("de 2–7 dias"), "de 2 a 7 dias")
+
     def test_alvo_e_chave(self):
         c = {"dia": "2026-09-27", "hora": "12:30", "n": 1}
         self.assertEqual(carrossel.alvo_de(c).strftime("%Y-%m-%d %H:%M"), "2026-09-27 12:30")

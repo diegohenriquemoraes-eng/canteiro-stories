@@ -31,6 +31,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta
@@ -222,6 +223,21 @@ def publicar(ig_id: str, token: str, urls: list[str], legenda: str) -> str:
 
 # ---- agenda -------------------------------------------------------------------
 
+def sem_pontuacao_pesada(t: str) -> str:
+    """Sem travessão e sem ponto e vírgula (pedido do Diego, 27/09/2026).
+
+    Sites e perfis grandes do mercado não usam nenhum dos dois. O texto nasce limpo
+    no app Canteiro, e isto é só a rede de segurança para o que escapar.
+    """
+    t = re.sub(r"(?m)^[ \t]*[—–][ \t]*", "· ", t or "")
+    t = re.sub(r"(\d)\s*–\s*(\d)", r"\1 a \2", t)
+    t = re.sub(r"[ \t]+[—–][ \t]+", ", ", t)
+    t = re.sub(r"[—–]", ",", t)
+    t = re.sub(r";[ \t]*$", "", t, flags=re.M)
+    t = re.sub(r";\s+(\w)", lambda m: ". " + m.group(1).upper(), t)
+    return t.replace(";", ".")
+
+
 def carregar(path: Path, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
@@ -250,6 +266,9 @@ def main() -> None:
     agora = datetime.now(FUSO)
     dia = args.data or agora.date().isoformat()
     todos = carregar(DADOS, [])
+    for c in todos:
+        c["slides"] = [sem_pontuacao_pesada(s) for s in c["slides"]]
+        c["legenda"] = sem_pontuacao_pesada(c["legenda"])
     do_dia = [c for c in todos if c["dia"] == dia]
     if not do_dia:
         log(f"nenhum carrossel no app para {dia}")
