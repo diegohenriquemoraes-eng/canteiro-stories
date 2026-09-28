@@ -372,6 +372,16 @@ O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por h
 dia seguinte. Se isso incomodar, o passo seguinte é um despertador fora do GitHub (Cloudflare
 Worker ou cron-job.org chamando `workflow_dispatch`) — depende de o Diego criar a conta.
 
+## Relógio do carrossel (28/09/2026) — o cron do GitHub engoliu o dia
+
+Em 28/09 nenhum dos seis crons do `carrossel.yml` disparou (e em 27/09 o primeiro chegou
+4 h atrasado; saiu 15h18 em vez de 12h30). O de 28/09 saiu na mão às 16h40. Correção:
+`relogio.yml` + `relogio.py` (mesmo vigia do `posts-vendanaobra`): acordado 5h50 por
+disparo, chama o `carrossel.yml` sem `agora` às 05h30, 10h30, 12h45, 14h30 e 17h30 se não
+houve execução desde a hora — o `carrossel.py` dorme até o horário do dia (acorda até
+150 min antes) e o `state_carrossel.json` impede duplicata. Horário novo na pauta fora
+dessas janelas → acrescentar na tabela `RELOGIO_SLOTS`.
+
 ## Carrossel publicado sozinho, 12h30, sem música (26/09/2026)
 
 Decisão do Diego: o carrossel deixou de ser a única tarefa manual do dia. A música (que a Graph

@@ -1,0 +1,52 @@
+name: Relogio do carrossel
+
+# 28/09/2026: o cron do GitHub engoliu os seis disparos do carrossel e ele so
+# saiu na mao, as 16h40. Este vigia fica acordado 5h50 por disparo e chama o
+# "Publicar carrossel" no horario da tabela via workflow_dispatch (sem
+# `agora`): o carrossel.py dorme ate a hora do dia e publica no minuto certo
+# (acorda ate 150 min antes; atrasado ate 6 h ainda publica). Os crons proprios
+# do carrossel.yml continuam como segunda via; o state_carrossel.json impede
+# post duplicado. 10h30 cobre o das 12h30; os demais cobrem os horarios
+# avulsos (07h30, 16h30, 19h30) que ja apareceram na pauta.
+
+on:
+  schedule:
+    - cron: "3 1,4,7,10,13,16,19,22 * * *"
+  workflow_dispatch:
+    inputs:
+      minutos:
+        description: "Minutos acordado (0 = uma passada so)"
+        default: "350"
+      ensaio:
+        description: "So mostrar o que dispararia"
+        type: boolean
+        default: false
+
+concurrency:
+  group: relogio
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+
+jobs:
+  relogio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vigiar a tabela
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELOGIO_SLOTS: >-
+            [
+             {"hora": "05:30", "workflow": "carrossel.yml"},
+             {"hora": "10:30", "workflow": "carrossel.yml"},
+             {"hora": "12:45", "workflow": "carrossel.yml"},
+             {"hora": "14:30", "workflow": "carrossel.yml"},
+             {"hora": "17:30", "workflow": "carrossel.yml"}
+            ]
+        run: |
+          args="--minutos ${{ inputs.minutos || 350 }}"
+          [ "${{ inputs.ensaio }}" = "true" ] && args="$args --ensaio"
+          python3 relogio.py $args
