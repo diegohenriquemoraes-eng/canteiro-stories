@@ -238,6 +238,27 @@ def sem_pontuacao_pesada(t: str) -> str:
     return t.replace(";", ".")
 
 
+CTA_BIO = ("Siga o @vendanaobra. Desenvolvo empresas da construção a vender mais "
+           "e de forma previsível.")
+
+
+def garantir_cta(t: str) -> str:
+    """Toda legenda leva a linha de transformação da bio (Rota 100K, 30/09/2026).
+
+    O app já escreve assim. Isto cobre legenda antiga que ainda feche só com
+    "@vendanaobra": a linha solta vira o CTA; sem ela, o CTA entra antes das hashtags.
+    """
+    t = t or ""
+    if "de forma previsível" in t:
+        return t
+    if re.search(r"(?m)^@vendanaobra[ \t]*$", t):
+        return re.sub(r"\n?^@vendanaobra[ \t]*$", "\n\n" + CTA_BIO, t, count=1, flags=re.M)
+    m = re.search(r"(?m)^#", t)
+    if m:
+        return t[:m.start()].rstrip() + "\n\n" + CTA_BIO + "\n\n" + t[m.start():]
+    return t.rstrip() + "\n\n" + CTA_BIO
+
+
 def carregar(path: Path, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
@@ -268,7 +289,7 @@ def main() -> None:
     todos = carregar(DADOS, [])
     for c in todos:
         c["slides"] = [sem_pontuacao_pesada(s) for s in c["slides"]]
-        c["legenda"] = sem_pontuacao_pesada(c["legenda"])
+        c["legenda"] = garantir_cta(sem_pontuacao_pesada(c["legenda"]))
     do_dia = [c for c in todos if c["dia"] == dia]
     if not do_dia:
         log(f"nenhum carrossel no app para {dia}")
