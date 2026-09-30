@@ -259,6 +259,24 @@ def garantir_cta(t: str) -> str:
     return t.rstrip() + "\n\n" + CTA_BIO
 
 
+FIM_DE_FRASE = re.compile(r"(?<=[A-Za-zÀ-ÿ%)\]])\.[ \t]+(?=[A-ZÀ-Ý\"“«])")
+
+
+def sem_ponto_final(t: str) -> str:
+    """Nas redes não se usa ponto final (pedido do Diego, 30/09/2026).
+
+    A frase acaba sem ponto e a próxima começa depois de uma linha em branco. O
+    ponto de lista ("1. ") e as reticências ficam. Rede de segurança: o app já
+    escreve assim.
+    """
+    saida = []
+    for linha in (t or "").split("\n"):
+        partes = FIM_DE_FRASE.split(linha)
+        partes = [re.sub(r"(?<!\.)\.([\"”]?)[ \t]*$", r"\1", p) for p in partes]
+        saida.append("\n\n".join(partes))
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(saida)).strip()
+
+
 def carregar(path: Path, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
@@ -288,8 +306,9 @@ def main() -> None:
     dia = args.data or agora.date().isoformat()
     todos = carregar(DADOS, [])
     for c in todos:
-        c["slides"] = [sem_pontuacao_pesada(s) for s in c["slides"]]
-        c["legenda"] = garantir_cta(sem_pontuacao_pesada(c["legenda"]))
+        c["slides"] = [re.sub(r"(?<!\.)\.([\"”]?)\s*$", r"\1", sem_pontuacao_pesada(s))
+                       for s in c["slides"]]
+        c["legenda"] = sem_ponto_final(garantir_cta(sem_pontuacao_pesada(c["legenda"])))
     do_dia = [c for c in todos if c["dia"] == dia]
     if not do_dia:
         log(f"nenhum carrossel no app para {dia}")

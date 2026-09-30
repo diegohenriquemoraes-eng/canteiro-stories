@@ -25,5 +25,24 @@ class TestCta(unittest.TestCase):
         self.assertEqual(garantir_cta("Pergunta?"), "Pergunta?\n\n" + CTA_BIO)
 
 
+class TestSemPontoFinal(unittest.TestCase):
+    def test_frases_viram_blocos_sem_ponto(self):
+        from carrossel import sem_ponto_final
+        t = "O cliente não sumiu. Ninguém ligou.\n\nQual é o seu?"
+        self.assertEqual(sem_ponto_final(t),
+                         "O cliente não sumiu\n\nNinguém ligou\n\nQual é o seu?")
+
+    def test_lista_numerada_e_reticencias_ficam(self):
+        from carrossel import sem_ponto_final
+        t = "1. Pergunte antes.\n2. Espere...\n\nR$ 3,5 mil."
+        self.assertEqual(sem_ponto_final(t), "1. Pergunte antes\n2. Espere...\n\nR$ 3,5 mil")
+
+    def test_cta_da_bio_quebra_em_duas_linhas(self):
+        from carrossel import sem_ponto_final
+        self.assertEqual(sem_ponto_final(CTA_BIO),
+                         "Siga o @vendanaobra\n\nDesenvolvo empresas da construção a vender "
+                         "mais e de forma previsível")
+
+
 if __name__ == "__main__":
     unittest.main()
