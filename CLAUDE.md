@@ -461,3 +461,26 @@ alerta foi para **08h50** (não 09h00) porque o método manda o tiro de alerta a
 regerado (SEQ 6). Toda legenda (Reel e carrossel) agora fecha com a pergunta e a linha da bio:
 "Siga o @vendanaobra. Desenvolvo empresas da construção a vender mais e de forma previsível." No app
 isso está no texto; no `carrossel.py`, `garantir_cta()` é a rede de segurança (teste em `testes/test_cta.py`).
+
+## Realinhamento pelos Funcionários (01/10/2026)
+
+Os 5 GPTs do Afonso revisaram a conta (síntese em `Perffec\Claude\ROTA100K-realinhamento-funcionarios-2026-10-01.md`)
+e o Canteiro foi reescrito de 02/10 a 15/10 pelo plano de 14 dias do Nelson.
+
+- **Stories em 2 blocos**: 08:50 · 09:10 · 18:20 · 18:40 (valem para todos os dias, inclusive de 16/10 em
+  diante, onde só os horários mudaram). **Uma história só por dia**: 1 fato do dia (imagem, sem CTA) → 2 peça
+  oculta + cliffhanger (imagem, com a enquete binária quando faz sentido: quem vota TEM ou NÃO SEI recebe
+  direct) → 3 revelação + prova (o VÍDEO do dia, 15-20 s, no carro) → 4 produto como continuação, **um sticker só**.
+  O story de prova social das 16h deixou de ser bloco fixo: a prova entra dentro da história.
+- **Um CTA por dia, alternado**: dia de dor operacional (Reel de objeção) = Caderno (`vendanaobra.com.br/caderno`),
+  dia de dor estrutural (funil, IA) = Raio-X (`vendanaobra.com.br/raio-x`), sábado = oferta forte do Caderno.
+  Terça deixou de ser o dia fixo do Venda 10x de 02 a 15/10 (o Raio-X é a porta dele); de 16/10 em diante
+  as terças antigas continuam com o Venda 10x até serem reescritas.
+- **Reel 09h = objeção real + script** (≤ 30 s, TCCC) e **Reel 19h30 = prova/dinheiro/IA** (IA como detector).
+  Cada Reel fecha com UMA palavra-chave no comentário (ORÇAMENTO, MARGEM, FUNIL, PERDIDOS e outras óbvias),
+  e a legenda termina com a pergunta, o "Comenta PALAVRA que eu te mando..." e a linha da bio.
+  08/10 e 15/10 têm Reel de 7 s com legenda longa. Dias pares: gravar também a versão de 45-65 s (teste A/B).
+- **O carrossel deixou de ser pauta própria**: dramatiza o Reel do dia (Certo × Errado, HQ dono × vendedor
+  ou caso real), 6 slides, último com a palavra-chave. Continua saindo sozinho às 12h30.
+- Backup antes da mudança: `Perffec\Claude\Canteiro\canteiro-vno-BACKUP-2026-10-01-antes-realinhamento.html`.
+  O roteiro do Reel (`.say`) aceita quebra de linha: frase sem ponto final, uma por linha.
