@@ -29,6 +29,13 @@
       "media_id": "17908345320481202",
       "quando": "2026-10-01T12:30:51-03:00",
       "titulo": "Lead não é quem pediu preço"
+    },
+    "2026-10-02|1": {
+      "media_id": "18016007837954870",
+      "quando": "2026-10-02T12:30:57-03:00",
+      "titulo": "Mais um orçamento: o certo e o errado",
+      "capa": "tweet",
+      "slides": 10
     }
   }
 }
