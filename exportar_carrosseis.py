@@ -62,6 +62,8 @@ def main():
                 # compartilhar = carrossel de vendedor (CTA pede salvar/mandar)
                 "publico": c.get("publico", ""),
                 "slides": c.get("slides", []),
+                # quadro da capa estilo tweet (02/10/2026): [{"num", "rot"}], 1 ou 2
+                "capa_numero": c.get("capa_numero") or [],
                 "legenda": c.get("legenda", ""),
             })
 

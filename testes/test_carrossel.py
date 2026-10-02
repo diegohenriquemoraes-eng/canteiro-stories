@@ -43,3 +43,17 @@ class TestCarrossel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TesteCapaAB(unittest.TestCase):
+    def test_alterna_a_partir_de_02_10(self):
+        self.assertEqual(carrossel.variante_capa("2026-10-01"), "tipografica")
+        self.assertEqual(carrossel.variante_capa("2026-10-02"), "tweet")
+        self.assertEqual(carrossel.variante_capa("2026-10-03"), "tipografica")
+        self.assertEqual(carrossel.variante_capa("2026-10-04"), "tweet")
+
+    def test_capa_tweet_desenha_com_e_sem_numero(self):
+        for nums in ([], [{"num": "24 de 38", "rot": "x"}],
+                     [{"num": "10%", "rot": "a"}, {"num": "21%", "rot": "b"}]):
+            im = carrossel.desenhar_capa_tweet("Uma frase\n\nOutra frase", nums)
+            self.assertEqual(im.size, (carrossel.L, carrossel.A))

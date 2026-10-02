@@ -137,12 +137,117 @@ def desenhar(texto: str, i: int, total: int) -> Image.Image:
     return im
 
 
+# ---- teste A/B da capa (aprovado pelo Diego em 02/10/2026) --------------------
+# Os grandes perfis de negócio (Primo Rico, Thiago Reis, Hormozi) abrem o carrossel
+# com rosto + nome no estilo de post/tweet; o nosso melhor carrossel (05/09, 2.118
+# views) também tinha rosto. Nenhum estudo mede estilo, então medimos aqui: a capa
+# alterna dia sim, dia não entre "tweet" e "tipografica" a partir de 02/10, e o
+# miolo fica igual. Régua em 31/10: (salvos + compartilhamentos) por mil alcançados.
+# Carrossel com 10+ slides tem o slide 2 escrito como SEGUNDA CAPA (o Instagram
+# reexibe o post a partir do slide 2 para quem não deslizou) e ganha o peso da capa.
+TESTE_CAPA_INICIO = "2026-10-02"
+AVATAR = AQUI / "fontes" / "avatar-diego.jpg"
+CINZA = (110, 118, 130)
+
+
+def variante_capa(dia: str) -> str:
+    if dia < TESTE_CAPA_INICIO:
+        return "tipografica"
+    dias = (datetime.fromisoformat(dia) - datetime.fromisoformat(TESTE_CAPA_INICIO)).days
+    return "tweet" if dias % 2 == 0 else "tipografica"
+
+
+def _avatar(tam: int):
+    f = Image.open(AVATAR).convert("RGB").resize((tam, tam), Image.LANCZOS)
+    masc = Image.new("L", (tam * 4, tam * 4), 0)
+    ImageDraw.Draw(masc).ellipse([0, 0, tam * 4, tam * 4], fill=255)
+    return f, masc.resize((tam, tam), Image.LANCZOS)
+
+
+def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
+    """Capa estilo post: foto, nome e @ do Diego, a frase e (se houver) o quadro do número."""
+    im = Image.new("RGB", (L, A), BRANCO)
+    d = ImageDraw.Draw(im)
+    tam_av, y0 = 120, 150
+    f, m = _avatar(tam_av)
+    im.paste(f, (MARGEM, y0), m)
+    d.text((MARGEM + tam_av + 28, y0 + 22), "Diego Moraes", font=fonte(46, 750), fill=NAVY)
+    d.text((MARGEM + tam_av + 28, y0 + 76), "@vendanaobra", font=fonte(36, 450), fill=CINZA)
+
+    numeros = [n for n in (numeros or []) if n.get("num")][:2]
+    topo, fundo = y0 + tam_av + 60, A - 190
+    espaco = (fundo - topo) - (420 if numeros else 0)
+    tam = 84 if not numeros else 66
+    while True:
+        ft = fonte(tam, 600)
+        blocos = [quebrar(d, par, ft, LARGURA) for par in texto.split("\n\n")]
+        altura = sum(len(b) for b in blocos) * tam * 1.25 + (len(blocos) - 1) * tam * 0.5
+        if altura <= espaco or tam <= 40:
+            break
+        tam -= 3
+    y = topo if numeros else max(topo, topo + (espaco - altura) / 2 - 40)
+    for b in blocos:
+        for linha in b:
+            d.text((MARGEM, y), linha, font=ft, fill=NAVY)
+            y += tam * 1.25
+        y += tam * 0.5
+
+    if numeros:
+        y1 = fundo
+        y0q = max(int(y + 10), y1 - 420)
+        x1 = L - MARGEM
+        d.rounded_rectangle([MARGEM, y0q, x1, y1], radius=36, fill=NAVY)
+        cy = (y0q + y1) // 2
+        fl = fonte(36, 500)
+        if len(numeros) == 1:
+            n = numeros[0]
+            tn = 150
+            while d.textlength(n["num"], font=fonte(tn, 800)) > x1 - MARGEM - 80 and tn > 60:
+                tn -= 6
+            d.text(((MARGEM + x1) // 2, cy + 40), n["num"], font=fonte(tn, 800), fill=CHAMP, anchor="ms")
+            d.text(((MARGEM + x1) // 2, cy + 110), n.get("rot", ""), font=fl,
+                   fill=(195, 199, 207), anchor="ms")
+        else:
+            meio = (MARGEM + x1) // 2
+            larg = meio - MARGEM - 120
+            tn = 150
+            while max(d.textlength(n["num"], font=fonte(tn, 800)) for n in numeros) > larg and tn > 50:
+                tn -= 6
+            for cx, n, cor in ((MARGEM + (meio - MARGEM) // 2, numeros[0], BRANCO),
+                               (meio + (x1 - meio) // 2, numeros[1], CHAMP)):
+                d.text((cx, cy + 40), n["num"], font=fonte(tn, 800), fill=cor, anchor="ms")
+                d.text((cx, cy + 110), n.get("rot", ""), font=fl, fill=(195, 199, 207), anchor="ms")
+            d.text((meio, cy - 15), "→", font=fonte(80, 500), fill=(120, 130, 150), anchor="mm")
+
+    rod = fonte(34, 500)
+    d.text((MARGEM, A - 150), "arrasta para o lado", font=rod, fill=CINZA, anchor="la")
+    d.text((L - MARGEM, A - 150 + 17), "→", font=fonte(60, 600), fill=CHAMP, anchor="rm")
+    return im
+
+
+def desenhar_segunda_capa(texto: str, total: int) -> Image.Image:
+    im = desenhar(texto, 0, total)          # peso e tamanho da capa tipográfica
+    d = ImageDraw.Draw(im)
+    rod = fonte(34, 500)
+    n = f"2/{total}"
+    d.text((L - MARGEM - d.textlength(n, font=rod), A - 150), n, font=rod, fill=CHAMP, anchor="la")
+    return im
+
+
 def renderizar(c: dict, pasta: Path) -> list[Path]:
     pasta.mkdir(parents=True, exist_ok=True)
     arquivos = []
+    total = len(c["slides"])
+    capa = variante_capa(c["dia"])
     for i, texto in enumerate(c["slides"]):
         p = pasta / f"{c['dia']}-carrossel{c['n']}-{i + 1:02d}.jpg"
-        desenhar(texto, i, len(c["slides"])).save(p, "JPEG", quality=92)
+        if i == 0 and capa == "tweet":
+            im = desenhar_capa_tweet(texto, c.get("capa_numero"))
+        elif i == 1 and total >= 10 and c["dia"] >= TESTE_CAPA_INICIO:
+            im = desenhar_segunda_capa(texto, total)
+        else:
+            im = desenhar(texto, i, total)
+        im.save(p, "JPEG", quality=92)
         arquivos.append(p)
     return arquivos
 
@@ -387,6 +492,8 @@ def main() -> None:
         "media_id": media_id,
         "quando": datetime.now(FUSO).isoformat(timespec="seconds"),
         "titulo": c["titulo"],
+        "capa": variante_capa(c["dia"]),
+        "slides": len(c["slides"]),
     }
     gravar_estado(st)
     # o registro humano fica no próprio estado: publicados.md é escrito pelo

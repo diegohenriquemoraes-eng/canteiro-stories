@@ -372,6 +372,26 @@ O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por h
 dia seguinte. Se isso incomodar, o passo seguinte é um despertador fora do GitHub (Cloudflare
 Worker ou cron-job.org chamando `workflow_dispatch`) — depende de o Diego criar a conta.
 
+## Carrossel em 10 slides com teste A/B da capa (02/10/2026)
+
+Decisão do Diego depois da pesquisa de layout (nota no Cérebro, `Instagram @vendanaobra`, 02/10):
+só texto é minoria entre os grandes (Primo Rico, Thiago Reis e Hormozi abrem com rosto + nome
+estilo tweet), e o nosso melhor carrossel (05/09, 2.118 views) tinha rosto.
+
+- **Capa alterna dia sim, dia não** (`variante_capa` em `carrossel.py`, desde 02/10): par a partir de
+  02/10 = **tweet** (foto `fontes/avatar-diego.jpg`, "Diego Moraes", @, frase e, se o carrossel tiver
+  `capa_numero` no app, o quadro marinho com 1 ou 2 números); ímpar = **tipográfica** (a de sempre).
+  O miolo é igual nas duas. O estado grava `capa` e `slides` de cada publicado.
+- **10 slides** de 02 a 15/10 (eram 6): 1 capa · 2 **segunda capa** (o Instagram reexibe o post a partir
+  do slide 2; desenhada com o peso da capa) · 3-8 a história · 9 "para usar amanhã" · 10 palavra-chave.
+  Reescritos no app só com o que já estava no slide e na legenda; backup em
+  `Perffec\Claude\Canteiro\canteiro-vno-BACKUP-2026-10-02-antes-carrossel-10-slides.html`.
+  De 16/10 em diante seguem com 8 slides até a próxima rodada de pauta, que já deve nascer com 10.
+- `capa_numero` passa pelo `exportar_carrosseis.py`. `docs/carrossel.html` (página antiga de artes
+  manuais) **não** foi atualizada: não é mais usada para postar.
+- **Régua em 31/10**: (salvos + compartilhamentos) por mil alcançados, tweet × tipográfica, e views
+  contra a mediana de 378 dos carrosséis de letra grande de setembro. Vencedor vira capa fixa.
+
 ## Relógio do carrossel (28/09/2026) — o cron do GitHub engoliu o dia
 
 Em 28/09 nenhum dos seis crons do `carrossel.yml` disparou (e em 27/09 o primeiro chegou
