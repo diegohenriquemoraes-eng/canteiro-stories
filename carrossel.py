@@ -51,7 +51,10 @@ FUSO = ZoneInfo("America/Sao_Paulo")
 DADOS = AQUI / "docs" / "carrosseis.json"
 STATE = AQUI / "state_carrossel.json"
 SAIDA = AQUI / "saida" / "carrossel"
-FONTE = AQUI / "fontes" / "Archivo.ttf"
+# 03/10/2026: Inter no lugar da Archivo. Os carrosséis estilo tweet dos grandes perfis
+# (Hormozi, Justin Welsh) usam a fonte do Twitter (Chirp/Helvetica), e a Inter é a
+# equivalente livre mais próxima.
+FONTE = AQUI / "fontes" / "Inter.ttf"
 GRAPH = "https://graph.instagram.com"
 # 26/09/2026: o IG_ACCESS_TOKEN deste repo (login do Instagram) foi invalidado por
 # troca de senha. O carrossel usa o TOKEN DE SISTEMA da Meta (META_TOKEN): não
@@ -86,7 +89,7 @@ def log(msg: str) -> None:
 def fonte(tam: int, peso: int) -> ImageFont.FreeTypeFont:
     f = ImageFont.truetype(str(FONTE), tam)
     try:
-        f.set_variation_by_axes([peso, 100])      # Weight, Width (normal)
+        f.set_variation_by_axes([min(32, max(14, tam // 2)), peso])   # Optical size, Weight
     except Exception:
         pass
     return f
@@ -107,27 +110,29 @@ def quebrar(draw, texto: str, f, largura: int) -> list[str]:
     return linhas
 
 
-def desenhar(texto: str, i: int, total: int) -> Image.Image:
+def desenhar(texto: str, i: int, total: int, peso_capa: bool = False) -> Image.Image:
     capa, cta = i == 0, i == total - 1
     im = Image.new("RGB", (L, A), NAVY if cta else BRANCO)
     d = ImageDraw.Draw(im)
     d.rectangle([90, 96, 90 + (320 if capa else 120), 106], fill=CHAMP)
 
-    tam, peso = (100, 800) if capa else (78, 500)
+    # 03/10/2026: tamanho medido nos carrosséis estilo tweet de Hormozi e Justin Welsh,
+    # texto corrido a ~48 px num slide de 1080 (era 78, e 100 na capa).
+    tam, peso = (56, 700) if capa or peso_capa else (48, 400)
     while True:
         f = fonte(tam, peso)
         linhas = quebrar(d, texto, f, LARGURA)
-        if len(linhas) * tam * 1.22 <= A - 460 or tam <= 30:
+        if len(linhas) * tam * 1.3 <= A - 460 or tam <= 30:
             break
         tam -= 3
-    bloco = len(linhas) * tam * 1.22
+    bloco = len(linhas) * tam * 1.3
     y = max(190, (A - bloco) / 2 - 40)
     cor = BRANCO if cta else NAVY
     for linha in linhas:
         d.text((MARGEM, y), linha, font=f, fill=cor, anchor="la")
-        y += tam * 1.22
+        y += tam * 1.3
 
-    rod = fonte(34, 500)
+    rod = fonte(30, 500)
     d.text((MARGEM, A - 150), "@vendanaobra", font=rod, anchor="la",
            fill=(195, 199, 207) if cta else (154, 163, 173))
     if not cta:
@@ -151,10 +156,11 @@ CINZA = (110, 118, 130)
 
 
 def variante_capa(dia: str) -> str:
+    # 03/10/2026: teste A/B encerrado pelo Diego. O carrossel de 02/10 ("Quando o cliente
+    # diz...", capa tweet) é o modelo; o de 03/10 saiu tipográfico e foi apagado do perfil.
     if dia < TESTE_CAPA_INICIO:
         return "tipografica"
-    dias = (datetime.fromisoformat(dia) - datetime.fromisoformat(TESTE_CAPA_INICIO)).days
-    return "tweet" if dias % 2 == 0 else "tipografica"
+    return "tweet"
 
 
 def _avatar(tam: int):
@@ -171,15 +177,15 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
     tam_av, y0 = 120, 150
     f, m = _avatar(tam_av)
     im.paste(f, (MARGEM, y0), m)
-    d.text((MARGEM + tam_av + 28, y0 + 22), "Diego Moraes", font=fonte(46, 750), fill=NAVY)
-    d.text((MARGEM + tam_av + 28, y0 + 76), "@vendanaobra", font=fonte(36, 450), fill=CINZA)
+    d.text((MARGEM + tam_av + 28, y0 + 24), "Diego Moraes", font=fonte(44, 700), fill=NAVY)
+    d.text((MARGEM + tam_av + 28, y0 + 76), "@vendanaobra", font=fonte(38, 400), fill=CINZA)
 
     numeros = [n for n in (numeros or []) if n.get("num")][:2]
     topo, fundo = y0 + tam_av + 60, A - 190
     espaco = (fundo - topo) - (420 if numeros else 0)
-    tam = 84 if not numeros else 66
+    tam = 54 if not numeros else 50
     while True:
-        ft = fonte(tam, 600)
+        ft = fonte(tam, 500)
         blocos = [quebrar(d, par, ft, LARGURA) for par in texto.split("\n\n")]
         altura = sum(len(b) for b in blocos) * tam * 1.25 + (len(blocos) - 1) * tam * 0.5
         if altura <= espaco or tam <= 40:
@@ -198,10 +204,10 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
         x1 = L - MARGEM
         d.rounded_rectangle([MARGEM, y0q, x1, y1], radius=36, fill=NAVY)
         cy = (y0q + y1) // 2
-        fl = fonte(36, 500)
+        fl = fonte(32, 500)
         if len(numeros) == 1:
             n = numeros[0]
-            tn = 150
+            tn = 120
             while d.textlength(n["num"], font=fonte(tn, 800)) > x1 - MARGEM - 80 and tn > 60:
                 tn -= 6
             d.text(((MARGEM + x1) // 2, cy + 40), n["num"], font=fonte(tn, 800), fill=CHAMP, anchor="ms")
@@ -210,7 +216,7 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
         else:
             meio = (MARGEM + x1) // 2
             larg = meio - MARGEM - 120
-            tn = 150
+            tn = 120
             while max(d.textlength(n["num"], font=fonte(tn, 800)) for n in numeros) > larg and tn > 50:
                 tn -= 6
             for cx, n, cor in ((MARGEM + (meio - MARGEM) // 2, numeros[0], BRANCO),
@@ -219,19 +225,14 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
                 d.text((cx, cy + 110), n.get("rot", ""), font=fl, fill=(195, 199, 207), anchor="ms")
             d.text((meio, cy - 15), "→", font=fonte(80, 500), fill=(120, 130, 150), anchor="mm")
 
-    rod = fonte(34, 500)
+    rod = fonte(30, 500)
     d.text((MARGEM, A - 150), "arrasta para o lado", font=rod, fill=CINZA, anchor="la")
-    d.text((L - MARGEM, A - 150 + 17), "→", font=fonte(60, 600), fill=CHAMP, anchor="rm")
+    d.text((L - MARGEM, A - 150 + 15), "→", font=fonte(52, 600), fill=CHAMP, anchor="rm")
     return im
 
 
 def desenhar_segunda_capa(texto: str, total: int) -> Image.Image:
-    im = desenhar(texto, 0, total)          # peso e tamanho da capa tipográfica
-    d = ImageDraw.Draw(im)
-    rod = fonte(34, 500)
-    n = f"2/{total}"
-    d.text((L - MARGEM - d.textlength(n, font=rod), A - 150), n, font=rod, fill=CHAMP, anchor="la")
-    return im
+    return desenhar(texto, 1, total, peso_capa=True)   # peso e tamanho da capa, número 2/N
 
 
 def renderizar(c: dict, pasta: Path) -> list[Path]:

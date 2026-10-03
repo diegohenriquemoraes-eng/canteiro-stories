@@ -49,7 +49,7 @@ class TesteCapaAB(unittest.TestCase):
     def test_alterna_a_partir_de_02_10(self):
         self.assertEqual(carrossel.variante_capa("2026-10-01"), "tipografica")
         self.assertEqual(carrossel.variante_capa("2026-10-02"), "tweet")
-        self.assertEqual(carrossel.variante_capa("2026-10-03"), "tipografica")
+        self.assertEqual(carrossel.variante_capa("2026-10-03"), "tweet")
         self.assertEqual(carrossel.variante_capa("2026-10-04"), "tweet")
 
     def test_capa_tweet_desenha_com_e_sem_numero(self):

@@ -372,6 +372,30 @@ O que ainda pode atrasar: acordar **depois** da hora, quando o GitHub some por h
 dia seguinte. Se isso incomodar, o passo seguinte é um despertador fora do GitHub (Cloudflare
 Worker ou cron-job.org chamando `workflow_dispatch`) — depende de o Diego criar a conta.
 
+## Modelo fixo do carrossel e letra dos grandes (03/10/2026) — vale por cima do A/B abaixo
+
+O carrossel de 03/10 caiu no dia "tipográfico" do A/B, saiu com letra gigante e o Diego **apagou do
+perfil**. O de 02/10 ("Quando o cliente diz vou fazer mais um orçamento...") é o **modelo fixo**: capa
+estilo tweet (foto, "Diego Moraes", @vendanaobra) todo dia, miolo branco com o filete dourado, último
+slide marinho. `variante_capa` devolve sempre "tweet" a partir de 02/10. **Teste A/B encerrado**, não
+reabrir.
+
+A letra caiu para a dos grandes, medida no Chrome em 03/10 nos carrosséis estilo tweet de Hormozi e
+Justin Welsh (convertido para slide de 1080 px): texto corrido ~48 px regular, nome ~44 px negrito,
+@ ~40 px cinza. Fonte deles: Chirp/Helvetica, então trocamos a Archivo pela **Inter**
+(`fontes/Inter.ttf`, Google Fonts, eixos opsz + wght). Tamanhos em `carrossel.py`:
+
+| Peça | Antes | Agora |
+|---|---|---|
+| Miolo | 78 px / 500 | **48 px / 400**, entrelinha 1,3 |
+| Capa tipográfica e 2ª capa | 100 px / 800 | 56 px / 700 |
+| Frase da capa tweet | 84 px / 600 (66 com número) | 54 px / 500 (50 com número) |
+| Nome · @ | 46 · 36 | 44 negrito · 38 cinza |
+| Número do quadro · rodapé | 150 · 34 | 120 · 30 |
+
+O "2/10" da segunda capa saía sobreposto ao "1/10" (desenhava a capa e escrevia por cima); corrigido
+com `desenhar(..., peso_capa=True)`.
+
 ## Carrossel em 10 slides com teste A/B da capa (02/10/2026)
 
 Decisão do Diego depois da pesquisa de layout (nota no Cérebro, `Instagram @vendanaobra`, 02/10):
