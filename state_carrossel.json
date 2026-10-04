@@ -43,6 +43,13 @@
       "titulo": "Deu 10% ou entregou 21% do lucro?",
       "capa": "tipografica",
       "slides": 10
+    },
+    "2026-10-04|1": {
+      "media_id": "18175069918435438",
+      "quando": "2026-10-04T12:31:00-03:00",
+      "titulo": "Vou pensar: o certo e o errado",
+      "capa": "tweet",
+      "slides": 10
     }
   }
 }
