@@ -550,3 +550,7 @@ mão, com a instrução do cartão (foto sugerida + frases + sticker). O workflo
 **desabilitado** no GitHub (`gh workflow disable`), `docs/fatos.json` vazio e as artes fixas não são mais usadas.
 Fica a rotina leve: fato 08:50, caixinha do Plantão da Objeção (mesmo quadro todo dia) até as 10h, vídeo de 15 s
 às 18:30 e oferta logo depois. Não religar o robô sem ele pedir.
+
+## Carrossel 2 por semana (14/10/2026)
+
+O carrossel diário saiu (alcance mediano 142 contra 474 do Reel). Às **terças e sextas, 12h30**, `carrossel_viral.py` (passo do `carrossel.yml`, antes do `carrossel.py`) pega o Reel de mais views dos últimos 8 dias **acima de 2.000** que ainda não virou carrossel, transforma a legenda dele em slides e grava em `docs/carrosseis_virais.json`. O `carrossel.py` lê esse arquivo junto com o `docs/carrosseis.json` do app. Sem Reel acima de 2.000, não sai carrossel no dia. A legenda abre com uma linha a mais para a conferência "já está no perfil" não confundir com a do Reel. Teste: `testes/test_carrossel_viral.py`.

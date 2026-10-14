@@ -53,6 +53,11 @@ jobs:
       - name: Pegar o estado mais recente
         run: git pull --rebase --autostash origin main || true
 
+      - name: Montar o carrossel de terça e sexta (Reel acima de 2.000 views)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python carrossel_viral.py
+
       - name: Publicar o carrossel devido
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -68,10 +73,11 @@ jobs:
       - name: Guardar o estado
         if: always()
         run: |
-          if [ -n "$(git status --porcelain state_carrossel.json)" ]; then
+          if [ -n "$(git status --porcelain state_carrossel.json docs/carrosseis_virais.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add state_carrossel.json
+            [ -f docs/carrosseis_virais.json ] && git add docs/carrosseis_virais.json
             git commit -m "Carrossel publicado (auto)"
             for i in 1 2 3; do
               git pull --rebase --autostash origin main && git push && break

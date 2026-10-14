@@ -49,6 +49,9 @@ import fila as filamod        # noqa: E402
 
 FUSO = ZoneInfo("America/Sao_Paulo")
 DADOS = AQUI / "docs" / "carrosseis.json"
+# 14/10/2026: o carrossel de terça e sexta, montado por carrossel_viral.py a partir do
+# Reel que passou de 2.000 views (o diário saiu do app)
+VIRAIS = AQUI / "docs" / "carrosseis_virais.json"
 STATE = AQUI / "state_carrossel.json"
 SAIDA = AQUI / "saida" / "carrossel"
 # 03/10/2026: Inter no lugar da Archivo. Os carrosséis estilo tweet dos grandes perfis
@@ -410,7 +413,7 @@ def main() -> None:
 
     agora = datetime.now(FUSO)
     dia = args.data or agora.date().isoformat()
-    todos = carregar(DADOS, [])
+    todos = carregar(DADOS, []) + carregar(VIRAIS, [])
     for c in todos:
         c["slides"] = [re.sub(r"(?<!\.)\.([\"”]?)\s*$", r"\1", sem_pontuacao_pesada(s))
                        for s in c["slides"]]
