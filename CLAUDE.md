@@ -528,3 +528,19 @@ e o Canteiro foi reescrito de 02/10 a 15/10 pelo plano de 14 dias do Nelson.
   ou caso real), 6 slides, último com a palavra-chave. Continua saindo sozinho às 12h30.
 - Backup antes da mudança: `Perffec\Claude\Canteiro\canteiro-vno-BACKUP-2026-10-01-antes-realinhamento.html`.
   O roteiro do Reel (`.say`) aceita quebra de linha: frase sem ponto final, uma por linha.
+
+## Stories em 2 toques por dia (14/10/2026) — vale por cima do formato caixinha de 02/10
+
+O Diego não conseguia cumprir os 4 stories (foto, texto escrito à mão e 7 quadros diferentes na semana).
+Ele escolheu o formato de 2 toques, mantendo o mínimo do Afonso e do Stories 10x:
+- **08:50 fato do dia: o ROBÔ posta** (`story_fato.py` + `story-fato.yml`). Arte de texto 1080x1920 (navy,
+  champagne, Inter) desenhada com as frases do campo `arte` do cartão das 08:50 no app, exportadas por
+  `exportar_carrosseis.py` para `docs/fatos.json`. Estado em `state_story_fato.json`. É a exceção, pedida por ele,
+  à regra de 26/09 ("o único story automático é o que ele sobe"). Primeira publicação real: 15/10/2026
+- **De manhã, até as 10h: caixinha do Plantão da Objeção**, à mão, mesmo quadro todo dia, arte fixa
+  `docs/stories-fixos/caixinha-plantao-da-objecao.jpg`, sticker "Manda do jeito que o cliente falou"
+- **18:30 vídeo de 15 s** respondendo a caixinha (Compartilhar resposta) ou a fala pronta do dia, e logo depois a
+  **oferta** com arte fixa (`oferta-caderno.jpg`, quinta `oferta-raio-x.jpg`) e um sticker de link
+- Artes fixas: `python story_fato.py --fixas` redesenha em `saida/stories-fixos/`, copiar para `docs/stories-fixos/`
+- Alertas do iPhone: só caixinha (09:00) e vídeo + oferta (18:20). O `gerar_ics.py` passou a avaliar o DIAS com node
+  (o fatiador antigo não entendia os dias em JSON e parou de gerar sem aviso)
