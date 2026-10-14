@@ -21,6 +21,9 @@ from pathlib import Path
 
 APP = Path(r"C:\Users\NOTE\Desktop\Perffec\Claude\Canteiro\canteiro-vno.html")
 SAIDA = Path(__file__).parent / "docs" / "carrosseis.json"
+# 14/10/2026: o story "fato do dia" sai sozinho às 08h50 (story_fato.py), com o
+# texto do campo "arte" do cartão das 08:50 no app.
+FATOS = Path(__file__).parent / "docs" / "fatos.json"
 
 
 def dias_do_app(caminho: Path):
@@ -48,9 +51,12 @@ def main():
     o = a.parse_args()
 
     ano = 2026
-    out = []
+    out, fatos = [], []
     for d in dias_do_app(APP):
         dia, mes = d["data"].split("/")
+        for st in d.get("stories") or []:
+            if st.get("t") == "08:50" and st.get("arte"):
+                fatos.append({"dia": f"{ano}-{mes}-{dia}", "hora": "08:50", "frases": st["arte"]})
         for i, c in enumerate(d.get("carrosseis") or []):
             out.append({
                 "dia": f"{ano}-{mes}-{dia}",
@@ -77,6 +83,9 @@ def main():
     SAIDA.parent.mkdir(exist_ok=True)
     SAIDA.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"\ngravado em {SAIDA}")
+    fatos.sort(key=lambda x: x["dia"])
+    FATOS.write_text(json.dumps(fatos, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{len(fatos)} fatos do dia gravados em {FATOS}")
 
 
 if __name__ == "__main__":

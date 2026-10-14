@@ -1,0 +1,90 @@
+name: Story fato do dia
+
+# O story "fato do dia" (docs/fatos.json, exportado do app Canteiro) sai sozinho
+# às 08h50 de Brasília. Pedido do Diego em 14/10/2026 (formato de 2 toques por dia:
+# o robô posta o fato, ele faz a caixinha de manhã e o vídeo + oferta à noite).
+#
+# Mesmo desenho do carrossel: vários disparos em minutos quebrados porque o cron
+# do GitHub atrasa; quem acorda antes dorme até 08h50, os seguintes veem o estado
+# e saem. 09h37 é repescagem (o script desiste depois das 10h20).
+on:
+  schedule:
+    - cron: "23 10 * * *"    # 07:23 BRT — acorda e espera até 08:50
+    - cron: "51 10 * * *"    # 07:51
+    - cron: "17 11 * * *"    # 08:17
+    - cron: "39 11 * * *"    # 08:39
+    - cron: "37 12 * * *"    # 09:37 — repescagem
+  workflow_dispatch:
+    inputs:
+      agora:
+        description: "Publicar o fato de HOJE já, sem esperar a hora"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Só dizer o que faria"
+        type: boolean
+        default: false
+
+concurrency:
+  group: canteiro-story-fato
+  cancel-in-progress: false
+
+jobs:
+  fato:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pegar o estado mais recente
+        run: git pull --rebase --autostash origin main || true
+
+      - name: Publicar o fato do dia
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=""
+          [ "${{ inputs.agora }}" = "true" ] && args="$args --agora"
+          [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
+          python story_fato.py $args
+
+      - name: Guardar o estado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state_story_fato.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state_story_fato.json
+            git commit -m "Story fato do dia publicado (auto)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              sleep 5
+            done
+          else
+            echo "Nada publicado nesta execução."
+          fi
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="Story fato do dia não foi publicado"
+          if gh issue list --state open --search "$titulo in:title" \
+               --json number -q '.[0].number' | grep -q .; then
+            echo "Já existe issue aberta sobre isso."
+            exit 0
+          fi
+          gh issue create --title "$titulo" --body "A execução de $(date -u '+%d/%m %H:%M UTC') falhou. Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
