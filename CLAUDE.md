@@ -544,3 +544,9 @@ Ele escolheu o formato de 2 toques, mantendo o mínimo do Afonso e do Stories 10
 - Artes fixas: `python story_fato.py --fixas` redesenha em `saida/stories-fixos/`, copiar para `docs/stories-fixos/`
 - Alertas do iPhone: só caixinha (09:00) e vídeo + oferta (18:20). O `gerar_ics.py` passou a avaliar o DIAS com node
   (o fatiador antigo não entendia os dias em JSON e parou de gerar sem aviso)
+
+**Desligado no mesmo dia (14/10/2026)**: o Diego não gostou das artes de texto e voltou a fazer os 4 stories à
+mão, com a instrução do cartão (foto sugerida + frases + sticker). O workflow `story-fato.yml` está
+**desabilitado** no GitHub (`gh workflow disable`), `docs/fatos.json` vazio e as artes fixas não são mais usadas.
+Fica a rotina leve: fato 08:50, caixinha do Plantão da Objeção (mesmo quadro todo dia) até as 10h, vídeo de 15 s
+às 18:30 e oferta logo depois. Não religar o robô sem ele pedir.
