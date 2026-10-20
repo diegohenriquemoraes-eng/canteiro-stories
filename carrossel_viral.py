@@ -155,6 +155,13 @@ def main() -> None:
         log(f"{dia}: carrossel viral só sai terça e sexta")
         return
 
+    # 19/10/2026: o carrossel de terça e sexta passou a ser o formato NOTAS, escrito no app Canteiro
+    # (docs/carrosseis.json). Este automático só entra no dia em que o app não tiver carrossel
+    do_app = Path(__file__).parent / "docs" / "carrosseis.json"
+    if do_app.exists() and any(c.get("dia") == dia for c in json.loads(do_app.read_text(encoding="utf-8"))):
+        log(f"{dia}: o app já tem carrossel hoje (Notas), o automático não entra")
+        return
+
     feitos = json.loads(SAIDA.read_text(encoding="utf-8")) if SAIDA.exists() else []
     if any(c["dia"] == dia for c in feitos):
         log(f"{dia}: carrossel viral já montado")
