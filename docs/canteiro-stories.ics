@@ -6,2489 +6,458 @@ METHOD:PUBLISH
 X-WR-CALNAME:Canteiro · Stories
 X-WR-CALDESC:Alertas dos Stories do dia e do Reset — @vendanaobra
 BEGIN:VEVENT
-UID:canteiro-20261019-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261019T085000
-DTEND:20261019T090000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "A pergunta
-  que mais chega no fim da negociação" "consegue um desconto à vista?"
- \n\nTiro de alerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: 
- "Consegue um desconto à vista?": a condição está escrita antes\nAbri
- r o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261019-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261019T091000
-DTEND:20261019T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Consegue
-  um desconto à vista?": a condição está escrita antes\nAbrir o Cante
- iro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261019-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261019T183000
-DTEND:20261019T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "desconto à vista não é problema\, é t
- roca" "o problema é inventar o número na hora" "escreve a condição a
- ntes e mostra pro cliente: está aqui na nossa tabela" "Pegou a visão?"
-  Feche com "amanhã de manhã tem caixinha de novo"\n\nDepois: Foto do C
- aderno aberto ou sua com o celular na mão. Escreva: "Criei o Caderno do
-  Vendedor da Construção a partir do meu método de vendas" "Atração\
- , Conexão\, Diagnóstico\, Oferta e Decisão\, com roteiro e rotina em 
- cada passo" Sticker de link Quero o Caderno → vendanaobra.com.br/cader
- no. Nenhum outro sticker.\n\nResposta pública da caixinha (Ladeira): qu
- em perguntou vê a própria pergunta respondida e volta amanhã. Vídeo 
- depois das 16h (Afonso). Revelação: a condição escrita antes\n\nDia:
-  "Consegue um desconto à vista?": a condição está escrita antes\nAbr
- ir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:canteiro-20261020-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T085000
-DTEND:20261020T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261020T120000
+DTEND:20261020T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Tira a instalação que fica mais barato" "Hoje 
- às 18h30 eu te mostro o que responder"\n\nDepois: Foto de um orçamento
-  ou do balcão (tampe nomes e valores). Escreva: "Cliente: 'Tira a insta
- lação que fica mais barato'" "É aqui que muita venda desanda" "Não c
- orta tua margem junto"\n\nIntrodução da história do dia (Destrave Sto
- ry). A promessa é resolvida às 18h30\n\nDia: "Tira a instalação que 
- fica mais barato?": corta escopo\, não margem\nAbrir o Canteiro: https:
- //canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Tira a instalação que fica m
+ ais barato?": corta escopo\, não margem\nAbrir o Canteiro: https://cant
+ eiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261020-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T085600
-DTEND:20261020T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Tira a instalação 
- que fica mais barato?": corta escopo\, não margem\nAbrir o Canteiro: ht
- tps://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261020-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T121500
-DTEND:20261020T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Tira a insta
- lação que fica mais barato'\, qual é a tua primeira resposta?" Caixin
- ha: "Escreve a resposta que você dá hoje"\n\nAtivação de comunidade:
-  1 print por dia (Destrave Story)\n\nDia: "Tira a instalação que fica 
- mais barato?": corta escopo\, não margem\nAbrir o Canteiro: https://can
- teiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261020-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T122500
-DTEND:20261020T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Tira a instalação que 
- fica mais barato?": corta escopo\, não margem\nAbrir o Canteiro: https:
- //canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261020-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T183000
-DTEND:20261020T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: dá pra tirar\, sim\, só que aí a garantia da 
- instalação fica com quem instalar" "Se der problema\, são dois fornec
- edores apontando um pro outro" "Quer que eu te mostre as duas opções l
- ado a lado?" "Corta escopo\, nunca margem" Feche com "Esse é o tempo 2 
- da Resposta em 3 Tempos: descobrir o motivo real"\n\nDepois: Foto do Cad
- erno aberto (ou você com o celular mostrando a capa). Escreva: "Saber u
- ma resposta ajuda" "Vender sem improviso pede método" "Atração\, Cone
- xão\, Diagnóstico\, Oferta e Decisão"\n\nSolução: a promessa das 08
- h50 resolvida. Técnica com nome\, 2ª vez do dia\n\nDia: "Tira a instal
- ação que fica mais barato?": corta escopo\, não margem\nAbrir o Cante
- iro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261020-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261020T183600
-DTEND:20261020T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Tira a instalação que fica mais 
- barato?": corta escopo\, não margem\nAbrir o Canteiro: https://canteiro
- -vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261021-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261021T085000
-DTEND:20261021T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261021T120000
+DTEND:20261021T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Outubro e 
- o cliente já fala em Black Friday" "obra não entra em promoção\, ent
- ra em agenda"\n\nTiro de alerta antes das 9h (Afonso). Sem CTA\, só o f
- ato. Reset às 23h (quarta e sexta\, Afonso).\n\nDia: "Vou esperar a Bla
- ck Friday": obra tem agenda\, não promoção\nAbrir o Canteiro: https:/
- /canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Vou esperar a Black Friday": o
+ bra tem agenda\, não promoção\nAbrir o Canteiro: https://canteiro-vno
+ .vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261021-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261021T091000
-DTEND:20261021T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Vou espe
- rar a Black Friday": obra tem agenda\, não promoção\nAbrir o Canteiro
- : https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261021-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261021T183000
-DTEND:20261021T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "o cliente fala que vai esperar a Black Fr
- iday" "se você promete desconto pra novembro\, ele espera" "você respo
- nde: faz sentido pra produto de prateleira\, obra tem agenda" "e mostra 
- a data que você consegue reservar" "Pegou a visão?" Feche com "amanhã
-  de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno aberto ou su
- a com o celular na mão. Escreva: "Criei o Caderno do Vendedor da Constr
- ução a partir do meu método de vendas" "Atração\, Conexão\, Diagn
- óstico\, Oferta e Decisão\, com roteiro e rotina em cada passo" Sticke
- r de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum outro s
- ticker.\n\nResposta pública da caixinha (Ladeira): quem perguntou vê a
-  própria pergunta respondida e volta amanhã. Vídeo depois das 16h (Af
- onso). Revelação: trocar promoção por agenda\n\nDia: "Vou esperar a 
- Black Friday": obra tem agenda\, não promoção\nAbrir o Canteiro: http
- s://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261021-reset@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261021T230000
-DTEND:20261021T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 3
-DESCRIPTION:Apague a sequência inteira do dia (os 3\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 08:50 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 3
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261022-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T085000
-DTEND:20261022T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261022T120000
+DTEND:20261022T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Me manda por e-mail que eu repasso pro engenheiro
- " "Hoje às 18h30 eu te mostro o que responder"\n\nDepois: Foto de um or
- çamento ou do balcão (tampe nomes e valores). Escreva: "Cliente: 'Me m
- anda por e-mail que eu repasso pro engenheiro'" "É aqui que muita venda
-  desanda" "Não manda ainda"\n\nIntrodução da história do dia (Destra
- ve Story). A promessa é resolvida às 18h30\n\nDia: "Me manda por e-mai
- l que eu repasso pro engenheiro": apresente pra quem decide\nAbrir o Can
- teiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Me manda por e-mail que eu rep
+ asso pro engenheiro": apresente pra quem decide\nAbrir o Canteiro: https
+ ://canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261022-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T085600
-DTEND:20261022T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Me manda por e-mail 
- que eu repasso pro engenheiro": apresente pra quem decide\nAbrir o Cante
- iro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261022-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T121500
-DTEND:20261022T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Me manda por
-  e-mail que eu repasso pro engenheiro'\, qual é a tua primeira resposta
- ?" Caixinha: "Escreve a resposta que você dá hoje"\n\nAtivação de co
- munidade: 1 print por dia (Destrave Story)\n\nDia: "Me manda por e-mail 
- que eu repasso pro engenheiro": apresente pra quem decide\nAbrir o Cante
- iro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261022-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T122500
-DTEND:20261022T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Me manda por e-mail que 
- eu repasso pro engenheiro": apresente pra quem decide\nAbrir o Canteiro:
-  https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261022-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T183000
-DTEND:20261022T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: mando sim\, e pra ele não ficar com dúvida\, p
- osso apresentar pra vocês dois em 15 minutos amanhã às dez?" "Se não
-  der\, pergunta o que o engenheiro costuma olhar primeiro e deixa isso e
- m destaque" "Quem repassa teu preço não defende teu preço" Feche com 
- "Esse é o tempo 2 da Resposta em 3 Tempos: descobrir o motivo real"\n\n
- Depois: Foto do Caderno aberto (ou você com o celular mostrando a capa)
- . Escreva: "Saber uma resposta ajuda" "Vender sem improviso pede método
- " "Atração\, Conexão\, Diagnóstico\, Oferta e Decisão"\n\nSolução
- : a promessa das 08h50 resolvida. Técnica com nome\, 2ª vez do dia\n\n
- Dia: "Me manda por e-mail que eu repasso pro engenheiro": apresente pra 
- quem decide\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261022-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261022T183600
-DTEND:20261022T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Me manda por e-mail que eu repasso
-  pro engenheiro": apresente pra quem decide\nAbrir o Canteiro: https://c
- anteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261023-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261023T085000
-DTEND:20261023T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261023T120000
+DTEND:20261023T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Duas obras
-  na mesma rua" "e o cliente quer o mesmo preço nas duas"\n\nTiro de ale
- rta antes das 9h (Afonso). Sem CTA\, só o fato. Reset às 23h (quarta e
-  sexta\, Afonso).\n\nDia: "Faz o mesmo preço do meu vizinho": preço te
- m critério\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Faz o mesmo preço do meu vizi
+ nho": preço tem critério\nAbrir o Canteiro: https://canteiro-vno.verce
+ l.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261023-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261023T091000
-DTEND:20261023T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Faz o me
- smo preço do meu vizinho": preço tem critério\nAbrir o Canteiro: http
- s://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261023-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261023T183000
-DTEND:20261023T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente pede o mesmo preço que você fez
-  pro vizinho" "você responde: se fosse a mesma obra\, seria o mesmo pre
- ço\, posso te mostrar o que muda?" "metragem\, acesso\, prazo e o que e
- stá incluso" "preço com critério você explica uma vez" "Pegou a vis
- ão?" Feche com "amanhã de manhã tem caixinha de novo"\n\nDepois: Foto
-  do Caderno aberto ou sua com o celular na mão. Escreva: "Criei o Cader
- no do Vendedor da Construção a partir do meu método de vendas" "Atra
- ção\, Conexão\, Diagnóstico\, Oferta e Decisão\, com roteiro e roti
- na em cada passo" Sticker de link Quero o Caderno → vendanaobra.com.br
- /caderno. Nenhum outro sticker.\n\nResposta pública da caixinha (Ladeir
- a): quem perguntou vê a própria pergunta respondida e volta amanhã. V
- ídeo depois das 16h (Afonso). Revelação: o critério do preço\n\nDia
- : "Faz o mesmo preço do meu vizinho": preço tem critério\nAbrir o Can
- teiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261023-reset@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261023T230000
-DTEND:20261023T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 3
-DESCRIPTION:Apague a sequência inteira do dia (os 3\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 08:50 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 3
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261024-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261024T085000
-DTEND:20261024T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261024T120000
+DTEND:20261024T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Melhorar o
-  valor" "nem sempre quer dizer baixar o preço"\n\nTiro de alerta antes 
- das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Não consegue melhorar e
- sse valor?": pergunte melhorar como\nAbrir o Canteiro: https://canteiro-
- vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Não consegue melhorar esse va
+ lor?": pergunte melhorar como\nAbrir o Canteiro: https://canteiro-vno.ve
+ rcel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261024-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261024T091000
-DTEND:20261024T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Não con
- segue melhorar esse valor?": pergunte melhorar como\nAbrir o Canteiro: h
- ttps://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261024-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261024T183000
-DTEND:20261024T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "a mensagem de hoje tem dois erros" "deu d
- esconto sem perguntar o que o cliente queria melhorar" "e não pediu nad
- a em troca" "pergunta antes: melhorar como\, no valor\, no prazo ou na c
- ondição?" "Pegou a visão?" Feche com "amanhã de manhã tem caixinha 
- de novo"\n\nDepois: Foto do Caderno aberto ou sua com o celular na mão.
-  Escreva: "Criei o Caderno do Vendedor da Construção a partir do meu m
- étodo de vendas" "Atração\, Conexão\, Diagnóstico\, Oferta e Decis
- ão\, com roteiro e rotina em cada passo" Sticker de link Quero o Cadern
- o → vendanaobra.com.br/caderno. Nenhum outro sticker.\n\nResposta púb
- lica da caixinha (Ladeira): quem perguntou vê a própria pergunta respo
- ndida e volta amanhã. Vídeo depois das 16h (Afonso). Revelação: os d
- ois erros da mensagem\n\nDia: "Não consegue melhorar esse valor?": perg
- unte melhorar como\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261025-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261025T085000
-DTEND:20261025T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261025T120000
+DTEND:20261025T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "O material
-  na internet está mais barato" "a obra pronta não está"\n\nTiro de al
- erta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Na internet o
-  material tá mais barato": material não é obra pronta\nAbrir o Cantei
- ro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Na internet o material tá mai
+ s barato": material não é obra pronta\nAbrir o Canteiro: https://cante
+ iro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261025-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261025T091000
-DTEND:20261025T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Na inter
- net o material tá mais barato": material não é obra pronta\nAbrir o C
- anteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261025-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261025T183000
-DTEND:20261025T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente mostra o preço da internet" "voc
- ê não briga\, você responde: o material sim\, a obra pronta não" "e 
- separa no orçamento quanto é material e quanto é medição\, instala
- ção e garantia" "Pegou a visão?" Feche com "amanhã de manhã tem cai
- xinha de novo"\n\nDepois: Foto do Caderno aberto ou sua com o celular na
-  mão. Escreva: "Criei o Caderno do Vendedor da Construção a partir do
-  meu método de vendas" "Atração\, Conexão\, Diagnóstico\, Oferta e 
- Decisão\, com roteiro e rotina em cada passo" Sticker de link Quero o C
- aderno → vendanaobra.com.br/caderno. Nenhum outro sticker.\n\nResposta
-  pública da caixinha (Ladeira): quem perguntou vê a própria pergunta 
- respondida e volta amanhã. Vídeo depois das 16h (Afonso). Revelação:
-  material contra obra pronta\n\nDia: "Na internet o material tá mais ba
- rato": material não é obra pronta\nAbrir o Canteiro: https://canteiro-
- vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261026-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261026T085000
-DTEND:20261026T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261026T120000
+DTEND:20261026T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Uma linha 
- de descrição e um valor" "e o cliente pergunta se é com tudo"\n\nTiro
-  de alerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Esse pr
- eço é com tudo?": a proposta não deixou claro\nAbrir o Canteiro: http
- s://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Esse preço é com tudo?": a p
+ roposta não deixou claro\nAbrir o Canteiro: https://canteiro-vno.vercel
+ .app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261026-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261026T091000
-DTEND:20261026T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Esse pre
- ço é com tudo?": a proposta não deixou claro\nAbrir o Canteiro: https
- ://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261026-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261026T183000
-DTEND:20261026T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "se o cliente pergunta se o preço é com 
- tudo\, a proposta não deixou claro" "coloca três partes: o que está i
- ncluso\, o que não está e o que pode virar extra" "proposta clara não
-  precisa de desconto pra acalmar ninguém" "Pegou a visão?" Feche com "
- amanhã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno abert
- o ou sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor da
-  Construção a partir do meu método de vendas" "Atração\, Conexão\,
-  Diagnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo" 
- Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum o
- utro sticker.\n\nResposta pública da caixinha (Ladeira): quem perguntou
-  vê a própria pergunta respondida e volta amanhã. Vídeo depois das 1
- 6h (Afonso). Revelação: as três partes da proposta\n\nDia: "Esse pre
- ço é com tudo?": a proposta não deixou claro\nAbrir o Canteiro: https
- ://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261027-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T085000
-DTEND:20261027T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261027T120000
+DTEND:20261027T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Vou fechar com o mais barato\, nada pessoal" "Hoj
- e às 18h30 eu te mostro o que responder"\n\nDepois: Foto de um orçamen
- to ou do balcão (tampe nomes e valores). Escreva: "Cliente: 'Vou fechar
-  com o mais barato\, nada pessoal'" "É aqui que muita venda desanda" "N
- ão corre atrás com desconto"\n\nIntrodução da história do dia (Dest
- rave Story). A promessa é resolvida às 18h30\n\nDia: "Vou fechar com o
-  mais barato": perca bem\, sem desconto de última hora\nAbrir o Canteir
- o: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Vou fechar com o mais barato":
+  perca bem\, sem desconto de última hora\nAbrir o Canteiro: https://can
+ teiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261027-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T085600
-DTEND:20261027T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Vou fechar com o mai
- s barato": perca bem\, sem desconto de última hora\nAbrir o Canteiro: h
- ttps://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261027-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T121500
-DTEND:20261027T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Vou fechar c
- om o mais barato\, nada pessoal'\, qual é a tua primeira resposta?" Cai
- xinha: "Escreve a resposta que você dá hoje"\n\nAtivação de comunida
- de: 1 print por dia (Destrave Story)\n\nDia: "Vou fechar com o mais bara
- to": perca bem\, sem desconto de última hora\nAbrir o Canteiro: https:/
- /canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261027-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T122500
-DTEND:20261027T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Vou fechar com o mais ba
- rato": perca bem\, sem desconto de última hora\nAbrir o Canteiro: https
- ://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261027-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T183000
-DTEND:20261027T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: tranquilo\, obrigado por me avisar" "Só me fala
-  uma coisa: o que pesou mais\, o valor ou alguma coisa que faltou na min
- ha proposta?" "E fecha: posso te ligar daqui a 30 dias pra saber como a 
- obra está indo?" "Quem perde bem volta pra mesa" Feche com "Esse é o t
- empo 2 da Resposta em 3 Tempos: descobrir o motivo real"\n\nDepois: Foto
-  do Caderno aberto (ou você com o celular mostrando a capa). Escreva: "
- Saber uma resposta ajuda" "Vender sem improviso pede método" "Atração
- \, Conexão\, Diagnóstico\, Oferta e Decisão"\n\nSolução: a promessa
-  das 08h50 resolvida. Técnica com nome\, 2ª vez do dia\n\nDia: "Vou fe
- char com o mais barato": perca bem\, sem desconto de última hora\nAbrir
-  o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261027-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261027T183600
-DTEND:20261027T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Vou fechar com o mais barato": per
- ca bem\, sem desconto de última hora\nAbrir o Canteiro: https://canteir
- o-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261028-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261028T085000
-DTEND:20261028T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261028T120000
+DTEND:20261028T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Ticket cai
- ndo\, desconto subindo" "e todo mundo culpando o mercado"\n\nTiro de ale
- rta antes das 9h (Afonso). Sem CTA\, só o fato. Reset às 23h (quarta e
-  sexta\, Afonso).\n\nDia: Ticket caindo e desconto subindo no mesmo mês
-  não é o mercado\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: Ticket caindo e desconto subind
+ o no mesmo mês não é o mercado\nAbrir o Canteiro: https://canteiro-vn
+ o.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261028-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261028T091000
-DTEND:20261028T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: Ticket ca
- indo e desconto subindo no mesmo mês não é o mercado\nAbrir o Canteir
- o: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261028-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261028T183000
-DTEND:20261028T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "faturamento bom pode esconder margem indo
-  embora" "olha ticket médio e desconto médio juntos\, vendedor por ven
- dedor" "desconto não se dá\, se troca" "Pegou a visão?" Feche com "am
- anhã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno aberto 
- ou sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor da C
- onstrução a partir do meu método de vendas" "Atração\, Conexão\, D
- iagnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo" St
- icker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum out
- ro sticker.\n\nResposta pública da caixinha (Ladeira): quem perguntou v
- ê a própria pergunta respondida e volta amanhã. Vídeo depois das 16h
-  (Afonso). Revelação: os dois números lidos juntos\n\nDia: Ticket cai
- ndo e desconto subindo no mesmo mês não é o mercado\nAbrir o Canteiro
- : https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261028-reset@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261028T230000
-DTEND:20261028T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 3
-DESCRIPTION:Apague a sequência inteira do dia (os 3\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 08:50 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 3
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261029-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T085000
-DTEND:20261029T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261029T120000
+DTEND:20261029T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Faz um precinho aí" "Hoje às 18h30 eu te mostro
-  o que responder"\n\nDepois: Foto de um orçamento ou do balcão (tampe 
- nomes e valores). Escreva: "Cliente: 'Faz um precinho aí'" "É aqui que
-  muita venda desanda" "Não fala número nenhum no primeiro contato"\n\n
- Introdução da história do dia (Destrave Story). A promessa é resolvi
- da às 18h30\n\nDia: "Faz um precinho aí": desconto antes do diagnósti
- co é chute\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Faz um precinho aí": desconto
+  antes do diagnóstico é chute\nAbrir o Canteiro: https://canteiro-vno.
+ vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261029-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T085600
-DTEND:20261029T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Faz um precinho aí"
- : desconto antes do diagnóstico é chute\nAbrir o Canteiro: https://can
- teiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261029-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T121500
-DTEND:20261029T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Faz um preci
- nho aí'\, qual é a tua primeira resposta?" Caixinha: "Escreve a respos
- ta que você dá hoje"\n\nAtivação de comunidade: 1 print por dia (Des
- trave Story)\n\nDia: "Faz um precinho aí": desconto antes do diagnósti
- co é chute\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261029-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T122500
-DTEND:20261029T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Faz um precinho aí": de
- sconto antes do diagnóstico é chute\nAbrir o Canteiro: https://canteir
- o-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261029-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T183000
-DTEND:20261029T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: faço sim\, só que ainda nem sei o que você pr
- ecisa" "Me conta a obra que eu te digo onde dá pra economizar" "Aí voc
- ê pergunta prazo\, tamanho e quem decide" "A economia vem do projeto\, 
- não da tua margem" Feche com "Esse é o tempo 2 da Resposta em 3 Tempos
- : descobrir o motivo real"\n\nDepois: Foto do Caderno aberto (ou você c
- om o celular mostrando a capa). Escreva: "Saber uma resposta ajuda" "Ven
- der sem improviso pede método" "Atração\, Conexão\, Diagnóstico\, O
- ferta e Decisão"\n\nSolução: a promessa das 08h50 resolvida. Técnica
-  com nome\, 2ª vez do dia\n\nDia: "Faz um precinho aí": desconto antes
-  do diagnóstico é chute\nAbrir o Canteiro: https://canteiro-vno.vercel
- .app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261029-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261029T183600
-DTEND:20261029T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Faz um precinho aí": desconto ant
- es do diagnóstico é chute\nAbrir o Canteiro: https://canteiro-vno.verc
- el.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261030-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261030T085000
-DTEND:20261030T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261030T120000
+DTEND:20261030T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Ele pergun
- tou de parcela" "e o vendedor respondeu com desconto"\n\nTiro de alerta 
- antes das 9h (Afonso). Sem CTA\, só o fato. Reset às 23h (quarta e sex
- ta\, Afonso).\n\nDia: "Tem como dividir em mais vezes?": ofereça a cond
- ição\, mantenha o preço\nAbrir o Canteiro: https://canteiro-vno.verce
- l.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Tem como dividir em mais vezes
+ ?": ofereça a condição\, mantenha o preço\nAbrir o Canteiro: https:/
+ /canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261030-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261030T091000
-DTEND:20261030T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Tem como
-  dividir em mais vezes?": ofereça a condição\, mantenha o preço\nAbr
- ir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261030-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261030T183000
-DTEND:20261030T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente pergunta se dá pra dividir em ma
- is vezes" "você não tira nada do preço" "você oferece: dez vezes nes
- se valor ou à vista com 5%" "Pegou a visão?" Feche com "amanhã de man
- hã tem caixinha de novo"\n\nDepois: Foto do Caderno aberto ou sua com o
-  celular na mão. Escreva: "Criei o Caderno do Vendedor da Construção 
- a partir do meu método de vendas" "Atração\, Conexão\, Diagnóstico\
- , Oferta e Decisão\, com roteiro e rotina em cada passo" Sticker de lin
- k Quero o Caderno → vendanaobra.com.br/caderno. Nenhum outro sticker.\
- n\nResposta pública da caixinha (Ladeira): quem perguntou vê a própri
- a pergunta respondida e volta amanhã. Vídeo depois das 16h (Afonso). R
- evelação: condição no lugar do desconto\n\nDia: "Tem como dividir em
-  mais vezes?": ofereça a condição\, mantenha o preço\nAbrir o Cantei
- ro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261030-reset@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261030T230000
-DTEND:20261030T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 3
-DESCRIPTION:Apague a sequência inteira do dia (os 3\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 08:50 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 3
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261031-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261031T085000
-DTEND:20261031T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261031T120000
+DTEND:20261031T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "O cliente 
- pediu a tabela" "e recebeu um monte de número sem recomendação"\n\nTi
- ro de alerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Manda
-  a tabela de preços": tabela sozinha vira comparação de número\nAbri
- r o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Manda a tabela de preços": ta
+ bela sozinha vira comparação de número\nAbrir o Canteiro: https://can
+ teiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261031-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261031T091000
-DTEND:20261031T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Manda a 
- tabela de preços": tabela sozinha vira comparação de número\nAbrir o
-  Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261031-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261031T183000
-DTEND:20261031T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "segue a tabela\, qualquer dúvida estou 
- à disposição" "erro um: tabela sem a recomendação pra obra dele" "e
- rro dois: nenhuma data\, nenhum próximo passo" "manda com a opção mar
- cada e pergunta: posso te ligar amanhã às dez pra explicar?" Feche com
-  "amanhã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno abe
- rto ou sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor 
- da Construção a partir do meu método de vendas" "Atração\, Conexão
- \, Diagnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo
- " Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum
-  outro sticker.\n\nResposta pública da caixinha (Ladeira): quem pergunt
- ou vê a própria pergunta respondida e volta amanhã. Vídeo depois das
-  16h (Afonso). Revelação: os dois erros da mensagem\n\nDia: "Manda a t
- abela de preços": tabela sozinha vira comparação de número\nAbrir o 
- Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261101-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261101T085000
-DTEND:20261101T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261101T120000
+DTEND:20261101T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Ele está 
- esperando o outro orçamento" "e você está esperando ele"\n\nTiro de a
- lerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Tô esperand
- o o outro orçamento": marque a data pra comparar junto\nAbrir o Canteir
- o: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Tô esperando o outro orçamen
+ to": marque a data pra comparar junto\nAbrir o Canteiro: https://canteir
+ o-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261101-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261101T091000
-DTEND:20261101T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Tô espe
- rando o outro orçamento": marque a data pra comparar junto\nAbrir o Can
- teiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261101-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261101T183000
-DTEND:20261101T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente fala tô esperando o outro orçam
- ento" "você responde: ótimo\, quando chegar a gente olha os dois junto
- s\, quinta te serve?" "quem marca a comparação conduz a decisão" "Peg
- ou a visão?" Feche com "amanhã de manhã tem caixinha de novo"\n\nDepo
- is: Foto do Caderno aberto ou sua com o celular na mão. Escreva: "Criei
-  o Caderno do Vendedor da Construção a partir do meu método de vendas
- " "Atração\, Conexão\, Diagnóstico\, Oferta e Decisão\, com roteiro
-  e rotina em cada passo" Sticker de link Quero o Caderno → vendanaobra
- .com.br/caderno. Nenhum outro sticker.\n\nResposta pública da caixinha 
- (Ladeira): quem perguntou vê a própria pergunta respondida e volta ama
- nhã. Vídeo depois das 16h (Afonso). Revelação: a data marcada pra co
- mparar\n\nDia: "Tô esperando o outro orçamento": marque a data pra com
- parar junto\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261102-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261102T085000
-DTEND:20261102T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261102T120000
+DTEND:20261102T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Quem achou
-  caro não estava na conversa" "e é com ele que você precisa falar"\n\
- nTiro de alerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "O 
- engenheiro disse que teu preço tá alto": traga o engenheiro pra conver
- sa\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "O engenheiro disse que teu pre
+ ço tá alto": traga o engenheiro pra conversa\nAbrir o Canteiro: https:
+ //canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261102-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261102T091000
-DTEND:20261102T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "O engenh
- eiro disse que teu preço tá alto": traga o engenheiro pra conversa\nAb
- rir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261102-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261102T183000
-DTEND:20261102T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente diz que o engenheiro achou caro" 
- "você não discute e não baixa o preço" "você pede dez minutos com o
-  engenheiro pra mostrar o que está incluso" "Pegou a visão?" Feche com
-  "amanhã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno abe
- rto ou sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor 
- da Construção a partir do meu método de vendas" "Atração\, Conexão
- \, Diagnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo
- " Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum
-  outro sticker.\n\nResposta pública da caixinha (Ladeira): quem pergunt
- ou vê a própria pergunta respondida e volta amanhã. Vídeo depois das
-  16h (Afonso). Revelação: trazer o influenciador pra conversa\n\nDia: 
- "O engenheiro disse que teu preço tá alto": traga o engenheiro pra con
- versa\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261103-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T085000
-DTEND:20261103T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261103T120000
+DTEND:20261103T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Se você cobrir o preço dele\, eu fecho" "Hoje 
- às 18h30 eu te mostro o que responder"\n\nDepois: Foto de um orçamento
-  ou do balcão (tampe nomes e valores). Escreva: "Cliente: 'Se você cob
- rir o preço dele\, eu fecho'" "É aqui que muita venda desanda" "Não c
- obre sem ver"\n\nIntrodução da história do dia (Destrave Story). A pr
- omessa é resolvida às 18h30\n\nDia: "Se você cobrir o preço dele\, e
- u fecho": não vire leiloeiro\nAbrir o Canteiro: https://canteiro-vno.ve
- rcel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Se você cobrir o preço dele\
+ , eu fecho": não vire leiloeiro\nAbrir o Canteiro: https://canteiro-vno
+ .vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261103-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T085600
-DTEND:20261103T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Se você cobrir o pr
- eço dele\, eu fecho": não vire leiloeiro\nAbrir o Canteiro: https://ca
- nteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261103-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T121500
-DTEND:20261103T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Se você cob
- rir o preço dele\, eu fecho'\, qual é a tua primeira resposta?" Caixin
- ha: "Escreve a resposta que você dá hoje"\n\nAtivação de comunidade:
-  1 print por dia (Destrave Story)\n\nDia: "Se você cobrir o preço dele
- \, eu fecho": não vire leiloeiro\nAbrir o Canteiro: https://canteiro-vn
- o.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261103-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T122500
-DTEND:20261103T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Se você cobrir o preço
-  dele\, eu fecho": não vire leiloeiro\nAbrir o Canteiro: https://cantei
- ro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261103-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T183000
-DTEND:20261103T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: me mostra a proposta dele" "Se for a mesma coisa
- \, a gente conversa" "Aí você compara: incluso\, prazo\, garantia\, qu
- em instala" "Se não for a mesma coisa\, você mostra a diferença e man
- tém o preço" Feche com "Esse é o tempo 2 da Resposta em 3 Tempos: des
- cobrir o motivo real"\n\nDepois: Foto do Caderno aberto (ou você com o 
- celular mostrando a capa). Escreva: "Saber uma resposta ajuda" "Vender s
- em improviso pede método" "Atração\, Conexão\, Diagnóstico\, Oferta
-  e Decisão"\n\nSolução: a promessa das 08h50 resolvida. Técnica com 
- nome\, 2ª vez do dia\n\nDia: "Se você cobrir o preço dele\, eu fecho"
- : não vire leiloeiro\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261103-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261103T183600
-DTEND:20261103T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Se você cobrir o preço dele\, eu
-  fecho": não vire leiloeiro\nAbrir o Canteiro: https://canteiro-vno.ver
- cel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261104-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261104T085000
-DTEND:20261104T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261104T120000
+DTEND:20261104T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Você é c
- aro\, mas é bom" "é elogio com freio de mão"\n\nTiro de alerta antes 
- das 9h (Afonso). Sem CTA\, só o fato. Reset às 23h (quarta e sexta\, A
- fonso).\n\nDia: "Você é caro\, mas é bom": pergunte o que falta antes
-  de ceder\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Você é caro\, mas é bom": p
+ ergunte o que falta antes de ceder\nAbrir o Canteiro: https://canteiro-v
+ no.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261104-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261104T091000
-DTEND:20261104T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Você é
-  caro\, mas é bom": pergunte o que falta antes de ceder\nAbrir o Cantei
- ro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261104-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261104T183000
-DTEND:20261104T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente diz você é caro\, mas é bom" "
- o mas é uma dúvida que ele ainda não falou" "pergunta: o que falta pr
- a você ficar tranquilo com o investimento?" "Pegou a visão?" Feche com
-  "amanhã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno abe
- rto ou sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor 
- da Construção a partir do meu método de vendas" "Atração\, Conexão
- \, Diagnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo
- " Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum
-  outro sticker.\n\nResposta pública da caixinha (Ladeira): quem pergunt
- ou vê a própria pergunta respondida e volta amanhã. Vídeo depois das
-  16h (Afonso). Revelação: a pergunta depois do elogio\n\nDia: "Você 
- é caro\, mas é bom": pergunte o que falta antes de ceder\nAbrir o Cant
- eiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261104-reset@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261104T230000
-DTEND:20261104T231000
-TRANSP:TRANSPARENT
-SUMMARY:🧹 Reset de Stories — apague os 3
-DESCRIPTION:Apague a sequência inteira do dia (os 3\, não só o último
- ) e não publique nenhum story por 60 minutos. Só nos dias marcados\, 1
- x por semana.\n\nO próximo story é às 08:50 de amanhã\, então a esp
- era não custa nada — é só não postar nada solto esta noite.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🧹 Reset de Stories — apague os 3
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261105-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T085000
-DTEND:20261105T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261105T120000
+DTEND:20261105T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Quanto fica sem nota?" "Hoje às 18h30 eu te most
- ro o que responder"\n\nDepois: Foto de um orçamento ou do balcão (tamp
- e nomes e valores). Escreva: "Cliente: 'Quanto fica sem nota?'" "É aqui
-  que muita venda desanda" "Não faz a conta"\n\nIntrodução da históri
- a do dia (Destrave Story). A promessa é resolvida às 18h30\n\nDia: "Qu
- anto fica sem nota?": nota é a garantia dele\, não o teu imposto\nAbri
- r o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Quanto fica sem nota?": nota 
+ é a garantia dele\, não o teu imposto\nAbrir o Canteiro: https://cante
+ iro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261105-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T085600
-DTEND:20261105T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Quanto fica sem nota
- ?": nota é a garantia dele\, não o teu imposto\nAbrir o Canteiro: http
- s://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261105-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T121500
-DTEND:20261105T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Quanto fica 
- sem nota?'\, qual é a tua primeira resposta?" Caixinha: "Escreve a resp
- osta que você dá hoje"\n\nAtivação de comunidade: 1 print por dia (D
- estrave Story)\n\nDia: "Quanto fica sem nota?": nota é a garantia dele\
- , não o teu imposto\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261105-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T122500
-DTEND:20261105T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Quanto fica sem nota?": 
- nota é a garantia dele\, não o teu imposto\nAbrir o Canteiro: https://
- canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261105-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T183000
-DTEND:20261105T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: com nota você tem garantia por escrito e eu res
- pondo pela obra" "Se der problema daqui a um ano\, você tem a quem cobr
- ar" "E emenda: o que eu consigo é melhorar a condição de pagamento\, 
- quer ver?" "O assunto sai do imposto e vai pra segurança" Feche com "Es
- se é o tempo 2 da Resposta em 3 Tempos: descobrir o motivo real"\n\nDep
- ois: Foto do Caderno aberto (ou você com o celular mostrando a capa). E
- screva: "Saber uma resposta ajuda" "Vender sem improviso pede método" "
- Atração\, Conexão\, Diagnóstico\, Oferta e Decisão"\n\nSolução: a
-  promessa das 08h50 resolvida. Técnica com nome\, 2ª vez do dia\n\nDia
- : "Quanto fica sem nota?": nota é a garantia dele\, não o teu imposto\
- nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261105-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261105T183600
-DTEND:20261105T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Quanto fica sem nota?": nota é a 
- garantia dele\, não o teu imposto\nAbrir o Canteiro: https://canteiro-v
- no.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261106-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261106T085000
-DTEND:20261106T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261106T120000
+DTEND:20261106T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Desconto a
- gora em troca de indicação depois" "é o negócio que quase sempre sai
-  só de um lado"\n\nTiro de alerta antes das 9h (Afonso). Sem CTA\, só 
- o fato. Reset às 23h (quarta e sexta\, Afonso).\n\nDia: "Me dá um desc
- onto que eu te indico pra todo mundo": indicação vem depois da obra\nA
- brir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Me dá um desconto que eu te i
+ ndico pra todo mundo": indicação vem depois da obra\nAbrir o Canteiro:
+  https://canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261106-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261106T091000
-DTEND:20261106T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Me dá u
- m desconto que eu te indico pra todo mundo": indicação vem depois da o
- bra\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261106-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261106T183000
-DTEND:20261106T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente pede desconto prometendo indicar"
-  "você responde: quem indica ganha quando o indicado fecha" "e combina 
- por escrito hoje" "Pegou a visão?" Feche com "amanhã de manhã tem cai
- xinha de novo"\n\nDepois: Foto do Caderno aberto ou sua com o celular na
-  mão. Escreva: "Criei o Caderno do Vendedor da Construção a partir do
-  meu método de vendas" "Atração\, Conexão\, Diagnóstico\, Oferta e 
- Decisão\, com roteiro e rotina em cada passo" Sticker de link Quero o C
- aderno → vendanaobra.com.br/caderno. Nenhum outro sticker.\n\nResposta
-  pública da caixinha (Ladeira): quem perguntou vê a própria pergunta 
- respondida e volta amanhã. Vídeo depois das 16h (Afonso). Revelação:
-  bônus por indicação fechada no lugar do desconto\n\nDia: "Me dá um 
- desconto que eu te indico pra todo mundo": indicação vem depois da obr
- a\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261107-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261107T085000
-DTEND:20261107T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261107T120000
+DTEND:20261107T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "O concorre
- nte mais difícil" "senta na mesa de domingo do teu cliente"\n\nTiro de 
- alerta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Meu cunhado
-  faz mais barato": compare o serviço\, não o parente\nAbrir o Canteiro
- : https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Meu cunhado faz mais barato": 
+ compare o serviço\, não o parente\nAbrir o Canteiro: https://canteiro-
+ vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261107-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261107T091000
-DTEND:20261107T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Meu cunh
- ado faz mais barato": compare o serviço\, não o parente\nAbrir o Cante
- iro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261107-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261107T183000
-DTEND:20261107T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Deixa eu te explicar" "o seu cunhado não tem a experiência que
-  a gente tem" "erro um: atacou o parente do cliente" "erro dois: falou d
- e você\, não do risco dele" "pergunta: ele te dá garantia por escrito
-  e prazo?" Feche com "amanhã de manhã tem caixinha de novo"\n\nDepois:
-  Foto do Caderno aberto ou sua com o celular na mão. Escreva: "Criei o 
- Caderno do Vendedor da Construção a partir do meu método de vendas" "
- Atração\, Conexão\, Diagnóstico\, Oferta e Decisão\, com roteiro e 
- rotina em cada passo" Sticker de link Quero o Caderno → vendanaobra.co
- m.br/caderno. Nenhum outro sticker.\n\nResposta pública da caixinha (La
- deira): quem perguntou vê a própria pergunta respondida e volta amanh
- ã. Vídeo depois das 16h (Afonso). Revelação: os dois erros da mensag
- em\n\nDia: "Meu cunhado faz mais barato": compare o serviço\, não o pa
- rente\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261108-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261108T085000
-DTEND:20261108T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261108T120000
+DTEND:20261108T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Três pala
- vras" "e o vendedor já respondeu com desconto"\n\nTiro de alerta antes 
- das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Esse valor é negociáve
- l?": responda com pergunta\, não com porcentagem\nAbrir o Canteiro: htt
- ps://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Esse valor é negociável?": r
+ esponda com pergunta\, não com porcentagem\nAbrir o Canteiro: https://c
+ anteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261108-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261108T091000
-DTEND:20261108T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Esse val
- or é negociável?": responda com pergunta\, não com porcentagem\nAbrir
-  o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261108-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261108T183000
-DTEND:20261108T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente pergunta se o valor é negociáve
- l" "você responde: depende\, o que você quer ajustar?" "valor\, prazo 
- ou forma de pagamento" "Pegou a visão?" Feche com "amanhã de manhã te
- m caixinha de novo"\n\nDepois: Foto do Caderno aberto ou sua com o celul
- ar na mão. Escreva: "Criei o Caderno do Vendedor da Construção a part
- ir do meu método de vendas" "Atração\, Conexão\, Diagnóstico\, Ofer
- ta e Decisão\, com roteiro e rotina em cada passo" Sticker de link Quer
- o o Caderno → vendanaobra.com.br/caderno. Nenhum outro sticker.\n\nRes
- posta pública da caixinha (Ladeira): quem perguntou vê a própria perg
- unta respondida e volta amanhã. Vídeo depois das 16h (Afonso). Revela
- ção: a pergunta de três opções\n\nDia: "Esse valor é negociável?"
- : responda com pergunta\, não com porcentagem\nAbrir o Canteiro: https:
- //canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261109-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261109T085000
-DTEND:20261109T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261109T120000
+DTEND:20261109T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Metade ago
- ra e o resto quando eu gostar" "e gostar não tinha data"\n\nTiro de ale
- rta antes das 9h (Afonso). Sem CTA\, só o fato.\n\nDia: "Pago metade ag
- ora e o resto quando eu gostar": combine o que é gostar\nAbrir o Cantei
- ro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Pago metade agora e o resto qu
+ ando eu gostar": combine o que é gostar\nAbrir o Canteiro: https://cant
+ eiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261109-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261109T091000
-DTEND:20261109T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Pago met
- ade agora e o resto quando eu gostar": combine o que é gostar\nAbrir o 
- Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261109-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261109T183000
-DTEND:20261109T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente quer pagar o resto quando gostar"
-  "você responde: justo\, vamos escrever o que é ficar bom pra você" "
- lista assinada hoje e vistoria no fim" "Pegou a visão?" Feche com "aman
- hã de manhã tem caixinha de novo"\n\nDepois: Foto do Caderno aberto ou
-  sua com o celular na mão. Escreva: "Criei o Caderno do Vendedor da Con
- strução a partir do meu método de vendas" "Atração\, Conexão\, Dia
- gnóstico\, Oferta e Decisão\, com roteiro e rotina em cada passo" Stic
- ker de link Quero o Caderno → vendanaobra.com.br/caderno. Nenhum outro
-  sticker.\n\nResposta pública da caixinha (Ladeira): quem perguntou vê
-  a própria pergunta respondida e volta amanhã. Vídeo depois das 16h (
- Afonso). Revelação: a lista de vistoria no lugar do gostar\n\nDia: "Pa
- go metade agora e o resto quando eu gostar": combine o que é gostar\nAb
- rir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261110-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T085000
-DTEND:20261110T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261110T120000
+DTEND:20261110T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "O material eu compro\, você só cobra a mão de 
- obra" "Hoje às 18h30 eu te mostro o que responder"\n\nDepois: Foto de u
- m orçamento ou do balcão (tampe nomes e valores). Escreva: "Cliente: '
- O material eu compro\, você só cobra a mão de obra'" "É aqui que mui
- ta venda desanda" "Combina a garantia antes"\n\nIntrodução da históri
- a do dia (Destrave Story). A promessa é resolvida às 18h30\n\nDia: "O 
- material eu compro\, você só cobra a mão de obra": quem responde pelo
-  resultado?\nAbrir o Canteiro: https://canteiro-vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "O material eu compro\, você s
+ ó cobra a mão de obra": quem responde pelo resultado?\nAbrir o Canteir
+ o: https://canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261110-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T085600
-DTEND:20261110T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "O material eu compro
- \, você só cobra a mão de obra": quem responde pelo resultado?\nAbrir
-  o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261110-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T121500
-DTEND:20261110T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'O material e
- u compro\, você só cobra a mão de obra'\, qual é a tua primeira resp
- osta?" Caixinha: "Escreve a resposta que você dá hoje"\n\nAtivação d
- e comunidade: 1 print por dia (Destrave Story)\n\nDia: "O material eu co
- mpro\, você só cobra a mão de obra": quem responde pelo resultado?\nA
- brir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261110-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T122500
-DTEND:20261110T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "O material eu compro\, v
- ocê só cobra a mão de obra": quem responde pelo resultado?\nAbrir o C
- anteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261110-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T183000
-DTEND:20261110T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: pode ser\, e eu te passo a lista exata com a esp
- ecificação de cada item" "E escrevo: a garantia do serviço é minha\,
-  a do material é do fabricante" "Material atrasado\, obra remarcada\, s
- em multa" "Você aceita a obra sem assumir o risco dele" Feche com "Esse
-  é o tempo 2 da Resposta em 3 Tempos: descobrir o motivo real"\n\nDepoi
- s: Foto do Caderno aberto (ou você com o celular mostrando a capa). Esc
- reva: "Saber uma resposta ajuda" "Vender sem improviso pede método" "At
- ração\, Conexão\, Diagnóstico\, Oferta e Decisão"\n\nSolução: a p
- romessa das 08h50 resolvida. Técnica com nome\, 2ª vez do dia\n\nDia: 
- "O material eu compro\, você só cobra a mão de obra": quem responde p
- elo resultado?\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261110-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261110T183600
-DTEND:20261110T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "O material eu compro\, você só c
- obra a mão de obra": quem responde pelo resultado?\nAbrir o Canteiro: h
- ttps://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261111-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261111T085000
-DTEND:20261111T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261111T120000
+DTEND:20261111T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/3 · 1 · Fato do dia
-DESCRIPTION:imagem · só a frase\n\nSó a foto\, sem texto. Salve a imag
- em e escreva por cima no Instagram\, com a fonte que quiser: "Fechar tud
- o junto" "virou 10% de desconto em cada item"\n\nTiro de alerta antes da
- s 9h (Afonso). Sem CTA\, só o fato. Reset às 23h (quarta e sexta\, Afo
- nso).\n\nDia: "Se eu fechar tudo com você\, quanto fica?": pacote ganha
-  condição\, não desconto em tudo\nAbrir o Canteiro: https://canteiro-
- vno.vercel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Se eu fechar tudo com você\, 
+ quanto fica?": pacote ganha condição\, não desconto em tudo\nAbrir o 
+ Canteiro: https://canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/3 · 1 · Fato do dia
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261111-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261111T091000
-DTEND:20261111T092000
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-DESCRIPTION:imagem · só a frase\n\nFoto sua com o café ou no escritór
- io. Escreva: "Qual objeção travou sua venda hoje?" "Eu respondo a melh
- or hoje às 18h30" Caixinha: "Manda do jeito que o cliente falou"\n\nMes
- mo quadro todo dia\, como pede o Stories 10x (ritual de todo dia\, mesma
-  hora). Pode postar quando abrir o Instagram de manhã\, até as 10h. Qu
- em mandar pergunta recebe direct em áudio quando der.\n\nDia: "Se eu fe
- char tudo com você\, quanto fica?": pacote ganha condição\, não desc
- onto em tudo\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/3 · 2 · Caixinha (até as 10h)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261111-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261111T183000
-DTEND:20261111T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) + 4 
- · Caderno (um sticker só)
-DESCRIPTION:vídeo · você falando\n\nChegou pergunta? Toque nela\, Comp
- artilhar resposta e responda em 15 s\, olhando pra câmera. Não chegou?
-  Fale: "Imagina o seguinte" "o cliente quer fechar tudo com você" "voc
- ê não tira 10% de tudo" "você dá a instalação da última etapa e u
- ma condição melhor" "Pegou a visão?" Feche com "amanhã de manhã tem
-  caixinha de novo"\n\nDepois: Foto do Caderno aberto ou sua com o celula
- r na mão. Escreva: "Criei o Caderno do Vendedor da Construção a parti
- r do meu método de vendas" "Atração\, Conexão\, Diagnóstico\, Ofert
- a e Decisão\, com roteiro e rotina em cada passo" Sticker de link Quero
-  o Caderno → vendanaobra.com.br/caderno. Nenhum outro sticker.\n\nResp
- osta pública da caixinha (Ladeira): quem perguntou vê a própria pergu
- nta respondida e volta amanhã. Vídeo depois das 16h (Afonso). Revelaç
- ão: condição de pacote no lugar do desconto linear\n\nDia: "Se eu fec
- har tudo com você\, quanto fica?": pacote ganha condição\, não desco
- nto em tudo\nAbrir o Canteiro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 3/3 · 3 · Resposta da caixinha (vídeo de 15 s) 
- + 4 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:canteiro-20261112-1@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T085000
-DTEND:20261112T090000
+DTSTAMP:20261020T150436Z
+SEQUENCE:12
+DTSTART:20261112T120000
+DTEND:20261112T121000
 TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Problema
-DESCRIPTION:imagem · só a frase\n\nFoto sua de verdade\, na rua\, na ob
- ra ou no balcão\, expressão séria (nada de foto de IA hoje). Escreva 
- em duas cores fortes: "Segura esse preço até março?" "Hoje às 18h30 
- eu te mostro o que responder"\n\nDepois: Foto de um orçamento ou do bal
- cão (tampe nomes e valores). Escreva: "Cliente: 'Segura esse preço at
- é março?'" "É aqui que muita venda desanda" "Não segura de graça"\n
- \nIntrodução da história do dia (Destrave Story). A promessa é resol
- vida às 18h30\n\nDia: "Segura esse preço pra mim até março?": valida
- de com sinal\, não promessa\nAbrir o Canteiro: https://canteiro-vno.ver
- cel.app
+SUMMARY:🖼 Story 1/1 · Caixinha do dia
+DESCRIPTION:imagem · só a frase\n\nEscreva: "O que travou sua venda hoj
+ e?" Sticker de caixinha de perguntas\n\nO único story fixo do dia. O re
+ sto dos stories é o teu formato\n\nDia: "Segura esse preço pra mim at
+ é março?": validade com sinal\, não promessa\nAbrir o Canteiro: https
+ ://canteiro-vno.vercel.app
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🖼 Story 1/6 · 1 · Tiro de alerta (foto real) + 2 · Prob
- lema
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261112-2@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T085600
-DTEND:20261112T090600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-DESCRIPTION:imagem · só a frase\n\nFoto no carro estacionado com a tren
- a no painel (a peça oculta: aparece toda terça e quinta e você nunca 
- comenta). Escreva: "O problema quase nunca é o preço" "É a pergunta q
- ue ficou faltando ANTES da proposta" "Às 18h30 eu conto qual"\n\nCliffh
- anger: deixa a pergunta no ar até a noite\n\nDia: "Segura esse preço p
- ra mim até março?": validade com sinal\, não promessa\nAbrir o Cantei
- ro: https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 2/6 · 3 · Cliffhanger + peça oculta
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261112-3@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T121500
-DTEND:20261112T122500
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única inter
- ação do dia)
-DESCRIPTION:imagem · só a frase\n\nPrint de um comentário real de um R
- eel desta semana sobre preço ou desconto (tampe a foto da pessoa). Escr
- eva: "Toda vez que eu falo disso chega mensagem assim" "Não é só com 
- você". Sem comentário bom? Use a capa do Reel das 09h de hoje\n\nDepoi
- s: Mesmo fundo do story 2. Escreva: "Quando o cliente fala 'Segura esse 
- preço até março?'\, qual é a tua primeira resposta?" Caixinha: "Escr
- eve a resposta que você dá hoje"\n\nAtivação de comunidade: 1 print 
- por dia (Destrave Story)\n\nDia: "Segura esse preço pra mim até março
- ?": validade com sinal\, não promessa\nAbrir o Canteiro: https://cantei
- ro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 3/6 · 4 · Comunidade + 5 · Caixinha (a única i
- nteração do dia)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261112-4@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T122500
-DTEND:20261112T123500
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-DESCRIPTION:vídeo · você falando\n\nNo carro parado\, olhando pra câm
- era: "Eu ensino isso com a Resposta em 3 Tempos" "Não confronta\, desco
- bre o motivo real e marca o próximo passo" "Às 18h30 eu te mostro os 3
-  tempos com esse cliente"\n\nSigla ou técnica com nome\, 1ª vez do dia
- : a pessoa pergunta no direct o que é\n\nDia: "Segura esse preço pra m
- im até março?": validade com sinal\, não promessa\nAbrir o Canteiro: 
- https://canteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 4/6 · 6 · A técnica com nome (15 a 20 s)
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261112-5@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T183000
-DTEND:20261112T184000
-TRANSP:TRANSPARENT
-SUMMARY:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte para o
-  método
-DESCRIPTION:vídeo · você falando\n\nGrave em casa. Chegou resposta boa
-  na caixinha? Comece lendo uma. Depois: "Lembra do cliente de hoje de ma
- nhã?" "Eu responderia: seguro com um sinal\, e o sinal já entra como p
- agamento da obra" "Sem sinal\, a proposta vale até a data dela" "Em mar
- ço a gente atualiza junto" "Quem paga o sinal garante o preço e a vaga
-  na agenda" Feche com "Esse é o tempo 2 da Resposta em 3 Tempos: descob
- rir o motivo real"\n\nDepois: Foto do Caderno aberto (ou você com o cel
- ular mostrando a capa). Escreva: "Saber uma resposta ajuda" "Vender sem 
- improviso pede método" "Atração\, Conexão\, Diagnóstico\, Oferta e 
- Decisão"\n\nSolução: a promessa das 08h50 resolvida. Técnica com nom
- e\, 2ª vez do dia\n\nDia: "Segura esse preço pra mim até março?": va
- lidade com sinal\, não promessa\nAbrir o Canteiro: https://canteiro-vno
- .vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎥 Story 5/6 · 7 · A resposta (20 a 25 s) + 8 · Ponte pa
- ra o método
-TRIGGER;VALUE=DURATION:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:canteiro-20261112-6@vendanaobra
-DTSTAMP:20261020T012554Z
-SEQUENCE:11
-DTSTART:20261112T183600
-DTEND:20261112T184600
-TRANSP:TRANSPARENT
-SUMMARY:🖼 Story 6/6 · 9 · Caderno (um sticker só)
-DESCRIPTION:imagem · só a frase\n\nFoto do Caderno. Escreva: "Criei o C
- aderno do Vendedor da Construção a partir do meu método de vendas" "R
- oteiro e rotina em cada um dos 5 passos\, do primeiro contato ao fechame
- nto" Sticker de link Quero o Caderno → vendanaobra.com.br/caderno. Nen
- hum outro sticker\n\nOferta como continuação da história. Prova socia
- l e oferta todo dia (Afonso)\n\nDia: "Segura esse preço pra mim até ma
- rço?": validade com sinal\, não promessa\nAbrir o Canteiro: https://ca
- nteiro-vno.vercel.app
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🖼 Story 6/6 · 9 · Caderno (um sticker só)
+DESCRIPTION:🖼 Story 1/1 · Caixinha do dia
 TRIGGER;VALUE=DURATION:-PT10M
 END:VALARM
 END:VEVENT
