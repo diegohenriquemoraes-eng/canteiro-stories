@@ -885,7 +885,6 @@
    "Nota 0: \"Quanto você quer pagar?\"\n\nVocê acabou de pedir pro cliente marcar o teu preço",
    "Nota 1: \"Faço 5% pra você\"\n\nDesconto antes de saber com o que ele está comparando",
    "Nota 2: \"Mas a nossa qualidade é superior\"\n\nVira discussão, e cliente não compra de quem ganha a discussão",
-   "Nota 4: Mandar a proposta de novo, mais detalhada\n\nMais papel não muda a cabeça de quem já achou caro",
    "Nota 6: \"Caro comparado com o quê?\"\n\nA pergunta certa, mas dita seca soa como desafio",
    "Nota 10: \"Entendo. Quando você diz caro, é comparando com outra proposta ou com o que você tinha planejado gastar?\"",
    "Se for outra proposta: compara item por item, material, prazo, instalação e garantia",
