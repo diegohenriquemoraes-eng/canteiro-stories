@@ -127,6 +127,13 @@
       "titulo": "“Arredonda pra baixo que eu fecho”",
       "capa": "tweet",
       "slides": 5
+    },
+    "2026-10-20|1": {
+      "media_id": "18152724880531034",
+      "quando": "2026-10-20T12:31:04-03:00",
+      "titulo": "Dando nota para o que o vendedor responde quando o cliente diz \"tá caro\"",
+      "capa": "tweet",
+      "slides": 10
     }
   }
 }
