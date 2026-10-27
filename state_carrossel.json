@@ -148,6 +148,13 @@
       "titulo": "Dando nota para o que o vendedor responde quando o cliente diz \"me dá um desconto que eu fecho hoje\"",
       "capa": "tweet",
       "slides": 10
+    },
+    "2026-10-27|1": {
+      "media_id": "18104255687041158",
+      "quando": "2026-10-27T12:31:17-03:00",
+      "titulo": "Dando nota para o que o vendedor responde quando o cliente diz \"o outro faz mais barato\"",
+      "capa": "tweet",
+      "slides": 10
     }
   }
 }
