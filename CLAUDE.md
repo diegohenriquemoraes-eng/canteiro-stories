@@ -551,6 +551,17 @@ mão, com a instrução do cartão (foto sugerida + frases + sticker). O workflo
 Fica a rotina leve: fato 08:50, caixinha do Plantão da Objeção (mesmo quadro todo dia) até as 10h, vídeo de 15 s
 às 18:30 e oferta logo depois. Não religar o robô sem ele pedir.
 
-## Carrossel 2 por semana (14/10/2026)
+## Carrossel todo dia, do Reel do dia (06/11/2026)
 
-O carrossel diário saiu (alcance mediano 142 contra 474 do Reel). Às **terças e sextas, 12h30**, `carrossel_viral.py` (passo do `carrossel.yml`, antes do `carrossel.py`) pega o Reel de mais views dos últimos 8 dias **acima de 2.000** que ainda não virou carrossel, transforma a legenda dele em slides e grava em `docs/carrosseis_virais.json`. O `carrossel.py` lê esse arquivo junto com o `docs/carrosseis.json` do app. Sem Reel acima de 2.000, não sai carrossel no dia. A legenda abre com uma linha a mais para a conferência "já está no perfil" não confundir com a do Reel. Teste: `testes/test_carrossel_viral.py`.
+**Pedido do Diego em 06/11/2026: volta a ser 1 carrossel por dia, 12h30, com o tema de um dos vídeos do dia.**
+`carrossel_viral.py` (passo do `carrossel.yml`, antes do `carrossel.py`) pega os Reels de hoje, o mais cedo
+primeiro (o das 09h), depois os das últimas 24 h, transforma a legenda em slides e grava em `docs/carrosseis_virais.json`.
+O carrossel do app (Notas, `docs/carrosseis.json`) tem preferência no dia dele.
+
+**Trava `problemas()` (o erro de 06/11):** o automático publicou "Essa pergunta desmonta a objeção" sem a pergunta,
+que só existia na fala do vídeo, e com hashtag e "Siga" num slide. Foi apagado pelo Chrome e refeito à mão com a
+pergunta tirada da transcrição ("Até quando você pretende tomar essa decisão?"). Agora o carrossel NÃO sai se:
+cita pergunta sem ela entre aspas com "?", cita frase/roteiro sem mostrar, nenhum slide traz o que fazer
+(Eu responderia/faria, passos numerados ou fala entre aspas), tem hashtag, "Siga"/"me segue" ou oferta
+(bio, caderno, Raio-X) no meio, ou tem menos de 4 slides. Reprovou todos = sem carrossel no dia e o workflow
+falha (abre issue). Legenda escrita à mão pelo Diego, sem roteiro, reprova sozinha. Teste: `testes/test_carrossel_viral.py`.

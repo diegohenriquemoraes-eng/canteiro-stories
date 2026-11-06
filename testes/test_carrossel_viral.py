@@ -54,5 +54,78 @@ class SlidesDaLegenda(unittest.TestCase):
         self.assertEqual(c["hora"], "12:30")
 
 
+# 06/11/2026: a legenda citava "essa pergunta" e a pergunta só existia na fala do vídeo
+LEGENDA_SEM_PERGUNTA = """“Me envia teu preço que já tenho 3 orçamentos”
+
+Se você envia, vira só mais uma empresa pra comparação de preço
+
+Que comparação de preço só ganha quem tem o preço mais baixo e quase nunca é você
+
+Essa pergunta desmonta a objeção do cliente quando ele quer o preço só pra sumir depois
+
+Tá com dificuldade em vendas na construção civil? Siga o @vendanaobra 
+#vendas #empreendedorismo #construçãocivil"""
+
+LEGENDA_DO_DIA = """"Me dá um desconto que eu te indico pra todo mundo"
+
+Quando o cliente disser isso, não paga adiantado
+
+O desconto sai hoje, na proposta, e a indicação talvez nunca venha
+
+Eu responderia: "adoro indicação, e quem indica comigo ganha quando o indicado fecha"
+
+1. Para cada indicado que fechar, ele ganha um valor ou um serviço
+2. Combinado por escrito, no mesmo dia
+3. Você paga quando a venda acontece
+
+O cliente que queria indicar continua querendo, e agora tem motivo
+
+Indicação se paga depois da venda, não antes
+
+Pegou a visão?
+
+Quantas indicações prometidas viraram venda na tua empresa?
+
+Comenta INDICACAO que eu te mando o roteiro que eu usaria
+
+Siga o @vendanaobra. Desenvolvo empresas da construção a vender mais e de forma previsível
+
+#indicacao #desconto #negociacao #vendas #construcaocivil"""
+
+
+class Trava(unittest.TestCase):
+    def test_reprova_pergunta_citada_e_nao_mostrada(self):
+        slides, _ = cv.slides_da_legenda(LEGENDA_SEM_PERGUNTA)
+        erros = cv.problemas(slides)
+        self.assertTrue(any("pergunta" in e for e in erros), erros)
+
+    def test_hashtag_e_siga_nao_entram_no_slide(self):
+        slides, _ = cv.slides_da_legenda(LEGENDA_SEM_PERGUNTA)
+        texto = "\n".join(slides)
+        self.assertNotIn("#", texto)
+        self.assertNotIn("Siga o @", texto)
+
+    def test_aprova_o_refeito_de_06_11(self):
+        slides = [
+            "“Me envia teu preço que já tenho 3 orçamentos”",
+            "Se você manda a proposta na hora, vira só mais uma empresa na comparação de preço",
+            "E comparação de preço só ganha quem tem o mais baixo, que quase nunca é você",
+            "Antes de mandar qualquer número, faz uma única pergunta pra esse cliente:",
+            "“Até quando você pretende tomar essa decisão?”",
+            "Se ele tem data, é prioridade e você conduz a venda",
+            "Essa pergunta tira a pressa falsa do cliente\n\nSalva pra usar amanhã",
+        ]
+        self.assertEqual(cv.problemas(slides), [])
+
+    def test_reel_do_dia_com_roteiro_completo_passa(self):
+        slides, palavra = cv.slides_da_legenda(LEGENDA_DO_DIA)
+        self.assertEqual(palavra, "INDICACAO")
+        self.assertEqual(cv.problemas(slides), [])
+        self.assertIn("Quantas indicações prometidas", slides[-1])
+
+    def test_curto_demais_reprova(self):
+        self.assertTrue(cv.problemas(["“Tá caro”", "Pergunta antes", "Comenta X"]))
+
+
 if __name__ == "__main__":
     unittest.main()
