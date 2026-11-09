@@ -565,3 +565,13 @@ cita pergunta sem ela entre aspas com "?", cita frase/roteiro sem mostrar, nenhu
 (Eu responderia/faria, passos numerados ou fala entre aspas), tem hashtag, "Siga"/"me segue" ou oferta
 (bio, caderno, Raio-X) no meio, ou tem menos de 4 slides. Reprovou todos = sem carrossel no dia e o workflow
 falha (abre issue). Legenda escrita à mão pelo Diego, sem roteiro, reprova sozinha. Teste: `testes/test_carrossel_viral.py`.
+
+**09/11/2026: o roteiro vem da PAUTA, não da legenda publicada.** Em 08/11 e 09/11 o carrossel não saiu
+(workflow vermelho): a legenda que foi ao ar não tinha o roteiro em parágrafos e reprovou ("só 1 slides"),
+embora a pauta do dia estivesse completa. `reels_da_pauta()` lê o app publicado em canteiro-vno.vercel.app
+(Reels do dia, 09h primeiro); a legenda do Instagram virou reserva. **Pauta sem o dia = volta a depender da
+legenda publicada**: quem escreve a pauta do Canteiro VNO mantém sempre dias à frente.
+
+**09/11/2026 (Diego): fundo preto e letra branca em todo carrossel de hoje em diante** (capa tweet e miolo),
+filete e número da página dourados (`PRETO`, `CAIXA`, `APAGADO` em `carrossel.py`). O 1º assim:
+09/11 13:19, `18078896477725856`. `docs/carrossel.html` (página antiga de artes no celular) não foi trocada.
