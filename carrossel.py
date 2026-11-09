@@ -76,6 +76,9 @@ ATRASO_MAX_MIN = 360
 # ---- desenho: cópia fiel de docs/carrossel.html (canvas) --------------------
 L, A = 1080, 1350
 NAVY, CHAMP, BRANCO = (7, 16, 37), (216, 184, 136), (255, 255, 255)
+# 09/11/2026 (Diego): todo carrossel de hoje em diante sai com FUNDO PRETO e LETRA BRANCA
+# (identidade preto e dourado do Venda na Obra). O filete e o número da página seguem dourados.
+PRETO, CAIXA, APAGADO = (10, 10, 10), (30, 30, 30), (160, 160, 160)
 MARGEM = 90
 LARGURA = L - MARGEM * 2
 
@@ -115,7 +118,7 @@ def quebrar(draw, texto: str, f, largura: int) -> list[str]:
 
 def desenhar(texto: str, i: int, total: int, peso_capa: bool = False) -> Image.Image:
     capa, cta = i == 0, i == total - 1
-    im = Image.new("RGB", (L, A), NAVY if cta else BRANCO)
+    im = Image.new("RGB", (L, A), PRETO)
     d = ImageDraw.Draw(im)
     d.rectangle([90, 96, 90 + (320 if capa else 120), 106], fill=CHAMP)
 
@@ -130,14 +133,14 @@ def desenhar(texto: str, i: int, total: int, peso_capa: bool = False) -> Image.I
         tam -= 3
     bloco = len(linhas) * tam * 1.3
     y = max(190, (A - bloco) / 2 - 40)
-    cor = BRANCO if cta else NAVY
+    cor = BRANCO
     for linha in linhas:
         d.text((MARGEM, y), linha, font=f, fill=cor, anchor="la")
         y += tam * 1.3
 
     rod = fonte(30, 500)
     d.text((MARGEM, A - 150), "@vendanaobra", font=rod, anchor="la",
-           fill=(195, 199, 207) if cta else (154, 163, 173))
+           fill=APAGADO)
     if not cta:
         n = f"{i + 1}/{total}"
         d.text((L - MARGEM - d.textlength(n, font=rod), A - 150), n,
@@ -155,7 +158,7 @@ def desenhar(texto: str, i: int, total: int, peso_capa: bool = False) -> Image.I
 # reexibe o post a partir do slide 2 para quem não deslizou) e ganha o peso da capa.
 TESTE_CAPA_INICIO = "2026-10-02"
 AVATAR = AQUI / "fontes" / "avatar-diego.jpg"
-CINZA = (110, 118, 130)
+CINZA = APAGADO   # era (110, 118, 130) no fundo branco
 
 
 def variante_capa(dia: str) -> str:
@@ -175,12 +178,12 @@ def _avatar(tam: int):
 
 def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
     """Capa estilo post: foto, nome e @ do Diego, a frase e (se houver) o quadro do número."""
-    im = Image.new("RGB", (L, A), BRANCO)
+    im = Image.new("RGB", (L, A), PRETO)
     d = ImageDraw.Draw(im)
     tam_av, y0 = 120, 150
     f, m = _avatar(tam_av)
     im.paste(f, (MARGEM, y0), m)
-    d.text((MARGEM + tam_av + 28, y0 + 24), "Diego Moraes", font=fonte(44, 700), fill=NAVY)
+    d.text((MARGEM + tam_av + 28, y0 + 24), "Diego Moraes", font=fonte(44, 700), fill=BRANCO)
     d.text((MARGEM + tam_av + 28, y0 + 76), "@vendanaobra", font=fonte(38, 400), fill=CINZA)
 
     numeros = [n for n in (numeros or []) if n.get("num")][:2]
@@ -197,7 +200,7 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
     y = topo if numeros else max(topo, topo + (espaco - altura) / 2 - 40)
     for b in blocos:
         for linha in b:
-            d.text((MARGEM, y), linha, font=ft, fill=NAVY)
+            d.text((MARGEM, y), linha, font=ft, fill=BRANCO)
             y += tam * 1.25
         y += tam * 0.5
 
@@ -205,7 +208,7 @@ def desenhar_capa_tweet(texto: str, numeros: list | None = None) -> Image.Image:
         y1 = fundo
         y0q = max(int(y + 10), y1 - 420)
         x1 = L - MARGEM
-        d.rounded_rectangle([MARGEM, y0q, x1, y1], radius=36, fill=NAVY)
+        d.rounded_rectangle([MARGEM, y0q, x1, y1], radius=36, fill=CAIXA, outline=CHAMP, width=2)
         cy = (y0q + y1) // 2
         fl = fonte(32, 500)
         if len(numeros) == 1:

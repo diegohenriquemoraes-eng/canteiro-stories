@@ -16,6 +16,12 @@ Como funciona (roda no workflow do carrossel, antes do `carrossel.py`):
          últimas 24 h; nenhum passou = sem carrossel no dia (melhor nada que errado)
       -> grava em docs/carrosseis_virais.json com dia = hoje, hora = 12:30
 
+**09/11/2026: a fonte principal passou a ser a PAUTA do Canteiro VNO**, não a legenda publicada.
+Em 08/11 e 09/11 o carrossel não saiu: a legenda que foi ao ar não tinha o roteiro em parágrafos
+(reprovou na trava com "só 1 slides"), embora a pauta do dia tivesse tudo. Agora o script lê a pauta
+publicada em canteiro-vno.vercel.app (Reel das 09h, depois 15h e 19h30 do dia) e só cai na legenda
+do Instagram se a pauta não tiver o dia ou nenhum Reel dela passar na trava.
+
 O carrossel escrito à mão no app Canteiro (docs/carrosseis.json) tem preferência no dia dele.
 A legenda do carrossel abre com uma linha a mais, para não ser confundida com a do Reel
 na conferência "já está no perfil".
@@ -50,6 +56,7 @@ JANELA_HORAS = 24
 MINIMO_SLIDES = 4
 MAX_SLIDES = 10
 ABERTURA = "O roteiro do Reel de hoje, pra salvar e usar amanhã"
+PAUTA_URL = "https://canteiro-vno.vercel.app/"
 
 
 def log(msg: str) -> None:
@@ -79,6 +86,30 @@ def reels_recentes(token: str, ig_id: str, agora: datetime) -> list[dict]:
         except (KeyError, IndexError):
             m["views"] = 0
         out.append(m)
+    return out
+
+
+def reels_da_pauta(agora: datetime) -> list[dict]:
+    """Os Reels do dia na pauta do Canteiro VNO (o app publicado), 09h primeiro."""
+    try:
+        html = requests.get(PAUTA_URL, timeout=30).text
+    except requests.RequestException as e:
+        log(f"pauta do Canteiro VNO fora do ar ({e}); vou pela legenda publicada")
+        return []
+    ddmm = agora.strftime("%d/%m")
+    m = re.search(r'\{\s*"dow":\s*"[^"]+",\s*"data":\s*"' + re.escape(ddmm) + '"', html)
+    if not m:
+        log(f"a pauta não tem {ddmm}; vou pela legenda publicada")
+        return []
+    dia, _ = json.JSONDecoder().raw_decode(html, m.start())
+    out = []
+    for r in sorted(dia.get("reels", []), key=lambda r: r.get("hora", "")):
+        if not r.get("legenda"):
+            continue
+        h, mi = map(int, r["hora"].split(":"))
+        out.append({"id": f"pauta-{agora.date().isoformat()}-{r['hora']}", "caption": r["legenda"],
+                    "quando": agora.replace(hour=h, minute=mi, second=0, microsecond=0),
+                    "views": 0, "permalink": PAUTA_URL})
     return out
 
 
@@ -212,23 +243,34 @@ def main() -> None:
     usados = {c.get("origem", {}).get("reel") for c in feitos}
 
     token = os.environ.get("META_TOKEN", "").strip()
-    if not token:
-        raise SystemExit("sem META_TOKEN — não há como ler os Reels")
     ig_id = os.environ.get("IG_BUSINESS_ID", "").strip() or IG_BUSINESS_ID
 
-    recentes = [r for r in reels_recentes(token, ig_id, agora) if r["id"] not in usados]
-    # tema de um vídeo do dia: os de hoje primeiro, o mais cedo (09h) antes; depois as últimas 24 h
-    recentes.sort(key=lambda r: (r["quando"].date() != agora.date(),
-                                 r["quando"] if r["quando"].date() == agora.date() else -r["quando"].timestamp()))
+    def do_instagram() -> list[dict]:
+        if not token:
+            log("sem META_TOKEN: não há como ler os Reels publicados")
+            return []
+        rec = [r for r in reels_recentes(token, ig_id, agora) if r["id"] not in usados]
+        # os de hoje primeiro, o mais cedo (09h) antes; depois as últimas 24 h
+        rec.sort(key=lambda r: (r["quando"].date() != agora.date(),
+                                r["quando"] if r["quando"].date() == agora.date() else -r["quando"].timestamp()))
+        return rec
+
     dow = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"][agora.weekday()]
     c = reel = None
-    for r in recentes:
-        tentativa = montar(r, dia, dow)
-        erros = problemas(tentativa["slides"])
-        if not erros:
-            c, reel = tentativa, r
+    candidatos = reels_da_pauta(agora)
+    tentou_instagram = False
+    while True:
+        for r in candidatos:
+            tentativa = montar(r, dia, dow)
+            erros = problemas(tentativa["slides"])
+            if not erros:
+                c, reel = tentativa, r
+                break
+            log(f"{dia}: Reel {r['id']} ({r['quando']:%d/%m %H:%M}) reprovado: {'; '.join(erros)}")
+        if c or tentou_instagram:
             break
-        log(f"{dia}: Reel {r['id']} ({r['quando']:%d/%m %H:%M}) reprovado: {'; '.join(erros)}")
+        tentou_instagram = True
+        candidatos = do_instagram()
     if not c:
         raise SystemExit(f"{dia}: nenhum Reel das últimas {JANELA_HORAS} h deu carrossel completo. "
                          "Sem carrossel hoje (melhor nada que slide citando o que não mostra)")
