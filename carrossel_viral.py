@@ -104,10 +104,12 @@ def reels_da_pauta(agora: datetime) -> list[dict]:
     dia, _ = json.JSONDecoder().raw_decode(html, m.start())
     out = []
     for r in sorted(dia.get("reels", []), key=lambda r: r.get("hora", "")):
-        if not r.get("legenda"):
+        # desde 12/11/2026 a legenda do Reel é curta; a longa (o roteiro) fica em "legenda_longa"
+        texto = r.get("legenda_longa") or r.get("legenda")
+        if not texto:
             continue
         h, mi = map(int, r["hora"].split(":"))
-        out.append({"id": f"pauta-{agora.date().isoformat()}-{r['hora']}", "caption": r["legenda"],
+        out.append({"id": f"pauta-{agora.date().isoformat()}-{r['hora']}", "caption": texto,
                     "quando": agora.replace(hour=h, minute=mi, second=0, microsecond=0),
                     "views": 0, "permalink": PAUTA_URL})
     return out
