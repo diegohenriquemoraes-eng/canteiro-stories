@@ -426,7 +426,9 @@ houve execução desde a hora — o `carrossel.py` dorme até o horário do dia 
 150 min antes) e o `state_carrossel.json` impede duplicata. Horário novo na pauta fora
 dessas janelas → acrescentar na tabela `RELOGIO_SLOTS`.
 
-## Carrossel publicado sozinho, 12h30, sem música (26/09/2026)
+## Carrossel publicado sozinho, 12h12, sem música (26/09/2026; 12h30 até 12/11/2026)
+
+**12/11/2026: o carrossel passa a sair às 12h12** (Diego), de 13/11 em diante: `HORA` no `carrossel_viral.py` e os disparos do `carrossel.yml`. Os Reels do Canteiro VNO passaram para 09h12 · 15h12 · 19h12 no mesmo dia.
 
 Decisão do Diego: o carrossel deixou de ser a única tarefa manual do dia. A música (que a Graph
 API não põe) era o único motivo de ser manual, e a medição de 26/09 não mostrou ganho de alcance
@@ -436,7 +438,7 @@ continua em `DIAS[].carrosseis`, que é de onde `exportar_carrosseis.py` lê).
 | Peça | Onde |
 |---|---|
 | Publicador | `carrossel.py`: lê `docs/carrosseis.json`, desenha os slides igual a `docs/carrossel.html` (Pillow + `fontes/Archivo.ttf`), hospeda na Release `pronto`, cria os containers `is_carousel_item` + `CAROUSEL` com a legenda e publica |
-| Workflow | `carrossel.yml`: disparos 11:11, 11:47, 12:13, 12:29 BRT (quem acorda antes DORME até 12:30) e repescagem 13:41 e 15:07; `agora` no Run workflow publica o de hoje na hora |
+| Workflow | `carrossel.yml`: disparos 11:11, 11:47, 12:03, 12:11 BRT (quem acorda antes DORME até 12:12) e repescagem 13:41 e 15:07; `agora` no Run workflow publica o de hoje na hora |
 | Estado | `state_carrossel.json` (versionado). Antes de publicar, confere o PERFIL: legenda igual nas últimas 30 h = já publicado |
 | Token | secret **`META_TOKEN`** = token de sistema da Meta (não expira, `instagram_content_publish`), via `graph.facebook.com/v21.0` e id business `17841470188725651` |
 

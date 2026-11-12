@@ -1,4 +1,4 @@
-"""Publica sozinho o carrossel do dia do @vendanaobra, às 12h30, pela API.
+"""Publica sozinho o carrossel do dia do @vendanaobra, às 12h12, pela API (12h30 até 12/11/2026).
 
 Decisão do Diego em 26/09/2026: o carrossel deixa de ser postado à mão e sai
 **sem música** — era a música (que a Graph API não põe) a única razão de ele

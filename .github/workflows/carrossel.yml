@@ -1,20 +1,20 @@
 name: Publicar carrossel
 
 # O carrossel do dia (docs/carrosseis.json, exportado do app Canteiro) sai
-# sozinho às 12h30 de Brasília, sem música — decisão do Diego em 26/09/2026.
+# sozinho às 12h12 de Brasília (era 12h30 até 12/11/2026), sem música — decisão do Diego em 26/09/2026.
 #
 # O cron do GitHub é "quando der" (já entregou buracos de 4 h neste repo), então
 # são vários disparos em minutos quebrados: o primeiro que acordar antes das
-# 12h30 DORME até a hora e publica no minuto certo; os seguintes veem o estado
+# 12h12 DORME até a hora e publica no minuto certo; os seguintes veem o estado
 # e saem sem fazer nada; os das 13h41 e 15h07 são repescagem se os da manhã
 # forem engolidos. O script ainda confere o PERFIL antes de publicar (legenda
 # igual nas últimas 30 h), então um estado não commitado não vira post duplo.
 on:
   schedule:
-    - cron: "11 14 * * *"    # 11:11 BRT — acorda e espera até 12:30
+    - cron: "11 14 * * *"    # 11:11 BRT — acorda e espera até 12:12
     - cron: "47 14 * * *"    # 11:47
-    - cron: "13 15 * * *"    # 12:13
-    - cron: "29 15 * * *"    # 12:29
+    - cron: "3 15 * * *"     # 12:03
+    - cron: "11 15 * * *"    # 12:11
     - cron: "41 16 * * *"    # 13:41 — repescagem
     - cron: "7 18 * * *"     # 15:07 — repescagem
   workflow_dispatch:

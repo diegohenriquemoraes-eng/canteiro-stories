@@ -51,7 +51,7 @@ class SlidesDaLegenda(unittest.TestCase):
         c = cv.montar({"id": "1", "views": 3000, "caption": LEGENDA}, "2026-10-20", "Ter")
         self.assertNotEqual(c["legenda"], LEGENDA)
         self.assertIn(cv.ABERTURA, c["legenda"])
-        self.assertEqual(c["hora"], "12:30")
+        self.assertEqual(c["hora"], "12:12")
 
 
 # 06/11/2026: a legenda citava "essa pergunta" e a pergunta só existia na fala do vídeo
