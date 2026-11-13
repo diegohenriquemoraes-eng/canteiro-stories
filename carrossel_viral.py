@@ -1,4 +1,4 @@
-"""Carrossel de todo dia, 12h12: o roteiro de um Reel do próprio dia.
+"""Carrossel de todo dia, 12h20: o roteiro de um Reel do próprio dia.
 
 Histórico: 14/10/2026 o carrossel diário saiu e ficou terça e sexta com o Reel acima de
 2.000 views da semana. **06/11/2026 (Diego): volta a ser 1 por dia, com o tema de um dos
@@ -51,7 +51,7 @@ FUSO = ZoneInfo("America/Sao_Paulo")
 GRAPH = "https://graph.facebook.com/v21.0"
 IG_BUSINESS_ID = "17841470188725651"
 SAIDA = AQUI / "docs" / "carrosseis_virais.json"
-HORA = "12:12"  # 12h12 desde 13/11/2026 (Diego); antes 12h30
+HORA = "12:20"  # 12h20 desde 13/11/2026 (Diego: Instagram nao agenda minuto quebrado); antes 12h30
 JANELA_HORAS = 24
 MINIMO_SLIDES = 4
 MAX_SLIDES = 10

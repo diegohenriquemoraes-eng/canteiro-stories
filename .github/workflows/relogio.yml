@@ -6,7 +6,7 @@ name: Relogio do carrossel
 # `agora`): o carrossel.py dorme ate a hora do dia e publica no minuto certo
 # (acorda ate 150 min antes; atrasado ate 6 h ainda publica). Os crons proprios
 # do carrossel.yml continuam como segunda via; o state_carrossel.json impede
-# post duplicado. 10h03 cobre o das 12h12; os demais cobrem os horarios
+# post duplicado. 10h03 cobre o das 12h20; os demais cobrem os horarios
 # avulsos (07h30, 16h30, 19h30) que ja apareceram na pauta.
 
 on:
