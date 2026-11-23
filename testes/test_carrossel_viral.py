@@ -37,7 +37,7 @@ class SlidesDaLegenda(unittest.TestCase):
         self.assertEqual(slides[0], "“Se fechar hoje eu faço desconto”")
         self.assertIn("1. Pagamento à vista\n2. Entrada maior", slides)
         self.assertTrue(slides[-1].startswith("Teu vendedor oferece desconto"))
-        self.assertTrue(slides[-1].endswith("Comenta MARGEM que eu te mando o roteiro"))
+        self.assertTrue(slides[-1].endswith("Comenta AMOSTRA que eu te mando uma ficha de cada passo, de graça"))
         texto = "\n".join(slides)
         for fora in ("Pegou a visão", "Siga o @", "Desenvolvo empresas", "#desconto"):
             self.assertNotIn(fora, texto)

@@ -115,6 +115,10 @@ def reels_da_pauta(agora: datetime) -> list[dict]:
     return out
 
 
+CTA_AMOSTRA = ("Isso é um pedaço do meu método de vendas em 5 passos\n\n"
+               "Comenta AMOSTRA que eu te mando uma ficha de cada passo, de graça")
+
+
 def slides_da_legenda(legenda: str) -> tuple[list[str], str]:
     """A legenda do Reel já tem o roteiro na ordem: gancho, contexto, a frase, lista, fecho."""
     partes = [p.strip() for p in re.split(r"\n\s*\n", legenda) if p.strip()]
@@ -161,8 +165,10 @@ def slides_da_legenda(legenda: str) -> tuple[list[str], str]:
     while len(corpo) + 1 > MAX_SLIDES:
         i = min(range(1, len(corpo) - 1), key=lambda k: len(corpo[k]) + len(corpo[k + 1]))
         corpo[i:i + 2] = [corpo[i] + "\n\n" + corpo[i + 1]]
-    final = (pergunta + "\n\n" if pergunta else "") + (
-        f"Comenta {palavra} que eu te mando o roteiro" if palavra else "Salva pra usar amanhã")
+    # 23/11/2026 (estratégia "seguidor novo → Caderno", aprovada pelo Diego): o último slide chama
+    # a palavra AMOSTRA, que o robô vno-amostra atende sozinho. A palavra do Reel ficou sem robô
+    # desde 09/11 (vno-direct pausado), então "Comenta MATERIAL" no carrossel não levava a nada.
+    final = (pergunta + "\n\n" if pergunta else "") + CTA_AMOSTRA
     return corpo + [final], palavra
 
 
@@ -206,6 +212,13 @@ def problemas(slides: list[str]) -> list[str]:
 def montar(reel: dict, dia: str, dow: str) -> dict:
     slides, palavra = slides_da_legenda(reel["caption"])
     legenda = reel["caption"]
+    # a palavra do Reel sai da legenda do carrossel e entra a AMOSTRA (23/11/2026)
+    legenda, trocas = re.subn(r"(?m)^Comenta \S+.*$", lambda _: CTA_AMOSTRA, legenda, count=1)
+    if not trocas:
+        if "\n\nSiga o @" in legenda:
+            legenda = legenda.replace("\n\nSiga o @", "\n\n" + CTA_AMOSTRA + "\n\nSiga o @", 1)
+        else:
+            legenda += "\n\n" + CTA_AMOSTRA
     gancho = slides[0]
     legenda = legenda.replace(gancho, gancho + "\n\n" + ABERTURA, 1) if gancho in legenda \
         else ABERTURA + "\n\n" + legenda
